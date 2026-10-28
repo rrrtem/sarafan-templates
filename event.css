@@ -12,9 +12,6 @@
 .event-date{width:614.804px;font:500 80px/.92 "Sarafan Event Geist",Geist,Arial,sans-serif}
 .event-address{width:685.82px;font-size:35px;line-height:1.1;font-style:italic;font-weight:500}
 .event-badge{padding:5px 10px 10px;background:var(--ui-accent);color:var(--paper);border-radius:30px;font-size:45px;line-height:1;font-weight:500;white-space:nowrap;text-align:center}
-.event-clean-copy{position:absolute;left:65px;top:230px;width:814px;display:flex;flex-direction:column;align-items:flex-start;gap:50px}
-.event-clean-kicker{font:400 35px/1.1 Geist,Arial,sans-serif}
-.event-card .event-clean-title{font-size:110px;line-height:1}
 .event-photo{background:#014b3e;color:var(--paper)}
 .event-portrait{position:absolute;left:-.4166px;top:-.1917px;width:1080px;height:1353px;overflow:hidden}
 .event-portrait>img{position:absolute;left:-64.12%;top:0;width:187.92%;height:100%}

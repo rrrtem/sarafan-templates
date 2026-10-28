@@ -118,7 +118,6 @@
       ],
       "documentation": "docs/event-template.md",
       "labels": [
-        "Обложка · Чистый фон",
         "Обложка · Фото",
         "Готовая афиша · Концерт",
         "Готовая афиша · Стендап",
@@ -538,14 +537,14 @@
     {
       "path": "README.md",
       "mediaType": "text/markdown",
-      "bytes": 17191,
-      "sha256": "b7b0d477a6e66a9a1f32fb61243f5b060324eb72cb1b212455016baf3f24fd87"
+      "bytes": 17129,
+      "sha256": "e8328db54e28a8683e285d7c02dce9aa6f4fa74252675e7756da08d823e51fa7"
     },
     {
       "path": "agents.html",
       "mediaType": "text/html",
       "bytes": 10982,
-      "sha256": "dda93892246bb1e007efcd7b3e624dde85b162417085004b1f9e8bad0696d79d"
+      "sha256": "f30d1d020cb425d1c71adbfe9a39939b35cfa4992e1d345b371086b98581d10b"
     },
     {
       "path": "assets/club-5535-ellipse30.svg",
@@ -1588,8 +1587,8 @@
     {
       "path": "catalog.js",
       "mediaType": "text/javascript",
-      "bytes": 14384,
-      "sha256": "df1f17edaad1e9367aa167aacfb07c82c5ab8becf6369a668ebde1e55b056928"
+      "bytes": 14341,
+      "sha256": "ed1406310108d47d561552d81bb4183e45dc30e0dc31f0b95a9384d8634aa4fa"
     },
     {
       "path": "club.css",
@@ -1625,7 +1624,7 @@
       "path": "docs/agent-guide.md",
       "mediaType": "text/markdown",
       "bytes": 16754,
-      "sha256": "25e1079857e1ca19285e853d6cf16dec27b09e920da8f978effcf724c182fe7b"
+      "sha256": "81fff3d49dcaffd4173f5aff70ce51fcbc846dd5953a20d00f17e6c61d2d8dff"
     },
     {
       "path": "docs/club-templates.md",
@@ -1642,8 +1641,8 @@
     {
       "path": "docs/event-template.md",
       "mediaType": "text/markdown",
-      "bytes": 4264,
-      "sha256": "10db6e5ca855ca3e465e2152fdcd0065c4d9fde931e51d1ebd9435fcded4450a"
+      "bytes": 3705,
+      "sha256": "de48bda14fba7708331012e207bf2f6b37995e430287e313fdc8d82cd0228efa"
     },
     {
       "path": "docs/expert-template.md",
@@ -2026,8 +2025,8 @@
     {
       "path": "event.css",
       "mediaType": "text/css",
-      "bytes": 3313,
-      "sha256": "c35bd7e44758dc8f2801ff16686776fd2d63aa07def8a7b706dce9426d4abce7"
+      "bytes": 3053,
+      "sha256": "22aeddd20de2b132492a789c22b5884e436e9f9f4cc7d2d30d2f8d43f057648d"
     },
     {
       "path": "expert.css",
@@ -2092,32 +2091,26 @@
     {
       "path": "exports/sarafan-event-01.png",
       "mediaType": "image/png",
-      "bytes": 100273,
-      "sha256": "8e8e8129215bda47f3fcf00bb77a75989f9d749be515e2b563712f1ebe1cd4af"
+      "bytes": 941393,
+      "sha256": "1c8e1f3cf0dc34e65c02d816d84a4707454caeb7cf2e324a422bf94ce6a9a85c"
     },
     {
       "path": "exports/sarafan-event-02.png",
-      "mediaType": "image/png",
-      "bytes": 941411,
-      "sha256": "6ce1780d7382c0122a68939ce668ab32c0dee6af1100bb6d7742b3232022b8ce"
-    },
-    {
-      "path": "exports/sarafan-event-03.png",
       "mediaType": "image/png",
       "bytes": 557384,
       "sha256": "db3f950b3b2ca5fe04dbc4c1044b8a75ffca14798cd622a8b00843c5d1ccdca8"
     },
     {
-      "path": "exports/sarafan-event-04.png",
+      "path": "exports/sarafan-event-03.png",
       "mediaType": "image/png",
-      "bytes": 682560,
-      "sha256": "a23814dc0a2c2312bc1c37a129fd36f569082a41e237bcb654268e41637da808"
+      "bytes": 682571,
+      "sha256": "be14287d9424559bd492aada7d7ced3983cb440077dd25cf4a4232d826725a9e"
     },
     {
-      "path": "exports/sarafan-event-05.png",
+      "path": "exports/sarafan-event-04.png",
       "mediaType": "image/png",
-      "bytes": 846913,
-      "sha256": "d3abbc7caed44f28b1883b25661a69220fb5b17d3d9179450af51655b5f94f6d"
+      "bytes": 846907,
+      "sha256": "83166357633f33dec0a295d32748fac7ff2dca30058468bd4c85d09d78d654b1"
     },
     {
       "path": "exports/sarafan-expert-01.png",
@@ -2338,8 +2331,8 @@
     {
       "path": "index.html",
       "mediaType": "text/html",
-      "bytes": 76216,
-      "sha256": "ef02297867b05e2600182a8803d1f37d2925e237178c2ac5d817128fe5638a21"
+      "bytes": 75096,
+      "sha256": "d44387c655cce866896d849619638579f4cad6da5bffe4391e4f8c471cacc523"
     },
     {
       "path": "intro.css",
@@ -2350,8 +2343,8 @@
     {
       "path": "llms.txt",
       "mediaType": "text/plain",
-      "bytes": 2759,
-      "sha256": "a50ead901adf03c53eea2904b66e45b16198cae7ea824008e3d0b146e5c8d337"
+      "bytes": 2757,
+      "sha256": "44653fc8c8120724f3e714c7a2a52c68504230ba6863ac2e46c5353f165ba08c"
     },
     {
       "path": "new-posts-data.js",
@@ -3047,13 +3040,13 @@
       "path": "scripts/export-club.cjs",
       "mediaType": "text/javascript",
       "bytes": 7405,
-      "sha256": "5d0da8a26d990698b036975381bc7634361da1c061726e0df016d2ebf6cb0d4a"
+      "sha256": "776026bf0cb937ef6495ab61619f82c91e098016694fe50cb71d2da43bba4665"
     },
     {
       "path": "scripts/export-event.cjs",
       "mediaType": "text/javascript",
-      "bytes": 5622,
-      "sha256": "6e2648ddf139f786c11900d9da4b8a1c3bd310e8cafbed9b1d1dd0b87b2b7eaf"
+      "bytes": 6349,
+      "sha256": "c375138fe1488408b1b0516aa0fb6091e05c9bb7b5001b03fc655bc2b496dfcd"
     },
     {
       "path": "scripts/export-transition.cjs",
@@ -3168,8 +3161,8 @@
     {
       "path": "sarafan-event.zip",
       "mediaType": "application/zip",
-      "bytes": 3114550,
-      "sha256": "843135878808b43a661eec3b916fac0028e8be4f7770913b7a6eb0245f4a29d1"
+      "bytes": 3020648,
+      "sha256": "76092d561e26c54ee105a0392fef0da2b22f7c04c63335faa78aef8f6f0d893d"
     },
     {
       "path": "sarafan-intro.zip",

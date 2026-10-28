@@ -88,7 +88,7 @@ const JSZip = require(path.join(deps, 'jszip'));
     }
     await page.goto('about:blank');
     await page.goto(url + '#event');
-    assert.equal(await page.locator('#viewer-cards .ig-card').count(), 5, 'Existing journal posters remain accessible');
+    assert.equal(await page.locator('#viewer-cards .ig-card').count(), 4, 'Existing journal posters remain accessible');
     await page.goto(url + '#places');
     await page.locator('#variant-filter').selectOption('text');
     assert.equal(await page.locator('#viewer-cards .card-unit:visible').count(), 6, 'Existing place filters work');

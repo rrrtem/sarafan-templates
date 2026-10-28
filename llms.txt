@@ -14,7 +14,7 @@ Start with the guide and brand rules, then fetch only the relevant template file
 ## Templates and publications
 
 - [Expert template](docs/expert-template.md): Five cards; preserve the local Geist v1.6 font and source line breaks.
-- [Event template](docs/event-template.md): Two cover layouts and three supplied-poster containers.
+- [Event template](docs/event-template.md): One photo cover and three supplied-poster containers.
 - [Club templates](docs/club-templates.md): Club event posters and the salon style reference.
 - [Intro style reference](docs/intro-reference.md): Seven brand introduction cards.
 - [Transition style reference](docs/transition-reference.md): Six story cards.

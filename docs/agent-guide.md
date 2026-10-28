@@ -21,7 +21,7 @@
 | [Жизнь замечательных людей](../index.html#proust) | `#template-proust` | 6 | [cards.css](../cards.css) | [Правила бренда](design-system.md) |
 | [Подборка мест](../index.html#places) | `#template-places` | 12 | [cards.css](../cards.css) | [Правила бренда](design-system.md) |
 | [Пост про эксперта](../index.html#expert) | `#template-expert` | 5 | [cards.css](../cards.css), [expert.css](../expert.css) | [Эксперт](expert-template.md) |
-| [Афиша события](../index.html#event) | `#template-event` | 5 | [cards.css](../cards.css), [event.css](../event.css) | [Афиша](event-template.md) |
+| [Афиша события](../index.html#event) | `#template-event` | 4 | [cards.css](../cards.css), [event.css](../event.css) | [Афиша](event-template.md) |
 | [Афиша мероприятия клуба](../index.html#club-event) | `#template-club-event` | 6 | [cards.css](../cards.css), [club.css](../club.css) | [Клуб](club-templates.md) |
 | [Салон — образец стиля](../index.html#club-salon) | `#reference-club-salon` | 3 | [cards.css](../cards.css), [club.css](../club.css) | [Клуб](club-templates.md) |
 | [Интро-пост — образец стиля](../index.html#intro) | `#reference-intro` | 7 | [cards.css](../cards.css), [intro.css](../intro.css) | [Интро](intro-reference.md) |

@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 const deps = process.env.SARAFAN_NODE_MODULES || '/Users/fixed/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
 const { chromium } = require(path.join(deps, 'playwright'));
 const sharp = require(path.join(deps, 'sharp'));
+const JSZip = require(path.join(deps, 'jszip'));
 
 (async () => {
   const root = path.resolve(__dirname, '..');
@@ -20,16 +21,18 @@ const sharp = require(path.join(deps, 'sharp'));
     await page.locator('a[href="#event"]').click();
     await page.locator('#viewer-cards .event-card').first().waitFor();
     assert.equal(await page.locator('#viewer-title').textContent(), 'Афиша события');
-    assert.equal(await page.locator('#viewer-cards .ig-card').count(), 5);
+    assert.equal(await page.locator('#viewer-cards .ig-card').count(), 4);
+    assert.equal(await page.locator('#viewer-cards .event-clean').count(), 0);
+    assert.equal(await page.locator('#viewer-cards .ig-card').first().getAttribute('class'), 'ig-card event-card event-photo');
     await page.locator('[data-view="carousel"]').click();
     await page.locator('#variant-filter').selectOption('container');
     assert.equal(await page.locator('#slide-number').textContent(), '01 / 03');
     await page.keyboard.press('Tab');
     await page.keyboard.press('End');
-    assert.equal(await page.locator('#download-slide').getAttribute('href'), 'exports/sarafan-event-05.png');
+    assert.equal(await page.locator('#download-slide').getAttribute('href'), 'exports/sarafan-event-04.png');
     await page.locator('#variant-filter').selectOption('cover');
     await page.locator('[data-view="grid"]').click();
-    assert.equal(await page.locator('#viewer-cards .card-unit:visible').count(), 2);
+    assert.equal(await page.locator('#viewer-cards .card-unit:visible').count(), 1);
     await page.locator('#variant-filter').selectOption('all');
     await page.evaluate(() => document.fonts.ready);
     await page.evaluate(() => Promise.all([...document.images].map(img => img.decode())));
@@ -44,8 +47,8 @@ const sharp = require(path.join(deps, 'sharp'));
     await page.setViewportSize({ width: 390, height: 844 });
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, 'No mobile page overflow');
     await page.screenshot({ path: path.join(root, 'preview/event-mobile.png'), fullPage: true });
-    await page.goto('file://' + root + '/index.html#event/4');
-    assert.equal(await page.locator('#download-slide').getAttribute('href'), 'exports/sarafan-event-04.png', 'Deep link selects the standup card');
+    await page.goto('file://' + root + '/index.html#event/3');
+    assert.equal(await page.locator('#download-slide').getAttribute('href'), 'exports/sarafan-event-03.png', 'Deep link selects the standup card');
     await page.goto('file://' + root + '/index.html#places');
     await page.locator('#variant-filter').selectOption('text');
     assert.equal(await page.locator('#viewer-cards .card-unit:visible').count(), 6, 'Places formats still work');
@@ -59,15 +62,22 @@ const sharp = require(path.join(deps, 'sharp'));
     await page.setViewportSize({ width: 1080, height: 1350 });
     await page.evaluate(() => document.fonts.ready);
     await page.evaluate(() => Promise.all([...document.images].map(img => img.decode())));
-    for (let i = 0; i < 5; i++) await page.locator('.ig-card').nth(i).screenshot({ path: path.join(root, `exports/sarafan-event-${String(i + 1).padStart(2, '0')}.png`) });
-    const tiles = await Promise.all(Array.from({ length: 5 }, async (_, i) => ({
+    for (let i = 0; i < 4; i++) await page.locator('.ig-card').nth(i).screenshot({ path: path.join(root, `exports/sarafan-event-${String(i + 1).padStart(2, '0')}.png`) });
+    const tiles = await Promise.all(Array.from({ length: 4 }, async (_, i) => ({
       input: await sharp(path.join(root, `exports/sarafan-event-${String(i + 1).padStart(2, '0')}.png`)).resize(324, 405).toBuffer(),
       left: (i % 3) * 324, top: Math.floor(i / 3) * 405
     })));
     await sharp({ create: { width: 972, height: 810, channels: 3, background: '#f0efeb' } }).composite(tiles).png().toFile(path.join(root, 'preview/event-contact.png'));
-    for (let i = 1; i <= 5; i++) assert(fs.statSync(path.join(root, `exports/sarafan-event-${String(i).padStart(2, '0')}.png`)).size > 0);
+    for (let i = 1; i <= 4; i++) assert(fs.statSync(path.join(root, `exports/sarafan-event-${String(i).padStart(2, '0')}.png`)).size > 0);
+    fs.rmSync(path.join(root, 'exports/sarafan-event-05.png'), { force: true });
+    const zip = new JSZip();
+    for (let i = 1; i <= 4; i++) {
+      const name = `sarafan-event-${String(i).padStart(2, '0')}.png`;
+      zip.file(name, fs.readFileSync(path.join(root, 'exports', name)), { date: new Date('2021-01-01T00:00:00Z') });
+    }
+    fs.writeFileSync(path.join(root, 'sarafan-event.zip'), await zip.generateAsync({ type: 'nodebuffer', compression: 'DEFLATE' }));
     assert.deepEqual(errors, [], 'No browser errors');
-    console.log(JSON.stringify({ verified: 'Journal category, five cards, cover/container filters, keyboard navigation, download links, deep link, places regression, mobile width, local images, five 1080×1350 PNG exports', geometry }, null, 2));
+    console.log(JSON.stringify({ verified: 'Journal category, four cards, cover/container filters, keyboard navigation, download links, deep link, places regression, mobile width, local images, four 1080×1350 PNG exports', geometry }, null, 2));
   } finally {
     await browser.close();
   }

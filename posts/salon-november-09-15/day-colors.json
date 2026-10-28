@@ -1,0 +1,8 @@
+{
+  "10/11": {"name":"Оливковый","background":"#91945B","color":"#FBEED2"},
+  "11/11": {"name":"Голубой","background":"#A9C9DF","color":"#553D3D"},
+  "12/11": {"name":"Розовый","background":"#E19A9B","color":"#FBEED2"},
+  "13/11": {"name":"Коричневый","background":"#553D3D","color":"#FBEED2"},
+  "14/11": {"name":"Бежевый","background":"#FBEED2","color":"#553D3D"},
+  "15/11": {"name":"Оранжевый","background":"#FF3C00","color":"#FBEED2","badgeBackground":"#553D3D"}
+}

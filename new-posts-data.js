@@ -56,7 +56,7 @@ window.SARAFAN_POSTS = [
         "edit": {
           "image": "posts/salon-november-09-15/images/02.jpeg",
           "overlay": "posts/salon-november-09-15/layers/02.png",
-          "background": "#FBEED2",
+          "background": "#91945B",
           "matte": "#ffffff",
           "slot": {
             "x": 34,
@@ -130,7 +130,7 @@ window.SARAFAN_POSTS = [
         "edit": {
           "image": "posts/salon-november-09-15/images/06.jpeg",
           "overlay": "posts/salon-november-09-15/layers/06.png",
-          "background": "#553D3D",
+          "background": "#E19A9B",
           "matte": "#ffffff",
           "slot": {
             "x": 34,
@@ -153,7 +153,7 @@ window.SARAFAN_POSTS = [
         "edit": {
           "image": "posts/salon-november-09-15/images/07.jpeg",
           "overlay": "posts/salon-november-09-15/layers/07.png",
-          "background": "#A9C9DF",
+          "background": "#553D3D",
           "matte": "#ffffff",
           "slot": {
             "x": 34,
@@ -199,7 +199,7 @@ window.SARAFAN_POSTS = [
         "edit": {
           "image": "posts/salon-november-09-15/images/09.jpeg",
           "overlay": "posts/salon-november-09-15/layers/09.png",
-          "background": "#91945B",
+          "background": "#FBEED2",
           "matte": "#ffffff",
           "slot": {
             "x": 34,
@@ -222,7 +222,7 @@ window.SARAFAN_POSTS = [
         "edit": {
           "image": "posts/salon-november-09-15/images/10.png",
           "overlay": "posts/salon-november-09-15/layers/10.png",
-          "background": "#E19A9B",
+          "background": "#FF3C00",
           "matte": "#ffffff",
           "slot": {
             "x": 34,
@@ -245,7 +245,7 @@ window.SARAFAN_POSTS = [
         "edit": {
           "image": "posts/salon-november-09-15/images/11.jpeg",
           "overlay": "posts/salon-november-09-15/layers/11.png",
-          "background": "#FBEED2",
+          "background": "#FF3C00",
           "matte": "#ffffff",
           "slot": {
             "x": 34,

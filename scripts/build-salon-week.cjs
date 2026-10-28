@@ -14,7 +14,13 @@ vm.runInNewContext(fs.readFileSync(path.join(root, 'photo-crop.js'), 'utf8'), sc
 const escape = s => String(s).replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;');
 
 (async () => {
-  const events = JSON.parse(fs.readFileSync(path.join(dir, 'content.json'), 'utf8'));
+  const dayColors = JSON.parse(fs.readFileSync(path.join(dir, 'day-colors.json'), 'utf8'));
+  const events = JSON.parse(fs.readFileSync(path.join(dir, 'content.json'), 'utf8')).map(event=>{
+    const day=dayColors[event.date];
+    assert(day,'Every event date needs a shared color: '+event.date);
+    return {...event,background:day.background,color:day.color,badgeBackground:day.badgeBackground||'#FF3C00'};
+  });
+  assert.equal(new Set(Object.values(dayColors).map(day=>day.background)).size,Object.keys(dayColors).length,'Dates in the weekly program have distinct background colors');
   const registry = [], media = {};
   const cover = require('./weekly-cover.cjs').prepare(root, dir);
   fs.mkdirSync(path.join(dir, 'layers'), { recursive: true });
@@ -30,7 +36,7 @@ const escape = s => String(s).replaceAll('&', '&amp;').replaceAll('"', '&quot;')
     const title = `<p class="club-cinema club-poster-date">${e.date}</p><p class="club-poster-time">${e.time}</p><div class="club-poster-copy"><div class="club-poster-heading-zone">${heading}</div><p class="club-poster-description">${escape(e.description)}</p></div>`;
     const branding = `<div class="club-ribbon" aria-hidden="true"><div class="club-ribbon-vertical"><img src="../../assets/${ribbon}" alt=""></div></div><p class="club-ribbon-name">Сарафан</p><p class="club-ribbon-salon">Салон</p><img class="club-mark" src="../../assets/club-5883-group93.svg" alt="">`;
     const price = e.price ? `<div class="club-price-wrap${e.price.length>8?' weekly-free':''}"><p class="club-price">${escape(e.price)}</p></div>` : '';
-    const article = `<article class="ig-card club-card club-poster weekly-event${cream?' weekly-event--cream':''}" style="--club-background:${e.background};--club-color:${e.color}" aria-label="${escape(e.label)}">${photo}${title}${branding}${price}</article>`;
+    const article = `<article class="ig-card club-card club-poster weekly-event${cream?' weekly-event--cream':''}" style="--club-background:${e.background};--club-color:${e.color};--club-badge-background:${e.badgeBackground}" aria-label="${escape(e.label)}">${photo}${title}${branding}${price}</article>`;
     const html = `<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=1080"><title>${escape(e.label)}</title><link rel="stylesheet" href="../../cards.css"><link rel="stylesheet" href="../../catalog.css"><link rel="stylesheet" href="../../club.css"><link rel="stylesheet" href="post.css"></head><body>${article}</body></html>`;
     fs.writeFileSync(path.join(dir, n+'.html'), html);
     const imagePath = relative + e.photo;

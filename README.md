@@ -76,3 +76,17 @@
 В «Общие» добавлен «Переходный пост» — шесть карточек из [Figma Page 12](https://www.figma.com/design/oEldVQIQ9PsRezkqg1rdzy/?node-id=351-6288). Это второй образец стиля. Разметка — `reference-transition` в `index.html`, стили — `transition.css`, ресурсы — `assets/transition-*`. Подробности — [docs/transition-reference.md](docs/transition-reference.md).
 
 PNG находятся в `exports/sarafan-transition-01.png` … `sarafan-transition-06.png`; отдельный архив — `sarafan-transition.zip`, контактный лист — `preview/transition-contact.png`. Все карточки — 1080 × 1350 px.
+
+
+## Публикация на Vercel
+
+Git-репозиторий: [rrrtem/sarafan-templates](https://github.com/rrrtem/sarafan-templates).
+Проект Vercel — `sarafan-templates`; production-ветка — `main`.
+Пуши в `main` запускают автоматическую публикацию.
+
+Команда сборки — `node scripts/build-site.cjs`, выходная папка — `dist/`.
+Сборка обновляет каталог агентов, проверяет его и копирует только перечисленные
+публичные файлы и архивы. `.git`, служебные спецификации, локальные превью
+и устаревший полный ZIP в опубликованную папку не попадают.
+Проверка готовой папки: `node scripts/test-site-build.cjs`.
+Новые зависимости для сборки не нужны.

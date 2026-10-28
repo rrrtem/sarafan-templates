@@ -288,7 +288,7 @@
           "edit": {
             "image": "posts/salon-november-09-15/images/02.jpeg",
             "overlay": "posts/salon-november-09-15/layers/02.png",
-            "background": "#FBEED2",
+            "background": "#91945B",
             "matte": "#ffffff",
             "slot": {
               "x": 34,
@@ -362,7 +362,7 @@
           "edit": {
             "image": "posts/salon-november-09-15/images/06.jpeg",
             "overlay": "posts/salon-november-09-15/layers/06.png",
-            "background": "#553D3D",
+            "background": "#E19A9B",
             "matte": "#ffffff",
             "slot": {
               "x": 34,
@@ -385,7 +385,7 @@
           "edit": {
             "image": "posts/salon-november-09-15/images/07.jpeg",
             "overlay": "posts/salon-november-09-15/layers/07.png",
-            "background": "#A9C9DF",
+            "background": "#553D3D",
             "matte": "#ffffff",
             "slot": {
               "x": 34,
@@ -431,7 +431,7 @@
           "edit": {
             "image": "posts/salon-november-09-15/images/09.jpeg",
             "overlay": "posts/salon-november-09-15/layers/09.png",
-            "background": "#91945B",
+            "background": "#FBEED2",
             "matte": "#ffffff",
             "slot": {
               "x": 34,
@@ -454,7 +454,7 @@
           "edit": {
             "image": "posts/salon-november-09-15/images/10.png",
             "overlay": "posts/salon-november-09-15/layers/10.png",
-            "background": "#E19A9B",
+            "background": "#FF3C00",
             "matte": "#ffffff",
             "slot": {
               "x": 34,
@@ -477,7 +477,7 @@
           "edit": {
             "image": "posts/salon-november-09-15/images/11.jpeg",
             "overlay": "posts/salon-november-09-15/layers/11.png",
-            "background": "#FBEED2",
+            "background": "#FF3C00",
             "matte": "#ffffff",
             "slot": {
               "x": 34,
@@ -532,14 +532,14 @@
     {
       "path": "AGENTS.md",
       "mediaType": "text/markdown",
-      "bytes": 3349,
-      "sha256": "834aae75d44ddac84e82a1ddffa509963c4b56eb01462abf312d3360e92e53a6"
+      "bytes": 3719,
+      "sha256": "bbf348fe5054cf54e2c54116eed73552c14404d9e7bbdbeb1aacbb0d05b7b6ff"
     },
     {
       "path": "README.md",
       "mediaType": "text/markdown",
-      "bytes": 16239,
-      "sha256": "3a7cf1eadc2f8b8cddfcd437ffc36764d9412a4319da3fff5b250621d3c34a1a"
+      "bytes": 17191,
+      "sha256": "b7b0d477a6e66a9a1f32fb61243f5b060324eb72cb1b212455016baf3f24fd87"
     },
     {
       "path": "agents.html",
@@ -1612,8 +1612,8 @@
     {
       "path": "design-system.html",
       "mediaType": "text/html",
-      "bytes": 7743,
-      "sha256": "04a9093aeb08b4e05d31a32054ff37aa5639be9b0c314da395460a75eb616969"
+      "bytes": 7996,
+      "sha256": "68a3698feca5eefeac3e729381991dd3eff19d6f09412cd5b56867a949747b30"
     },
     {
       "path": "design-system.js",
@@ -1624,20 +1624,20 @@
     {
       "path": "docs/agent-guide.md",
       "mediaType": "text/markdown",
-      "bytes": 16254,
-      "sha256": "d758dbe07b9105c1e27dabef27e4c048dd64837f4791f35489c761451faabb74"
+      "bytes": 16754,
+      "sha256": "25e1079857e1ca19285e853d6cf16dec27b09e920da8f978effcf724c182fe7b"
     },
     {
       "path": "docs/club-templates.md",
       "mediaType": "text/markdown",
-      "bytes": 5064,
-      "sha256": "a3e44e047c5a8623dadd89ab91c1e7819e44aa850e62b9709ddf97098d1bd0ce"
+      "bytes": 5389,
+      "sha256": "10316a841c355077be714a89d132f240faacd564f010a615aeb2091b39a38e2b"
     },
     {
       "path": "docs/design-system.md",
       "mediaType": "text/markdown",
-      "bytes": 8140,
-      "sha256": "e354bfdc5b71965e4597cc517eaae8041252c948635e9b393201eb109ed36e7a"
+      "bytes": 8648,
+      "sha256": "dd1cb8cb1586fdb226ac3f1e3f28ba203fffdc9e2cd0382c0f5a30a8a8a5dec4"
     },
     {
       "path": "docs/event-template.md",
@@ -2357,7 +2357,7 @@
       "path": "new-posts-data.js",
       "mediaType": "text/javascript",
       "bytes": 11464,
-      "sha256": "ce8c5d2fa4242c875ff9d3f8c80a3b9aa200abf80661aefc524cdf31655fcbd0"
+      "sha256": "722e2d8a8f472a3e6f236e364f1be5169e6548b7c54fdc1ab51da4f817ccd50d"
     },
     {
       "path": "new-posts.css",
@@ -2572,20 +2572,20 @@
     {
       "path": "posts/salon-november-09-15/02.html",
       "mediaType": "text/html",
-      "bytes": 1893,
-      "sha256": "7a7d7918d46031030b9c2ae620ef64d7658150d16e883990be134c664abd6205"
+      "bytes": 1905,
+      "sha256": "8cb61d83b5445eda4be9e057dcddd10d97eca18e6c6e3d4671747517775094e7"
     },
     {
       "path": "posts/salon-november-09-15/02.png",
       "mediaType": "image/png",
-      "bytes": 459210,
-      "sha256": "3daac534f1db58a902f013ea06ee15ae6f2e8520379d81c239284eae97555071"
+      "bytes": 454936,
+      "sha256": "403c9720eb2e68138a6e610527c47b3b4af2e41f46f45c511800bef69a18e8f4"
     },
     {
       "path": "posts/salon-november-09-15/03.html",
       "mediaType": "text/html",
-      "bytes": 1802,
-      "sha256": "124d460df757e24072e1157b65178fcaa3f2270f0ee9b57e95ef1ca2d6fc2c6e"
+      "bytes": 1834,
+      "sha256": "24293a01fe44500cd0bfb5a666f1ff8a73b5f557b769d1eceb5b9e08a4c4fac4"
     },
     {
       "path": "posts/salon-november-09-15/03.png",
@@ -2596,8 +2596,8 @@
     {
       "path": "posts/salon-november-09-15/04.html",
       "mediaType": "text/html",
-      "bytes": 1946,
-      "sha256": "525fc16d02908ec29cc91e9fcd6a9176027702db50c0211185c428b08da0253c"
+      "bytes": 1978,
+      "sha256": "4ce6cd51b8cff348d5fda585c7629b042b7e88baeb679724f456554881f89b6d"
     },
     {
       "path": "posts/salon-november-09-15/04.png",
@@ -2608,8 +2608,8 @@
     {
       "path": "posts/salon-november-09-15/05.html",
       "mediaType": "text/html",
-      "bytes": 1820,
-      "sha256": "f326d2369531760502da986a301544832968e600d6dc532f65889269bfbbff5f"
+      "bytes": 1852,
+      "sha256": "c0a5eadbe8faa3f9d5452a8b485911fa100a4f1dcea00c1682c8c233c7844c37"
     },
     {
       "path": "posts/salon-november-09-15/05.png",
@@ -2620,32 +2620,32 @@
     {
       "path": "posts/salon-november-09-15/06.html",
       "mediaType": "text/html",
-      "bytes": 1712,
-      "sha256": "567728146bb11f4e28d5bb0d9ccf9f8742e2094579b4ef629525d01da85e02a5"
+      "bytes": 1744,
+      "sha256": "7d7846f2ce1280cbc96ca8ed8e51eef20242b8f0963b3c2be6c01824ab74385e"
     },
     {
       "path": "posts/salon-november-09-15/06.png",
       "mediaType": "image/png",
-      "bytes": 336523,
-      "sha256": "3665c3e2c7b0221d29d261a62f4afadfd43e709c01cd626ade688cf207739b2a"
+      "bytes": 328370,
+      "sha256": "cf6e08ec6ba95f3600451ce276ea5bb81f4d98c5d8391834fb2e403810381cd9"
     },
     {
       "path": "posts/salon-november-09-15/07.html",
       "mediaType": "text/html",
-      "bytes": 1843,
-      "sha256": "f4b2044c7650018e2ec0f4831a98d4a64b91a0e025cabaafab08044b8330753e"
+      "bytes": 1875,
+      "sha256": "54efe942649c41035597cfdb758ffaa0aeb251d1cf6822c43788189eff2e95f3"
     },
     {
       "path": "posts/salon-november-09-15/07.png",
       "mediaType": "image/png",
-      "bytes": 646178,
-      "sha256": "603b70e82ebd0cd14e7854defd9f276a953cd131213dd12aac7f2856f70bf5cb"
+      "bytes": 647540,
+      "sha256": "cb603062a36ea6e19f384ab6ff8c9f811c222aea2cdb9cb103cd3d474c07e857"
     },
     {
       "path": "posts/salon-november-09-15/08.html",
       "mediaType": "text/html",
-      "bytes": 1879,
-      "sha256": "194712362a837d1a808e83cd7b3ce5e71723ec740dc10332d31449a5d74e3976"
+      "bytes": 1911,
+      "sha256": "7076adf5a5e6d5eccdac2412c0638d563521d1671dc62760df1e56357b156d31"
     },
     {
       "path": "posts/salon-november-09-15/08.png",
@@ -2656,44 +2656,44 @@
     {
       "path": "posts/salon-november-09-15/09.html",
       "mediaType": "text/html",
-      "bytes": 1731,
-      "sha256": "6d87d89a5ebeb3aeee7c46282c5161fe3daadb5e344d9ce8a9582289eb970541"
+      "bytes": 1783,
+      "sha256": "c9a3cc15f42d6f353df60ee7e5f735888ec7379264858530ac889517746e3b97"
     },
     {
       "path": "posts/salon-november-09-15/09.png",
       "mediaType": "image/png",
-      "bytes": 709649,
-      "sha256": "467473e9096279bce037fcf73c1d0f7bc86c34d4c4d0bddff469d447f5e795cd"
+      "bytes": 713565,
+      "sha256": "18e1be07a7accbec7e085cedf489c3cd3fab68d8e98e3acd96ebf70019510a0d"
     },
     {
       "path": "posts/salon-november-09-15/10.html",
       "mediaType": "text/html",
-      "bytes": 1840,
-      "sha256": "cd409a23446a1c1547727579aaada97bf41dd28b05f6feab7bca37965eb995bc"
+      "bytes": 1872,
+      "sha256": "bf8968e45ed4a7135911e3b0ec67f92fce465261549cd5aa0d505098ebe3c97a"
     },
     {
       "path": "posts/salon-november-09-15/10.png",
       "mediaType": "image/png",
-      "bytes": 404604,
-      "sha256": "191b4d0570e1dc4056b995294d543006a640050545f2cf5f15785f84e1322eaf"
+      "bytes": 405579,
+      "sha256": "b9a6d800600c63f47e7004e6c2de0450fa827045cbdc64f0eb22c067da097bf8"
     },
     {
       "path": "posts/salon-november-09-15/11.html",
       "mediaType": "text/html",
-      "bytes": 1679,
-      "sha256": "c9bdee096ccd6998fcb6c223bb2c3583417fc07944c0c7ffe1103e4cfaad67be"
+      "bytes": 1691,
+      "sha256": "e76e949cd16c230b496bd1797ed7e159de0d05d7db871e5daa4d12360e680a57"
     },
     {
       "path": "posts/salon-november-09-15/11.png",
       "mediaType": "image/png",
-      "bytes": 695450,
-      "sha256": "336778210af0893bb8b3b00d3a8f57d602beca8020aeb1dc5581a96ece962f8f"
+      "bytes": 687468,
+      "sha256": "874525a4b29c3c1147593e9f70f8703bbed23c9940ef19337e339d618b2303f7"
     },
     {
       "path": "posts/salon-november-09-15/README.md",
       "mediaType": "text/markdown",
-      "bytes": 8023,
-      "sha256": "0049fcfc26e058cc334db4bc5e1b6ac2d8abf3a97f0de4f482242e6264c86b6c"
+      "bytes": 8645,
+      "sha256": "046c6b8600339877c8c0fc9d99c7270a2ce6472285caf8f1cfcd3e241453ef9f"
     },
     {
       "path": "posts/salon-november-09-15/caption.txt",
@@ -2704,14 +2704,14 @@
     {
       "path": "posts/salon-november-09-15/contact-sheet.png",
       "mediaType": "image/png",
-      "bytes": 1299466,
-      "sha256": "22cfdef3b67a10f4d873f19db4f7b4b224bb8517bb30d423a71463defc1fe7c1"
+      "bytes": 1258869,
+      "sha256": "39d4542ad7d6e54dce666e9e990c37ef8284f2b18afcbf365253825793254131"
     },
     {
       "path": "posts/salon-november-09-15/content.json",
       "mediaType": "application/json",
-      "bytes": 7519,
-      "sha256": "eb4fafbb7614b11bc21eac23a97b3431c0dfdfba4bb79c18de3b3f17de94fef3"
+      "bytes": 6989,
+      "sha256": "5272c8747dd22d345b779f21f269bdadf38438c7d6e35ea7fe7d773c976bfded"
     },
     {
       "path": "posts/salon-november-09-15/cover-base.html",
@@ -2866,8 +2866,14 @@
     {
       "path": "posts/salon-november-09-15/crop-media.js",
       "mediaType": "text/javascript",
-      "bytes": 5923749,
-      "sha256": "690138912307426ee7c0428c341c8d0b3fb0d840c0cef6967438fab5769e4728"
+      "bytes": 5926937,
+      "sha256": "e86469d2bd002097ef84c4e04808a0c6ccc5214eb3332d29e0a5909a5e612309"
+    },
+    {
+      "path": "posts/salon-november-09-15/day-colors.json",
+      "mediaType": "application/json",
+      "bytes": 519,
+      "sha256": "cb6613cd21b57f4e04d5bbe4c3e0ab838eba51e7cde39b4c08488e48ca91731f"
     },
     {
       "path": "posts/salon-november-09-15/images/02.jpeg",
@@ -2938,8 +2944,8 @@
     {
       "path": "posts/salon-november-09-15/layers/02.png",
       "mediaType": "image/png",
-      "bytes": 133587,
-      "sha256": "ebafdd2f8522ed2bd6e9206eb27e3c82c99aa7ce454c92ae749cc56878778649"
+      "bytes": 134172,
+      "sha256": "6a0ebe81cfbd050a7a257b84832a203902dba8694c3ae8500efbaa26ce9302b3"
     },
     {
       "path": "posts/salon-november-09-15/layers/03.png",
@@ -2962,8 +2968,8 @@
     {
       "path": "posts/salon-november-09-15/layers/07.png",
       "mediaType": "image/png",
-      "bytes": 131122,
-      "sha256": "1fc3881583f31128f98836b5c10c294f8eecb8140dd03ca5ff5aae9891d09db2"
+      "bytes": 131337,
+      "sha256": "a8f03a2339cdfef2864852993d74e62256b2a0c4ea488be1e92ea018d694fcfc"
     },
     {
       "path": "posts/salon-november-09-15/layers/08.png",
@@ -2974,20 +2980,20 @@
     {
       "path": "posts/salon-november-09-15/layers/09.png",
       "mediaType": "image/png",
-      "bytes": 115917,
-      "sha256": "13be7879a0357123d439371f8011cb5fb67fe75e3f43aecc5815b2a379adc40d"
+      "bytes": 115559,
+      "sha256": "f85f3ba7538ae914e9f170002ea25e99db2b453f6f64f969acf6c1b5347e6bc1"
     },
     {
       "path": "posts/salon-november-09-15/layers/10.png",
       "mediaType": "image/png",
-      "bytes": 130528,
-      "sha256": "41765f985a93de7a658d9b9a2d85cc17d709af8a2a39ebb123e233adfa1a72a1"
+      "bytes": 131029,
+      "sha256": "20eab879542fdfffae56c934682068e2a8b57425255ca87ae477b6b5b0fd70a1"
     },
     {
       "path": "posts/salon-november-09-15/layers/11.png",
       "mediaType": "image/png",
-      "bytes": 97454,
-      "sha256": "04f0bf4f94cc2162f68c5a9f7e5b790f0c4bff5ba8e1774e03b31b99e0c2e12f"
+      "bytes": 98903,
+      "sha256": "c7012e6864bb03e3d7546bc18b872e4eb6d5950407bedcb6fc16b30ee9cce6a7"
     },
     {
       "path": "posts/salon-november-09-15/layout-check.json",
@@ -2998,8 +3004,8 @@
     {
       "path": "posts/salon-november-09-15/post.css",
       "mediaType": "text/css",
-      "bytes": 611,
-      "sha256": "bba4c00e0166776ca572765b66c79419cd5160db908e56948cdbf109aaea3e26"
+      "bytes": 696,
+      "sha256": "73d9c1c6cfa56629a585b8d667c74e6a4713353d0b2723836b462ed038e2379c"
     },
     {
       "path": "posts/salon-november-09-15/sources.json",
@@ -3022,8 +3028,14 @@
     {
       "path": "scripts/build-salon-week.cjs",
       "mediaType": "text/javascript",
-      "bytes": 9280,
-      "sha256": "1650d7003d0f5722f1bece4815614da4b764383b30cab9f5e7abfbdd9ab2965d"
+      "bytes": 9827,
+      "sha256": "551e271050c48ffe278e090013817ade62315b345509c8903213b2d35edaf2fc"
+    },
+    {
+      "path": "scripts/build-site.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 1251,
+      "sha256": "7c7f133ffe8bb6e41ec58784823f3a041c3abb475b4de81e2cfcdd852d2292cc"
     },
     {
       "path": "scripts/download-kit.py",
@@ -3072,6 +3084,12 @@
       "mediaType": "text/javascript",
       "bytes": 7678,
       "sha256": "7c962402a1c32c9f20499ef4fcb9dd15c4c14b2c6ef9742153d0deb034475bf1"
+    },
+    {
+      "path": "scripts/test-site-build.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 1450,
+      "sha256": "922b1d0a110894a7584c72ad4dd33b1d59f203a14cec1acad35494a6b28c18f3"
     },
     {
       "path": "scripts/weekly-cover.cjs",
@@ -3132,8 +3150,8 @@
     {
       "path": "posts/salon-november-09-15/salon-week-png.zip",
       "mediaType": "application/zip",
-      "bytes": 5114794,
-      "sha256": "089c73ac9a1ae5f9e9139da147e7d35956ef5e4fae5a99b1cec9d6953f2333de"
+      "bytes": 5100843,
+      "sha256": "951a44f28a4b0e5423dd0c80fa9d27046ebc83529eb02e95dcdddcd807889bbc"
     },
     {
       "path": "sarafan-club-event.zip",

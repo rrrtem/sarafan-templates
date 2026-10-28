@@ -1,0 +1,12 @@
+.git/
+.vercel/
+.env
+.env.*
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+docs/superpowers/
+preview/
+sarafan-templates*.zip
+dist/

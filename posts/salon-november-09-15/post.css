@@ -1,1 +1,3 @@
 body{margin:0;width:1080px;height:1350px;background:transparent}.ig-card{--card-scale:1}.weekly-photo{position:absolute;left:34px;top:260px;width:1012px;height:476px;overflow:hidden;border-radius:50%;background:var(--photo-matte)}.weekly-photo img{position:absolute}.weekly-title{left:58px!important;width:987px!important}.weekly-subtitle{font-size:70px}.weekly-event .club-mark{left:918px}.weekly-event .club-ribbon-name,.weekly-event .club-ribbon-salon{color:var(--ink)}.weekly-event--cream .club-ribbon-name,.weekly-event--cream .club-ribbon-salon{color:var(--paper)}.weekly-free{left:417px;width:267.371px}
+
+.weekly-event .club-price{background:var(--club-badge-background,var(--ui-accent))}

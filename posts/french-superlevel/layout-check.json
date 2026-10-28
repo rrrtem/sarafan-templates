@@ -1,0 +1,407 @@
+[
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "cover-1",
+    "grid": false,
+    "columns": 1,
+    "rows": 1,
+    "padding": "0px",
+    "gap": "normal",
+    "blocks": [],
+    "overlaps": [],
+    "overflow": [],
+    "images": [
+      {
+        "src": "../../assets/bureau-cover-1-ovals.svg",
+        "loaded": true,
+        "width": 813,
+        "height": 733
+      },
+      {
+        "src": "../../assets/bureau-cover-1-brand.svg",
+        "loaded": true,
+        "width": 481,
+        "height": 82
+      },
+      {
+        "src": "../../assets/bureau-cover-1-rule.svg",
+        "loaded": true,
+        "width": 945,
+        "height": 1
+      }
+    ],
+    "fonts": [
+      "Sarafan Bureau Geist"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "change",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "Что значит«суперуровень»",
+        "left": 65,
+        "top": 65,
+        "right": 1015,
+        "bottom": 225,
+        "inkLeft": 65,
+        "inkRight": 703.28125,
+        "inkTop": 53,
+        "inkBottom": 237
+      },
+      {
+        "text": "У «суперуровня» нет официальной шкалы. В CEFR продвинутое владение описывают уровни C1 и C2. Это конкретные умения: понимать, объяснять и точно формулировать мысль.",
+        "left": 65,
+        "top": 271.65625,
+        "right": 1015,
+        "bottom": 574.15625,
+        "inkLeft": 65,
+        "inkRight": 987.40625,
+        "inkTop": 265.65625,
+        "inkBottom": 578.65625
+      },
+      {
+        "text": "C1Понимать сложные тексты и скрытые смыслы, свободно выражать идеи, выбирать подходящий стиль общения.",
+        "left": 65,
+        "top": 685,
+        "right": 530,
+        "bottom": 1218.5,
+        "inkLeft": 65,
+        "inkRight": 530,
+        "inkTop": 672,
+        "inkBottom": 1223
+      },
+      {
+        "text": "C2Обобщать информацию, передавать тонкие оттенки смысла, говорить точно и гибко.",
+        "left": 550,
+        "top": 685,
+        "right": 1015,
+        "bottom": 1158,
+        "inkLeft": 550,
+        "inkRight": 1015,
+        "inkTop": 672,
+        "inkBottom": 1162.5
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Bureau Geist"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "audience",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "Определитесвою задачу",
+        "left": 65,
+        "top": 65,
+        "right": 1015,
+        "bottom": 225,
+        "inkLeft": 65,
+        "inkRight": 567.109375,
+        "inkTop": 53,
+        "inkBottom": 237
+      },
+      {
+        "text": "РаботаОбъяснить решение и ответить на возражения.",
+        "left": 65,
+        "top": 478.328125,
+        "right": 1015,
+        "bottom": 620.328125,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 493.328125,
+        "inkBottom": 624.828125
+      },
+      {
+        "text": "УчёбаОбсудить текст и выстроить аргументацию.",
+        "left": 65,
+        "top": 685,
+        "right": 1015,
+        "bottom": 827,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 700,
+        "inkBottom": 831.5
+      },
+      {
+        "text": "ЖизньПоддержать разговор и уточнить свою мысль.",
+        "left": 65,
+        "top": 891.65625,
+        "right": 1015,
+        "bottom": 1033.65625,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 906.65625,
+        "inkBottom": 1038.15625
+      },
+      {
+        "text": "Выберите ситуацию, в которой хотите говорить свободнее. Так большая цель станет конкретнее.",
+        "left": 65,
+        "top": 1153,
+        "right": 1015,
+        "bottom": 1285,
+        "inkLeft": 65,
+        "inkRight": 985.53125,
+        "inkTop": 1149,
+        "inkBottom": 1289
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "Sarafan Bureau Geist"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "actions",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "Одна тема —три действия",
+        "left": 65,
+        "top": 65,
+        "right": 1015,
+        "bottom": 225,
+        "inkLeft": 65,
+        "inkRight": 594.921875,
+        "inkTop": 53,
+        "inkBottom": 237
+      },
+      {
+        "text": "ЧитайтеВозьмите статью и выпишите полезные обороты.",
+        "left": 65,
+        "top": 271.65625,
+        "right": 1015,
+        "bottom": 458.328125,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 286.65625,
+        "inkBottom": 478.65625
+      },
+      {
+        "text": "ГоворитеПерескажите смысл и добавьте своё мнение.",
+        "left": 65,
+        "top": 478.328125,
+        "right": 1015,
+        "bottom": 620.328125,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 493.328125,
+        "inkBottom": 624.828125
+      },
+      {
+        "text": "ПерепишитеПопросите обратную связь и улучшите текст.",
+        "left": 65,
+        "top": 685,
+        "right": 1015,
+        "bottom": 827,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 700,
+        "inkBottom": 831.5
+      },
+      {
+        "text": "Это пример упражнения, которое можно повторять с новыми темами.",
+        "left": 65,
+        "top": 1164,
+        "right": 1015,
+        "bottom": 1285,
+        "inkLeft": 65,
+        "inkRight": 982.1875,
+        "inkTop": 1158,
+        "inkBottom": 1289.5
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "Sarafan Bureau Geist"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "documents",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "Как замечатьсвой прогресс",
+        "left": 65,
+        "top": 65,
+        "right": 1015,
+        "bottom": 225,
+        "inkLeft": 65,
+        "inkRight": 627.265625,
+        "inkTop": 53,
+        "inkBottom": 237
+      },
+      {
+        "text": "В разговореЗапишите короткий ответ на знакомую тему. Через время повторите: легче ли строить фразы и точнее ли мысль?",
+        "left": 65,
+        "top": 478.328125,
+        "right": 530,
+        "bottom": 915.328125,
+        "inkLeft": 65,
+        "inkRight": 530,
+        "inkTop": 474.328125,
+        "inkBottom": 919.828125
+      },
+      {
+        "text": "В текстеСохраните первый вариант письма и исправленный. Сравните связность, выбор слов и повторяющиеся ошибки.",
+        "left": 550,
+        "top": 478.328125,
+        "right": 1015,
+        "bottom": 975.828125,
+        "inkLeft": 550,
+        "inkRight": 1015,
+        "inkTop": 474.328125,
+        "inkBottom": 980.328125
+      },
+      {
+        "text": "Для оценки уровня можно сверяться с критериями DALF. Эти упражнения — способ наблюдать за своей работой.",
+        "left": 65,
+        "top": 1153,
+        "right": 1015,
+        "bottom": 1285,
+        "inkLeft": 65,
+        "inkRight": 957.765625,
+        "inkTop": 1149,
+        "inkBottom": 1289
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "Sarafan Bureau Geist"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "nuance",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "C2 — этоточностьи гибкость",
+        "left": 65,
+        "top": 369.15625,
+        "right": 1015,
+        "bottom": 774.15625,
+        "inkLeft": 65,
+        "inkRight": 725.609375,
+        "inkTop": 338.15625,
+        "inkBottom": 804.15625
+      },
+      {
+        "text": "Уровень C2 описывает владение языком. Сходство с носителем не служит его определением.",
+        "left": 65,
+        "top": 1103.5,
+        "right": 1015,
+        "bottom": 1285,
+        "inkLeft": 65,
+        "inkRight": 958.921875,
+        "inkTop": 1097.5,
+        "inkBottom": 1289.5
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "summary",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "Выберитеследующий шаг",
+        "left": 65,
+        "top": 65,
+        "right": 1015,
+        "bottom": 225,
+        "inkLeft": 65,
+        "inkRight": 699.921875,
+        "inkTop": 53,
+        "inkBottom": 237
+      },
+      {
+        "text": "Назовите задачу, для которой нужен французский.Соедините понимание, речь и письменную практику.Сравнивайте свои работы по конкретным критериям.",
+        "left": 65,
+        "top": 478.328125,
+        "right": 1015,
+        "bottom": 984.328125,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 478.328125,
+        "inkBottom": 988.828125
+      },
+      {
+        "text": "В какой ситуации вам хочется чувствовать себя свободнее? Начните с неё.",
+        "left": 65,
+        "top": 1197,
+        "right": 1015,
+        "bottom": 1285,
+        "inkLeft": 65,
+        "inkRight": 1004.28125,
+        "inkTop": 1193,
+        "inkBottom": 1289
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "Sarafan Bureau Geist"
+    ]
+  }
+]

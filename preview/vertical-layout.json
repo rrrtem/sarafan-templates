@@ -1,0 +1,234 @@
+[
+  {
+    "id": "reels-cover",
+    "fonts": [
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Geist",
+      "Geist",
+      "Geist",
+      "Inter",
+      "Sarafan Vertical Geist",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Geist",
+      "Sarafan Recommendations Garamond",
+      "Sarafan Ads Geist",
+      "Sarafan Bureau Geist",
+      "EB Garamond",
+      "Sarafan Expert Geist",
+      "Sarafan Event Geist"
+    ],
+    "cards": [
+      {
+        "width": 1080,
+        "height": 1920,
+        "node": "385:10072",
+        "images": [
+          {
+            "src": "assets/reels-underlay.png",
+            "loaded": true,
+            "left": -333.578125,
+            "top": -98.015625,
+            "width": 1701.90625,
+            "height": 3025.609375
+          },
+          {
+            "src": "assets/reels-photo.png",
+            "loaded": true,
+            "left": -369.828125,
+            "top": -229.96875,
+            "width": 1904.484375,
+            "height": 2539.3125
+          },
+          {
+            "src": "assets/reels-title-ellipse.svg",
+            "loaded": true,
+            "left": -18.859375,
+            "top": 512.953125,
+            "width": 1115.28125,
+            "height": 894.0625
+          }
+        ],
+        "text": [
+          {
+            "text": "21-й округПарижа",
+            "font": "\"Sarafan Reels Garamond\", \"EB Garamond\", Georgia, serif",
+            "left": 240.734375,
+            "top": 758.671875,
+            "right": 839.234375,
+            "bottom": 1083.671875,
+            "overflow": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bureau-live",
+    "fonts": [
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Geist",
+      "Geist",
+      "Geist",
+      "Inter",
+      "Sarafan Vertical Geist",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Geist",
+      "Sarafan Recommendations Garamond",
+      "Sarafan Ads Geist",
+      "Sarafan Bureau Geist",
+      "EB Garamond",
+      "Sarafan Expert Geist",
+      "Sarafan Event Geist"
+    ],
+    "cards": [
+      {
+        "width": 1080,
+        "height": 1920,
+        "node": "385:10038",
+        "images": [
+          {
+            "src": "assets/bureau-live-dark-ribbon.svg",
+            "loaded": true,
+            "left": 0,
+            "top": 367,
+            "width": 368,
+            "height": 82
+          },
+          {
+            "src": "assets/bureau-live-dark-mark.svg",
+            "loaded": true,
+            "left": 940,
+            "top": 367,
+            "width": 68,
+            "height": 82
+          },
+          {
+            "src": "assets/bureau-live-portrait.png",
+            "loaded": true,
+            "left": 484.5,
+            "top": 1428,
+            "width": 93,
+            "height": 93
+          }
+        ],
+        "text": [
+          {
+            "text": "СарафанБюро",
+            "font": "\"EB Garamond\", Georgia, serif",
+            "left": 29.5,
+            "top": 370.796875,
+            "right": 328,
+            "bottom": 435.796875,
+            "overflow": false
+          },
+          {
+            "text": "Возможноли выучить французский язык до супер-уровня?",
+            "font": "\"Sarafan Vertical Geist\", Geist, Arial, sans-serif",
+            "left": 163.015625,
+            "top": 711,
+            "right": 917.984375,
+            "bottom": 1209,
+            "overflow": false
+          },
+          {
+            "text": "Прямой эфир",
+            "font": "\"Sarafan Vertical Geist\", Geist, Arial, sans-serif",
+            "left": 210.5,
+            "top": 1448.5,
+            "right": 464.140625,
+            "bottom": 1500.5,
+            "overflow": false
+          },
+          {
+            "text": "Артём Зайцев",
+            "font": "\"Sarafan Vertical Geist\", Geist, Arial, sans-serif",
+            "left": 597.5,
+            "top": 1448.5,
+            "right": 869.546875,
+            "bottom": 1500.5,
+            "overflow": false
+          }
+        ]
+      },
+      {
+        "width": 1080,
+        "height": 1920,
+        "node": "385:10055",
+        "images": [
+          {
+            "src": "assets/bureau-live-light-ribbon.svg",
+            "loaded": true,
+            "left": 0,
+            "top": 367,
+            "width": 368,
+            "height": 82
+          },
+          {
+            "src": "assets/bureau-live-light-mark.svg",
+            "loaded": true,
+            "left": 940,
+            "top": 367,
+            "width": 68,
+            "height": 82
+          },
+          {
+            "src": "assets/bureau-live-light-portrait.png",
+            "loaded": true,
+            "left": 484.5,
+            "top": 1428,
+            "width": 93,
+            "height": 93
+          }
+        ],
+        "text": [
+          {
+            "text": "СарафанБюро",
+            "font": "\"EB Garamond\", Georgia, serif",
+            "left": 29.5,
+            "top": 370.796875,
+            "right": 328,
+            "bottom": 435.796875,
+            "overflow": false
+          },
+          {
+            "text": "Что делать если у вас нет французского гаранта?",
+            "font": "\"Sarafan Vertical Geist\", Geist, Arial, sans-serif",
+            "left": 131.984375,
+            "top": 711,
+            "right": 949.015625,
+            "bottom": 1117,
+            "overflow": false
+          },
+          {
+            "text": "Прямой эфир",
+            "font": "\"Sarafan Vertical Geist\", Geist, Arial, sans-serif",
+            "left": 210.5,
+            "top": 1448.5,
+            "right": 464.140625,
+            "bottom": 1500.5,
+            "overflow": false
+          },
+          {
+            "text": "Артём Зайцев",
+            "font": "\"Sarafan Vertical Geist\", Geist, Arial, sans-serif",
+            "left": 597.5,
+            "top": 1448.5,
+            "right": 869.546875,
+            "bottom": 1500.5,
+            "overflow": false
+          }
+        ]
+      }
+    ]
+  }
+]

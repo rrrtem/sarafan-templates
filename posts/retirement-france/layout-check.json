@@ -1,0 +1,471 @@
+[
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "cover-2",
+    "grid": false,
+    "columns": 1,
+    "rows": 1,
+    "padding": "0px",
+    "gap": "normal",
+    "blocks": [],
+    "overlaps": [],
+    "overflow": [],
+    "images": [
+      {
+        "src": "../../assets/bureau-cover-2-ovals.svg",
+        "loaded": true,
+        "width": 813,
+        "height": 733
+      },
+      {
+        "src": "../../assets/bureau-cover-2-brand.svg",
+        "loaded": true,
+        "width": 479,
+        "height": 82
+      },
+      {
+        "src": "../../assets/bureau-cover-2-rule.svg",
+        "loaded": true,
+        "width": 945,
+        "height": 1
+      }
+    ],
+    "fonts": [
+      "Sarafan Bureau Geist"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "change",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "Пенсия инакопления",
+        "left": 65,
+        "top": 65,
+        "right": 1015,
+        "bottom": 225,
+        "inkLeft": 65,
+        "inkRight": 535.015625,
+        "inkTop": 53,
+        "inkBottom": 237
+      },
+      {
+        "text": "В материале Сарафана о пенсии главный вопрос — не только когда перестать работать, но и на какой доход жить после этого.",
+        "left": 65,
+        "top": 271.65625,
+        "right": 1015,
+        "bottom": 513.65625,
+        "inkLeft": 65,
+        "inkRight": 960.078125,
+        "inkTop": 265.65625,
+        "inkBottom": 518.15625
+      },
+      {
+        "text": "Ваши праваПенсионные права зависят от вашей карьеры. Сначала проверьте, какие периоды, кварталы и баллы уже учтены.",
+        "left": 65,
+        "top": 685,
+        "right": 530,
+        "bottom": 1158,
+        "inkLeft": 65,
+        "inkRight": 530,
+        "inkTop": 672,
+        "inkBottom": 1162.5
+      },
+      {
+        "text": "Ваш планОтдельно оцените будущие расходы и дополнительные доходы. Пенсия и личные накопления — разные части бюджета.",
+        "left": 550,
+        "top": 685,
+        "right": 1015,
+        "bottom": 1218.5,
+        "inkLeft": 550,
+        "inkRight": 1015,
+        "inkTop": 672,
+        "inkBottom": 1223
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Bureau Geist"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "audience",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "Три вопросао будущем",
+        "left": 65,
+        "top": 65,
+        "right": 1015,
+        "bottom": 225,
+        "inkLeft": 65,
+        "inkRight": 545.453125,
+        "inkTop": 53,
+        "inkBottom": 237
+      },
+      {
+        "text": "КогдаКакие даты выхода доступны в вашей ситуации?",
+        "left": 65,
+        "top": 478.328125,
+        "right": 1015,
+        "bottom": 665,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 493.328125,
+        "inkBottom": 685.328125
+      },
+      {
+        "text": "СколькоКакой доход показывает личный расчёт?",
+        "left": 65,
+        "top": 685,
+        "right": 1015,
+        "bottom": 827,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 700,
+        "inkBottom": 831.5
+      },
+      {
+        "text": "Хватит лиКак он соотносится с вашими расходами?",
+        "left": 65,
+        "top": 891.65625,
+        "right": 1015,
+        "bottom": 1033.65625,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 906.65625,
+        "inkBottom": 1038.15625
+      },
+      {
+        "text": "Ориентируйтесь на личную оценку на info-retraite.fr: средняя пенсия не покажет вашу ситуацию.",
+        "left": 65,
+        "top": 1153,
+        "right": 1015,
+        "bottom": 1285,
+        "inkLeft": 65,
+        "inkRight": 899.921875,
+        "inkTop": 1149,
+        "inkBottom": 1289
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "Sarafan Bureau Geist"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "actions",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "Начнитес учёта карьеры",
+        "left": 65,
+        "top": 65,
+        "right": 1015,
+        "bottom": 225,
+        "inkLeft": 65,
+        "inkRight": 715.296875,
+        "inkTop": 53,
+        "inkBottom": 237
+      },
+      {
+        "text": "ОткройтеСервис «Ma carrière» на info-retraite.fr.",
+        "left": 65,
+        "top": 271.65625,
+        "right": 1015,
+        "bottom": 413.65625,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 286.65625,
+        "inkBottom": 418.15625
+      },
+      {
+        "text": "СверьтеПериоды работы, доходы, кварталы и баллы.",
+        "left": 65,
+        "top": 478.328125,
+        "right": 1015,
+        "bottom": 620.328125,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 493.328125,
+        "inkBottom": 624.828125
+      },
+      {
+        "text": "УточнитеКак сообщить о пропусках в вашей кассе.",
+        "left": 65,
+        "top": 685,
+        "right": 1015,
+        "bottom": 827,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 700,
+        "inkBottom": 831.5
+      },
+      {
+        "text": "Сохраните документы о работе: они могут понадобиться для уточнения данных.",
+        "left": 65,
+        "top": 1164,
+        "right": 1015,
+        "bottom": 1285,
+        "inkLeft": 65,
+        "inkRight": 1001.65625,
+        "inkTop": 1158,
+        "inkBottom": 1289.5
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "Sarafan Bureau Geist"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "documents",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "Посчитайтенесколько сценариев",
+        "left": 65,
+        "top": 65,
+        "right": 1015,
+        "bottom": 225,
+        "inkLeft": 65,
+        "inkRight": 923.328125,
+        "inkTop": 53,
+        "inkBottom": 237
+      },
+      {
+        "text": "РасчётВ «Mon estimation retraite» сравните даты выхода и суммы. Можно проверить, как меняется прогноз при другой занятости.",
+        "left": 65,
+        "top": 478.328125,
+        "right": 530,
+        "bottom": 1036.328125,
+        "inkLeft": 65,
+        "inkRight": 530,
+        "inkTop": 474.328125,
+        "inkBottom": 1040.828125
+      },
+      {
+        "text": "БюджетСопоставьте прогноз с расходами на жильё, жизнь и здоровье. Оцените разницу до выбора финансового продукта.",
+        "left": 550,
+        "top": 478.328125,
+        "right": 1015,
+        "bottom": 975.828125,
+        "inkLeft": 550,
+        "inkRight": 1015,
+        "inkTop": 474.328125,
+        "inkBottom": 980.328125
+      },
+      {
+        "text": "Симуляция даёт ориентир. Возможные даты и суммы зависят от вашей карьеры и личной ситуации.",
+        "left": 65,
+        "top": 1153,
+        "right": 1015,
+        "bottom": 1285,
+        "inkLeft": 65,
+        "inkRight": 967.8125,
+        "inkTop": 1149,
+        "inkBottom": 1289
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "Sarafan Bureau Geist"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "change",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "PER: накопленияк пенсии",
+        "left": 65,
+        "top": 65,
+        "right": 1015,
+        "bottom": 225,
+        "inkLeft": 65,
+        "inkRight": 731.390625,
+        "inkTop": 53,
+        "inkBottom": 237
+      },
+      {
+        "text": "PER — продукт долгосрочных пенсионных накоплений. Перед выбором разберитесь, когда можно получить деньги, как устроены выплаты, комиссии и налоги.",
+        "left": 65,
+        "top": 271.65625,
+        "right": 1015,
+        "bottom": 574.15625,
+        "inkLeft": 65,
+        "inkRight": 1005.5625,
+        "inkTop": 265.65625,
+        "inkBottom": 578.65625
+      },
+      {
+        "text": "ДоступОбычно деньги доступны при выходе на пенсию. Досрочное снятие возможно лишь в предусмотренных случаях.",
+        "left": 65,
+        "top": 685,
+        "right": 530,
+        "bottom": 1279,
+        "inkLeft": 65,
+        "inkRight": 530,
+        "inkTop": 672,
+        "inkBottom": 1283.5
+      },
+      {
+        "text": "ВыплатаКапитал, рента или их сочетание: варианты зависят от происхождения средств и выбранных условий.",
+        "left": 550,
+        "top": 685,
+        "right": 1015,
+        "bottom": 1158,
+        "inkLeft": 550,
+        "inkRight": 1015,
+        "inkTop": 672,
+        "inkBottom": 1162.5
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Bureau Geist"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "nuance",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "План —доходыи расходы",
+        "left": 65,
+        "top": 369.15625,
+        "right": 1015,
+        "bottom": 774.15625,
+        "inkLeft": 65,
+        "inkRight": 681.203125,
+        "inkTop": 338.15625,
+        "inkBottom": 804.15625
+      },
+      {
+        "text": "Сначала оцените будущий бюджет. Потом сравнивайте инструменты, их риски, комиссии и ограничения.",
+        "left": 65,
+        "top": 1103.5,
+        "right": 1015,
+        "bottom": 1285,
+        "inkLeft": 65,
+        "inkRight": 997.703125,
+        "inkTop": 1097.5,
+        "inkBottom": 1289.5
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond"
+    ]
+  },
+  {
+    "width": 1080,
+    "height": 1350,
+    "variant": "summary",
+    "grid": true,
+    "columns": 6,
+    "rows": 6,
+    "padding": "65px",
+    "gap": "20px",
+    "blocks": [
+      {
+        "text": "Что можносделать сейчас",
+        "left": 65,
+        "top": 65,
+        "right": 1015,
+        "bottom": 225,
+        "inkLeft": 65,
+        "inkRight": 688.1875,
+        "inkTop": 53,
+        "inkBottom": 237
+      },
+      {
+        "text": "Проверьте карьеру и сохраните документы.Сравните прогноз пенсии с будущими расходами.Изучите условия накоплений перед решением.",
+        "left": 65,
+        "top": 478.328125,
+        "right": 1015,
+        "bottom": 984.328125,
+        "inkLeft": 65,
+        "inkRight": 1015,
+        "inkTop": 478.328125,
+        "inkBottom": 988.828125
+      },
+      {
+        "text": "Материал Сарафана и официальные ссылки — в описании поста. Сохраните, чтобы вернуться к ним.",
+        "left": 65,
+        "top": 1153,
+        "right": 1015,
+        "bottom": 1285,
+        "inkLeft": 65,
+        "inkRight": 970.640625,
+        "inkTop": 1149,
+        "inkBottom": 1289
+      }
+    ],
+    "overlaps": [],
+    "overflow": [],
+    "images": [],
+    "fonts": [
+      "EB Garamond",
+      "Sarafan Bureau Geist"
+    ]
+  }
+]

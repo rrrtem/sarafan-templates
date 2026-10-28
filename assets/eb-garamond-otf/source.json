@@ -1,0 +1,65 @@
+{
+  "source": "https://github.com/octaviopardo/EBGaramond12/tree/master/fonts/otf",
+  "files": [
+    {
+      "name": "EBGaramond-Bold.otf",
+      "source": "https://github.com/octaviopardo/EBGaramond12/blob/master/fonts/otf/EBGaramond-Bold.otf",
+      "gitBlob": "9e7242168fc1d1ec0727689edd50459cf23113f4",
+      "sha256": "2832055876314e4932c46809e919a45fd726a53faa6bfae53be9628723bde90f"
+    },
+    {
+      "name": "EBGaramond-BoldItalic.otf",
+      "source": "https://github.com/octaviopardo/EBGaramond12/blob/master/fonts/otf/EBGaramond-BoldItalic.otf",
+      "gitBlob": "b9ede3e78bb34c807abd1ee04899ec618955d88e",
+      "sha256": "c010c63d6924e0dec2fedc1b0cb57e86ae9047bb0e9651ea603b0967d6e3072e"
+    },
+    {
+      "name": "EBGaramond-ExtraBold.otf",
+      "source": "https://github.com/octaviopardo/EBGaramond12/blob/master/fonts/otf/EBGaramond-ExtraBold.otf",
+      "gitBlob": "1ca5eb54c0add9ab90c0d24fe92f3337ae68c3a9",
+      "sha256": "7a24930119c0f4b567300118b961ce0c5f1208be5ef6a73c16bd7971ae941f5e"
+    },
+    {
+      "name": "EBGaramond-ExtraBoldItalic.otf",
+      "source": "https://github.com/octaviopardo/EBGaramond12/blob/master/fonts/otf/EBGaramond-ExtraBoldItalic.otf",
+      "gitBlob": "6022f4e66b343e0dcafb36701bac268610195b9f",
+      "sha256": "f6a36345d38b25436cc81ab1da3bacd8c12a1b8ab480dbc2a7dec9d95195a4c8"
+    },
+    {
+      "name": "EBGaramond-Italic.otf",
+      "source": "https://github.com/octaviopardo/EBGaramond12/blob/master/fonts/otf/EBGaramond-Italic.otf",
+      "gitBlob": "76a6d67bc9b68645f9541f4f25088bba6af6087c",
+      "sha256": "296feee09f6fa157f913cf3d75460b5e282b3c43dff4ddffbcc5c1a924f4fd14"
+    },
+    {
+      "name": "EBGaramond-Medium.otf",
+      "source": "https://github.com/octaviopardo/EBGaramond12/blob/master/fonts/otf/EBGaramond-Medium.otf",
+      "gitBlob": "6a55ef1a52f846313d42d0c6f065307c48ca9394",
+      "sha256": "e0bd0a740f5d3d5eca3205ca0d927eebb0cb8f8e8a7d35fa5a24b31cf2e2063d"
+    },
+    {
+      "name": "EBGaramond-MediumItalic.otf",
+      "source": "https://github.com/octaviopardo/EBGaramond12/blob/master/fonts/otf/EBGaramond-MediumItalic.otf",
+      "gitBlob": "d8a29f8080b5fd441e15b7bbe6a09ce9ca735aaf",
+      "sha256": "ed5d8378381970637054fe905d6c5d50d13155693dd1fc50ab926372a4e607ca"
+    },
+    {
+      "name": "EBGaramond-Regular.otf",
+      "source": "https://github.com/octaviopardo/EBGaramond12/blob/master/fonts/otf/EBGaramond-Regular.otf",
+      "gitBlob": "62c5a328908dbdb174ee183c143cdaca674580c2",
+      "sha256": "8d618a6bc6e1f4444e1990c39770a62ccbc29394e57afcc58acd530c16489275"
+    },
+    {
+      "name": "EBGaramond-SemiBold.otf",
+      "source": "https://github.com/octaviopardo/EBGaramond12/blob/master/fonts/otf/EBGaramond-SemiBold.otf",
+      "gitBlob": "2f2abb1efbba4783b782e78091e7c202995a3326",
+      "sha256": "f30a456cfca3351e1f2ef20ec356741d54752c64a1066db34e78afa368d92412"
+    },
+    {
+      "name": "EBGaramond-SemiBoldItalic.otf",
+      "source": "https://github.com/octaviopardo/EBGaramond12/blob/master/fonts/otf/EBGaramond-SemiBoldItalic.otf",
+      "gitBlob": "cc1e130e934a7ffdc5dbe494d0c089f7e7ec6e75",
+      "sha256": "764445965e8b7b3ced015339fc6925caf934a6aace6a26852412a9ff4f2459fb"
+    }
+  ]
+}

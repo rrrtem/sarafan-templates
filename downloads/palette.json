@@ -48,9 +48,15 @@
     "secondary": true
   },
   {
-    "id": "dusty-rose",
-    "title": "Пыльно-розовый",
-    "hex": "#C98384",
+    "id": "plum",
+    "title": "Сливовый",
+    "hex": "#67436F",
+    "secondary": true
+  },
+  {
+    "id": "lemon",
+    "title": "Лимонный",
+    "hex": "#E8D44D",
     "secondary": true
   },
   {

@@ -1,0 +1,33 @@
+/* Бюро · исходные обложки Page 14 и универсальные продолжения карусели. */
+.bureau-card,.bureau-card *{box-sizing:border-box}
+.bureau-card{--bureau-bg:#553D3D;--bureau-ink:#FBEED2;background:var(--bureau-bg);color:var(--bureau-ink);font-synthesis:none}
+.bureau-card h2,.bureau-card h3,.bureau-card ul,.bureau-card ol{margin:0}
+.bureau-card h2,.bureau-card h3{font-weight:500}
+.bureau-card em{font-family:"EB Garamond",Georgia,serif;font-weight:500;font-style:italic}
+.bureau-cover-brand{position:absolute;left:0;top:64.8008px}
+.bureau-cover-ovals{position:absolute;left:133.48px;top:251.526px}
+.bureau-cover-title{position:absolute;left:105px;top:506.8008px;width:870px;text-align:center;color:#553D3D;font:500 80px/.92 Geist,Arial,sans-serif}
+.bureau-cover-title-frame{position:absolute;left:95px;top:496.8008px;width:890px;padding:10px;background:#553D3D}
+.bureau-cover-title-frame .bureau-cover-title{position:static;color:#FBEED2}
+.bureau-cover-description{position:absolute;left:69.7397px;top:1088.8008px;width:808.297px;font:300 40px/1.1 Geist,Arial,sans-serif}
+.bureau-cover-rule{position:absolute;left:69.7397px;top:1283.8008px}
+/* New compositions share the project's 6 × 6 grid and four corner anchors. */
+.bureau-grid{display:grid;grid-template-columns:repeat(var(--sarafan-grid-columns,6),minmax(0,1fr));grid-template-rows:repeat(var(--sarafan-grid-rows,6),minmax(0,1fr));gap:var(--sarafan-grid-gutter,20px);padding:var(--sarafan-grid-margin,65px)}
+.bureau-cream{--bureau-bg:#FBEED2;--bureau-ink:#553D3D}
+.bureau-block{position:relative;align-self:start;min-width:0;max-height:100%}
+.bureau-heading{font:500 80px/1 Geist,Arial,sans-serif}
+.bureau-serif{font:600 80px/1 "EB Garamond",Georgia,serif}
+.bureau-body{font:400 55px/1.1 "EB Garamond",Georgia,serif}
+.bureau-note{font:400 40px/1.1 Geist,Arial,sans-serif}
+.bureau-label{font:500 40px/1.1 Geist,Arial,sans-serif}
+.bureau-prose p+p,.bureau-prose h3+p{margin-top:30px}
+.bureau-row{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:20px}
+.bureau-row>h3{grid-column:1 / 3}
+.bureau-row>p{grid-column:3 / 7}
+.bureau-row--rule{border-top:1px solid currentColor;padding-top:20px}
+.bureau-bottom{align-self:end}
+.bureau-middle{align-self:center}
+.bureau-center{text-align:center}
+.bureau-statement{font:500 150px/.9 "EB Garamond",Georgia,serif}
+.bureau-list{padding:0;list-style:none;display:grid;gap:40px}
+.bureau-list li{padding-top:20px;border-top:1px solid currentColor}

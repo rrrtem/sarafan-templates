@@ -24,6 +24,7 @@
       download.href=image.src;
     }
     unit.append(footer);update();
+    return { source: () => image.src };
   }
   window.SarafanWeeklyCover={mount};
 })();

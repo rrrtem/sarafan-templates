@@ -1,0 +1,1586 @@
+[
+  {
+    "id": "recommendations",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "recommendations",
+    "slide": 2,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "recommendations",
+    "slide": 3,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "reels-cover",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "bureau-live",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "bureau-live",
+    "slide": 2,
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "bureau-guide",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "bureau-guide",
+    "slide": 2,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "bureau-guide",
+    "slide": 3,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "bureau-guide",
+    "slide": 4,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "bureau-guide",
+    "slide": 5,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "bureau-guide",
+    "slide": 6,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "bureau-guide",
+    "slide": 7,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "bureau-guide",
+    "slide": 8,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "ads-retreat",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "ads-retreat",
+    "slide": 2,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "ads-retreat",
+    "slide": 3,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "ads-retreat",
+    "slide": 4,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "ads-retreat",
+    "slide": 5,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "ads-retreat",
+    "slide": 6,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "ads-retreat",
+    "slide": 7,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "ads-retreat",
+    "slide": 8,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "ads-retreat",
+    "slide": 9,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "club-salon",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "club-salon",
+    "slide": 2,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "club-salon",
+    "slide": 3,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "club-event",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "club-event",
+    "slide": 2,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "club-event",
+    "slide": 3,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "club-event",
+    "slide": 4,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "club-event",
+    "slide": 5,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "club-event",
+    "slide": 6,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "event",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "event",
+    "slide": 2,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "event",
+    "slide": 3,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "event",
+    "slide": 4,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "proust",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "proust",
+    "slide": 2,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "proust",
+    "slide": 3,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "proust",
+    "slide": 4,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "proust",
+    "slide": 5,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "proust",
+    "slide": 6,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "places",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "places",
+    "slide": 2,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "places",
+    "slide": 3,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "places",
+    "slide": 4,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "places",
+    "slide": 5,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "places",
+    "slide": 6,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "places",
+    "slide": 7,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "places",
+    "slide": 8,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "places",
+    "slide": 9,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "places",
+    "slide": 10,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "places",
+    "slide": 11,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "places",
+    "slide": 12,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "expert",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "expert",
+    "slide": 2,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "expert",
+    "slide": 3,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "expert",
+    "slide": 4,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "expert",
+    "slide": 5,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "intro",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "intro",
+    "slide": 2,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "intro",
+    "slide": 3,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "intro",
+    "slide": 4,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "intro",
+    "slide": 5,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "intro",
+    "slide": 6,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "intro",
+    "slide": 7,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "transition",
+    "slide": 1,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "transition",
+    "slide": 2,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "transition",
+    "slide": 3,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "transition",
+    "slide": 4,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "transition",
+    "slide": 5,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  },
+  {
+    "id": "transition",
+    "slide": 6,
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "overflow": [],
+    "fonts": [
+      "Geist",
+      "CoFo Cinema 1909",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "EB Garamond",
+      "Sarafan Reels Garamond",
+      "Sarafan Recommendations Garamond",
+      "EB Garamond"
+    ],
+    "obsolete": []
+  }
+]

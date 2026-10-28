@@ -1,18 +1,16 @@
 (() => {
+  'use strict';
   const data = window.SARAFAN_DESIGN;
   const registry = window.SARAFAN_ASSETS;
-  const paletteCSS = ':root {\n' + [...data.colors,...(data.additionalColors||[])].map(c => `  --sarafan-${c.id}: ${c.hex};`).join('\n') + '\n}';
   const status = document.getElementById('copy-status');
   let timer;
-
   function notify(message) {
     clearTimeout(timer);
     status.textContent = message;
-    status.setAttribute('data-visible', '');
-    timer = setTimeout(() => status.removeAttribute('data-visible'), 2500);
+    status.setAttribute('data-visible','');
+    timer = setTimeout(() => status.removeAttribute('data-visible'),2500);
   }
-
-  async function copy(value, label) {
+  async function copy(value, label = 'Скопировано') {
     try {
       if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
       await navigator.clipboard.writeText(value);
@@ -23,7 +21,7 @@
       document.body.append(input);
       input.select();
       let copied = false;
-      try { copied = document.execCommand('copy'); } catch { /* Manual fallback below. */ }
+      try { copied = document.execCommand('copy'); } catch { /* Show manual copy. */ }
       input.remove();
       if (!copied) {
         const dialog = document.getElementById('copy-dialog');
@@ -33,188 +31,247 @@
         return;
       }
     }
-    notify(label || 'Скопировано');
+    notify(label);
   }
-
-  function button(text, value, label, className) {
-    const node = document.createElement('button');
-    node.type = 'button';
-    node.textContent = text;
-    if (className) node.className = className;
-    node.addEventListener('click', () => copy(value, label));
-    return node;
+  function node(tag, className, text) {
+    const el = document.createElement(tag);
+    if (className) el.className = className;
+    if (text !== undefined) el.textContent = text;
+    return el;
   }
-
-  for (const [target,colors] of [['palette',data.colors],['additional-palette',data.additionalColors||[]]]) for (const color of colors) {
-    const entry = document.createElement('div');
-    entry.className = 'ds-color';
-    const swatch = button('', color.hex, color.hex + ' скопирован', 'ds-swatch');
-    swatch.style.setProperty('--swatch', color.hex);
-    swatch.style.setProperty('--swatch-ink', ['brown', 'orange'].includes(color.id) ? '#FBEED2' : '#553D3D');
-    swatch.setAttribute('aria-label', `${color.name}: скопировать ${color.hex}`);
-    const title = document.createElement('h4');
-    title.textContent = color.name;
-    const rgb = [1, 3, 5].map(i => parseInt(color.hex.slice(i, i + 2), 16)).join(', ');
-    const hexButton = button(color.hex, color.hex, color.hex + ' скопирован', 'ds-copy-hex');
-    hexButton.setAttribute('aria-label', `Скопировать HEX ${color.hex}`);
-    const rgbButton = button('RGB ' + rgb, `rgb(${rgb})`, 'RGB скопирован', 'ds-copy-rgb');
-    entry.append(swatch, title, hexButton, rgbButton);
-    document.getElementById(target).append(entry);
+  function download(path, text, label) {
+    const a = node('a','',text);
+    a.href = path;
+    a.download = path.split('/').pop();
+    if (label) a.setAttribute('aria-label',label);
+    return a;
   }
-  document.querySelector('[data-copy="palette"]').addEventListener('click', () => copy(paletteCSS, 'CSS палитры скопирован'));
-
-  data.combinations.forEach((combo, index) => {
-    const entry = document.createElement('article');
-    entry.className = 'ds-combo';
-    entry.style.setProperty('--combo-bg', combo.background);
-    entry.style.setProperty('--combo-ink', combo.color);
-    entry.style.setProperty('--combo-accent', combo.accent);
-    const text = document.createElement('p');
-    text.append('Почувствовать', document.createElement('br'));
-    const emphasis = document.createElement('em');
-    emphasis.textContent = 'себя как дома';
-    text.append(emphasis);
-    const css = `background: ${combo.background};\ncolor: ${combo.color};\n/* Курсивный акцент */\n--text-accent: ${combo.accent};`;
-    const control = button('Копировать ↗', css, 'Сочетание скопировано');
-    control.setAttribute('aria-label', `${combo.name}: скопировать CSS сочетания ${index + 1}`);
-    entry.append(text, control);
-    document.getElementById('combinations').append(entry);
-  });
-
-  data.typography.forEach(group => {
-    const section = document.createElement('section');
-    section.className = 'ds-type-group';
-    section.id = 'type-' + group.id;
-    section.setAttribute('aria-labelledby', section.id + '-title');
-    const heading = document.createElement('h4');
-    heading.id = section.id + '-title';
-    heading.textContent = group.name;
-    section.append(heading);
-    group.styles.forEach(type => {
-    const entry = document.createElement('article');
-    entry.className = 'ds-type';
-    const info = document.createElement('div');
-    const title = document.createElement('h5');
-    title.textContent = type.name;
-    const spec = document.createElement('p');
-    spec.className = 'ds-spec';
-    spec.textContent = `${type.family} · ${type.weight}${type.style ? ' Italic' : ''}\n${type.size} px / ${Math.round(type.line * 100)}%${type.tracking ? ' · трекинг ' + type.tracking + ' px' : ''}`;
-    spec.style.whiteSpace = 'pre-line';
-    let css = `.sarafan-text {\n  font-family: "${type.family}";\n  font-size: ${type.size}px;\n  line-height: ${type.line};\n  font-weight: ${type.weight};\n  font-style: ${type.style || 'normal'};${type.tracking ? '\n  letter-spacing: ' + type.tracking + 'px;' : ''}\n}`;
-    for (const run of type.runs || []) {
-      if (!run.tag) continue;
-      const declarations = [];
-      if (run.family) declarations.push(`font-family: "${run.family}";`);
-      if (run.weight) declarations.push(`font-weight: ${run.weight};`);
-      if (run.style) declarations.push(`font-style: ${run.style};`);
-      if (run.color) declarations.push(`color: ${run.color};`);
-      css += `\n\n.sarafan-text ${run.tag} {\n  ${declarations.join('\n  ')}\n}`;
-    }
-    info.append(title, spec, button('Копировать CSS ↗', css, 'Стиль текста скопирован', 'ds-text-link'));
-    const preview = document.createElement('div');
-    const sample = document.createElement('p');
-    sample.className = 'ds-type-sample';
-    sample.style.setProperty('--type-family', `"${type.family}", serif`);
-    sample.style.setProperty('--type-weight', type.weight);
-    sample.style.setProperty('--type-style', type.style || 'normal');
-    sample.style.setProperty('--type-size', type.size * 0.5 + 'px');
-    sample.style.setProperty('--type-line', type.line);
-    if (type.tracking) sample.style.letterSpacing = type.tracking * 0.5 + 'px';
-    if (type.runs) {
-      for (const run of type.runs) {
-        const part = document.createElement(run.tag || 'span');
-        part.textContent = run.text;
-        if (run.family) part.style.fontFamily = `"${run.family}", serif`;
-        if (run.weight) part.style.fontWeight = run.weight;
-        if (run.style) part.style.fontStyle = run.style;
-        if (run.color) part.style.color = run.color;
-        sample.append(part);
-      }
-    } else sample.textContent = type.sample;
-    const source = document.createElement('a');
-    source.className = 'ds-type-source';
-    source.href = type.href;
-    source.textContent = type.source + ' ↗';
-    preview.append(sample, source);
-    entry.append(info, preview);
-    section.append(entry);
-    });
-    document.getElementById('typography').append(section);
-  });
-
-  if (!registry) {
-    document.getElementById('logos').textContent = 'Реестр ассетов не загрузился. Проверьте, что папка downloads находится рядом со страницей.';
-    return;
+  function image(path, alt) {
+    const img = node('img');
+    img.src = path;
+    img.alt = alt;
+    return img;
   }
-  document.getElementById('logos').replaceChildren();
-  for (const asset of registry.assets) {
-    const entry = document.createElement('article');
-    entry.className = 'ds-asset';
-    const preview = document.createElement('div');
-    preview.className = 'ds-asset-preview';
-    if (/cream|ribbon-bureau|expert-ovals|expert-mask/.test(asset.id)) preview.dataset.tone = 'dark';
-    const img = document.createElement('img');
-    img.src = asset.formats.SVG || asset.formats.PNG;
-    img.alt = asset.title;
-    img.loading = 'lazy';
-    preview.append(img);
-    const title = document.createElement('h4');
-    title.textContent = asset.title.replace(' · исходный растр', '');
-    const links = document.createElement('div');
-    links.className = 'ds-asset-links';
-    for (const [format, path] of Object.entries(asset.formats)) {
-      const link = document.createElement('a');
+  const dialog = document.getElementById('specimen-dialog');
+  const dialogImage = document.getElementById('specimen-image');
+  document.getElementById('specimen-close').addEventListener('click',() => dialog.close());
+  dialog.addEventListener('click',event => { if (event.target === dialog) {
+    const rect = dialog.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
+  }});
+  function exampleButton(path, title) {
+    const button = node('button','ds-example-button');
+    button.type = 'button';
+    button.dataset.specimen = path;
+    button.setAttribute('aria-label',`Открыть пример: ${title}, 1080 × 1350`);
+    button.append(image(path,title));
+    button.addEventListener('click',() => {
+      dialogImage.src = path;
+      dialogImage.alt = title;
+      document.getElementById('specimen-title').textContent = title;
+      const link = document.getElementById('specimen-download');
       link.href = path;
       link.download = path.split('/').pop();
-      link.textContent = format + ' ↓';
-      link.setAttribute('aria-label', `Скачать ${asset.title}, ${format}`);
-      if (location.protocol === 'file:' && ['SVG', 'PNG'].includes(format)) {
-        link.addEventListener('click', event => {
+      dialog.showModal();
+    });
+    return button;
+  }
+  function palette(target, colors) {
+    for (const color of colors) {
+      const entry = node('div','ds-color');
+      const swatch = node('button','ds-swatch');
+      swatch.type = 'button';
+      swatch.style.setProperty('--swatch',color.hex);
+      // Choose the more legible brand ink by WCAG relative luminance.
+      const luminance = hex => [1,3,5].map(i => parseInt(hex.slice(i,i+2),16)/255)
+        .map(c => c <= .04045 ? c/12.92 : ((c+.055)/1.055)**2.4)
+        .reduce((sum,c,i) => sum+c*[.2126,.7152,.0722][i],0);
+      const light = '#FBEED2', dark = '#553D3D', value = luminance(color.hex);
+      const contrast = hex => (Math.max(value,luminance(hex))+.05)/(Math.min(value,luminance(hex))+.05);
+      entry.style.setProperty('--swatch-ink',contrast(light)>contrast(dark) ? light : dark);
+      const rgb = [1,3,5].map(i => parseInt(color.hex.slice(i,i+2),16)).join(', ');
+      swatch.setAttribute('aria-label',`${color.name}: скопировать ${color.hex}`);
+      swatch.title = `Скопировать ${color.hex}`;
+      swatch.addEventListener('click',() => copy(color.hex,`${color.hex} скопирован`));
+      const caption = node('span','ds-color-caption');
+      const values = node('span','ds-color-values');
+      values.append(node('span','',color.hex),node('span','',`RGB ${rgb}`));
+      caption.append(node('span','ds-color-name',color.name),values);
+      swatch.append(caption);
+      const backgrounds = node('div','ds-background-links');
+      for (const height of [1350,1920]) {
+        const link = download(`downloads/backgrounds/${color.id}-1080x${height}.png`,`1080 × ${height} ↓`,`Скачать фон ${color.name}, 1080 × ${height}, PNG`);
+        if (location.protocol === 'file:') link.addEventListener('click',event => {
+          event.preventDefault();
+          const canvas = document.createElement('canvas');
+          canvas.width = 1080; canvas.height = height;
+          const context = canvas.getContext('2d');
+          context.fillStyle = color.hex; context.fillRect(0,0,1080,height);
+          canvas.toBlob(blob => {
+            const url = URL.createObjectURL(blob);
+            const save = download(url,''); save.download = link.download;
+            document.body.append(save); save.click(); save.remove();
+            setTimeout(() => URL.revokeObjectURL(url),10000);
+          },'image/png');
+        });
+        backgrounds.append(link);
+      }
+      entry.append(swatch,backgrounds);
+      document.getElementById(target).append(entry);
+    }
+  }
+  palette('palette',data.colors);
+  palette('additional-palette',data.additionalColors);
+  for (const combo of data.combinations) {
+    const card = node('article','ds-combo');
+    const path = `downloads/examples/color-${combo.id}.png`;
+    card.append(exampleButton(path,`${combo.name} · сочетание`),node('p','ds-combo-footer',combo.name));
+    document.getElementById('combinations').append(card);
+  }
+  for (const specimen of data.specimens) {
+    const card = node('article','ds-specimen');
+    const details = node('details');
+    details.append(node('summary','',specimen.name));
+    const specs = node('dl','ds-type-specs');
+    for (const type of specimen.styles) {
+      const row = node('div');
+      row.append(node('dt','',type.name),node('dd','',`${type.family} · ${type.weight}${type.style ? ' Italic' : ''}\n${type.size} px / ${Math.round(type.line*100)}%${type.tracking !== undefined ? ' · трекинг ' + type.tracking + ' px' : ''}`));
+      specs.append(row);
+    }
+    const links = node('div','ds-specimen-links');
+    links.append(download(specimen.image,'PNG ↓',`Скачать ${specimen.name}, 1080 × 1350`));
+    details.append(specs,links);
+    card.append(exampleButton(specimen.image,specimen.name),details,node('p','ds-specimen-use',specimen.use));
+    document.getElementById('typography').append(card);
+  }
+  for (let i=0; i<36; i++) document.getElementById('grid-modules').append(node('span'));
+  if (!registry) {
+    document.getElementById('wordmarks').textContent = 'Реестр материалов не загрузился. Проверьте папку downloads.';
+    return;
+  }
+  const assets = new Map(registry.assets.map(asset => [asset.id,asset]));
+  function assetLinks(asset) {
+    const links = node('div','ds-asset-links');
+    for (const [format,path] of Object.entries(asset.formats)) {
+      const link = download(path,`${format} ↓`,`Скачать ${asset.title}, ${format}`);
+      if (location.protocol === 'file:' && ['SVG','PNG'].includes(format)) {
+        link.addEventListener('click',event => {
           const contents = format === 'SVG' ? asset.svgText : asset.pngBase64;
           if (!contents) return;
           event.preventDefault();
-          const bytes = format === 'SVG' ? contents : Uint8Array.from(atob(contents), c => c.charCodeAt(0));
-          const blob = new Blob([bytes], { type: format === 'SVG' ? 'image/svg+xml' : 'image/png' });
-          const url = URL.createObjectURL(blob);
-          const save = document.createElement('a');
-          save.href = url;
-          save.download = link.download;
+          const bytes = format === 'SVG' ? contents : Uint8Array.from(atob(contents),c => c.charCodeAt(0));
+          const url = URL.createObjectURL(new Blob([bytes],{type:format==='SVG'?'image/svg+xml':'image/png'}));
+          const save = download(url,'');
+          save.download = path.split('/').pop();
           document.body.append(save);
           save.click();
           save.remove();
-          setTimeout(() => URL.revokeObjectURL(url), 10000);
+          setTimeout(() => URL.revokeObjectURL(url),10000);
         });
       }
       links.append(link);
     }
-    entry.append(preview, title, links);
-    document.getElementById(asset.category === 'logo' ? 'logos' : 'elements').append(entry);
+    return links;
   }
+  const colorCards = [];
+  function assetCard(item, target) {
+    const asset = assets.get(item.id);
+    if (!asset) throw new Error('Missing design asset: '+item.id);
+    const card = node('article','ds-asset');
+    card.dataset.asset = item.id;
+    const preview = node('div','ds-asset-preview');
+    if (item.tone) preview.dataset.tone = item.tone;
+    preview.append(image(asset.formats.SVG || asset.formats.PNG,item.name));
+    if (item.label) preview.append(node('span','ds-action-label',item.label));
+    card.append(preview,node('h3','',item.name));
+    if (item.use) card.append(node('span','ds-asset-use',item.use));
+    card.append(assetLinks(asset));
+    document.getElementById(target).append(card);
+    if (asset.variants) colorCards.push({card,preview,item,asset});
+  }
+  data.wordmarks.forEach(item => assetCard(item,'wordmarks'));
+  data.symbols.forEach(item => assetCard(item,'symbol-assets'));
+  data.elements.forEach(item => assetCard(item,'elements'));
+  function selectBrandColor(color) {
+    for (const {card,preview,item,asset} of colorCards) {
+      const variant = color.id === 'orange' ? asset : asset.variants[color.id];
+      if (!variant) throw new Error('Missing asset color: ' + asset.id + ' / ' + color.id);
+      const img = preview.querySelector('img');
+      img.src = variant.formats.SVG;
+      img.alt = item.name + ' · ' + color.name;
+      preview.dataset.tone = ['cream','blue','pink'].includes(color.id) ? 'dark' : 'light';
+      card.dataset.color = color.id;
+      card.querySelector('.ds-asset-links').replaceWith(assetLinks(variant));
+    }
+    for (const button of document.querySelectorAll('[data-brand-color]')) button.setAttribute('aria-pressed',String(button.dataset.brandColor === color.id));
+  }
+  for (const color of data.colors) {
+    const button = node('button','ds-brand-color');
+    button.type = 'button';
+    button.dataset.brandColor = color.id;
+    button.style.setProperty('--brand-swatch',color.hex);
+    button.setAttribute('aria-label',color.name);
+    button.title = color.name + ' · ' + color.hex;
+    button.addEventListener('click',() => selectBrandColor(color));
+    document.getElementById('brand-colors').append(button);
+  }
+  selectBrandColor(data.colors.find(color => color.id === 'orange'));
 
-  const groups = [
-    ['EB Garamond', f => f.id.startsWith('eb-garamond-')],
-    ['Geist', f => f.id.startsWith('geist-')],
-    ['Geist · эксперт', f => f.id.startsWith('expert-geist')],
-    ['CoFo Cinema 1909', f => f.id.startsWith('cofo-')],
-    ['Inter · геометка', f => f.id.startsWith('inter-')]
+  for (const ribbon of data.ribbons) {
+    const card = node('article','ds-ribbon');
+    card.dataset.ribbon = ribbon.name;
+    const preview = node('div','ds-ribbon-preview');
+    preview.dataset.orientation = ribbon.orientation;
+    const choices = node('div','ds-ribbon-colors');
+    choices.setAttribute('role','group');
+    choices.setAttribute('aria-label','Цвет ленты · ' + ribbon.name);
+    card.append(preview,node('h3','',ribbon.name));
+    if (ribbon.use) card.append(node('p','ds-ribbon-use',ribbon.use));
+    if (ribbon.options.length > 1) card.append(choices);
+    const links = node('div','ds-asset-links');
+    card.append(links);
+    function choose(option) {
+      const asset = assets.get(option.id);
+      if (!asset) throw new Error('Missing ribbon: ' + option.id);
+      preview.replaceChildren(image(asset.formats.SVG,`${ribbon.name} · ${option.name.toLowerCase()}`));
+      preview.dataset.tone = option.color === 'cream' ? 'dark' : 'light';
+      card.dataset.color = option.color;
+      card.querySelector('.ds-asset-links').replaceWith(assetLinks(asset));
+      for (const button of choices.querySelectorAll('button')) button.setAttribute('aria-pressed',String(button.dataset.ribbonColor===option.color));
+    }
+    if (ribbon.options.length > 1) for (const option of ribbon.options) {
+      const color = data.colors.find(c => c.id === option.color);
+      const button = node('button','ds-ribbon-color');
+      button.type='button';button.dataset.ribbonColor=option.color;
+      button.style.setProperty('--ribbon-swatch',color.hex);
+      button.setAttribute('aria-label',`${option.name} лента · ${ribbon.name}`);
+      button.title=option.name + ' · ' + color.hex;
+      button.addEventListener('click',() => choose(option));
+      choices.append(button);
+    }
+    choose(ribbon.options[0]);
+    document.getElementById('ribbons').append(card);
+  }
+  const fontGroups = [
+    {name:'EB Garamond',family:'EB Garamond',use:'Редакционный текст и курсив',path:'downloads/eb-garamond.zip',format:'ZIP · OTF',page:'https://fonts.google.com/specimen/EB+Garamond'},
+    {name:'Geist',family:'Geist',use:'Заголовки и текст · единая версия 1.6',path:'downloads/fonts/expert-geist-v1.6.ttf',format:'TTF',page:'https://vercel.com/font'},
+    {name:'CoFo Cinema1909',family:'CoFo Cinema 1909',use:'Клуб · Салон',path:'downloads/fonts/cofo-cinema1909-regular.otf',format:'OTF'}
   ];
-  groups.forEach(([name, matches]) => {
-    const entry = document.createElement('div');
-    entry.className = 'ds-font-group';
-    const title = document.createElement('h4');
-    title.textContent = name;
-    const files = document.createElement('div');
-    files.className = 'ds-font-files';
-    registry.fonts.filter(matches).forEach(font => {
-      const link = document.createElement('a');
-      link.href = font.path;
-      link.download = font.title;
-      const face = font.id.replace(/^(eb-garamond-|geist-|cofo-cinema1909-|inter-)/, '').replace('expert-geist-', '').replaceAll('-', ' ');
-      link.textContent = `${face} · ${font.format} ↓`;
-      link.setAttribute('aria-label', `Скачать ${name}, ${face}, ${font.format}`);
-      files.append(link);
-    });
-    entry.append(title, files);
+  for (const group of fontGroups) {
+    const entry = node('div','ds-font-group');
+    const info = node('div');
+    const title = node('h3','ds-font-name',group.name);
+    title.dataset.font = group.family;
+    title.style.fontFamily = `"${group.family}", sans-serif`;
+    info.append(title,node('p','',group.use));
+    const files = node('div','ds-font-files');
+    files.append(download(group.path,`Скачать · ${group.format} ↓`,`Скачать ${group.name} одним файлом`));
+    if (group.page) {
+      const page = node('a','','Страница шрифта ↗');
+      page.href = group.page; page.target = '_blank'; page.rel = 'noopener noreferrer';
+      files.append(page);
+    }
+    entry.append(info,files);
     document.getElementById('font-downloads').append(entry);
-  });
+  }
 })();

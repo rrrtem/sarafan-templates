@@ -4,11 +4,15 @@
 .posts-index h2{font-size:13px;font-weight:400;margin:0}
 .posts-index span{font-size:11px;color:var(--ui-muted);font-variant-numeric:tabular-nums}
 .posts-nav{display:grid;gap:18px}
+.mobile-post-picker{display:none}
 .posts-nav a{font:400 24px/1.15 "EB Garamond",Georgia,serif;text-decoration:none;overflow-wrap:anywhere}
 .posts-nav a[aria-current="true"]{font-style:italic;font-weight:500;color:var(--ui-accent)}
 .posts-content{min-width:0;border-left:1px solid var(--ui-line);padding-left:40px}
 .posts-empty{margin:0;padding:64px 0;font:400 32px/1.15 "EB Garamond",Georgia,serif;color:var(--ui-muted)}
-#post-title{font:400 38px/1.08 "EB Garamond",Georgia,serif;margin:0 0 28px;overflow-wrap:anywhere}
+.posts-intro{margin:0 0 24px;color:var(--ui-muted);font-size:13px;line-height:1.6}
+.post-heading{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:28px}
+#post-title{flex:1 1 300px;font:400 38px/1.08 "EB Garamond",Georgia,serif;margin:0;overflow-wrap:anywhere}
+.post-heading .download{min-height:44px}
 .post-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 .post-card{position:relative;min-width:0;aspect-ratio:4/5;overflow:hidden;margin:0}
 .post-card img{display:block;width:100%;height:100%;object-fit:contain}
@@ -47,11 +51,44 @@
 .crop-actions{display:flex;justify-content:flex-end;gap:12px;border-top:1px solid var(--ui-line);padding-top:20px;margin-top:20px}
 .crop-actions button{padding:10px 16px;border:1px solid var(--ui-line);border-radius:4px;background:transparent;color:var(--ui-ink);font-size:12px}
 .crop-actions .crop-save{background:var(--ui-ink);border-color:var(--ui-ink);color:var(--workspace)}
-@media(max-width:640px){.photo-editor{padding:18px}.crop-heading h2{font-size:26px}.crop-layout{grid-template-columns:1fr;gap:22px}#crop-preview{width:min(100%,240px)}.crop-controls{gap:8px}.crop-controls input{margin-bottom:10px}.crop-actions{position:sticky;bottom:-18px;background:var(--workspace);padding:16px 0;margin-top:12px}.crop-actions button{flex:1}}
+@media(max-width:760px), (hover:none) and (max-width:1000px){
+  .photo-editor{width:100%;max-width:none;height:100dvh;max-height:100dvh;margin:0;padding:max(12px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));border:0;border-radius:0;overscroll-behavior:contain}
+  body:has(.photo-editor[open]){overflow:hidden}
+  .crop-heading{gap:12px;padding-bottom:10px;margin-bottom:16px}
+  .crop-heading h2{font-size:27px}
+  .crop-heading button{min-width:44px;min-height:44px;padding:6px}
+  .crop-layout{grid-template-columns:1fr;gap:20px}
+  #crop-preview{width:min(100%,240px)}
+  .crop-controls{gap:4px}
+  .crop-controls label{font-size:14px}
+  .crop-controls select{min-height:44px;font-size:16px}
+  .crop-controls input{min-height:44px;margin:0}
+  .crop-card-name{margin-bottom:10px}
+  .crop-reset{min-height:44px;font-size:13px}
+  .crop-note,.crop-status{font-size:12px}
+  .crop-actions{position:sticky;bottom:calc(-1 * max(12px,env(safe-area-inset-bottom)));background:var(--workspace);padding:12px 0 max(12px,env(safe-area-inset-bottom));margin-top:16px;z-index:1}
+  .crop-actions button{flex:1;min-height:44px;padding:10px 8px;font-size:13px}
+}
+@media(max-width:760px) and (orientation:landscape), (hover:none) and (max-width:1000px) and (orientation:landscape){.crop-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}#crop-preview{width:min(100%,240px)}}
 .post-description{margin-top:36px;max-width:680px}
 .post-description h2{font:400 28px/1.1 "EB Garamond",Georgia,serif;margin:0 0 14px}
 .post-description p{font-size:14px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
 @media(max-width:1000px){.posts-layout{grid-template-columns:180px minmax(0,1fr);gap:28px}.posts-content{padding-left:28px}.post-cards{gap:18px}}
-@media(max-width:760px){.posts-layout{display:block;padding-top:24px}.posts-sidebar{position:static;padding-bottom:24px}.posts-index{margin-bottom:16px}.posts-nav{display:flex;flex-wrap:wrap;gap:12px 24px}.posts-nav a{font-size:23px}.posts-content{border-left:0;border-top:1px solid var(--ui-line);padding:24px 0 0}.posts-empty{padding:32px 0}#post-title{font-size:32px;margin-bottom:24px}}
-@media(max-width:480px){.post-cards{grid-template-columns:1fr;gap:20px}.post-description{margin-top:28px}}
+@media(max-width:760px), (hover:none) and (max-width:1000px){
+  .posts-layout{display:block;padding-top:20px}
+  .posts-sidebar{position:static;padding-bottom:20px}
+  .posts-index{margin-bottom:12px}
+  .posts-nav{display:none}
+  .mobile-post-picker{display:grid;gap:8px;font-size:12px;color:var(--ui-muted)}
+  .mobile-post-picker select{width:100%;min-width:0;min-height:48px;padding:10px 30px 10px 12px;border:1px solid var(--ui-line);border-radius:5px;background:var(--workspace);color:var(--ui-ink);font:inherit;font-size:16px;text-overflow:ellipsis}
+  .posts-content{border-left:0;border-top:1px solid var(--ui-line);padding:24px 0 0}
+  .posts-empty{padding:32px 0}
+  #post-title{font-size:32px}
+  .post-heading{margin-bottom:24px}
+  .post-card-actions{gap:10px;font-size:13px}
+  .post-card-actions button,.post-card-actions a,.post-cover-controls>a{display:inline-flex;justify-content:center;align-items:center;min-width:60px;min-height:44px;padding:8px 12px;border:1px solid var(--ui-line);border-radius:5px}
+  .post-cover-controls{gap:10px;font-size:12px}
+  .post-cover-controls select{width:100%;min-height:44px;padding:8px;font-size:16px}
+}
+@media(max-width:640px){.post-cards{grid-template-columns:1fr;gap:24px}.post-description{margin-top:28px}}
 @media print{.posts-sidebar{display:none}.posts-layout{display:block}.posts-content{border:0;padding:0}.post-cards{grid-template-columns:1fr}.post-card{break-inside:avoid}}

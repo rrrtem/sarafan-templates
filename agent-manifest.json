@@ -15,11 +15,163 @@
   },
   "templates": [
     {
+      "id": "recommendations",
+      "title": "Рекомендации от человека",
+      "category": "journal",
+      "kind": "template",
+      "href": "index.html#recommendations",
+      "canvas": {
+        "width": 1080,
+        "height": 1350
+      },
+      "source": {
+        "path": "index.html",
+        "selector": "#template-recommendations",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css",
+        "recommendations.css"
+      ],
+      "documentation": "docs/recommendations-template.md",
+      "labels": [
+        "Места · Из сохраненок Вари",
+        "Бассейны · Куда ходит Варя",
+        "Сувениры · Из вишлиста Вари"
+      ]
+    },
+    {
+      "id": "reels-cover",
+      "title": "Обложка рилса",
+      "category": "journal",
+      "kind": "template",
+      "href": "index.html#reels-cover",
+      "canvas": {
+        "width": 1080,
+        "height": 1920
+      },
+      "source": {
+        "path": "index.html",
+        "selector": "#template-reels-cover",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css",
+        "vertical.css"
+      ],
+      "documentation": "docs/vertical-templates.md",
+      "labels": [
+        "21-й округ Парижа"
+      ]
+    },
+    {
+      "id": "bureau-live",
+      "title": "Бюро · Эфир на тему",
+      "category": "bureau",
+      "kind": "template",
+      "href": "index.html#bureau-live",
+      "canvas": {
+        "width": 1080,
+        "height": 1920
+      },
+      "source": {
+        "path": "index.html",
+        "selector": "#template-bureau-live",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css",
+        "vertical.css"
+      ],
+      "documentation": "docs/vertical-templates.md",
+      "labels": [
+        "Прямой эфир · Тёмный",
+        "Прямой эфир · Светлый"
+      ]
+    },
+    {
+      "id": "bureau-guide",
+      "title": "Бюро · Полезная карусель",
+      "category": "bureau",
+      "kind": "template",
+      "href": "index.html#bureau-guide",
+      "canvas": {
+        "width": 1080,
+        "height": 1350
+      },
+      "source": {
+        "path": "index.html",
+        "selector": "#template-bureau-guide",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css",
+        "bureau.css"
+      ],
+      "documentation": "docs/bureau-template.md",
+      "labels": [
+        "Обложка · Кремовые овалы",
+        "Обложка · Цветные контуры",
+        "Что изменилось",
+        "Кого касается",
+        "Что делать",
+        "Документы и сроки",
+        "Важный нюанс",
+        "Итог и сохранение"
+      ]
+    },
+    {
+      "id": "ads-retreat",
+      "title": "Рекламная карусель",
+      "category": "ads",
+      "kind": "template",
+      "href": "index.html#ads-retreat",
+      "canvas": {
+        "width": 1080,
+        "height": 1350
+      },
+      "source": {
+        "path": "index.html",
+        "selector": "#template-ads-retreat",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css",
+        "ads.css"
+      ],
+      "documentation": "docs/ads-template.md",
+      "labels": [
+        "Обложка · Marrakech Girls Retreat",
+        "Йога в пустыне Агафай",
+        "Хаммам и массаж",
+        "Сад Мажорель и музей Yves Saint Laurent",
+        "Верблюды и квадроциклы",
+        "Медина и La Terrasse des Épices",
+        "Ужины и lounge",
+        "Бранч у бассейна",
+        "Стоимость и запись"
+      ]
+    },
+    {
       "id": "club-event",
       "title": "Афиша мероприятия клуба",
       "category": "club",
       "kind": "template",
       "href": "index.html#club-event",
+      "canvas": {
+        "width": 1080,
+        "height": 1350
+      },
       "source": {
         "path": "index.html",
         "selector": "#template-club-event",
@@ -47,6 +199,10 @@
       "category": "journal",
       "kind": "template",
       "href": "index.html#proust",
+      "canvas": {
+        "width": 1080,
+        "height": 1350
+      },
       "source": {
         "path": "index.html",
         "selector": "#template-proust",
@@ -73,6 +229,10 @@
       "category": "journal",
       "kind": "template",
       "href": "index.html#places",
+      "canvas": {
+        "width": 1080,
+        "height": 1350
+      },
       "source": {
         "path": "index.html",
         "selector": "#template-places",
@@ -105,6 +265,10 @@
       "category": "journal",
       "kind": "template",
       "href": "index.html#event",
+      "canvas": {
+        "width": 1080,
+        "height": 1350
+      },
       "source": {
         "path": "index.html",
         "selector": "#template-event",
@@ -130,6 +294,10 @@
       "category": "bureau",
       "kind": "template",
       "href": "index.html#expert",
+      "canvas": {
+        "width": 1080,
+        "height": 1350
+      },
       "source": {
         "path": "index.html",
         "selector": "#template-expert",
@@ -156,6 +324,10 @@
       "category": "club",
       "kind": "reference",
       "href": "index.html#club-salon",
+      "canvas": {
+        "width": 1080,
+        "height": 1350
+      },
       "source": {
         "path": "index.html",
         "selector": "#reference-club-salon",
@@ -180,6 +352,10 @@
       "category": "general",
       "kind": "reference",
       "href": "index.html#intro",
+      "canvas": {
+        "width": 1080,
+        "height": 1350
+      },
       "source": {
         "path": "index.html",
         "selector": "#reference-intro",
@@ -208,6 +384,10 @@
       "category": "general",
       "kind": "reference",
       "href": "index.html#transition",
+      "canvas": {
+        "width": 1080,
+        "height": 1350
+      },
       "source": {
         "path": "index.html",
         "selector": "#reference-transition",
@@ -232,9 +412,100 @@
   ],
   "posts": [
     {
+      "id": "french-superlevel",
+      "title": "Возможно ли выучить французский до суперуровня?",
+      "description": "Возможно ли выучить французский до суперуровня?\n\nДа, если превратить расплывчатую мечту в понятные задачи: понимать сложный текст, защищать свою позицию и выражать оттенки мысли. Уровни C1 и C2 помогают описать эти умения.\n\nВ карусели — ориентиры и пример практики: прочитать, пересказать, получить обратную связь и попробовать ещё раз. Выберите ситуацию, в которой хотите чувствовать себя свободнее.\n\nСохраните пост для следующего занятия. А что сейчас сложнее всего: говорить, понимать на слух или писать?\n\nИсточники: France Éducation international, дескрипторы C1/C2 и описание DALF. Проверено 28.10.2026.\n\nИсточники:\nFrance Éducation international · дескрипторы C1\nhttps://www.france-education-international.fr/document/cecrldescripteursc1\n\nFrance Éducation international · дескрипторы C2\nhttps://www.france-education-international.fr/document/cecrldescripteursc2\n\nFrance Éducation international · описание DALF и уровня C2\nhttps://www.france-education-international.fr/document/manuel-rgc",
+      "source": "https://www.france-education-international.fr/document/cecrldescripteursc1",
+      "cards": [
+        {
+          "type": "html",
+          "src": "posts/french-superlevel/01.html",
+          "alt": "Французский до суперуровня: это возможно?"
+        },
+        {
+          "type": "html",
+          "src": "posts/french-superlevel/02.html",
+          "alt": "Что значит суперуровень"
+        },
+        {
+          "type": "html",
+          "src": "posts/french-superlevel/03.html",
+          "alt": "Определите свою задачу"
+        },
+        {
+          "type": "html",
+          "src": "posts/french-superlevel/04.html",
+          "alt": "Одна тема — три действия"
+        },
+        {
+          "type": "html",
+          "src": "posts/french-superlevel/05.html",
+          "alt": "Как замечать свой прогресс"
+        },
+        {
+          "type": "html",
+          "src": "posts/french-superlevel/06.html",
+          "alt": "C2 — точность и гибкость"
+        },
+        {
+          "type": "html",
+          "src": "posts/french-superlevel/07.html",
+          "alt": "Выберите следующий шаг"
+        }
+      ]
+    },
+    {
+      "id": "retirement-france",
+      "title": "Пенсия во Франции: с чего начать?",
+      "description": "Пенсия во Франции: с чего начать?\n\nСначала — разобраться в своих пенсионных правах и оценить будущий бюджет. Затем — изучать, нужны ли вам дополнительные накопления и какие условия у выбранного инструмента.\n\nВ карусели собрали последовательность действий и объяснили, что важно знать о PER.\n\nПо материалу Сарафана «Пенсия во Франции» Марины Поповой; сервисы и общие условия проверены по Info Retraite и Service-Public 28.10.2026.\n\nСохраните пост, чтобы вернуться к проверке своей карьеры и расчёту пенсии.\n\nИсточники:\nСарафан · Пенсия во Франции, материал Марины Поповой\nhttps://sarafan-buro.com/epargne_en_france\n\nInfo Retraite · Préparez votre retraite\nhttps://www.info-retraite.fr/portail-info/sites/PortailInformationnel/home/preparez-votre-retraite-et-envisagez-toutes-vos-possibilites.html\n\nInfo Retraite · Mon estimation retraite\nhttps://www.info-retraite.fr/portail-info/sites/PortailInformationnel/home/mon-estimation-retraite.html\n\nService-Public · PER individuel\nhttps://www.service-public.gouv.fr/particuliers/vosdroits/F36526/0",
+      "source": "https://sarafan-buro.com/epargne_en_france",
+      "cards": [
+        {
+          "type": "html",
+          "src": "posts/retirement-france/01.html",
+          "alt": "Пенсия во Франции: с чего начать?"
+        },
+        {
+          "type": "html",
+          "src": "posts/retirement-france/02.html",
+          "alt": "Пенсия и накопления"
+        },
+        {
+          "type": "html",
+          "src": "posts/retirement-france/03.html",
+          "alt": "Три вопроса о будущем"
+        },
+        {
+          "type": "html",
+          "src": "posts/retirement-france/04.html",
+          "alt": "Начните с учёта карьеры"
+        },
+        {
+          "type": "html",
+          "src": "posts/retirement-france/05.html",
+          "alt": "Посчитайте несколько сценариев"
+        },
+        {
+          "type": "html",
+          "src": "posts/retirement-france/06.html",
+          "alt": "PER: накопления к пенсии"
+        },
+        {
+          "type": "html",
+          "src": "posts/retirement-france/07.html",
+          "alt": "План — доходы и расходы"
+        },
+        {
+          "type": "html",
+          "src": "posts/retirement-france/08.html",
+          "alt": "Что можно сделать сейчас"
+        }
+      ]
+    },
+    {
       "id": "salon-november-09-15",
       "title": "Сарафан Салон · 9–15 ноября",
-      "description": "Сарафан Салон · 9–15 ноября\n\nНа этой неделе встречаемся за кофе, говорим о театре и дизайне, поём, вышиваем, играем и пробуем новое.\n\n10/11 · вторник, 10:00–12:00 — Открытый кофе-нетворкинг · Вход свободный\n10/11 · вторник, 19:30 — Драматург и власть · €10\n11/11 · среда, весь день — Дизайн-приёмная и кастом-станция Chichis\n12/11 · четверг, 10:00–12:00 — Искусство сервировки · €30\n12/11 · четверг, 19:30–20:00 — Квартирник Димы Макарова · €20\n13/11 · пятница, 10:00–12:00 — Искусство радоваться · €30\n14/11 · суббота, 15:00–18:00 — Вышивка с кутюрье Dior · €50\n14/11 · суббота, 19:00 — Винное казино · €20\n15/11 · воскресенье, 14:00–16:30 — Керамическая мастерская · €70\n15/11 · воскресенье, 17:00 — Книжный своп · Вход свободный\n\n11 ноября — два события в одном от дизайн-дуэта Chichis: Артёма Зайцева и Насти Самохиной.\n\nПриносите свои дизайн-вопросы о вашем бизнесе, блоге или проекте: посоветуем, что к чему, а может, придумаем концептуальные решения прямо на месте. Параллельно будем делать кастом-патчи на вашу одежду с нашими иллюстрациями.\n\n66 rue Notre-Dame de Nazareth, 75003 Paris\nПрограмма и запись: https://sarafan-buro.com/sarafansalon",
+      "description": "Сарафан Салон · 9–15 ноября\n\nНа этой неделе встречаемся за кофе, говорим о театре и дизайне, поём, вышиваем, играем и пробуем новое.\n\n10/11 · вторник, 10:00–12:00 — Открытый кофе-нетворкинг · Вход свободный\n10/11 · вторник, 19:30 — Драматург и власть · €10\n11/11 · среда, 17:00–21:00 — Дизайн-приёмная и кастом-станция CHICHIS\n12/11 · четверг, 10:00–12:00 — Искусство сервировки · €30\n12/11 · четверг, 19:30–20:00 — Квартирник Димы Макарова · €20\n13/11 · пятница, 10:00–12:00 — Искусство радоваться · €30\n14/11 · суббота, 15:00–18:00 — Вышивка с кутюрье Dior · €50\n14/11 · суббота, 19:00 — Винное казино · €20\n15/11 · воскресенье, 14:00–16:30 — Керамическая мастерская · €70\n15/11 · воскресенье, 17:00 — Книжный своп · Вход свободный\n\n11 ноября — два события в одном от дизайн-дуэта Chichis: Артёма Зайцева и Насти Самохиной.\n\nПриносите свои дизайн-вопросы о вашем бизнесе, блоге или проекте: посоветуем, что к чему, а может, придумаем концептуальные решения прямо на месте. Параллельно будем делать кастом-патчи на вашу одежду с нашими иллюстрациями. А после — танцы.\n\n66 rue Notre-Dame de Nazareth, 75003 Paris\nПрограмма и запись: https://sarafan-buro.com/sarafansalon",
       "source": "https://sarafan-buro.com/sarafansalon",
       "cards": [
         {
@@ -408,7 +679,7 @@
             "image": "posts/salon-november-09-15/images/08.jpeg",
             "overlay": "posts/salon-november-09-15/layers/08.png",
             "background": "#FBEED2",
-            "matte": "#f7f4e9",
+            "matte": "#ffffff",
             "slot": {
               "x": 34,
               "y": 260,
@@ -531,20 +802,158 @@
     {
       "path": "AGENTS.md",
       "mediaType": "text/markdown",
-      "bytes": 3719,
-      "sha256": "bbf348fe5054cf54e2c54116eed73552c14404d9e7bbdbeb1aacbb0d05b7b6ff"
+      "bytes": 5735,
+      "sha256": "ea7d6e71201ae7d4ddb38b539f55e5de48f608b8aaf18fae9401496ef9621090"
     },
     {
       "path": "README.md",
       "mediaType": "text/markdown",
-      "bytes": 17129,
-      "sha256": "e8328db54e28a8683e285d7c02dce9aa6f4fa74252675e7756da08d823e51fa7"
+      "bytes": 21916,
+      "sha256": "ac31fe460381918decacd7008cee64668169124cb26643f8b6367c03778f3a34"
+    },
+    {
+      "path": "ads.css",
+      "mediaType": "text/css",
+      "bytes": 4114,
+      "sha256": "9351035af1b2dce71fef57a384a32b0f7d0c81332e0c40af71a3f49e3d6555ae"
     },
     {
       "path": "agents.html",
       "mediaType": "text/html",
-      "bytes": 10982,
-      "sha256": "f30d1d020cb425d1c71adbfe9a39939b35cfa4992e1d345b371086b98581d10b"
+      "bytes": 12793,
+      "sha256": "466abf8d02567d7e443cd40f34653a1000d06620cb74c7826275cc08938c5f5d"
+    },
+    {
+      "path": "assets/ads-retreat-01.png",
+      "mediaType": "image/png",
+      "bytes": 2167839,
+      "sha256": "1cab48c9ae8512351c042fef34b3c87890ded5c713f69a84a580859e84dfa9b8"
+    },
+    {
+      "path": "assets/ads-retreat-02.png",
+      "mediaType": "image/png",
+      "bytes": 1108421,
+      "sha256": "ee6f8891b8541cccabd514a8cc66586b0ae3ef3efa740252a5ad24b0a9133a62"
+    },
+    {
+      "path": "assets/ads-retreat-03.png",
+      "mediaType": "image/png",
+      "bytes": 248588,
+      "sha256": "f6a1d5358194505ae1509fe7f47923790a13704c6bff728618fc3c585f6d3d37"
+    },
+    {
+      "path": "assets/ads-retreat-04.png",
+      "mediaType": "image/png",
+      "bytes": 3970561,
+      "sha256": "0d4fc7b6119a32fd780ab5b98f835576993ba96702947c0425b4c5c28f0857e9"
+    },
+    {
+      "path": "assets/ads-retreat-05.png",
+      "mediaType": "image/png",
+      "bytes": 5691012,
+      "sha256": "bce4e296abf823742cb97e0782f5fb46d2264cffa1066b126a3a9baa8f6a523d"
+    },
+    {
+      "path": "assets/ads-retreat-06.png",
+      "mediaType": "image/png",
+      "bytes": 3961913,
+      "sha256": "11c685030718567d2c4899d02d7f12d750291fde244cc4975d81b93aa8c7f4df"
+    },
+    {
+      "path": "assets/ads-retreat-07.png",
+      "mediaType": "image/png",
+      "bytes": 3106320,
+      "sha256": "746ff81ab64556f1d97d23d09c9ddc43d18810a0e16408c24edab0894a259e11"
+    },
+    {
+      "path": "assets/ads-retreat-08.png",
+      "mediaType": "image/png",
+      "bytes": 344343,
+      "sha256": "6bd8d1436c01a7717c1146e29ecce3ac34dd0d7bee699ff24b14c63e7b1d8050"
+    },
+    {
+      "path": "assets/ads-retreat-09.png",
+      "mediaType": "image/png",
+      "bytes": 152896,
+      "sha256": "8d77fbd7e6b79b8a8e01057c6ec93d7da024b257eaac6ebd14d8a5e2ed040eec"
+    },
+    {
+      "path": "assets/ads-retreat-brand.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 37194,
+      "sha256": "58a128f20a875ba891b12ec0664712680fe5bedb72c3c806f8f2cfc0542cfa4b"
+    },
+    {
+      "path": "assets/bureau-cover-1-brand.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 47172,
+      "sha256": "125c7211e5711d3445cb1775a0ebfa4d0469af83af9d4dfd3ebb9b7aa9f12a23"
+    },
+    {
+      "path": "assets/bureau-cover-1-ovals.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 491,
+      "sha256": "eeaebb433426b8b5689783f89b04fff6787f8850857a0c8d72b8c5dc9e5f94f6"
+    },
+    {
+      "path": "assets/bureau-cover-1-rule.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2105,
+      "sha256": "7f60606ea687d4baadfd9c98bcc792c6577c69a387ab8795044d4215a13e6084"
+    },
+    {
+      "path": "assets/bureau-cover-2-brand.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 47106,
+      "sha256": "bb4d62c4b08150ed73d54a0c972e998f93cd659abb66b1c5211e98d138811240"
+    },
+    {
+      "path": "assets/bureau-cover-2-ovals.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1800,
+      "sha256": "824c6a92cc71edb5aa54f1b2a4f48b3440c62dec1b6d7c61eac2a592f491b08a"
+    },
+    {
+      "path": "assets/bureau-cover-2-rule.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2105,
+      "sha256": "7f60606ea687d4baadfd9c98bcc792c6577c69a387ab8795044d4215a13e6084"
+    },
+    {
+      "path": "assets/bureau-live-dark-mark.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "9ffc51344fdb0641dd0dac44e266267e832bf5fafe9c32a3c08bfe3dc8b08de0"
+    },
+    {
+      "path": "assets/bureau-live-dark-ribbon.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 320,
+      "sha256": "af62f18ee1dfe7a1308bc18031c6ffb6b78789067412f5441b4aa5057cea55ec"
+    },
+    {
+      "path": "assets/bureau-live-light-mark.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "9ffc51344fdb0641dd0dac44e266267e832bf5fafe9c32a3c08bfe3dc8b08de0"
+    },
+    {
+      "path": "assets/bureau-live-light-portrait.png",
+      "mediaType": "image/png",
+      "bytes": 48523,
+      "sha256": "78063fb575c3daea8eee5b0c8b31bc1644f5e2d9d7dcc7925ad5811deae7e493"
+    },
+    {
+      "path": "assets/bureau-live-light-ribbon.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 320,
+      "sha256": "e7f7c224d6b75f9093c94f79ca6470fe1fede706325801da529db4ac81b5728d"
+    },
+    {
+      "path": "assets/bureau-live-portrait.png",
+      "mediaType": "image/png",
+      "bytes": 48523,
+      "sha256": "78063fb575c3daea8eee5b0c8b31bc1644f5e2d9d7dcc7925ad5811deae7e493"
     },
     {
       "path": "assets/club-5535-ellipse30.svg",
@@ -597,8 +1006,8 @@
     {
       "path": "assets/club-5535-group93.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 139943,
-      "sha256": "99ed81c8664133bf6a23b1d521615ccce9501395439bddde806c4fe7b27a036f"
+      "bytes": 133042,
+      "sha256": "24ab98e9f600874be3acd55c9bf82ecdc9d0503bcd1e2fb9a8868664cde02bcb"
     },
     {
       "path": "assets/club-5535-screenshot20261027at1436031.png",
@@ -627,14 +1036,14 @@
     {
       "path": "assets/club-5883-group93.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 139730,
-      "sha256": "317e150b403313cc506868ea1b852803f213a37c92b146c6d09dbe64792598f1"
+      "bytes": 133042,
+      "sha256": "24ab98e9f600874be3acd55c9bf82ecdc9d0503bcd1e2fb9a8868664cde02bcb"
     },
     {
       "path": "assets/club-5883-rectangle71.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 423,
-      "sha256": "55d4449c28cd1f513a38b70bd89610ef54c1e4cf364b50217393288e5dbbf8f6"
+      "bytes": 512,
+      "sha256": "01d76f6d0b2b28c5c309a6ce0a16c99ce146a1c95f90ceb828e4abe69689c12a"
     },
     {
       "path": "assets/club-6218-ellipse17.png",
@@ -645,14 +1054,14 @@
     {
       "path": "assets/club-6218-group93.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 139747,
-      "sha256": "ee1b42f052d47e2799e7a8dcad43ea6e85a5abd69bfedda3070bf632c340d534"
+      "bytes": 133042,
+      "sha256": "24ab98e9f600874be3acd55c9bf82ecdc9d0503bcd1e2fb9a8868664cde02bcb"
     },
     {
       "path": "assets/club-6218-rectangle71.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 423,
-      "sha256": "55d4449c28cd1f513a38b70bd89610ef54c1e4cf364b50217393288e5dbbf8f6"
+      "bytes": 512,
+      "sha256": "01d76f6d0b2b28c5c309a6ce0a16c99ce146a1c95f90ceb828e4abe69689c12a"
     },
     {
       "path": "assets/club-6554-ellipse17.png",
@@ -663,14 +1072,14 @@
     {
       "path": "assets/club-6554-group93.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 139729,
-      "sha256": "563c1039fc8f85807dca6513b90028fa53ca1b03f273c945cf8b8519eac338dc"
+      "bytes": 133042,
+      "sha256": "24ab98e9f600874be3acd55c9bf82ecdc9d0503bcd1e2fb9a8868664cde02bcb"
     },
     {
       "path": "assets/club-6554-rectangle71.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 423,
-      "sha256": "55d4449c28cd1f513a38b70bd89610ef54c1e4cf364b50217393288e5dbbf8f6"
+      "bytes": 512,
+      "sha256": "01d76f6d0b2b28c5c309a6ce0a16c99ce146a1c95f90ceb828e4abe69689c12a"
     },
     {
       "path": "assets/club-6889-ellipse17.png",
@@ -681,14 +1090,14 @@
     {
       "path": "assets/club-6889-group93.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 139729,
-      "sha256": "563c1039fc8f85807dca6513b90028fa53ca1b03f273c945cf8b8519eac338dc"
+      "bytes": 133042,
+      "sha256": "24ab98e9f600874be3acd55c9bf82ecdc9d0503bcd1e2fb9a8868664cde02bcb"
     },
     {
       "path": "assets/club-6889-rectangle71.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 423,
-      "sha256": "55d4449c28cd1f513a38b70bd89610ef54c1e4cf364b50217393288e5dbbf8f6"
+      "bytes": 512,
+      "sha256": "01d76f6d0b2b28c5c309a6ce0a16c99ce146a1c95f90ceb828e4abe69689c12a"
     },
     {
       "path": "assets/club-7225-ellipse17.png",
@@ -699,14 +1108,14 @@
     {
       "path": "assets/club-7225-group93.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 139785,
-      "sha256": "4fb42d62107467fc1310d0d1770fe604e41ac9dbd64c218ac36872e1402653d7"
+      "bytes": 133042,
+      "sha256": "24ab98e9f600874be3acd55c9bf82ecdc9d0503bcd1e2fb9a8868664cde02bcb"
     },
     {
       "path": "assets/club-7225-rectangle71.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 423,
-      "sha256": "3ff9d8f92dcff492710f5a966939f2798732d4ce7227dfbfa349b0fe27d0a177"
+      "bytes": 512,
+      "sha256": "9d3cc3d8e33cbf350072871defaf6ce31ec03d09f7b8f56a40c40d6acf3f038f"
     },
     {
       "path": "assets/club-7560-ellipse17.png",
@@ -717,14 +1126,14 @@
     {
       "path": "assets/club-7560-group93.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 139785,
-      "sha256": "4fb42d62107467fc1310d0d1770fe604e41ac9dbd64c218ac36872e1402653d7"
+      "bytes": 133042,
+      "sha256": "24ab98e9f600874be3acd55c9bf82ecdc9d0503bcd1e2fb9a8868664cde02bcb"
     },
     {
       "path": "assets/club-7560-rectangle71.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 423,
-      "sha256": "55d4449c28cd1f513a38b70bd89610ef54c1e4cf364b50217393288e5dbbf8f6"
+      "bytes": 512,
+      "sha256": "01d76f6d0b2b28c5c309a6ce0a16c99ce146a1c95f90ceb828e4abe69689c12a"
     },
     {
       "path": "assets/cofo-cinema1909-regular.otf",
@@ -733,10 +1142,22 @@
       "sha256": "f0071d058ddc230c3bdee948a3dbd54a4737a5c9f27df9b167aee3144d254154"
     },
     {
+      "path": "assets/eb-garamond-OFL.txt",
+      "mediaType": "text/plain",
+      "bytes": 4398,
+      "sha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7"
+    },
+    {
       "path": "assets/eb-garamond-bold.ttf",
       "mediaType": "font/ttf",
       "bytes": 392040,
       "sha256": "40b4eb8a3c92f651728bc285ac3acacec1005ef5436cf33a337ab5ffe86daf29"
+    },
+    {
+      "path": "assets/eb-garamond-italic.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 754468,
+      "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e"
     },
     {
       "path": "assets/eb-garamond-medium-italic.ttf",
@@ -749,6 +1170,78 @@
       "mediaType": "font/ttf",
       "bytes": 392064,
       "sha256": "45fad23db0ff6cc8f2ce5a6f9802d499e8ab737c039a7944a6f2f617d224af14"
+    },
+    {
+      "path": "assets/eb-garamond-otf/EBGaramond-Bold.otf",
+      "mediaType": "font/otf",
+      "bytes": 422148,
+      "sha256": "2832055876314e4932c46809e919a45fd726a53faa6bfae53be9628723bde90f"
+    },
+    {
+      "path": "assets/eb-garamond-otf/EBGaramond-BoldItalic.otf",
+      "mediaType": "font/otf",
+      "bytes": 382696,
+      "sha256": "c010c63d6924e0dec2fedc1b0cb57e86ae9047bb0e9651ea603b0967d6e3072e"
+    },
+    {
+      "path": "assets/eb-garamond-otf/EBGaramond-ExtraBold.otf",
+      "mediaType": "font/otf",
+      "bytes": 361628,
+      "sha256": "7a24930119c0f4b567300118b961ce0c5f1208be5ef6a73c16bd7971ae941f5e"
+    },
+    {
+      "path": "assets/eb-garamond-otf/EBGaramond-ExtraBoldItalic.otf",
+      "mediaType": "font/otf",
+      "bytes": 323720,
+      "sha256": "f6a36345d38b25436cc81ab1da3bacd8c12a1b8ab480dbc2a7dec9d95195a4c8"
+    },
+    {
+      "path": "assets/eb-garamond-otf/EBGaramond-Italic.otf",
+      "mediaType": "font/otf",
+      "bytes": 304844,
+      "sha256": "296feee09f6fa157f913cf3d75460b5e282b3c43dff4ddffbcc5c1a924f4fd14"
+    },
+    {
+      "path": "assets/eb-garamond-otf/EBGaramond-Medium.otf",
+      "mediaType": "font/otf",
+      "bytes": 425756,
+      "sha256": "e0bd0a740f5d3d5eca3205ca0d927eebb0cb8f8e8a7d35fa5a24b31cf2e2063d"
+    },
+    {
+      "path": "assets/eb-garamond-otf/EBGaramond-MediumItalic.otf",
+      "mediaType": "font/otf",
+      "bytes": 384716,
+      "sha256": "ed5d8378381970637054fe905d6c5d50d13155693dd1fc50ab926372a4e607ca"
+    },
+    {
+      "path": "assets/eb-garamond-otf/EBGaramond-Regular.otf",
+      "mediaType": "font/otf",
+      "bytes": 316832,
+      "sha256": "8d618a6bc6e1f4444e1990c39770a62ccbc29394e57afcc58acd530c16489275"
+    },
+    {
+      "path": "assets/eb-garamond-otf/EBGaramond-SemiBold.otf",
+      "mediaType": "font/otf",
+      "bytes": 422480,
+      "sha256": "f30a456cfca3351e1f2ef20ec356741d54752c64a1066db34e78afa368d92412"
+    },
+    {
+      "path": "assets/eb-garamond-otf/EBGaramond-SemiBoldItalic.otf",
+      "mediaType": "font/otf",
+      "bytes": 385388,
+      "sha256": "764445965e8b7b3ced015339fc6925caf934a6aace6a26852412a9ff4f2459fb"
+    },
+    {
+      "path": "assets/eb-garamond-otf/OFL.txt",
+      "mediaType": "text/plain",
+      "bytes": 4454,
+      "sha256": "058611bd968817d532cedeab6acaa055e882d365a88523df00e7917ad7a0f704"
+    },
+    {
+      "path": "assets/eb-garamond-otf/source.json",
+      "mediaType": "application/json",
+      "bytes": 3204,
+      "sha256": "262fc60a4ecde2bab571f778e89b0d246521766154ef726bb71ac56aae89b79a"
     },
     {
       "path": "assets/eb-garamond-regular.ttf",
@@ -825,8 +1318,8 @@
     {
       "path": "assets/expert-about-logo.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 1522,
-      "sha256": "dd996d150916e465a3b16b370ca8012be26f223aaf924e6c918211b10dcd1fe5"
+      "bytes": 2444,
+      "sha256": "9ffc51344fdb0641dd0dac44e266267e832bf5fafe9c32a3c08bfe3dc8b08de0"
     },
     {
       "path": "assets/expert-about-portrait.png",
@@ -843,8 +1336,8 @@
     {
       "path": "assets/expert-contact-logo.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 1522,
-      "sha256": "597f06059699bef46ddc2dc889e739cac03877ffbda7ddeb3056dbbcebf26b57"
+      "bytes": 2444,
+      "sha256": "9d965c01a6d7b4b9323e3754b186e658f90e131464b5b6a9afbd42253b280137"
     },
     {
       "path": "assets/expert-contact-rule.svg",
@@ -897,8 +1390,8 @@
     {
       "path": "assets/expert-questions-logo.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 1522,
-      "sha256": "17df9e5c274447a04e4d6a29d15b4a1e4fbd652d1bbd098486b1ed4d4c5f19dd"
+      "bytes": 2444,
+      "sha256": "9ffc51344fdb0641dd0dac44e266267e832bf5fafe9c32a3c08bfe3dc8b08de0"
     },
     {
       "path": "assets/expert-questions-rule.svg",
@@ -915,8 +1408,8 @@
     {
       "path": "assets/expert-session-logo.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 1522,
-      "sha256": "dd996d150916e465a3b16b370ca8012be26f223aaf924e6c918211b10dcd1fe5"
+      "bytes": 2444,
+      "sha256": "9ffc51344fdb0641dd0dac44e266267e832bf5fafe9c32a3c08bfe3dc8b08de0"
     },
     {
       "path": "assets/expert-session-photo.png",
@@ -929,96 +1422,6 @@
       "mediaType": "image/svg+xml",
       "bytes": 2098,
       "sha256": "0e9d55ecb5912f6f98bfd90c75c7c6dcfc1a8cfa707815719d85e8979ee8f9d6"
-    },
-    {
-      "path": "assets/geist-bold.ttf",
-      "mediaType": "font/ttf",
-      "bytes": 72984,
-      "sha256": "1a9874b3be0fc168692a3d2327bccb4d28835653d3b91537a755296a467a83e3"
-    },
-    {
-      "path": "assets/geist-regular.ttf",
-      "mediaType": "font/ttf",
-      "bytes": 72916,
-      "sha256": "ccce59465ae5c61930ada5453834f60500fbd95084d85db63e0e65fad0125455"
-    },
-    {
-      "path": "assets/geist-semibold.ttf",
-      "mediaType": "font/ttf",
-      "bytes": 73048,
-      "sha256": "7171f481b121803d007f5c6c76cd9988c0d41cce4202db9a18dff9945505d36d"
-    },
-    {
-      "path": "assets/inter-regular.ttf",
-      "mediaType": "font/ttf",
-      "bytes": 324820,
-      "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba"
-    },
-    {
-      "path": "assets/intro-1-group58.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 5267,
-      "sha256": "c4b08217e000f23cbdb310fb40e1059cbc0212cd8772bb50f515228a9f4ed414"
-    },
-    {
-      "path": "assets/intro-1-group59.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 6951,
-      "sha256": "500d29051b6e3873724297e2efa2b91f366e601be7553fefed7375d1be071188"
-    },
-    {
-      "path": "assets/intro-1-group60.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 8646,
-      "sha256": "132b33831797628e71fc4b3ea83e38effc51f3bc75efba99704ed1e247368d9d"
-    },
-    {
-      "path": "assets/intro-1-group61.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 10314,
-      "sha256": "d93c3bb171d9b7680469d06b8af52f8f960c6fd6165868066d83a2562ebcad2b"
-    },
-    {
-      "path": "assets/intro-1-group62.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 11956,
-      "sha256": "aa308dd39ab55a82aa726b81ed5733e08b0a3e30b5d2a361e2bc6d0188ffd67e"
-    },
-    {
-      "path": "assets/intro-1-group63.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 10295,
-      "sha256": "74c87179301807d55f8e9594ca136f14a65bc263a30d55d030792cc840b7063e"
-    },
-    {
-      "path": "assets/intro-1-group65.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 13684,
-      "sha256": "6e00df272d61990177de942b2d4d2ea3e312f9f91fdbc5fd78e8f54e97810edd"
-    },
-    {
-      "path": "assets/intro-1-group66.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 13644,
-      "sha256": "ac26793af92cf511406c1d02cacecf3a6ba0bff29889f55853606b074079d47c"
-    },
-    {
-      "path": "assets/intro-1-group67.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 8647,
-      "sha256": "c68542504b8be7a7f58a5809f1a8db9efbcf2d5692a2e2e61affa38fd667eb23"
-    },
-    {
-      "path": "assets/intro-1-group68.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 3587,
-      "sha256": "af32fa9211f9eb9318bcd638ec0f47da96d66d1f9b670690686cbc8a2b615ea7"
-    },
-    {
-      "path": "assets/intro-1-group69.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 12026,
-      "sha256": "92e5272cf48d21f51d756e2cb60051b97cb3c7924460ce80b7798c421bbeb600"
     },
     {
       "path": "assets/intro-1-image79.png",
@@ -1053,8 +1456,8 @@
     {
       "path": "assets/intro-3-group82.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 1522,
-      "sha256": "17df9e5c274447a04e4d6a29d15b4a1e4fbd652d1bbd098486b1ed4d4c5f19dd"
+      "bytes": 2444,
+      "sha256": "9ffc51344fdb0641dd0dac44e266267e832bf5fafe9c32a3c08bfe3dc8b08de0"
     },
     {
       "path": "assets/intro-3-vector.svg",
@@ -1131,8 +1534,8 @@
     {
       "path": "assets/intro-3826-logo.png",
       "mediaType": "image/png",
-      "bytes": 16057,
-      "sha256": "e44a155375d3d0bc34787d67f0a589066f8d4dc44afb8d7c999d102e628076bf"
+      "bytes": 20060,
+      "sha256": "7ea8c550f294e0c55c7ec905be03c1deb2f60ac054d79c7d3f0d188317e67b0c"
     },
     {
       "path": "assets/intro-4875-image74.svg",
@@ -1203,8 +1606,8 @@
     {
       "path": "assets/intro-4910-logo.png",
       "mediaType": "image/png",
-      "bytes": 13441,
-      "sha256": "ba69517809c5c8b8c907a3ec9f5520183038134d5fb9b9110c868b93944c53f9"
+      "bytes": 25443,
+      "sha256": "d09deffc7bc9dd968e32af5d18679c3f081c9aef2c2ac9ef3b6a0cfbfdc4e71b"
     },
     {
       "path": "assets/intro-7-ellipse17.png",
@@ -1223,72 +1626,6 @@
       "mediaType": "image/png",
       "bytes": 2240882,
       "sha256": "e3ad01d1706c597877896a737f7df76891b1e6a054a11588995f3bb9b0d7ec3f"
-    },
-    {
-      "path": "assets/intro-7-group58.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 5227,
-      "sha256": "a8e11fe6eabf2b9523208786daa3e2eef9fd0d693c0b10f1d1915e6147d9f772"
-    },
-    {
-      "path": "assets/intro-7-group59.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 6906,
-      "sha256": "1e58b92dedf0c969b140c446c97fe7211eccca74a2b20430d8d10c6aaac80839"
-    },
-    {
-      "path": "assets/intro-7-group60.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 8606,
-      "sha256": "59976ce66038cfe87e72a5e28f67df4b4117b0ec0c55a06ace5ce3482cca7f3d"
-    },
-    {
-      "path": "assets/intro-7-group61.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 10283,
-      "sha256": "a99b4b93342974e30ca8cef3496dc7a5560d6cc4e92d2f5e605f5a96a2a96725"
-    },
-    {
-      "path": "assets/intro-7-group62.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 12006,
-      "sha256": "14f8763676006ca27139bd63a56a567435a9fff8cc6257791d793e8cc46dfd69"
-    },
-    {
-      "path": "assets/intro-7-group63.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 10322,
-      "sha256": "4fe85dbafa0ec80e4b17593b94a2e18e04b6107553640b65fd0620d3523c11a9"
-    },
-    {
-      "path": "assets/intro-7-group65.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 13674,
-      "sha256": "f0dff81e612f080d0eef9e1a1be328e39aee01540c46fca56895bf0db673347b"
-    },
-    {
-      "path": "assets/intro-7-group66.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 13701,
-      "sha256": "cde77b850e0ab2752643da658baa4b455eebfed617d53ebc2f312305b61accf5"
-    },
-    {
-      "path": "assets/intro-7-group67.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 8604,
-      "sha256": "8ddb56db73e2a8279ec645bc9d5e886f766b636df3524fbc39b6a6ee4add1ab6"
-    },
-    {
-      "path": "assets/intro-7-group68.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 3553,
-      "sha256": "2bb5a689d21ef4abfb94ad43a73305c99c285e97abfe82de32edb068ad929a22"
-    },
-    {
-      "path": "assets/intro-7-group69.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 12007,
-      "sha256": "3c2bebc764aae0ea1705a2c77ecd435c6349112437769cad10c1bd77c4162c67"
     },
     {
       "path": "assets/places-cover-khachapuri.png",
@@ -1393,10 +1730,226 @@
       "sha256": "80e5011fce092d84a50c2b809887dd29a0b6d645cc74a379a79c7342f1b480e3"
     },
     {
+      "path": "assets/recommendations-ribbon.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 104211,
+      "sha256": "9fb1d3195e50ce3f45f509a6bca7a41f925ca953aa83919c8b936f57c516a737"
+    },
+    {
+      "path": "assets/recommendations-varvara.png",
+      "mediaType": "image/png",
+      "bytes": 372913,
+      "sha256": "7243d6663f202da9063885676c002ab990c578f48ba0ac8605c40dc8d707847b"
+    },
+    {
+      "path": "assets/reels-eb-garamond-OFL.txt",
+      "mediaType": "text/plain",
+      "bytes": 4398,
+      "sha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7"
+    },
+    {
+      "path": "assets/reels-eb-garamond-variable.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 851176,
+      "sha256": "ef9512f92f6d579e5dc75af59a5a4b1b8b47d2eda89e00b954d44520e5369027"
+    },
+    {
+      "path": "assets/reels-photo.png",
+      "mediaType": "image/png",
+      "bytes": 1210568,
+      "sha256": "556f55dda1586108f9d2853e2f3b3bcca1fc8d335a8690b5f81be6167c29a9a7"
+    },
+    {
+      "path": "assets/reels-title-ellipse.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 727,
+      "sha256": "e153d17814f8f16e919b863ec49204f42b72b043cab7de6102751c5230b0da7d"
+    },
+    {
+      "path": "assets/reels-underlay.png",
+      "mediaType": "image/png",
+      "bytes": 3023352,
+      "sha256": "2a51953c60c27f32612cf510c4a965b0494beb88d77a67f4b12e6a063b23c14a"
+    },
+    {
       "path": "assets/sarafan-ribbon.svg",
       "mediaType": "image/svg+xml",
       "bytes": 323,
       "sha256": "7a459135e4f99e70e6db2458320d58a073d55de4cd7da601eddd4a683fcdb4f7"
+    },
+    {
+      "path": "assets/symbol-bureau-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "f1bb9abf634a9c9f56cd81cf05c271545c8bcb73113ebb01bf76c62d99dbac34"
+    },
+    {
+      "path": "assets/symbol-bureau-brown.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "7cb84794ca992c59bd9e0a461b452c90079a2b377336feb127b756b48e9af75b"
+    },
+    {
+      "path": "assets/symbol-bureau-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "9d965c01a6d7b4b9323e3754b186e658f90e131464b5b6a9afbd42253b280137"
+    },
+    {
+      "path": "assets/symbol-bureau-figma.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "9ffc51344fdb0641dd0dac44e266267e832bf5fafe9c32a3c08bfe3dc8b08de0"
+    },
+    {
+      "path": "assets/symbol-bureau-olive.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "ec1ec6faf562bfa82287bf08ceee972e645b2bd9ab26af600a3ef5610d015f7e"
+    },
+    {
+      "path": "assets/symbol-bureau-orange.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "9ffc51344fdb0641dd0dac44e266267e832bf5fafe9c32a3c08bfe3dc8b08de0"
+    },
+    {
+      "path": "assets/symbol-bureau-pink.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "4914c362e165240054e48c6098cfb15f4f69565c0439878d1e9aa7eb0ca48cc5"
+    },
+    {
+      "path": "assets/symbol-horse-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "6f02112a6fccefb91ef0f1cbd57a8e8691c485263b59c9a2c7cd3bc35f690284"
+    },
+    {
+      "path": "assets/symbol-horse-brown.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "74859f8a279800f1316040751677680d27393b7d47155f2f146f03fbd8f85113"
+    },
+    {
+      "path": "assets/symbol-horse-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "e9f251897243487a77196d92b5d7b592517d175c8757ec4cd21670eb2f856dfa"
+    },
+    {
+      "path": "assets/symbol-horse-figma.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "24ab98e9f600874be3acd55c9bf82ecdc9d0503bcd1e2fb9a8868664cde02bcb"
+    },
+    {
+      "path": "assets/symbol-horse-olive.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "fc62685bbbb36ae0cdb8969d56c0acf5882cd59e86a5675bff935a78869f423c"
+    },
+    {
+      "path": "assets/symbol-horse-orange.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "24ab98e9f600874be3acd55c9bf82ecdc9d0503bcd1e2fb9a8868664cde02bcb"
+    },
+    {
+      "path": "assets/symbol-horse-pink.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "0675bd624090902691ed5ed5cb4887f68903d828dedd65db186cd53a5b640ae8"
+    },
+    {
+      "path": "assets/symbol-rooster-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "69033a0dd5b327600c83ce67136dc7dcea7fa46a31f770fa34548f53985d83bc"
+    },
+    {
+      "path": "assets/symbol-rooster-brown.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "e72fc48b01fd4e5ebf38c72af328b57b376a03e48603f1d76d2cb51e6d4107ff"
+    },
+    {
+      "path": "assets/symbol-rooster-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "6d4c0070fae0ad6b5f3e82be222b4d9c8d60ec94f701d64033f4cd38fad38532"
+    },
+    {
+      "path": "assets/symbol-rooster-figma.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "1a837727cd5f714c4fd97c619361fc1c3c2db01d516f80eb4ab94a4f7b89079b"
+    },
+    {
+      "path": "assets/symbol-rooster-olive.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "6a507d261ab17fc582101175443e1457e3fd66a144eebe72a0a140883e5813a0"
+    },
+    {
+      "path": "assets/symbol-rooster-orange.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "1a837727cd5f714c4fd97c619361fc1c3c2db01d516f80eb4ab94a4f7b89079b"
+    },
+    {
+      "path": "assets/symbol-rooster-pink.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "938a1d52eefa520a9cabd57eb675a2534f18b678763a2afd2f3a6740f8f62e67"
+    },
+    {
+      "path": "assets/symbol-sirin-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "b29f2f8c712021cb17c48b329f5748fba91cfa26ab891ff6806f3d17a1c9dff9"
+    },
+    {
+      "path": "assets/symbol-sirin-brown.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "df76ad71a7e47a9e48453dff2419263c463ce86793a070ac9f7f3916675bb3e7"
+    },
+    {
+      "path": "assets/symbol-sirin-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "70248794505f18cd88578bd8ad5658b37e0d1eed7480704ecf00b3353cb7115f"
+    },
+    {
+      "path": "assets/symbol-sirin-figma.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "fbfb8509102e0b9844eea4df55fc4628c7179a8390419eddaed44cb0a88a4ee6"
+    },
+    {
+      "path": "assets/symbol-sirin-olive.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "b20d1134559745e6aec05f9f04db893a9b0a7b8e8e3eff8058df06c22417fdf7"
+    },
+    {
+      "path": "assets/symbol-sirin-orange.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "fbfb8509102e0b9844eea4df55fc4628c7179a8390419eddaed44cb0a88a4ee6"
+    },
+    {
+      "path": "assets/symbol-sirin-pink.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "22c64ae775ebda0e7e303129506dcdd2f2c0910d8474822cee9c43cfff36a9e0"
+    },
+    {
+      "path": "assets/symbols.json",
+      "mediaType": "application/json",
+      "bytes": 4946,
+      "sha256": "d691c616da6adb188b1ce5d3d1856f5ea4c935085ba35fe4d84f8e9e035df5f7"
     },
     {
       "path": "assets/transition-6289-image202610042121411.png",
@@ -1441,202 +1994,94 @@
       "sha256": "76aa69568fcd57853e037ff3a58cd3be1f4d06f0a3e9dd6f529d85f4ccec4803"
     },
     {
-      "path": "assets/transition-6331-group58.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 5257,
-      "sha256": "e06e11557898de88593278b9fa43ae2b631e36dabc98ba89feed3b81bcf472fe"
-    },
-    {
-      "path": "assets/transition-6331-group59.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 6930,
-      "sha256": "9534ca15993e00f4ad6340402a05ad6ac6ee3cd8eadfbbb373bca6783c2ade55"
-    },
-    {
-      "path": "assets/transition-6331-group60.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 8597,
-      "sha256": "40bc028c11d10c65468bebbe03b285746391dd7a91aae81b959cd1dfccd4bcfb"
-    },
-    {
-      "path": "assets/transition-6331-group61.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 10306,
-      "sha256": "cff5173cd1499c0aeef02ea6a58dc6b8fd339ca4cb24a1ec31753b02b66012c0"
-    },
-    {
-      "path": "assets/transition-6331-group62.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 11994,
-      "sha256": "599770534c9d3a8a08d4f67e5e7923cced6c03ae8dd1895b6898e8a014a1f7d7"
-    },
-    {
-      "path": "assets/transition-6331-group63.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 10277,
-      "sha256": "6cda3a6e8f2856d66f49f163a2ac45e18b8425a91c06d8825bb558c1172d252b"
-    },
-    {
-      "path": "assets/transition-6331-group65.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 13557,
-      "sha256": "f7a5fa81c3e0df8357f9c57eee0581892e9c618bd5c0b4bac2d93f408c3aabe5"
-    },
-    {
-      "path": "assets/transition-6331-group66.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 13629,
-      "sha256": "91f33f0d877131e0a50eb23b2cc7a64573904e99fc18929d0a496b5c7edcdc40"
-    },
-    {
-      "path": "assets/transition-6331-group67.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 8597,
-      "sha256": "aafa0904165558f953ebe27dab674e5c34a7bb7770260805b6f8cc01874f59b2"
-    },
-    {
-      "path": "assets/transition-6331-group68.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 3571,
-      "sha256": "55f0f3d8f8aaff603d4f10a15e09eb92e88fa86108bc7026da73414e82b614f2"
-    },
-    {
-      "path": "assets/transition-6331-group69.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 11919,
-      "sha256": "ab9dddaa4f48671a7391ab46ec021303ac14d81ba8143123ea936c928e448d4d"
-    },
-    {
-      "path": "assets/transition-6591-group58.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 5257,
-      "sha256": "702a8493e61add190e6b06a2a223d264424a89aa276600f59613203d2287790c"
-    },
-    {
-      "path": "assets/transition-6591-group59.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 6930,
-      "sha256": "d30c278457124b5d41855613073e35ac7e829acc9e24fabaca8b3f165282327c"
-    },
-    {
-      "path": "assets/transition-6591-group60.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 8597,
-      "sha256": "40bc028c11d10c65468bebbe03b285746391dd7a91aae81b959cd1dfccd4bcfb"
-    },
-    {
-      "path": "assets/transition-6591-group61.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 10306,
-      "sha256": "c44f78d370d84063ccc27c248a9f2e128d5403721a15b73218c9593b6a6c9389"
-    },
-    {
-      "path": "assets/transition-6591-group62.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 11994,
-      "sha256": "84e54e94758bc0768a031465670cce32e745ca329e99dfdc5344c5f6a6971ffb"
-    },
-    {
-      "path": "assets/transition-6591-group63.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 10277,
-      "sha256": "6cda3a6e8f2856d66f49f163a2ac45e18b8425a91c06d8825bb558c1172d252b"
-    },
-    {
-      "path": "assets/transition-6591-group65.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 13557,
-      "sha256": "f7a5fa81c3e0df8357f9c57eee0581892e9c618bd5c0b4bac2d93f408c3aabe5"
-    },
-    {
-      "path": "assets/transition-6591-group66.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 13629,
-      "sha256": "91f33f0d877131e0a50eb23b2cc7a64573904e99fc18929d0a496b5c7edcdc40"
-    },
-    {
-      "path": "assets/transition-6591-group67.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 8597,
-      "sha256": "aafa0904165558f953ebe27dab674e5c34a7bb7770260805b6f8cc01874f59b2"
-    },
-    {
-      "path": "assets/transition-6591-group68.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 3560,
-      "sha256": "c3706d96c241107f8328500d7d2855984f40abd876f8f49cc5d70972175c730f"
-    },
-    {
-      "path": "assets/transition-6591-group69.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 11966,
-      "sha256": "3f09f555ad39099c55898e1ff9becd35e8acf8d1dbcac44d805050d0bf37aa05"
+      "path": "bureau.css",
+      "mediaType": "text/css",
+      "bytes": 2502,
+      "sha256": "3fd0d50034efa08915911227ca4368d9f3280fb26483b2b812380f22c5207b2d"
     },
     {
       "path": "cards.css",
       "mediaType": "text/css",
-      "bytes": 12537,
-      "sha256": "9f58251af020ea3dd8b1da416a9c06f5e6983a5389c107225cdb4b84689d6d7c"
+      "bytes": 12274,
+      "sha256": "7a6499a2d31c430b43cd09c230b63a9982183e87d0ee1384ec9099d81e99e575"
+    },
+    {
+      "path": "carousel-zip.js",
+      "mediaType": "text/javascript",
+      "bytes": 2348,
+      "sha256": "7a4f133170ce6ea2855ab7a3ff08e35d370b7002bf146a50b6e61a6d43041bf9"
     },
     {
       "path": "catalog.css",
       "mediaType": "text/css",
-      "bytes": 7773,
-      "sha256": "a0aaf3826a99ade62530461718c7b6a5eade0ddfc209103e8011b8d94fe25efa"
+      "bytes": 11416,
+      "sha256": "ced390d27eba5b5f17f45893913edb9a1e3b495a3c12f292575fe0c511777ce5"
     },
     {
       "path": "catalog.js",
       "mediaType": "text/javascript",
-      "bytes": 14341,
-      "sha256": "ed1406310108d47d561552d81bb4183e45dc30e0dc31f0b95a9384d8634aa4fa"
+      "bytes": 20773,
+      "sha256": "2a27a9df3402eaee9eccac299b6bd0304105ff830a35bbb5544c55fc7b29483b"
     },
     {
       "path": "club.css",
       "mediaType": "text/css",
-      "bytes": 4865,
-      "sha256": "1e952d51ef0a903c15ef631affccfbb1c893bf60f59225402f41e294e91cbaad"
+      "bytes": 4884,
+      "sha256": "4250ffa4d8135418a8a970e126c20f0be010aff9e73a67e3fb71c7ce268adab3"
     },
     {
       "path": "design-system-data.js",
       "mediaType": "text/javascript",
-      "bytes": 5303,
-      "sha256": "6345386d2f418e8f1b2250714a597f09a6ad1ab19458dc04d385105be1e16724"
+      "bytes": 10112,
+      "sha256": "f291cfa14a1d37ed60eca744f3dccee77068ffd5a9f483c299319180c6eaa748"
     },
     {
       "path": "design-system.css",
       "mediaType": "text/css",
-      "bytes": 6689,
-      "sha256": "696c379611646e5c9ad491b9f21eddd2b705f993985531f6c07aedf1f48d5bd8"
+      "bytes": 16046,
+      "sha256": "5fedbbe7a23efaa2cf4f7dbab624c59ade7cb36f5bddc3f9101e0ca9e3d172a5"
     },
     {
       "path": "design-system.html",
       "mediaType": "text/html",
-      "bytes": 7996,
-      "sha256": "68a3698feca5eefeac3e729381991dd3eff19d6f09412cd5b56867a949747b30"
+      "bytes": 11501,
+      "sha256": "e95863ce8a4578ae7981816b9e7b958c4ee6ad7f0f9fcb46ad8ea4693746bd5a"
     },
     {
       "path": "design-system.js",
       "mediaType": "text/javascript",
-      "bytes": 10739,
-      "sha256": "80d0c2a014b7f9e74423f27eff2f4a3f059db5f9bfbecc158bcc199cad13bac8"
+      "bytes": 13743,
+      "sha256": "081898ff4b1e84126d60ef8f089cf8ed3d155e1622ce4ec41eb6450197957e93"
+    },
+    {
+      "path": "docs/ads-template.md",
+      "mediaType": "text/markdown",
+      "bytes": 4529,
+      "sha256": "a3c2a1d91ae9aee93e0966c7c06b579844d3084d674ddc98bfcfa671eea4ee43"
     },
     {
       "path": "docs/agent-guide.md",
       "mediaType": "text/markdown",
-      "bytes": 16754,
-      "sha256": "81fff3d49dcaffd4173f5aff70ce51fcbc846dd5953a20d00f17e6c61d2d8dff"
+      "bytes": 20258,
+      "sha256": "e99c812d974371c9e162e8edf4a52b399a00fcd133b9674ef88ca59b9f6e1b9f"
+    },
+    {
+      "path": "docs/bureau-template.md",
+      "mediaType": "text/markdown",
+      "bytes": 7041,
+      "sha256": "d67f67db8c9f5d12f882ccfb1a85a352820f48fd98100ad9fca56ae2a992c051"
     },
     {
       "path": "docs/club-templates.md",
       "mediaType": "text/markdown",
-      "bytes": 5389,
-      "sha256": "10316a841c355077be714a89d132f240faacd564f010a615aeb2091b39a38e2b"
+      "bytes": 6090,
+      "sha256": "60b0909c0c552b8e9d8c02636801ec411e97ebb0330e6abd7e7ea0f0c202c2d0"
     },
     {
       "path": "docs/design-system.md",
       "mediaType": "text/markdown",
-      "bytes": 8648,
-      "sha256": "dd1cb8cb1586fdb226ac3f1e3f28ba203fffdc9e2cd0382c0f5a30a8a8a5dec4"
+      "bytes": 21368,
+      "sha256": "5d2e6e43080ce5666a3c3f932a3ef33ae426e15fb4149951e32b1ffc3d560637"
     },
     {
       "path": "docs/event-template.md",
@@ -1647,32 +2092,188 @@
     {
       "path": "docs/expert-template.md",
       "mediaType": "text/markdown",
-      "bytes": 3785,
-      "sha256": "28ad48ef483e795ac5940cff97a041b8c7b116e8dde9aa079912a97300c937ba"
+      "bytes": 4226,
+      "sha256": "69d5b68975ca3a758e53c0719beb211d8700ab18a1ae2c5c6977210cb1b971f7"
     },
     {
       "path": "docs/intro-reference.md",
       "mediaType": "text/markdown",
-      "bytes": 3932,
-      "sha256": "0fa59d0e6dded030d36e6ee3ef5d85a136fba8df80946ebceb993fcd6df35e6b"
+      "bytes": 3990,
+      "sha256": "b15c0563ef4b98fad77e56dfbdca9bde41e779fcc913686a1d9aca65aa0432b0"
     },
     {
       "path": "docs/new-posts.md",
       "mediaType": "text/markdown",
-      "bytes": 6335,
-      "sha256": "bc2b511016224c4108798fd906bca9593cbb45029e98610159c9375b7e0e8ce4"
+      "bytes": 9333,
+      "sha256": "fdc3754392517c946bcc0a1124a0149a027b520ca0136ba77d0d890cf2db902c"
+    },
+    {
+      "path": "docs/recommendations-template.md",
+      "mediaType": "text/markdown",
+      "bytes": 4970,
+      "sha256": "1ebe947dbd36981f8e72f3dc0bb5b60ea0f5e32b272c4b0351b909d61aa067c6"
     },
     {
       "path": "docs/transition-reference.md",
       "mediaType": "text/markdown",
-      "bytes": 3228,
-      "sha256": "c43ed2825b230edfd99db67e14d4579dd437e547ed3d03405546ed096d05b9cb"
+      "bytes": 3342,
+      "sha256": "f38d7f82b64a658251392ffab298501aa828af98eb5ad6b546fd842d346aa3b4"
+    },
+    {
+      "path": "docs/vertical-templates.md",
+      "mediaType": "text/markdown",
+      "bytes": 6391,
+      "sha256": "1b8d7ccd52a9878ede6bca5d5fe75cd06e436215e4f92444d7bc13a2cdc510d9"
     },
     {
       "path": "downloads/README.md",
       "mediaType": "text/markdown",
-      "bytes": 4421,
-      "sha256": "5ae857fe5d058aaae0a5e4fd9651ed49ea88e1f3dd1d4611bce9255d749e6820"
+      "bytes": 6941,
+      "sha256": "354dd94dd930830891cb2db757d53b924909f3ed66f21efe5d9f0c1dbe7ab641"
+    },
+    {
+      "path": "downloads/backgrounds/blue-1080x1350.png",
+      "mediaType": "image/png",
+      "bytes": 23281,
+      "sha256": "6081d41de9178e22c0b02299465a03949e4a8e2466daacb93650f97157d4e573"
+    },
+    {
+      "path": "downloads/backgrounds/blue-1080x1920.png",
+      "mediaType": "image/png",
+      "bytes": 33063,
+      "sha256": "2a163b7ff8228429e675a65f81f3488b37600a543ca1c77b25e3d3c61135ed21"
+    },
+    {
+      "path": "downloads/backgrounds/brown-1080x1350.png",
+      "mediaType": "image/png",
+      "bytes": 23277,
+      "sha256": "f0d12491a9e1a69244992597b59a0fd86c26e6d61b7cc120b8c42052a1872767"
+    },
+    {
+      "path": "downloads/backgrounds/brown-1080x1920.png",
+      "mediaType": "image/png",
+      "bytes": 33058,
+      "sha256": "b384781c7f5117afa54172405c09d675185bb5070315d1b25679ea02c93f7501"
+    },
+    {
+      "path": "downloads/backgrounds/cream-1080x1350.png",
+      "mediaType": "image/png",
+      "bytes": 23280,
+      "sha256": "eac0705722cd121907d70eaecaef4021b2a8db987452c2934d515a751ca97900"
+    },
+    {
+      "path": "downloads/backgrounds/cream-1080x1920.png",
+      "mediaType": "image/png",
+      "bytes": 33062,
+      "sha256": "12d77fa3863fde9ae303fbf49b756c3acae351e8d042aff981b1f4cd85df1083"
+    },
+    {
+      "path": "downloads/backgrounds/forest-1080x1350.png",
+      "mediaType": "image/png",
+      "bytes": 23279,
+      "sha256": "487092bbd9a026ac7b3686a0d33c773ed64913feff73f6f51f20e5c5fb1e6630"
+    },
+    {
+      "path": "downloads/backgrounds/forest-1080x1920.png",
+      "mediaType": "image/png",
+      "bytes": 33061,
+      "sha256": "9116f86a0e3d2020b240265d4cd3d01f01e302a891a03ff667d53725f34c60d5"
+    },
+    {
+      "path": "downloads/backgrounds/lemon-1080x1350.png",
+      "mediaType": "image/png",
+      "bytes": 23278,
+      "sha256": "aeac4c03146bc4183d66b51e89fd587fd74df28fcff1aa2777f5b6e40db8c54f"
+    },
+    {
+      "path": "downloads/backgrounds/lemon-1080x1920.png",
+      "mediaType": "image/png",
+      "bytes": 33060,
+      "sha256": "1f4400d8aacf1687fb063bfd7a03e16ab402898fb8bba8d06312a968925cd38e"
+    },
+    {
+      "path": "downloads/backgrounds/olive-1080x1350.png",
+      "mediaType": "image/png",
+      "bytes": 23278,
+      "sha256": "3d1f88ad59833ca0dbbf6659881fc63d1940ae347bff5c9d803fd2f1eb0a6c06"
+    },
+    {
+      "path": "downloads/backgrounds/olive-1080x1920.png",
+      "mediaType": "image/png",
+      "bytes": 33060,
+      "sha256": "76ffec9e006d87be07731030714a55075ff930adb0697da088617001bdafb499"
+    },
+    {
+      "path": "downloads/backgrounds/orange-1080x1350.png",
+      "mediaType": "image/png",
+      "bytes": 22444,
+      "sha256": "4e8dbf95c2c8909343f2746f1c95bb307d93eb7bb3d2dae68c51b73547f16318"
+    },
+    {
+      "path": "downloads/backgrounds/orange-1080x1920.png",
+      "mediaType": "image/png",
+      "bytes": 31893,
+      "sha256": "e58df91736f2c449d04e68edb32e4e0c5654277955a55a8ab7a2efc1a5e8c2a6"
+    },
+    {
+      "path": "downloads/backgrounds/pink-1080x1350.png",
+      "mediaType": "image/png",
+      "bytes": 23278,
+      "sha256": "ac7ec74c412d0250a12ee2b9a6cdb8c49d536993df7e0cb90075900736102a1b"
+    },
+    {
+      "path": "downloads/backgrounds/pink-1080x1920.png",
+      "mediaType": "image/png",
+      "bytes": 33060,
+      "sha256": "d10e58d4b38a6cd2fbb02d3f0a3bcba22dfef07c5de83839f3df6b5e917ee162"
+    },
+    {
+      "path": "downloads/backgrounds/plum-1080x1350.png",
+      "mediaType": "image/png",
+      "bytes": 23279,
+      "sha256": "5f5db0fcdc4a09d96a7209644251982927ffade385745863ca802ea7f2678e81"
+    },
+    {
+      "path": "downloads/backgrounds/plum-1080x1920.png",
+      "mediaType": "image/png",
+      "bytes": 33061,
+      "sha256": "0e13d7fe6e0c6bf27ccc3a225a9e17ad5ef397f571c931c5807b45654f68fc49"
+    },
+    {
+      "path": "downloads/backgrounds/sand-1080x1350.png",
+      "mediaType": "image/png",
+      "bytes": 23281,
+      "sha256": "7a55d7aca5189281be77ccc1d582c61f116d599f9ad4e631fe8ccd1b8d725ec8"
+    },
+    {
+      "path": "downloads/backgrounds/sand-1080x1920.png",
+      "mediaType": "image/png",
+      "bytes": 33063,
+      "sha256": "bf8581141217db6c2c2aaca593a19d7e0336d7f201bb3d442829a2eb322f24a2"
+    },
+    {
+      "path": "downloads/backgrounds/slate-1080x1350.png",
+      "mediaType": "image/png",
+      "bytes": 23278,
+      "sha256": "58d3f082a40138225d7eba7d4a93b7a0253d5705d085776c38c2a411ebf10adb"
+    },
+    {
+      "path": "downloads/backgrounds/slate-1080x1920.png",
+      "mediaType": "image/png",
+      "bytes": 33060,
+      "sha256": "3cf6a1b0d2e6afb59e62768050c22e234cd01829c402e1d7337f90e477a99619"
+    },
+    {
+      "path": "downloads/backgrounds/terracotta-1080x1350.png",
+      "mediaType": "image/png",
+      "bytes": 23278,
+      "sha256": "81b64f07910a437253a278420d93baf34f3156145fd09f4e28f5f189f869f1ca"
+    },
+    {
+      "path": "downloads/backgrounds/terracotta-1080x1920.png",
+      "mediaType": "image/png",
+      "bytes": 33060,
+      "sha256": "541ea15f88b59be10a7f22d67753ed1e5c593141af4ece79d2a459b55acbcfd0"
     },
     {
       "path": "downloads/elements/expert-mask.pdf",
@@ -1729,6 +2330,42 @@
       "sha256": "f2a09a2e48a885f31189d7c01701f6600a8826b9094a2469a0d78503b2eb45c6"
     },
     {
+      "path": "downloads/elements/journal-bookmark.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 1351,
+      "sha256": "660695e1833c84fec4491f4f8f65dd27fd240b7a70cda2da5460f16baa4e9c16"
+    },
+    {
+      "path": "downloads/elements/journal-bookmark.png",
+      "mediaType": "image/png",
+      "bytes": 9406,
+      "sha256": "097ddbe539d5ee64c3e3bd1ec3977467530b60710f6411f9b5c1a9ee60ebaf02"
+    },
+    {
+      "path": "downloads/elements/journal-bookmark.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 262,
+      "sha256": "9c79b482c8926c38c4812e866c5ffadbdacc0c567c8d9d2305c10b4081dbed50"
+    },
+    {
+      "path": "downloads/elements/ribbon-action-labelled.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 7940,
+      "sha256": "655fd10ab953a184e5d4778e13f6588fbb8af5b3a2d16006936a3e9b2794cfe7"
+    },
+    {
+      "path": "downloads/elements/ribbon-action-labelled.png",
+      "mediaType": "image/png",
+      "bytes": 46351,
+      "sha256": "e48f07c4cd3a8aae74f1d43ba8aa83e6d11745518b3cf13e46c351bbea00688a"
+    },
+    {
+      "path": "downloads/elements/ribbon-action-labelled.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 12736,
+      "sha256": "2990b1332b3ce05f64d8d27f6c6c517fc684adf7c988a4f88bc49be95af7901b"
+    },
+    {
       "path": "downloads/elements/ribbon-action.pdf",
       "mediaType": "application/pdf",
       "bytes": 4259,
@@ -1747,22 +2384,94 @@
       "sha256": "d1ab92334b326652dc0685ddcf2a9d04a6610e7c9bb877edcdaae79a3aa99144"
     },
     {
-      "path": "downloads/elements/ribbon-bureau.pdf",
+      "path": "downloads/elements/ribbon-bureau-blue.pdf",
       "mediaType": "application/pdf",
-      "bytes": 1360,
-      "sha256": "45f24475f5fa4a6efbc3d66c58c10203e2e696f3b4b79361a76816d9f6acd33c"
+      "bytes": 20454,
+      "sha256": "2f5706b627e6b456a793361f48a35a1606e265dcf0256f67ba2523130f590e0a"
     },
     {
-      "path": "downloads/elements/ribbon-bureau.png",
+      "path": "downloads/elements/ribbon-bureau-blue.png",
       "mediaType": "image/png",
-      "bytes": 20210,
-      "sha256": "3d4ea780450e9ce63d20e80a5dddb6e2fb92ede633fab999b5a74b5345b1224d"
+      "bytes": 50893,
+      "sha256": "9850f267c337ff067ce2e751897b635396d30a7ac5a00f14e0288ee7ed87c672"
     },
     {
-      "path": "downloads/elements/ribbon-bureau.svg",
+      "path": "downloads/elements/ribbon-bureau-blue.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 321,
-      "sha256": "9786f7bb33820c1036519574522845c13707931180edfe2fc6be068c905609aa"
+      "bytes": 47172,
+      "sha256": "059c80dc59c1ecaabef561db02695c0713ca09fd34089767e90c1cd4e744be9e"
+    },
+    {
+      "path": "downloads/elements/ribbon-bureau-horizontal.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 20488,
+      "sha256": "8f37d3a6da89d2b6de55bf51c855596ee1e0d9b74fac75c2ea0d767de078609e"
+    },
+    {
+      "path": "downloads/elements/ribbon-bureau-horizontal.png",
+      "mediaType": "image/png",
+      "bytes": 51134,
+      "sha256": "5d41a78d810db032a159579a5935367449cc99f548fe7ab217e9b609099d8d44"
+    },
+    {
+      "path": "downloads/elements/ribbon-bureau-horizontal.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 47172,
+      "sha256": "125c7211e5711d3445cb1775a0ebfa4d0469af83af9d4dfd3ebb9b7aa9f12a23"
+    },
+    {
+      "path": "downloads/elements/ribbon-club-green.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 12680,
+      "sha256": "a872bc4f9a7b8e8ad132dcfa2856d8b4b7651297dda4cb03a390a21d8c3bd83f"
+    },
+    {
+      "path": "downloads/elements/ribbon-club-green.png",
+      "mediaType": "image/png",
+      "bytes": 48129,
+      "sha256": "de6b5e1a860466fbf6d8a23a2dc59f9d17065f8639553327a86c31ef53ec5e24"
+    },
+    {
+      "path": "downloads/elements/ribbon-club-green.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 24223,
+      "sha256": "5ba20c9ffefd47e436d580a6d8a970743c1ded798dc570f80709ba6916c7f65c"
+    },
+    {
+      "path": "downloads/elements/ribbon-club-horizontal.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 12707,
+      "sha256": "3126974b2e18552120f5a5650d7719aa0ac60a8cce0b11849c6aa8c915f65b22"
+    },
+    {
+      "path": "downloads/elements/ribbon-club-horizontal.png",
+      "mediaType": "image/png",
+      "bytes": 49316,
+      "sha256": "4cbdec7bc925642d11187a4ceb818a30b38bcb80f763238f2261c1e5a7c26657"
+    },
+    {
+      "path": "downloads/elements/ribbon-club-horizontal.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 24223,
+      "sha256": "e2d8dd64bab4f265cddbd38f4f96bdb4e3062e7a97fea62a9270e5e905582c9a"
+    },
+    {
+      "path": "downloads/elements/ribbon-journal-vertical.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 15546,
+      "sha256": "fbc9daf2c188000f0917a4d77a827481139ae049688a9a95bd86798f4347e0ae"
+    },
+    {
+      "path": "downloads/elements/ribbon-journal-vertical.png",
+      "mediaType": "image/png",
+      "bytes": 58038,
+      "sha256": "58d3cacba306b946e1280e6d6a5044e7fe6aa460eef359e9b8969b54ac7bc4ad"
+    },
+    {
+      "path": "downloads/elements/ribbon-journal-vertical.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 37194,
+      "sha256": "58a128f20a875ba891b12ec0664712680fe5bedb72c3c806f8f2cfc0542cfa4b"
     },
     {
       "path": "downloads/elements/ribbon-journal.pdf",
@@ -1783,10 +2492,118 @@
       "sha256": "7a459135e4f99e70e6db2458320d58a073d55de4cd7da601eddd4a683fcdb4f7"
     },
     {
+      "path": "downloads/elements/ribbon-salon-green.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 13132,
+      "sha256": "74fe82d9696a1c164e1a87b947a5a9ecd236f1522dfaf0ef61ce331b1b48cf5a"
+    },
+    {
+      "path": "downloads/elements/ribbon-salon-green.png",
+      "mediaType": "image/png",
+      "bytes": 47729,
+      "sha256": "9e8bc5fba910fa7e879c85ccfa31bee2427cf8207c49e10a2ac578c433072cde"
+    },
+    {
+      "path": "downloads/elements/ribbon-salon-green.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 25647,
+      "sha256": "7ec75b4f2ec654b2be2d34b90c0d8e21022685b16512964917b910d24c964995"
+    },
+    {
+      "path": "downloads/elements/ribbon-salon-horizontal.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 13160,
+      "sha256": "3b1903d514c4da2992dd4cee60658821704abe3dec6c74b1ecf6ad660ff70422"
+    },
+    {
+      "path": "downloads/elements/ribbon-salon-horizontal.png",
+      "mediaType": "image/png",
+      "bytes": 48827,
+      "sha256": "243e8726f9ed9bb2c645843ad44296c28444056569216ffd49f5980c4b35a3d5"
+    },
+    {
+      "path": "downloads/elements/ribbon-salon-horizontal.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 25647,
+      "sha256": "0d348b9766b930bfb75cebfd3138790cce511c224ba5e90df20e8ac8227a754e"
+    },
+    {
+      "path": "downloads/examples/color-blue.html",
+      "mediaType": "text/html",
+      "bytes": 895,
+      "sha256": "a2b693d29fcd593cd55a40f92f62fb8317456d4fa5cc323f2670cdfc65b465da"
+    },
+    {
+      "path": "downloads/examples/color-blue.png",
+      "mediaType": "image/png",
+      "bytes": 32652,
+      "sha256": "f4ea341bd7fdb05d0d42f67b873b1c8bdd720c5c29357bd2c43b91001d37866b"
+    },
+    {
+      "path": "downloads/examples/color-brown.html",
+      "mediaType": "text/html",
+      "bytes": 901,
+      "sha256": "99c7cdfbb7db09c6414df21b7e84835b57eaa601dba65ed9a9ed999b427bfdff"
+    },
+    {
+      "path": "downloads/examples/color-brown.png",
+      "mediaType": "image/png",
+      "bytes": 31740,
+      "sha256": "d8aafcd05cbde3586dd92eeca853823e7c379133f8ff61fd5d1c0625005fab06"
+    },
+    {
+      "path": "downloads/examples/color-cream.html",
+      "mediaType": "text/html",
+      "bytes": 897,
+      "sha256": "0b3e36daef0b688e24de956c77f9d57508edfd8176b95b10f49c99c2ff4b92e8"
+    },
+    {
+      "path": "downloads/examples/color-cream.png",
+      "mediaType": "image/png",
+      "bytes": 32364,
+      "sha256": "6c4fa293da95e077e339811c3eee8876e93bba8f198bf2408bc2e3a720a74f7a"
+    },
+    {
+      "path": "downloads/examples/color-olive.html",
+      "mediaType": "text/html",
+      "bytes": 899,
+      "sha256": "6de1e3408f86058cc861330d44b9592c46f9b7a489d39dc194f2326737753394"
+    },
+    {
+      "path": "downloads/examples/color-olive.png",
+      "mediaType": "image/png",
+      "bytes": 31073,
+      "sha256": "75607e96ede131d4090ff31897d6a552bdbf8dd0619abdd96ebb6ba0be4dc66c"
+    },
+    {
+      "path": "downloads/examples/color-orange.html",
+      "mediaType": "text/html",
+      "bytes": 899,
+      "sha256": "e3178fddb3ea194d54fc91b4311879090e3c2549400d41c0fbca55e7ae85772f"
+    },
+    {
+      "path": "downloads/examples/color-orange.png",
+      "mediaType": "image/png",
+      "bytes": 30695,
+      "sha256": "4656811b876df402afd70cdcf58d50b8680d4d029a30c433c1c30e6870d69112"
+    },
+    {
+      "path": "downloads/examples/color-pink.html",
+      "mediaType": "text/html",
+      "bytes": 895,
+      "sha256": "b6a930ec5fd60e0d08b5ee25fd9da1e3b88018f79c99bf6679165411dcab74c0"
+    },
+    {
+      "path": "downloads/examples/color-pink.png",
+      "mediaType": "image/png",
+      "bytes": 30598,
+      "sha256": "78c2977030eb97c8dfb4e03cdc670b6a5e3f53e8917465972061f0989f3ea2ea"
+    },
+    {
       "path": "downloads/fonts.css",
       "mediaType": "text/css",
-      "bytes": 2246,
-      "sha256": "65365128507102029c6cc332410126d9b63bfa15008d1606c713357454a8913c"
+      "bytes": 1809,
+      "sha256": "e577dad36ce2c720205fccbddf7b189b6ecbfcb6894c0487e60c126ad18327a2"
     },
     {
       "path": "downloads/fonts/cofo-cinema1909-regular.otf",
@@ -1795,10 +2612,22 @@
       "sha256": "f0071d058ddc230c3bdee948a3dbd54a4737a5c9f27df9b167aee3144d254154"
     },
     {
+      "path": "downloads/fonts/eb-garamond-OFL.txt",
+      "mediaType": "text/plain",
+      "bytes": 4398,
+      "sha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7"
+    },
+    {
       "path": "downloads/fonts/eb-garamond-bold.ttf",
       "mediaType": "font/ttf",
       "bytes": 392040,
       "sha256": "40b4eb8a3c92f651728bc285ac3acacec1005ef5436cf33a337ab5ffe86daf29"
+    },
+    {
+      "path": "downloads/fonts/eb-garamond-italic.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 754468,
+      "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e"
     },
     {
       "path": "downloads/fonts/eb-garamond-medium-italic.ttf",
@@ -1843,106 +2672,274 @@
       "sha256": "a0d3d05d83b39a89429962aef900bb25f4789160f5d635c101d0a6d67b5d974a"
     },
     {
-      "path": "downloads/fonts/geist-bold.ttf",
-      "mediaType": "font/ttf",
-      "bytes": 72984,
-      "sha256": "1a9874b3be0fc168692a3d2327bccb4d28835653d3b91537a755296a467a83e3"
+      "path": "downloads/logos/bureau-blue.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 2317,
+      "sha256": "e5887f2a9e2d9973249da47765c8ce9c63c4764b5a07dcf0e15bdb07c4178f02"
     },
     {
-      "path": "downloads/fonts/geist-regular.ttf",
-      "mediaType": "font/ttf",
-      "bytes": 72916,
-      "sha256": "ccce59465ae5c61930ada5453834f60500fbd95084d85db63e0e65fad0125455"
+      "path": "downloads/logos/bureau-blue.png",
+      "mediaType": "image/png",
+      "bytes": 157788,
+      "sha256": "ff66bfa906014f648a02dcc5f8280ab55c0e70f4b9a86efcbc46e97a25989565"
     },
     {
-      "path": "downloads/fonts/geist-semibold.ttf",
-      "mediaType": "font/ttf",
-      "bytes": 73048,
-      "sha256": "7171f481b121803d007f5c6c76cd9988c0d41cce4202db9a18dff9945505d36d"
+      "path": "downloads/logos/bureau-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "f1bb9abf634a9c9f56cd81cf05c271545c8bcb73113ebb01bf76c62d99dbac34"
     },
     {
-      "path": "downloads/fonts/inter-regular.ttf",
-      "mediaType": "font/ttf",
-      "bytes": 324820,
-      "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba"
+      "path": "downloads/logos/bureau-brown.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 2326,
+      "sha256": "f2fac085db8d4c2ec37d3946d197c872b98299d0eae4f70c30c5bcac99d56042"
+    },
+    {
+      "path": "downloads/logos/bureau-brown.png",
+      "mediaType": "image/png",
+      "bytes": 151830,
+      "sha256": "ec183cce2302e0be5d6cf264936e4795b6f3e39ee1f98255805a4f34701fb89e"
+    },
+    {
+      "path": "downloads/logos/bureau-brown.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "7cb84794ca992c59bd9e0a461b452c90079a2b377336feb127b756b48e9af75b"
     },
     {
       "path": "downloads/logos/bureau-cream.pdf",
       "mediaType": "application/pdf",
-      "bytes": 1750,
-      "sha256": "9e35092b4569d217a7de1399046ddf684e9b0a2e6c7d5f143dae0764555dce13"
+      "bytes": 2273,
+      "sha256": "9ed968039d5f04e31bb7e6ecb83d37c4380885a8fb4e764dac0374e0806ec721"
     },
     {
       "path": "downloads/logos/bureau-cream.png",
       "mediaType": "image/png",
-      "bytes": 16442,
-      "sha256": "f030ce761c9cd805629d8513f3a55a1eeaa243325ef5e1fd425bccf47e977ea1"
+      "bytes": 156060,
+      "sha256": "4ae982c1906c260b00edfda5a6a041bbbd97d0de9896069ae7145422bc063af7"
     },
     {
       "path": "downloads/logos/bureau-cream.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 1522,
-      "sha256": "597f06059699bef46ddc2dc889e739cac03877ffbda7ddeb3056dbbcebf26b57"
+      "bytes": 2444,
+      "sha256": "9d965c01a6d7b4b9323e3754b186e658f90e131464b5b6a9afbd42253b280137"
+    },
+    {
+      "path": "downloads/logos/bureau-olive.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 2324,
+      "sha256": "5e6335f6472d3ba2496d0beeda2ea01b018c04aa38e661ee04de6c184fead533"
+    },
+    {
+      "path": "downloads/logos/bureau-olive.png",
+      "mediaType": "image/png",
+      "bytes": 156395,
+      "sha256": "5fcc5c8af60eceb171b7fd4358f5a9f61f35443f2eac6009f752b01bcd4eefe4"
+    },
+    {
+      "path": "downloads/logos/bureau-olive.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "ec1ec6faf562bfa82287bf08ceee972e645b2bd9ab26af600a3ef5610d015f7e"
     },
     {
       "path": "downloads/logos/bureau-orange.pdf",
       "mediaType": "application/pdf",
-      "bytes": 1748,
-      "sha256": "e3074c8635c28d24c17b6a0f7049682f900bad5850041659c0d0215ad88c499f"
+      "bytes": 2269,
+      "sha256": "4c34e417ec58ba0f3579d8a20f56697a4a88070ec51dcd2e7eb5b34006b8f292"
     },
     {
       "path": "downloads/logos/bureau-orange.png",
       "mediaType": "image/png",
-      "bytes": 15141,
-      "sha256": "63074d23f27e79fd943f8fe85477e5f2f455da21c3b0f7c6c5d15bfe4e8e8b8c"
+      "bytes": 145261,
+      "sha256": "e1dafc48d83fffef931d96b44b10cb2be78a4e7627c5d2f0ffb1b5f6d7d6ff62"
     },
     {
       "path": "downloads/logos/bureau-orange.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 1522,
-      "sha256": "dd996d150916e465a3b16b370ca8012be26f223aaf924e6c918211b10dcd1fe5"
+      "bytes": 2444,
+      "sha256": "9ffc51344fdb0641dd0dac44e266267e832bf5fafe9c32a3c08bfe3dc8b08de0"
+    },
+    {
+      "path": "downloads/logos/bureau-pink.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 2317,
+      "sha256": "b523cb35d1e339fe49d7d005432c9a8ebaa17372b5f6bdafe45783c22c02ebd9"
+    },
+    {
+      "path": "downloads/logos/bureau-pink.png",
+      "mediaType": "image/png",
+      "bytes": 154094,
+      "sha256": "005e1714ff635240ddffd42cd926d4f811622ab8367122bc530ba2b09442de27"
+    },
+    {
+      "path": "downloads/logos/bureau-pink.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2444,
+      "sha256": "4914c362e165240054e48c6098cfb15f4f69565c0439878d1e9aa7eb0ca48cc5"
+    },
+    {
+      "path": "downloads/logos/club-horse-blue.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 39691,
+      "sha256": "18f47abcb05a0ed4d2a9ddfede1708c8adab02bffadc68e92a11e7a14d4e0898"
+    },
+    {
+      "path": "downloads/logos/club-horse-blue.png",
+      "mediaType": "image/png",
+      "bytes": 295285,
+      "sha256": "782f7a64aa8cfd18eeaa9a60479706006dade824ab6832b57a55d271c7ed3357"
+    },
+    {
+      "path": "downloads/logos/club-horse-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "6f02112a6fccefb91ef0f1cbd57a8e8691c485263b59c9a2c7cd3bc35f690284"
+    },
+    {
+      "path": "downloads/logos/club-horse-brown.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 39701,
+      "sha256": "cd3e84d480791692179de6bbbf739bb151f361862fc0078ece10fba7b7696434"
+    },
+    {
+      "path": "downloads/logos/club-horse-brown.png",
+      "mediaType": "image/png",
+      "bytes": 278030,
+      "sha256": "4a49a24dd92cd9a455e98ff2c3c1a84dc9e347c35ba4d3b94c28f78ad5b49ccb"
+    },
+    {
+      "path": "downloads/logos/club-horse-brown.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "74859f8a279800f1316040751677680d27393b7d47155f2f146f03fbd8f85113"
+    },
+    {
+      "path": "downloads/logos/club-horse-cream.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 39694,
+      "sha256": "97352c0db120d2e2a891d60d5e862bc79b10dcf0cb26b6e3ef161ebef1e38290"
+    },
+    {
+      "path": "downloads/logos/club-horse-cream.png",
+      "mediaType": "image/png",
+      "bytes": 289703,
+      "sha256": "c522b56af9184eec6a5e2498e093d9d7fb72dc4a4076e31587edbe1b1fedb42c"
+    },
+    {
+      "path": "downloads/logos/club-horse-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "e9f251897243487a77196d92b5d7b592517d175c8757ec4cd21670eb2f856dfa"
+    },
+    {
+      "path": "downloads/logos/club-horse-olive.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 39699,
+      "sha256": "8dca1c60dc776320fcb81378a0d2087a3d23c724d558b98771777b579c8c22d8"
+    },
+    {
+      "path": "downloads/logos/club-horse-olive.png",
+      "mediaType": "image/png",
+      "bytes": 291859,
+      "sha256": "c78e478a341d265f1ef3499f199d04a8fffc7e488f75c778a4f9754ecd38721d"
+    },
+    {
+      "path": "downloads/logos/club-horse-olive.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "fc62685bbbb36ae0cdb8969d56c0acf5882cd59e86a5675bff935a78869f423c"
+    },
+    {
+      "path": "downloads/logos/club-horse-pink.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 39691,
+      "sha256": "fe9d5b382a8d619c565ee2f654f80a33b0a62625e475da60a3cbd396efabd80b"
+    },
+    {
+      "path": "downloads/logos/club-horse-pink.png",
+      "mediaType": "image/png",
+      "bytes": 287092,
+      "sha256": "f360fbc15fd5ad1dc0cb0e6319567cd2d288b6eb521dfdc68c0b24179c91cab6"
+    },
+    {
+      "path": "downloads/logos/club-horse-pink.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "0675bd624090902691ed5ed5cb4887f68903d828dedd65db186cd53a5b640ae8"
+    },
+    {
+      "path": "downloads/logos/club-horse.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 39646,
+      "sha256": "4c7bb50b13f1b6c48f8da1b1d6c6c72ad8fb18ce0c38ab7cbf4bf5b6d3fc527f"
+    },
+    {
+      "path": "downloads/logos/club-horse.png",
+      "mediaType": "image/png",
+      "bytes": 264621,
+      "sha256": "e08ea1f8c590e3a521c56b9ab341647ce9e941b84ee07ea57fe598cd2270529a"
+    },
+    {
+      "path": "downloads/logos/club-horse.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "24ab98e9f600874be3acd55c9bf82ecdc9d0503bcd1e2fb9a8868664cde02bcb"
+    },
+    {
+      "path": "downloads/logos/club.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 39690,
+      "sha256": "59657e15d6868fb0d2c93dcd214a2724aecc5f379c136c32972a4f29c7a63e02"
     },
     {
       "path": "downloads/logos/club.png",
       "mediaType": "image/png",
-      "bytes": 13441,
-      "sha256": "ba69517809c5c8b8c907a3ec9f5520183038134d5fb9b9110c868b93944c53f9"
+      "bytes": 264621,
+      "sha256": "e08ea1f8c590e3a521c56b9ab341647ce9e941b84ee07ea57fe598cd2270529a"
+    },
+    {
+      "path": "downloads/logos/club.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 133042,
+      "sha256": "24ab98e9f600874be3acd55c9bf82ecdc9d0503bcd1e2fb9a8868664cde02bcb"
     },
     {
       "path": "downloads/logos/heart-cream.pdf",
       "mediaType": "application/pdf",
-      "bytes": 30025,
-      "sha256": "7698cc65f005c91cd08419a217097ea778a50def3e1c21f66ed3b074a7943a8f"
+      "bytes": 24429,
+      "sha256": "bfb4893808001790254a0e076d01cdeb3bed69c65f48fa404f452e7ec8499c14"
     },
     {
       "path": "downloads/logos/heart-cream.png",
       "mediaType": "image/png",
-      "bytes": 37073,
-      "sha256": "9e7fb76d4f471553b4b9054e4c120588d993f113fc075859cf3c48be7b10a475"
+      "bytes": 248137,
+      "sha256": "10704ed686e268a7e40e1690893b613ff50e6eee029407837b134f300339f058"
     },
     {
       "path": "downloads/logos/heart-cream.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 105456,
-      "sha256": "c5901116ec33ebaa98c727651645864d9a978fe563c9f4a930442f1db0c42fac"
+      "bytes": 97689,
+      "sha256": "6d4c0070fae0ad6b5f3e82be222b4d9c8d60ec94f701d64033f4cd38fad38532"
     },
     {
       "path": "downloads/logos/heart-orange.pdf",
       "mediaType": "application/pdf",
-      "bytes": 28802,
-      "sha256": "0bcaf3943824ebc252de824b606182c5d6459670c526656d954b23abbbf15aa9"
+      "bytes": 24380,
+      "sha256": "6c40f207afff325d5e695b15e265b47c36b658a76e8e44df5b9b71362643ec6b"
     },
     {
       "path": "downloads/logos/heart-orange.png",
       "mediaType": "image/png",
-      "bytes": 42423,
-      "sha256": "2eb943a9aea5dfd25d89a29c2101607fe6df4037bc7bcb5dd770555722d88450"
+      "bytes": 227560,
+      "sha256": "c75d2c345a6d502ee1bc349ec2a1c91b6afccc53b132baef6f02a140b4f7b877"
     },
     {
       "path": "downloads/logos/heart-orange.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 105600,
-      "sha256": "f91748e3eae980bc440dbea4ce12a09f7cd32795e3746e46e8ba5d9622f5d5c4"
+      "bytes": 97689,
+      "sha256": "1a837727cd5f714c4fd97c619361fc1c3c2db01d516f80eb4ab94a4f7b89079b"
     },
     {
       "path": "downloads/logos/journal-bookmark.pdf",
@@ -1963,16 +2960,208 @@
       "sha256": "9c79b482c8926c38c4812e866c5ffadbdacc0c567c8d9d2305c10b4081dbed50"
     },
     {
+      "path": "downloads/logos/rooster-blue.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 24403,
+      "sha256": "2475e30815170a0e96dbb77381d0850c974f5b9ebd21546779876af38ccbd43c"
+    },
+    {
+      "path": "downloads/logos/rooster-blue.png",
+      "mediaType": "image/png",
+      "bytes": 250042,
+      "sha256": "88544b1e0ad0663999f749e435226b21e7295780fd5a974848f9252773b948b2"
+    },
+    {
+      "path": "downloads/logos/rooster-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "69033a0dd5b327600c83ce67136dc7dcea7fa46a31f770fa34548f53985d83bc"
+    },
+    {
+      "path": "downloads/logos/rooster-brown.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 24411,
+      "sha256": "b2f0bcc3722e49ee2cb363948715d934d0b08c4cca90d2f99f6842a7bdc941b0"
+    },
+    {
+      "path": "downloads/logos/rooster-brown.png",
+      "mediaType": "image/png",
+      "bytes": 237464,
+      "sha256": "3cb20c602dcafcc33d96e63fdd8e3f62a4f90eff40c8632c3ea943c42fa26d31"
+    },
+    {
+      "path": "downloads/logos/rooster-brown.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "e72fc48b01fd4e5ebf38c72af328b57b376a03e48603f1d76d2cb51e6d4107ff"
+    },
+    {
+      "path": "downloads/logos/rooster-cream.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 24357,
+      "sha256": "b0103590c16b8ba796ce5c84341189122a4d8effd36cffd05532f5d1ffb1d2ac"
+    },
+    {
+      "path": "downloads/logos/rooster-cream.png",
+      "mediaType": "image/png",
+      "bytes": 248137,
+      "sha256": "10704ed686e268a7e40e1690893b613ff50e6eee029407837b134f300339f058"
+    },
+    {
+      "path": "downloads/logos/rooster-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "6d4c0070fae0ad6b5f3e82be222b4d9c8d60ec94f701d64033f4cd38fad38532"
+    },
+    {
+      "path": "downloads/logos/rooster-olive.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 24410,
+      "sha256": "7e4730992be7f74837044a1008ca5e10dad627544a075cac7c1b4166f16fff54"
+    },
+    {
+      "path": "downloads/logos/rooster-olive.png",
+      "mediaType": "image/png",
+      "bytes": 248345,
+      "sha256": "5c9ad6895da0a11ac4568e3209a5f33f0598fae91f7e021dd3171258f234380e"
+    },
+    {
+      "path": "downloads/logos/rooster-olive.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "6a507d261ab17fc582101175443e1457e3fd66a144eebe72a0a140883e5813a0"
+    },
+    {
+      "path": "downloads/logos/rooster-orange.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 24356,
+      "sha256": "3b21a1e582459b868fc4813058fea8299941f17132675324862655199ff8b043"
+    },
+    {
+      "path": "downloads/logos/rooster-orange.png",
+      "mediaType": "image/png",
+      "bytes": 227560,
+      "sha256": "c75d2c345a6d502ee1bc349ec2a1c91b6afccc53b132baef6f02a140b4f7b877"
+    },
+    {
+      "path": "downloads/logos/rooster-orange.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "1a837727cd5f714c4fd97c619361fc1c3c2db01d516f80eb4ab94a4f7b89079b"
+    },
+    {
+      "path": "downloads/logos/rooster-pink.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 24403,
+      "sha256": "ca56280153c4883f2933f740c106d7ea2774d868f7d14fa57a8ce68f7f31e2a4"
+    },
+    {
+      "path": "downloads/logos/rooster-pink.png",
+      "mediaType": "image/png",
+      "bytes": 243892,
+      "sha256": "a0a77a8e72815d0d264b4e30359a68e2288d5c8edff7ff380dfceb1c745150a0"
+    },
+    {
+      "path": "downloads/logos/rooster-pink.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97689,
+      "sha256": "938a1d52eefa520a9cabd57eb675a2534f18b678763a2afd2f3a6740f8f62e67"
+    },
+    {
+      "path": "downloads/logos/salon.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 30487,
+      "sha256": "423f2e2e0115e30ded825b550f1bdf8d9caf02f20f6814bc2c68c0bb7d9e4afa"
+    },
+    {
       "path": "downloads/logos/salon.png",
       "mediaType": "image/png",
-      "bytes": 16057,
-      "sha256": "e44a155375d3d0bc34787d67f0a589066f8d4dc44afb8d7c999d102e628076bf"
+      "bytes": 189434,
+      "sha256": "c1e686c58ff5684f1b7e4a145dc5b6f757c6ff6b64c14399b192a309176174b5"
+    },
+    {
+      "path": "downloads/logos/salon.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "fbfb8509102e0b9844eea4df55fc4628c7179a8390419eddaed44cb0a88a4ee6"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-blue.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 9581,
+      "sha256": "019736be83d0b26e65065d1922bab610c410ccf18d14ca8dbc5fd129f2568422"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-blue.png",
+      "mediaType": "image/png",
+      "bytes": 59078,
+      "sha256": "70fb76634d8c69f61c83adacb6c26c03c294ea91a20707134ba7110c2a874ee1"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 22556,
+      "sha256": "ffe34a0c9bd8e6fbfb55374c7b04a5f7d06cfde6b0e102bee811fe92fe12205a"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-brown.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 9590,
+      "sha256": "90646366cb61b0510ac47ef7847b309ac00a2348092ad392223ccf6dbc910de2"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-brown.png",
+      "mediaType": "image/png",
+      "bytes": 56817,
+      "sha256": "e43ab4abcd1ae54a9b43b9ff840c781d397800d91ae2249a65c45b9e3f57b661"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-brown.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 22556,
+      "sha256": "55f1fdf98546bf44104516651cc5ac50551676cf6fd8231353acf650163b97a3"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-cream.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 9585,
+      "sha256": "166af869b39079897e251dc786daccd305a2adb5ab5f60565505a6ca103056f7"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-cream.png",
+      "mediaType": "image/png",
+      "bytes": 58835,
+      "sha256": "83afbd4680418a650561e8581ebd73b5c672831ebe9bf52595793b7f942b03e6"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 22556,
+      "sha256": "3b4c3604fa5d698409f80fcaeb2958aeaa66e63dc6474f4529ce60bb8bae66dc"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-olive.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 9590,
+      "sha256": "1c90cb639b25a3b2a37b8e2a376cd2672bc8418b0ced469af517d4a5e53693f4"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-olive.png",
+      "mediaType": "image/png",
+      "bytes": 58676,
+      "sha256": "aac16938aa1938b85d0ae22b38964d6933302fcc692620b9c631271d7f7b3dd7"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-olive.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 22556,
+      "sha256": "5bdb1ce16400d7f40ef9e53edb3bb16d2731f039d813162c8c64abe356bb3e09"
     },
     {
       "path": "downloads/logos/sarafan-wordmark-orange.pdf",
       "mediaType": "application/pdf",
-      "bytes": 9712,
-      "sha256": "7ff51248946c4006cede65173d7fec102d390d7f35f246153142fec874555c50"
+      "bytes": 9536,
+      "sha256": "357b300841d8b780cf3ccd17cd86bf7e35305fb192707841cd81c6fc962770ec"
     },
     {
       "path": "downloads/logos/sarafan-wordmark-orange.png",
@@ -1983,296 +3172,644 @@
     {
       "path": "downloads/logos/sarafan-wordmark-orange.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 24615,
-      "sha256": "e518c7064b764ea628cd70bee156c9b422726b55d358ae2aff8e4a3d682a3b4a"
+      "bytes": 22556,
+      "sha256": "acd865c7fb9d773684e783bf35cf1d2ad8f0ff708a52e229cdedb50c0aba6d31"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-pink.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 9581,
+      "sha256": "d1b3ea8418bf7a045b2ffe2cf8fd64080cabb3b8a0ce6fde98bfde6e7faf90c2"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-pink.png",
+      "mediaType": "image/png",
+      "bytes": 57690,
+      "sha256": "8f34b166b1606d6ee73443ede322f1fa75769c7cd06ee32ba49f571c17bb3ae8"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-pink.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 22556,
+      "sha256": "1095e6a4808b799b1eafb53d9d0e2c93901d961e1ae09e770636693e181d52c6"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-blue.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 19688,
+      "sha256": "73b885b13bd626154dcccad47c3863060c80b5bf8777ba9c0a3dd2853b8aa411"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-blue.png",
+      "mediaType": "image/png",
+      "bytes": 77583,
+      "sha256": "c6bb6cc38d9e2a3c831d03b0404781dfcc1f6ca92b1272bd422f47525cdf8145"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 46745,
+      "sha256": "42c9259f7d59708954b0ab56c71a84b0fd52edbe7733e077ed43d6367b5bdfa2"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-brown.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 19696,
+      "sha256": "2acbed20797f8d74cf6b72ad4e4a0f6f573d9b802fa6fddc0622521c55dbc072"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-brown.png",
+      "mediaType": "image/png",
+      "bytes": 74613,
+      "sha256": "5b6be8939d895f6de0a45ce1da544d395996f5ec4e3db1a4e34ebe38810be62d"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-brown.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 46745,
+      "sha256": "e88034d2d25f46f0d34ef81c829540d1d670963dc5e3d53707c869aebc78ef40"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-cream.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 19692,
+      "sha256": "d1bd5d75d0385f716524704aeffe64bd8750a3ee49a32b5d5104c33e8aec594e"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-cream.png",
+      "mediaType": "image/png",
+      "bytes": 77261,
+      "sha256": "80390863968d0de33a829e2296814c26cd3b46e6d20de8b6a478cb762789d1c3"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 46745,
+      "sha256": "099bd1d96d1eb1792bf1fb9e531ada01343aad81d4d281300afca97b5a058bf0"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-olive.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 19696,
+      "sha256": "4c7b6cfd9619e6b0d17b0427c4ec69fb53af7666ad3f2c597cb10c4094069bd8"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-olive.png",
+      "mediaType": "image/png",
+      "bytes": 76920,
+      "sha256": "efe2576b96c053a168524001259d500a9b37f8c818f8e65b65509bb4bc2b2dbe"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-olive.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 46745,
+      "sha256": "71c3e02a25e9256fd90171e49b95973071cbbff0cc3dc20b3d8aa2e59d49235f"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-pink.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 19687,
+      "sha256": "13e7c8453eb1b35cf7f10fcd12e39b3602fc5bfed856c493485b9e78906ce01f"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-pink.png",
+      "mediaType": "image/png",
+      "bytes": 75753,
+      "sha256": "b1f6309a799b8d7585e7f44b17c3a97cf6a57a690047beb24cc2e70be16867ed"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since-pink.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 46745,
+      "sha256": "10b4f7ce6bb61a264ce5a9a6390bbf23ba2f8968846164826c1b69e68220af7c"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 19643,
+      "sha256": "97350d3c5079075859fd77722617a32f430a0dd35df993e1b5185143bc51300a"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since.png",
+      "mediaType": "image/png",
+      "bytes": 70627,
+      "sha256": "9e3b0cd53dfd8749aa1361d15d248596a3dee652e57d93476e9239bad9207834"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-since.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 46745,
+      "sha256": "5de64909497777a85ff35fb2a39bf6af8922c45fcd9951450cf4423538de818a"
+    },
+    {
+      "path": "downloads/logos/sirin-blue.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 30545,
+      "sha256": "f595d817f0e75849b3090810fdcac4bcfdf9be9f016d7db16b8d8d5a5bbdf45f"
+    },
+    {
+      "path": "downloads/logos/sirin-blue.png",
+      "mediaType": "image/png",
+      "bytes": 209706,
+      "sha256": "3f27feeca16386f4190f0eb34ec369bee226bbbf2d0a32af49b2530b792f82d4"
+    },
+    {
+      "path": "downloads/logos/sirin-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "b29f2f8c712021cb17c48b329f5748fba91cfa26ab891ff6806f3d17a1c9dff9"
+    },
+    {
+      "path": "downloads/logos/sirin-brown.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 30555,
+      "sha256": "9d60df71ca2e9aa19d8f5f295d39613fb01e8237b52abc4a3f1033809a6d3e5a"
+    },
+    {
+      "path": "downloads/logos/sirin-brown.png",
+      "mediaType": "image/png",
+      "bytes": 197704,
+      "sha256": "b0421eb101be1a8b0a29be94d4cfab032280137a7fc72390c1870dd6d475a0d6"
+    },
+    {
+      "path": "downloads/logos/sirin-brown.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "df76ad71a7e47a9e48453dff2419263c463ce86793a070ac9f7f3916675bb3e7"
+    },
+    {
+      "path": "downloads/logos/sirin-cream.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 30551,
+      "sha256": "b7c83ab1011547af7c35a7c01a14867fdf7dbbdb9ad070e4fb99b5de420fa898"
+    },
+    {
+      "path": "downloads/logos/sirin-cream.png",
+      "mediaType": "image/png",
+      "bytes": 205392,
+      "sha256": "04da192f44f69fb6ccf767c282da43a4d1468d60d37d2b665ccdc61081a1f51a"
+    },
+    {
+      "path": "downloads/logos/sirin-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "70248794505f18cd88578bd8ad5658b37e0d1eed7480704ecf00b3353cb7115f"
+    },
+    {
+      "path": "downloads/logos/sirin-olive.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 30552,
+      "sha256": "f87d00e2e8278a2402a359930f1f28a838b36355953cadf238632f6317f7ba10"
+    },
+    {
+      "path": "downloads/logos/sirin-olive.png",
+      "mediaType": "image/png",
+      "bytes": 207101,
+      "sha256": "e7e968432d8538548bb33db3483e382c0f1fc29a19e74d8db2f9849bc6003029"
+    },
+    {
+      "path": "downloads/logos/sirin-olive.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "b20d1134559745e6aec05f9f04db893a9b0a7b8e8e3eff8058df06c22417fdf7"
+    },
+    {
+      "path": "downloads/logos/sirin-pink.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 30546,
+      "sha256": "153ff31f940f3983e94ef492d3d15c71d990ea0d4a5a0cacf27c992eabfa1ddf"
+    },
+    {
+      "path": "downloads/logos/sirin-pink.png",
+      "mediaType": "image/png",
+      "bytes": 204228,
+      "sha256": "7b1a179b417e1eb30f7ee2cf667819d06bb49ea4b4791e05a0c72b60d3aee71a"
+    },
+    {
+      "path": "downloads/logos/sirin-pink.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "22c64ae775ebda0e7e303129506dcdd2f2c0910d8474822cee9c43cfff36a9e0"
+    },
+    {
+      "path": "downloads/logos/sirin.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 30499,
+      "sha256": "dcb294daa50524304b3a85bca3a64ff1654c9a396caa8dc7f877ceffa8a21130"
+    },
+    {
+      "path": "downloads/logos/sirin.png",
+      "mediaType": "image/png",
+      "bytes": 189434,
+      "sha256": "c1e686c58ff5684f1b7e4a145dc5b6f757c6ff6b64c14399b192a309176174b5"
+    },
+    {
+      "path": "downloads/logos/sirin.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 97705,
+      "sha256": "fbfb8509102e0b9844eea4df55fc4628c7179a8390419eddaed44cb0a88a4ee6"
     },
     {
       "path": "downloads/manifest.js",
       "mediaType": "text/javascript",
-      "bytes": 1057914,
-      "sha256": "47af36c9be8cb5ed693e80feb9c522178e1545462b5d560da4fa644dfdb48a03"
+      "bytes": 14205693,
+      "sha256": "1dc5c5b9387250554b2e66b1fe827497ec8208aa24fe5df17068a61d2247c843"
     },
     {
       "path": "downloads/manifest.json",
       "mediaType": "application/json",
-      "bytes": 1057889,
-      "sha256": "b4088906239dfec406e158467b50d4cd49769f3edb9363e599fd2315588cc60f"
+      "bytes": 14205668,
+      "sha256": "31a5c7b77d767d2784562b22c80bfee27439316309e770b52d55125e9fda99ff"
     },
     {
       "path": "downloads/palette.css",
       "mediaType": "text/css",
-      "bytes": 327,
-      "sha256": "728ddc1b944bc026488b6129a5a09acc0bb9e75697e6babfdca2f3dc74386be4"
+      "bytes": 349,
+      "sha256": "bc2edfa96f1803d878d0d6a65344971eb5744fae81ea7df823a70f06af29c77d"
     },
     {
       "path": "downloads/palette.json",
       "mediaType": "application/json",
-      "bytes": 1064,
-      "sha256": "1ed526571076c64cb127daa3861df90f84eee4f63794bfc47ababb560b88f48a"
+      "bytes": 1152,
+      "sha256": "038bf2f861e10ba0010a07f1082ebe41887c42a82abf0515621a79153b6db2d4"
     },
     {
       "path": "downloads/tokens.css",
       "mediaType": "text/css",
-      "bytes": 3324,
-      "sha256": "699199ff249a00194ce3c65dda2702f6e9791440596db2c1cb2c7df9546a9eb5"
+      "bytes": 3433,
+      "sha256": "14657ab89c582249f3977a6825d031b40d4531c6f3a3ff7c757d17f6685894ac"
     },
     {
       "path": "downloads/tokens.json",
       "mediaType": "application/json",
-      "bytes": 9785,
-      "sha256": "e90c8fe735ac1fc531b53593986abf4ae3c600a4bdb3e53857928286e36c7e46"
+      "bytes": 9719,
+      "sha256": "e34f0d62b5caa88c5808bd02ac46d6672ea87d6d7979ddab33d4802d371efa82"
     },
     {
       "path": "event.css",
       "mediaType": "text/css",
-      "bytes": 3053,
-      "sha256": "22aeddd20de2b132492a789c22b5884e436e9f9f4cc7d2d30d2f8d43f057648d"
+      "bytes": 2869,
+      "sha256": "28c01ae623f711693a5ee3c2149e9d8e9587e9ceffa3abf428178f1798ab5d1a"
     },
     {
       "path": "expert.css",
       "mediaType": "text/css",
-      "bytes": 4629,
-      "sha256": "79ab66a24365dde9fa61ab836e678b2652daffeb85a819713fba45fbbece9f7c"
+      "bytes": 4484,
+      "sha256": "a91118b46d10bb9f0fb7dac959156a0844e419339833e50784d5710420682b6b"
+    },
+    {
+      "path": "exports/sarafan-ads-retreat-01.png",
+      "mediaType": "image/png",
+      "bytes": 1889514,
+      "sha256": "5c8a409895e1746dd080dabbdd4dbca2ab370a3dd915447e0291b5f6776b709c"
+    },
+    {
+      "path": "exports/sarafan-ads-retreat-02.png",
+      "mediaType": "image/png",
+      "bytes": 1558596,
+      "sha256": "28d1e2645c3987626b6b4ff5e92f0a3ef3c6f1ea4a9dcace72753897c329452b"
+    },
+    {
+      "path": "exports/sarafan-ads-retreat-03.png",
+      "mediaType": "image/png",
+      "bytes": 1081900,
+      "sha256": "2f6168627c36cab8ddf4607a3f9653fff2c0e70102104b9871f75901cec2a4f1"
+    },
+    {
+      "path": "exports/sarafan-ads-retreat-04.png",
+      "mediaType": "image/png",
+      "bytes": 1921106,
+      "sha256": "c6a4099590703f1c29c603603902693719756eae68e55637c44be174bc2bed21"
+    },
+    {
+      "path": "exports/sarafan-ads-retreat-05.png",
+      "mediaType": "image/png",
+      "bytes": 833389,
+      "sha256": "768c0e8f9d5fb8ce615d57e1c35fc8d6e8c144372fda21a3dea53ceb764886cb"
+    },
+    {
+      "path": "exports/sarafan-ads-retreat-06.png",
+      "mediaType": "image/png",
+      "bytes": 2117539,
+      "sha256": "b2d234931e276eea77ffda90f7a8a8f2dcf785d0a8774567fd0ea210f6e6bdf5"
+    },
+    {
+      "path": "exports/sarafan-ads-retreat-07.png",
+      "mediaType": "image/png",
+      "bytes": 1812036,
+      "sha256": "58bfbb48bcfc4265e08f3194de500ab9ab5c00ae53f7d199d2ee1bd02c84e56d"
+    },
+    {
+      "path": "exports/sarafan-ads-retreat-08.png",
+      "mediaType": "image/png",
+      "bytes": 2004091,
+      "sha256": "0a1e328f476d6d31434dc27b0cdaefd792763c4628dfa761c83f95b773a17f1b"
+    },
+    {
+      "path": "exports/sarafan-ads-retreat-09.png",
+      "mediaType": "image/png",
+      "bytes": 1431235,
+      "sha256": "d353257f3c40395128e8cbcf402b65e35444e2ed70371bbeef633bd12f010b3d"
+    },
+    {
+      "path": "exports/sarafan-bureau-guide-01.png",
+      "mediaType": "image/png",
+      "bytes": 110915,
+      "sha256": "a55582b074aa11a14db5ace218bc46a5cf48591a3235b4267b7f52d6f413cb02"
+    },
+    {
+      "path": "exports/sarafan-bureau-guide-02.png",
+      "mediaType": "image/png",
+      "bytes": 141580,
+      "sha256": "c93b10b704e36b6dbc8c977544ecb9fd93d10a9fa0ee93e75fd3be89d65180c3"
+    },
+    {
+      "path": "exports/sarafan-bureau-guide-03.png",
+      "mediaType": "image/png",
+      "bytes": 145595,
+      "sha256": "9a00770eff9c45d275565ea9483f14d9678841df882d08382778b495722c671a"
+    },
+    {
+      "path": "exports/sarafan-bureau-guide-04.png",
+      "mediaType": "image/png",
+      "bytes": 112009,
+      "sha256": "2f548265815c23d18cd85b09eaa5c93447cd7c7cf99d94475be52e64e2505fc3"
+    },
+    {
+      "path": "exports/sarafan-bureau-guide-05.png",
+      "mediaType": "image/png",
+      "bytes": 112859,
+      "sha256": "ef353060085e075b16390a2b818df65393ab56b8f06cfa7c51d8b9abad4d8b93"
+    },
+    {
+      "path": "exports/sarafan-bureau-guide-06.png",
+      "mediaType": "image/png",
+      "bytes": 120567,
+      "sha256": "a4c38df0c2f5556afef69db48db7fb105439a69a1a2434ae3175340bfad92e4d"
+    },
+    {
+      "path": "exports/sarafan-bureau-guide-07.png",
+      "mediaType": "image/png",
+      "bytes": 89463,
+      "sha256": "81cc75971fb57e0a0733aa515e4c45ec0d06b65212337a1f0e47ac1c722510ba"
+    },
+    {
+      "path": "exports/sarafan-bureau-guide-08.png",
+      "mediaType": "image/png",
+      "bytes": 106631,
+      "sha256": "42420fb7c535d996cd505c7622bea69707e6b2224d2d87d6efad819376ee4add"
+    },
+    {
+      "path": "exports/sarafan-bureau-live-01.png",
+      "mediaType": "image/png",
+      "bytes": 105940,
+      "sha256": "8903f7f13933c299a9d03db4548375208fbf20e3bbafdc2cbc3929dc285c6ae4"
+    },
+    {
+      "path": "exports/sarafan-bureau-live-02.png",
+      "mediaType": "image/png",
+      "bytes": 94777,
+      "sha256": "97ed8c84b4f84f2fc6ac270533b992ef3ee1361d28afa5d1a0f855bc9f846e19"
     },
     {
       "path": "exports/sarafan-club-event-01.png",
       "mediaType": "image/png",
-      "bytes": 429052,
-      "sha256": "730d5201f0f46147ca487813995e18248c08cd0680a3c9cc4b791454991d80b7"
+      "bytes": 429244,
+      "sha256": "1da4e82ae1b255dcd124dcc56b760391d91eab2afe3a074cf083e954791e3e8e"
     },
     {
       "path": "exports/sarafan-club-event-02.png",
       "mediaType": "image/png",
-      "bytes": 681468,
-      "sha256": "fc497ec1ce0bf01cb2db19125d782b800bc490c7c869fb6b14b91b938a1efa2a"
+      "bytes": 681726,
+      "sha256": "f9fdc8fb60689926dade85eb7d7c245394ac6f9706f51a624bf16c9b68acdc4f"
     },
     {
       "path": "exports/sarafan-club-event-03.png",
       "mediaType": "image/png",
-      "bytes": 795745,
-      "sha256": "83c2f382f6b12e4e84961f58129f33e1162d3ab3dfebf4f8052ff976d48accc6"
+      "bytes": 795970,
+      "sha256": "f8a237d1fa7ff511a8b2533afc9c7280fdae0d1bac94f9410d0165e5e9ea9a65"
     },
     {
       "path": "exports/sarafan-club-event-04.png",
       "mediaType": "image/png",
-      "bytes": 779652,
-      "sha256": "9d3965c63105d5e093840ecf0e2bf42823f789bf0aaee91a7ad11ef89847eef1"
+      "bytes": 779826,
+      "sha256": "83dec5a36f52974f75077d53bd9692199661b5c3476915ea689954e0f08e3c9c"
     },
     {
       "path": "exports/sarafan-club-event-05.png",
       "mediaType": "image/png",
-      "bytes": 828927,
-      "sha256": "4c486f18125bdd106ead422d7d390156615bb4c2a27ed647c327537ba9f7091c"
+      "bytes": 829099,
+      "sha256": "c8feed2c4c42da954ddfe8f31d78e36d6138f52848fb170984d3c1928a34b809"
     },
     {
       "path": "exports/sarafan-club-event-06.png",
       "mediaType": "image/png",
-      "bytes": 859096,
-      "sha256": "1153182581852bf82dea74287c312e435c773b9802d85ae7e396e87e512526b8"
+      "bytes": 859506,
+      "sha256": "300475d5e67bd6a291eb7c042057c97ed113f1b259ef6c64b8d23c5bd2222c02"
     },
     {
       "path": "exports/sarafan-club-salon-01.png",
       "mediaType": "image/png",
-      "bytes": 194069,
-      "sha256": "23f4184a05ef5af2ce3d6617d0f2ef6e015ccd93522ccf318b8cd00e35b3b487"
+      "bytes": 193989,
+      "sha256": "155fb9226a827bd9160729829c000da8f06fafdee393e3ab6324123201207587"
     },
     {
       "path": "exports/sarafan-club-salon-02.png",
       "mediaType": "image/png",
-      "bytes": 691372,
-      "sha256": "a2c15dd06efb0eb15d6d447608e6f3f3dab0ddcab0e9328898290b7c84999ac2"
+      "bytes": 691993,
+      "sha256": "c982b56bbb1597029392d7e681fde8985e6c89930e2f75c57f03cf596ae51796"
     },
     {
       "path": "exports/sarafan-club-salon-03.png",
       "mediaType": "image/png",
-      "bytes": 1444050,
-      "sha256": "f1b0db00f1b0143bbda55fd24b3aac3ac80bf0299c73fae6c5ef4eb4924d0cc9"
+      "bytes": 1443918,
+      "sha256": "01d1e4cf55ec9e0d1abff309eef3542e7f367dd4d9c5bbae00a6a16574735b19"
     },
     {
       "path": "exports/sarafan-event-01.png",
       "mediaType": "image/png",
-      "bytes": 941393,
-      "sha256": "1c8e1f3cf0dc34e65c02d816d84a4707454caeb7cf2e324a422bf94ce6a9a85c"
+      "bytes": 941214,
+      "sha256": "8c4cc236880fcb6ca1bd2cac8eb38cbf3b2d7897cbcf5b59b4bf632239ab77f4"
     },
     {
       "path": "exports/sarafan-event-02.png",
       "mediaType": "image/png",
-      "bytes": 557384,
-      "sha256": "db3f950b3b2ca5fe04dbc4c1044b8a75ffca14798cd622a8b00843c5d1ccdca8"
+      "bytes": 557157,
+      "sha256": "8c3f6cde62b4656179c894f5aeff33252b022efda56bf74700fce2d63b9c1165"
     },
     {
       "path": "exports/sarafan-event-03.png",
       "mediaType": "image/png",
-      "bytes": 682571,
-      "sha256": "be14287d9424559bd492aada7d7ced3983cb440077dd25cf4a4232d826725a9e"
+      "bytes": 682336,
+      "sha256": "3dc470f7a8dbc5c1d720afc7feedca14f82492c819f7bf7f5cb8690b54c40b99"
     },
     {
       "path": "exports/sarafan-event-04.png",
       "mediaType": "image/png",
-      "bytes": 846907,
-      "sha256": "83166357633f33dec0a295d32748fac7ff2dca30058468bd4c85d09d78d654b1"
+      "bytes": 846913,
+      "sha256": "cb24d952c367d8f2755c8e1962823895236831abc42c4832fe4ccc1269417ac9"
     },
     {
       "path": "exports/sarafan-expert-01.png",
       "mediaType": "image/png",
-      "bytes": 386626,
-      "sha256": "355b635d6a4d08d6a2ad266268218585b98211b2ab81a9bdbc4b5bf55027f7c5"
+      "bytes": 105266,
+      "sha256": "5c30aeb9c548e3f5f3a7b67034c5bdeb181fecde410d6ab2ba62c5556dee94b8"
     },
     {
       "path": "exports/sarafan-expert-02.png",
       "mediaType": "image/png",
-      "bytes": 112517,
-      "sha256": "119af4b07138baed19c309ae7c0e4dae3cd0dd200a3c9ec99b700b4e8d494879"
+      "bytes": 112427,
+      "sha256": "1c36f7ac12865b6e4120ca6e4cb179b3b8635c8aa3c969dcb78de93b7c79a8dc"
     },
     {
       "path": "exports/sarafan-expert-03.png",
       "mediaType": "image/png",
-      "bytes": 1092981,
-      "sha256": "a6241052549af612e65899d67e213e91b6de1918aa256cbd2112d48067cd2286"
+      "bytes": 1092729,
+      "sha256": "dc326a92e46214385a5388291b398391733d233e3bcb2e931637061af0c6cf8c"
     },
     {
       "path": "exports/sarafan-expert-04.png",
       "mediaType": "image/png",
-      "bytes": 218779,
-      "sha256": "defca25af9821156ed83a591f8bf8f3f70b202d7940bf1cbf1b33de1394841c9"
+      "bytes": 218838,
+      "sha256": "d4dfa4ef248e1f072e787cad87e65a323a5df83c07ca9f74e0f54580f5135079"
     },
     {
       "path": "exports/sarafan-expert-05.png",
       "mediaType": "image/png",
-      "bytes": 65061,
-      "sha256": "1aaefa40decf880dd6bf44d72c50725bb4bfa52b4157a36a8fb1b75af8505ae0"
+      "bytes": 65110,
+      "sha256": "7c8cf13f6954af9bb9cf9f9e48c367361ccbd0a4dff4d7194e28597d6bfa1424"
     },
     {
       "path": "exports/sarafan-intro-01.png",
       "mediaType": "image/png",
-      "bytes": 2315106,
-      "sha256": "d557f228284ed62cd3a06ed7bca90477e9662cd5c1b96398700f5d4da2cac14e"
+      "bytes": 2315187,
+      "sha256": "88a55b5b34ef8a4fae135c3946f8b3305c58776d7832241ee6356254bda5b03c"
     },
     {
       "path": "exports/sarafan-intro-02.png",
       "mediaType": "image/png",
-      "bytes": 503848,
-      "sha256": "c81729a92d7f39d8ca0cad88cd53c9e6b296d2e789cc99c19f6c3c0d80ed85d6"
+      "bytes": 503301,
+      "sha256": "cffc22772d9ce46b4797bea4bfc5068d588885f1487407460ffda472678a18fe"
     },
     {
       "path": "exports/sarafan-intro-03.png",
       "mediaType": "image/png",
-      "bytes": 637901,
-      "sha256": "17aba8ce6c20c60adaf7b07a128bde86cc16005e9b49c83c23aa6a2c4edc33e1"
+      "bytes": 637985,
+      "sha256": "4c42ae3e9b8020b0071f3ffdd63b167cc28932ec0a133b1a37a8db75e87ea4b0"
     },
     {
       "path": "exports/sarafan-intro-04.png",
       "mediaType": "image/png",
-      "bytes": 830079,
-      "sha256": "14a96a28213a21faa45e2f9c46ef365204a39a6c90a1993c8252f721c143bc18"
+      "bytes": 829488,
+      "sha256": "b2640c4b67d7d51438643dcb19d2701f5b79f027d734e4e6edd6ddd00428ac74"
     },
     {
       "path": "exports/sarafan-intro-05.png",
       "mediaType": "image/png",
-      "bytes": 740963,
-      "sha256": "c5e7e700e27b6729311c853da5677bd316fed8fac007033929ab29e8e84e18f1"
+      "bytes": 738979,
+      "sha256": "2a93f4ebd880f3e3db91ea0015bc3734359063e73b599b32e9f44ff149f8bf97"
     },
     {
       "path": "exports/sarafan-intro-06.png",
       "mediaType": "image/png",
-      "bytes": 162997,
-      "sha256": "87abd508e84e286e964e2902dc05ed4f0fe61b6a89e1c6400927a3aab2099df9"
+      "bytes": 162648,
+      "sha256": "e4f23b4c512aad1691a51820b83190060518aaa19da32fcc36ec17a4d1a6a3cb"
     },
     {
       "path": "exports/sarafan-intro-07.png",
       "mediaType": "image/png",
-      "bytes": 1286924,
-      "sha256": "336f1da9a02833ea04403c22a58e56b51b5274c0a1e4a39eaeb721d7220cc2f0"
+      "bytes": 1286363,
+      "sha256": "e7292007636edfe2695a2f1760e39ab7ca1236676b2948a1864d5c2e2331f555"
     },
     {
       "path": "exports/sarafan-places-01.png",
       "mediaType": "image/png",
-      "bytes": 1521867,
-      "sha256": "ecc2acdae3772021f6be038d51be0252c61024df4f434532910e454f5e65d84a"
+      "bytes": 1521989,
+      "sha256": "83b958b922cf653d293e081e86d51a020a5e867be4a77b05e0e6c936ea2674f5"
     },
     {
       "path": "exports/sarafan-places-02.png",
       "mediaType": "image/png",
-      "bytes": 1797564,
-      "sha256": "bc8ec729cc4db3ce9932f7a0b99300bbd9ddf9c83450e02ece1949e65d2155b9"
+      "bytes": 1797653,
+      "sha256": "79977f2e7dde2f2390101d6e318c4c1c25651279819fc495a7b4ba714ef7a762"
     },
     {
       "path": "exports/sarafan-places-03.png",
       "mediaType": "image/png",
-      "bytes": 941183,
-      "sha256": "2606ff052291c03a39aed8aaff7cd4709a1031940bda028aede4599f81f3a5c1"
+      "bytes": 941292,
+      "sha256": "510570a0a418de7e145be36e53004c474a48e6ebb19ec9ebeffeedc4bb7cad7b"
     },
     {
       "path": "exports/sarafan-places-04.png",
       "mediaType": "image/png",
-      "bytes": 868513,
-      "sha256": "6acb2eaa0fa6188aa0114b7d26b024bb87ded0f6f0ec4f46dc2a29eba3ac26d9"
+      "bytes": 868423,
+      "sha256": "543c0139e388148d07267926fdeac0678a78d707c28518b0c2182a203feb3d2b"
     },
     {
       "path": "exports/sarafan-places-05.png",
       "mediaType": "image/png",
-      "bytes": 1644772,
-      "sha256": "4685f32859dc1effafd781ee84943fc31a14e7ac20c37d04c98219635f173112"
+      "bytes": 1643865,
+      "sha256": "5a98ae866e013c29397e823a0b6589782e2646f00db8403bc2de4b78fa254c40"
     },
     {
       "path": "exports/sarafan-places-06.png",
       "mediaType": "image/png",
-      "bytes": 769481,
-      "sha256": "108769ac1460d4d9ac9c1726631edcbe804711a7ef7324499fff84329d16fbf7"
+      "bytes": 770996,
+      "sha256": "c417f84d5c31cee0b95cbf00b8e6d6f0e99754a0921eb99acfa67e3faaf8b501"
     },
     {
       "path": "exports/sarafan-places-07.png",
       "mediaType": "image/png",
-      "bytes": 86099,
-      "sha256": "14c26cff5a0a7df79d274b93527e6eeb6bb54e7302d4c2c72054bf81bcb81f06"
+      "bytes": 85416,
+      "sha256": "5914a5eda59bddc9951c485abbec76b886717de142271a9df221458afa8dc27d"
     },
     {
       "path": "exports/sarafan-places-08.png",
       "mediaType": "image/png",
-      "bytes": 93855,
-      "sha256": "088e883b74b9c0e098e40050bfc191c5160668a619f52eda68a1cde194ba239c"
+      "bytes": 92485,
+      "sha256": "75a94c1b91610388021f353a041e75acaf91a396a12a44b74d0e454354961580"
     },
     {
       "path": "exports/sarafan-places-09.png",
       "mediaType": "image/png",
-      "bytes": 81227,
-      "sha256": "c1fc09410458a19a45241210546354c3daab3ed36361346ef89075cba8ea83bd"
+      "bytes": 81126,
+      "sha256": "7e23b4558242a37bf4a6f122d29cade313616e37d0ff3cb6aea4c61fc7116e15"
     },
     {
       "path": "exports/sarafan-places-10.png",
       "mediaType": "image/png",
-      "bytes": 73188,
-      "sha256": "0a27643e0390e0d0c37d0a15d616fb2285de683826bc676b49a6aeff5670683a"
+      "bytes": 74153,
+      "sha256": "880301941df02a77fb2aa7159b751518747180aaa5496a0eddca219aaff5eaa7"
     },
     {
       "path": "exports/sarafan-places-11.png",
       "mediaType": "image/png",
-      "bytes": 89491,
-      "sha256": "a2046b7f4926f894fdd4194144c5b9969ffef7eed5c49838985c5db68623c442"
+      "bytes": 92280,
+      "sha256": "12bd416974d57f0cc33ade12e90e382ca037068c302ab21f7575dfd1daa02b80"
     },
     {
       "path": "exports/sarafan-places-12.png",
       "mediaType": "image/png",
-      "bytes": 85697,
-      "sha256": "8a04acb05a385d0b482f15f76791abff85725d1402dab27108ec461f6c0dae58"
+      "bytes": 85800,
+      "sha256": "49445e2a5ab72eb229f150b3bd550d08d7ce8f3a2787742f68ccb8a6c2b15cb9"
     },
     {
       "path": "exports/sarafan-proust-01.png",
       "mediaType": "image/png",
-      "bytes": 950933,
-      "sha256": "2abcbcef2da2eb8e249a5b0cfaa503e3f5585d62490ad55a441ed9d38dbdf661"
+      "bytes": 951265,
+      "sha256": "69c2eb93ee9ca2c1854e34cc53bc7ec16efd5558ea0d55190e4e9f5031304117"
     },
     {
       "path": "exports/sarafan-proust-02.png",
       "mediaType": "image/png",
-      "bytes": 971912,
-      "sha256": "51971d5f31edd5a570ae9876f8d966f0a42c060298c6c30119fc73fb241b4454"
+      "bytes": 971929,
+      "sha256": "c1fdc7c21b3384a8e59e99c15b400307ddd66f1dc08e8a3e27fa74a674bd0967"
     },
     {
       "path": "exports/sarafan-proust-03.png",
       "mediaType": "image/png",
-      "bytes": 607940,
-      "sha256": "ef803157752cd9893ce66d18cfcabd4f9b8b215e90bb25d26913ebdc77640ab8"
+      "bytes": 607913,
+      "sha256": "1dea88ac6ba54da5e8df2bf62c2f8e978f59b23eed796135fac9f271838354d0"
     },
     {
       "path": "exports/sarafan-proust-04.png",
@@ -2283,92 +3820,116 @@
     {
       "path": "exports/sarafan-proust-05.png",
       "mediaType": "image/png",
-      "bytes": 1665473,
-      "sha256": "3162aab1fc816530e0b24785272506f1f24bb6c584c1efef35db78a410a1b53e"
+      "bytes": 1665452,
+      "sha256": "b7e93b1fcf5e60485f0fba3aab6e9573f3298ee1130a88ff93427d861706455e"
     },
     {
       "path": "exports/sarafan-proust-06.png",
       "mediaType": "image/png",
-      "bytes": 145858,
-      "sha256": "5bad8905264ccb32ab7ecbe23166295c6ad3a212e22dc9443c5737ec8e76541f"
+      "bytes": 145848,
+      "sha256": "d267c6f94f7aa23038f548930737f876e81b792f45c0295d4e929afe12ca6960"
+    },
+    {
+      "path": "exports/sarafan-recommendations-01.png",
+      "mediaType": "image/png",
+      "bytes": 96374,
+      "sha256": "ae009c253122e22b4250d6c4d526f46439d46cc48445050a8268714d1960810b"
+    },
+    {
+      "path": "exports/sarafan-recommendations-02.png",
+      "mediaType": "image/png",
+      "bytes": 98520,
+      "sha256": "5c34e4e4212ab0202116f6c1e9b71f045732030b710d264ee7a6f978f46624ba"
+    },
+    {
+      "path": "exports/sarafan-recommendations-03.png",
+      "mediaType": "image/png",
+      "bytes": 80901,
+      "sha256": "c686fcaa5efedc17bd2bb2f487971e6a761ed12444a98ed0715e36c35dbfd1ce"
+    },
+    {
+      "path": "exports/sarafan-reels-cover-01.png",
+      "mediaType": "image/png",
+      "bytes": 1069584,
+      "sha256": "d0a4b3e924486ca35716706fb4b5ad97fde04c7aeee81a4fc6868144865069c4"
     },
     {
       "path": "exports/sarafan-transition-01.png",
       "mediaType": "image/png",
-      "bytes": 88967,
-      "sha256": "8cb6f336c06977453a5da1ba649a577e81e89562b61b96597e76e5c5c10cbbb4"
+      "bytes": 88830,
+      "sha256": "2448a34b37f996b6cd67d16796c648d2a2be8ebec55609fb47741856ba6bf623"
     },
     {
       "path": "exports/sarafan-transition-02.png",
       "mediaType": "image/png",
-      "bytes": 341103,
-      "sha256": "0ca46f50d5ebec46d8ea6dd2ca00d307b6942897b0ab9756f2012f9bf0dfb893"
+      "bytes": 340924,
+      "sha256": "622770b6740ea7d2a5719e58282c4004478213c3a95591d1a6a4db78e8155861"
     },
     {
       "path": "exports/sarafan-transition-03.png",
       "mediaType": "image/png",
-      "bytes": 231246,
-      "sha256": "53be6297f5fe6f6a09e158ea9029c1d3896a098c94bc5a4b27d47fdb11971a7a"
+      "bytes": 231028,
+      "sha256": "53f9be4c5911b8524bbf849a323e1ca17c3c78731e658e048f6c4c7b7557bfba"
     },
     {
       "path": "exports/sarafan-transition-04.png",
       "mediaType": "image/png",
-      "bytes": 235567,
-      "sha256": "798ab608a00e1c01f3036b521f2362a893622d597e7619422c8216962ff3de11"
+      "bytes": 235324,
+      "sha256": "0638ff60bdb964c144bb367308eb36b46d9eb9d9aa8014e225fceee273ed6b68"
     },
     {
       "path": "exports/sarafan-transition-05.png",
       "mediaType": "image/png",
-      "bytes": 1748698,
-      "sha256": "23f75587773b854802309d1d559a6a0eecf3560887d3b0db771f3a1e81c30b00"
+      "bytes": 1748321,
+      "sha256": "17d508e37968a21a1a2bd966f5fa6cc0dcf559283db87252d6a522184ceea963"
     },
     {
       "path": "exports/sarafan-transition-06.png",
       "mediaType": "image/png",
-      "bytes": 185697,
-      "sha256": "f5daf4113fc5f82a7a5c57d502eb198d2b3e161dc1c4886aa518d55d861d8f31"
+      "bytes": 191372,
+      "sha256": "dc21fca6c64b7b3affec74c8726ca7abba99957273a72852e2bf9f723624ad92"
     },
     {
       "path": "index.html",
       "mediaType": "text/html",
-      "bytes": 75096,
-      "sha256": "d44387c655cce866896d849619638579f4cad6da5bffe4391e4f8c471cacc523"
+      "bytes": 93136,
+      "sha256": "735abf590d50cc60850a8585c97ba595e19f5bd4ea3fc3bec5b18c2b1b94b849"
     },
     {
       "path": "intro.css",
       "mediaType": "text/css",
-      "bytes": 7485,
-      "sha256": "b61cd29b2fdd28b5fd1ab22a4056722554dd2297336c7f6adf5c7b196594dc99"
+      "bytes": 7492,
+      "sha256": "bb3a09df70c89849058b3370612f2f6aeee2eabbbbca15710177eeeba07800d3"
     },
     {
       "path": "llms.txt",
       "mediaType": "text/plain",
-      "bytes": 2757,
-      "sha256": "44653fc8c8120724f3e714c7a2a52c68504230ba6863ac2e46c5353f165ba08c"
+      "bytes": 3579,
+      "sha256": "b9d4acaa39076df294e97b380371a6421cd9a070447e5d5864724e1bac6a2582"
     },
     {
       "path": "new-posts-data.js",
       "mediaType": "text/javascript",
-      "bytes": 11464,
-      "sha256": "722e2d8a8f472a3e6f236e364f1be5169e6548b7c54fdc1ab51da4f817ccd50d"
+      "bytes": 17411,
+      "sha256": "7f73dcd94ee82d225b546abb50bb553097119308b08945bf40e3085748f1f966"
     },
     {
       "path": "new-posts.css",
       "mediaType": "text/css",
-      "bytes": 6263,
-      "sha256": "3f70863807eac9ebf695e9e233dc15d894e54c85b9bfb869022014921de53cc3"
+      "bytes": 8406,
+      "sha256": "c77a9b7beef52390a6da396c1660c9a04fcfa22e71a01a5c224730e557f1fdfe"
     },
     {
       "path": "new-posts.html",
       "mediaType": "text/html",
-      "bytes": 4682,
-      "sha256": "b8fd9cbf8161562e30f9c406161c738ca219c9ad06a2fe31d624b1bb7ffd6040"
+      "bytes": 5213,
+      "sha256": "6f34df01ab6a67cb42b7d7149619a036fa8600a9c1b61b3fbd587cfd305c1701"
     },
     {
       "path": "new-posts.js",
       "mediaType": "text/javascript",
-      "bytes": 4597,
-      "sha256": "e0e83bea12739475d173b4be81a114fedece86b1fb994eee2bc37e25924e2093"
+      "bytes": 7826,
+      "sha256": "45e11b2bcc6b869b9a95578923e6e74702cbd3488cc790565fd676359a385f35"
     },
     {
       "path": "photo-crop.js",
@@ -2379,8 +3940,128 @@
     {
       "path": "photo-editor.js",
       "mediaType": "text/javascript",
-      "bytes": 6048,
-      "sha256": "81f4bdf6a1e040068a999b0904f05c3480ec22fb005cdcbf455861e90f159eb8"
+      "bytes": 6158,
+      "sha256": "2af5507b2aa2c6420e2705a7b96976e8b9dff35b9c49ce1c95194c23dc8b7247"
+    },
+    {
+      "path": "posts/french-superlevel/01.html",
+      "mediaType": "text/html",
+      "bytes": 1418,
+      "sha256": "9cbb2b7475fff72998b0a58bba1adfe48553b5d463f4097929179d5b554958ba"
+    },
+    {
+      "path": "posts/french-superlevel/01.png",
+      "mediaType": "image/png",
+      "bytes": 105058,
+      "sha256": "c0c35432dc92e988f3e6fdf0569fb5ba7697b6511ed17d8248de9150e0cbe6dd"
+    },
+    {
+      "path": "posts/french-superlevel/02.html",
+      "mediaType": "text/html",
+      "bytes": 1796,
+      "sha256": "d1c119e8f58d6d31e7a60ddfc64a744b432d86cee4a09c09a93e6acb4881e8e0"
+    },
+    {
+      "path": "posts/french-superlevel/02.png",
+      "mediaType": "image/png",
+      "bytes": 192644,
+      "sha256": "f93976eb07fe436bd29bd132afb52fab437e13e898b5006f3911febb28a1c6ec"
+    },
+    {
+      "path": "posts/french-superlevel/03.html",
+      "mediaType": "text/html",
+      "bytes": 1786,
+      "sha256": "b94b4aa915698de7e0451c41b43e2a6bc5aa377651320e61fe5ca0b89f1abda0"
+    },
+    {
+      "path": "posts/french-superlevel/03.png",
+      "mediaType": "image/png",
+      "bytes": 123056,
+      "sha256": "62eb8c6651f5994d0f0533b902d2ad9e1b4a63764be62a6e352abcbd1220034e"
+    },
+    {
+      "path": "posts/french-superlevel/04.html",
+      "mediaType": "text/html",
+      "bytes": 1768,
+      "sha256": "193a136cb98b102e7e248d31a1c95f359922b2355befce22234787655f71de49"
+    },
+    {
+      "path": "posts/french-superlevel/04.png",
+      "mediaType": "image/png",
+      "bytes": 126173,
+      "sha256": "3f0bd5c36bbd28d3ab29b60cf5156a113ffd88be34985daddb589910c49b848c"
+    },
+    {
+      "path": "posts/french-superlevel/05.html",
+      "mediaType": "text/html",
+      "bytes": 1811,
+      "sha256": "a148e58c557816835d91c8bd68034b56c4d3027dac4890ed9c7fce7fa2a818b5"
+    },
+    {
+      "path": "posts/french-superlevel/05.png",
+      "mediaType": "image/png",
+      "bytes": 157157,
+      "sha256": "bca7b33010d56ecda0ea9ea6d0f70d9229936758efce43be96074441b1f04597"
+    },
+    {
+      "path": "posts/french-superlevel/06.html",
+      "mediaType": "text/html",
+      "bytes": 1079,
+      "sha256": "2f69740feaa052fc8cd84b7a503107fb33a7124585055262ae083e26b324dfcd"
+    },
+    {
+      "path": "posts/french-superlevel/06.png",
+      "mediaType": "image/png",
+      "bytes": 93942,
+      "sha256": "e469e69af1e6b16a092f0799a4da1744def7a9d82a275b48ce0f2fbcfb33d74c"
+    },
+    {
+      "path": "posts/french-superlevel/07.html",
+      "mediaType": "text/html",
+      "bytes": 1406,
+      "sha256": "edf9752cdf36c289d822bdc68fc5ca1361149caed5ec95303c55ae9ec2c0ae7d"
+    },
+    {
+      "path": "posts/french-superlevel/07.png",
+      "mediaType": "image/png",
+      "bytes": 115985,
+      "sha256": "1a2ffa9e2023848e113d5d4a696f65ff6a548db2415c943c36c01218ed4a1e37"
+    },
+    {
+      "path": "posts/french-superlevel/README.md",
+      "mediaType": "text/markdown",
+      "bytes": 1472,
+      "sha256": "9e74d15fbe35d63deec3e13b28d068b4a3493edb9cf7f383363378f0bb8a0c0e"
+    },
+    {
+      "path": "posts/french-superlevel/caption.txt",
+      "mediaType": "text/plain",
+      "bytes": 1505,
+      "sha256": "850d5ad0ef6967384aac024b62f7a29b6ee5ede406e24b73f4f7ce36426430e7"
+    },
+    {
+      "path": "posts/french-superlevel/contact-sheet.png",
+      "mediaType": "image/png",
+      "bytes": 314439,
+      "sha256": "5bacf34c772487a7009a68be063f0473b8697c6adf8c92deefdb3519ce96f602"
+    },
+    {
+      "path": "posts/french-superlevel/content.json",
+      "mediaType": "application/json",
+      "bytes": 10556,
+      "sha256": "73876558acbb62654d19179326216cf543d072d925dd53d80b66aa160820712e"
+    },
+    {
+      "path": "posts/french-superlevel/layout-check.json",
+      "mediaType": "application/json",
+      "bytes": 10965,
+      "sha256": "9a169fb738b54c2247703c0955d4e9466b7831f016cf4ce9b7f2f4f238b68a91"
+    },
+    {
+      "path": "posts/french-superlevel/post.css",
+      "mediaType": "text/css",
+      "bytes": 209,
+      "sha256": "43674e81fbb12017af90374272e7e92e4c6d08f3d963279a8a086c3cb93ce1b8"
     },
     {
       "path": "posts/ingrid-aromatherapy/01.html",
@@ -2403,8 +4084,8 @@
     {
       "path": "posts/ingrid-aromatherapy/02.png",
       "mediaType": "image/png",
-      "bytes": 118432,
-      "sha256": "7f2fe745ebed16309de4a045d1ef727d1753b5ab996f73c9b937cd72ad47416b"
+      "bytes": 118504,
+      "sha256": "ab589bd80a09876a9baae79bf2c2933daffb6b2e680a65377c39f573be463b61"
     },
     {
       "path": "posts/ingrid-aromatherapy/03.html",
@@ -2415,8 +4096,8 @@
     {
       "path": "posts/ingrid-aromatherapy/03.png",
       "mediaType": "image/png",
-      "bytes": 1145987,
-      "sha256": "369cea2204d413841e60ca0426b8be934c40b0690bf57a0094c6ec48630fdb50"
+      "bytes": 1145852,
+      "sha256": "cbe8b61b5bd4c51afe673cd01ac305046ce9abd019c3ec6a84115e6e271dc3b2"
     },
     {
       "path": "posts/ingrid-aromatherapy/04.html",
@@ -2427,8 +4108,8 @@
     {
       "path": "posts/ingrid-aromatherapy/04.png",
       "mediaType": "image/png",
-      "bytes": 168686,
-      "sha256": "8404091d2bab46e6c0f471ba4d9c3f9143c3065108cb92e78dee88bac421deaf"
+      "bytes": 168741,
+      "sha256": "9666f3a7c53107f0f263cc2e0375ff2afab0896a3036a519ba83494f01042d95"
     },
     {
       "path": "posts/ingrid-aromatherapy/05.html",
@@ -2439,14 +4120,14 @@
     {
       "path": "posts/ingrid-aromatherapy/05.png",
       "mediaType": "image/png",
-      "bytes": 47539,
-      "sha256": "3f2e22c6c02074538afaa85772b99f8c0181a63b214f2a69c497bd50ca6707a7"
+      "bytes": 47494,
+      "sha256": "6861cd9a016ebdc5ea031caae30f74654981230215bd9911f9cd137f20ad22e3"
     },
     {
       "path": "posts/ingrid-aromatherapy/README.md",
       "mediaType": "text/markdown",
-      "bytes": 3698,
-      "sha256": "c7e9536e78d51366321016b11a93d7c9cf985f17c9737d3631106711062285d8"
+      "bytes": 3810,
+      "sha256": "915d64fc4300e7d87643fd564b9132880a1112bd7d1028f20aa8f09eca07180d"
     },
     {
       "path": "posts/ingrid-aromatherapy/caption.txt",
@@ -2457,8 +4138,8 @@
     {
       "path": "posts/ingrid-aromatherapy/contact-sheet.png",
       "mediaType": "image/png",
-      "bytes": 586880,
-      "sha256": "cfbeec603d212877b2b21d56550b06bd144ecbf171eef853718fa8f32cd2447f"
+      "bytes": 586771,
+      "sha256": "025d3ed18d135b8e0a79b4f4b9a1c80959c45cb301830aab101eba7e2cdf7dce"
     },
     {
       "path": "posts/ingrid-aromatherapy/lavender-unsplash.jpg",
@@ -2481,20 +4162,20 @@
     {
       "path": "posts/ingrid-aromatherapy/marks/mark-blue.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 1522,
-      "sha256": "f72e5afcc36cbfbba72e73c7edcd62b28117eb806f97614aeacb568a15a0a8b5"
+      "bytes": 2444,
+      "sha256": "f1bb9abf634a9c9f56cd81cf05c271545c8bcb73113ebb01bf76c62d99dbac34"
     },
     {
       "path": "posts/ingrid-aromatherapy/marks/mark-cream.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 1522,
-      "sha256": "597f06059699bef46ddc2dc889e739cac03877ffbda7ddeb3056dbbcebf26b57"
+      "bytes": 2444,
+      "sha256": "9d965c01a6d7b4b9323e3754b186e658f90e131464b5b6a9afbd42253b280137"
     },
     {
       "path": "posts/ingrid-aromatherapy/marks/mark-olive.svg",
       "mediaType": "image/svg+xml",
-      "bytes": 1522,
-      "sha256": "6944c8689f79a55eb8191ab338b03f47a9ca18b3cb13fb33eef6b84215f62abb"
+      "bytes": 2444,
+      "sha256": "ec1ec6faf562bfa82287bf08ceee972e645b2bd9ab26af600a3ef5610d015f7e"
     },
     {
       "path": "posts/ingrid-aromatherapy/marks/ovals-blue.svg",
@@ -2551,6 +4232,138 @@
       "sha256": "215c22fcefaff5489923492428253520ed8da408e91dc8d6b18b972e4001fd65"
     },
     {
+      "path": "posts/retirement-france/01.html",
+      "mediaType": "text/html",
+      "bytes": 1403,
+      "sha256": "92864dadae8989196bae6b07c0705aab49cb7c0a72154a118da4922be2ff1f7e"
+    },
+    {
+      "path": "posts/retirement-france/01.png",
+      "mediaType": "image/png",
+      "bytes": 126547,
+      "sha256": "d0ff3ab6e7d47b78b9bd159bdedc7393f9b07ec22167155475b000e5d79f899a"
+    },
+    {
+      "path": "posts/retirement-france/02.html",
+      "mediaType": "text/html",
+      "bytes": 1782,
+      "sha256": "f8139da8d2e0851e68d0eedd78259e45fabba1ca316f1201ebb7ad8f5b15ccda"
+    },
+    {
+      "path": "posts/retirement-france/02.png",
+      "mediaType": "image/png",
+      "bytes": 176481,
+      "sha256": "cb0ecbeb4fdff55e8df82196b64de19f7e3f43465021e40dfbf71d84aaad8bee"
+    },
+    {
+      "path": "posts/retirement-france/03.html",
+      "mediaType": "text/html",
+      "bytes": 1751,
+      "sha256": "4bef6d66be0ef992888541857c9d0739adeb64787f28e9aa860f4dd50f628338"
+    },
+    {
+      "path": "posts/retirement-france/03.png",
+      "mediaType": "image/png",
+      "bytes": 119953,
+      "sha256": "6c068006ae369bc45b77e5bf9128dfdfbf65833814b575dfece606f713614f14"
+    },
+    {
+      "path": "posts/retirement-france/04.html",
+      "mediaType": "text/html",
+      "bytes": 1738,
+      "sha256": "6fc2d3bfd6dcf40b8617a4e204ffc1bef17c5aca7461fb67a9f72de239acef9e"
+    },
+    {
+      "path": "posts/retirement-france/04.png",
+      "mediaType": "image/png",
+      "bytes": 126193,
+      "sha256": "9dd4dba6633e6bb151dc6a6576633be66b4625e09573d89c4b2930779c6f22da"
+    },
+    {
+      "path": "posts/retirement-france/05.html",
+      "mediaType": "text/html",
+      "bytes": 1771,
+      "sha256": "d9c03195a3b7d0651304480771f3c509650119e3ecf4ab611745cd063b18554d"
+    },
+    {
+      "path": "posts/retirement-france/05.png",
+      "mediaType": "image/png",
+      "bytes": 167468,
+      "sha256": "00afab3f80a94f44064048d28a66d75a48c717c2d7d8904f9245a8294adb4d0a"
+    },
+    {
+      "path": "posts/retirement-france/06.html",
+      "mediaType": "text/html",
+      "bytes": 1808,
+      "sha256": "4f40e15cb5deab38911ee86c51eb0dcb12ab7fc4c4ca4736d181f57c978b584e"
+    },
+    {
+      "path": "posts/retirement-france/06.png",
+      "mediaType": "image/png",
+      "bytes": 191615,
+      "sha256": "943419f5ae1a3e7cb87bae5546b2dfc231c7c3b90fdb26bcbbad43bce4e37057"
+    },
+    {
+      "path": "posts/retirement-france/07.html",
+      "mediaType": "text/html",
+      "bytes": 1058,
+      "sha256": "5f15208d33d78a274bb9763a44bfc865625ae0a22e20ab5d6d365192898bad55"
+    },
+    {
+      "path": "posts/retirement-france/07.png",
+      "mediaType": "image/png",
+      "bytes": 90409,
+      "sha256": "e13155872757aafc42ab9ac618c89a68ac5b176cad2d02a541aa4c12a1947302"
+    },
+    {
+      "path": "posts/retirement-france/08.html",
+      "mediaType": "text/html",
+      "bytes": 1394,
+      "sha256": "54e6d084d902ee8165b6c2b0b51f473547bf9bb658e43f73538858cf26037ef7"
+    },
+    {
+      "path": "posts/retirement-france/08.png",
+      "mediaType": "image/png",
+      "bytes": 115014,
+      "sha256": "dd16ebf4b55aeca89009b9ca79a5002a048e5cdbe6287813353d684afa546813"
+    },
+    {
+      "path": "posts/retirement-france/README.md",
+      "mediaType": "text/markdown",
+      "bytes": 1762,
+      "sha256": "b69c4de7862e1e4b1b6aa6a14c6cfa340340db6796a4eb7264ab651f5b7ed157"
+    },
+    {
+      "path": "posts/retirement-france/caption.txt",
+      "mediaType": "text/plain",
+      "bytes": 1489,
+      "sha256": "1645030ba6ac5506a4fe668614ec717694c4c4267a3c0727fba7106387ec0b0d"
+    },
+    {
+      "path": "posts/retirement-france/contact-sheet.png",
+      "mediaType": "image/png",
+      "bytes": 378887,
+      "sha256": "fe2ce3856611aa28586bc24bc599e2f83e910a2bafb6406c5b5cb45fabedd545"
+    },
+    {
+      "path": "posts/retirement-france/content.json",
+      "mediaType": "application/json",
+      "bytes": 12286,
+      "sha256": "f7c5b4a830b46c7acde1f88c37c16cb5fc2011ef3a2485cad9daede061240cd5"
+    },
+    {
+      "path": "posts/retirement-france/layout-check.json",
+      "mediaType": "application/json",
+      "bytes": 12909,
+      "sha256": "ebb4d35795569c5206ca5cfa28ca38515bbd08e9ff1c00d8639b2c247c789ab3"
+    },
+    {
+      "path": "posts/retirement-france/post.css",
+      "mediaType": "text/css",
+      "bytes": 209,
+      "sha256": "43674e81fbb12017af90374272e7e92e4c6d08f3d963279a8a086c3cb93ce1b8"
+    },
+    {
       "path": "posts/salon-november-09-15/01.html",
       "mediaType": "text/html",
       "bytes": 2537,
@@ -2559,152 +4372,152 @@
     {
       "path": "posts/salon-november-09-15/01.png",
       "mediaType": "image/png",
-      "bytes": 178231,
-      "sha256": "11ea32d6ed539086a2b637ddf3f7c7acc1b4633dfd16a4f6cdcc7b9c3050d389"
+      "bytes": 179649,
+      "sha256": "4182bae519cbe7049cc2c548df66a3b976c9e00a6e2e360fc3c4ac356acd559e"
     },
     {
       "path": "posts/salon-november-09-15/02.html",
       "mediaType": "text/html",
-      "bytes": 1905,
-      "sha256": "8cb61d83b5445eda4be9e057dcddd10d97eca18e6c6e3d4671747517775094e7"
+      "bytes": 1908,
+      "sha256": "b4ad8c32618aa54d36a5d19cb799babf7376bf5639d0ae7413376d7643c51126"
     },
     {
       "path": "posts/salon-november-09-15/02.png",
       "mediaType": "image/png",
-      "bytes": 454936,
-      "sha256": "403c9720eb2e68138a6e610527c47b3b4af2e41f46f45c511800bef69a18e8f4"
+      "bytes": 455320,
+      "sha256": "a1cf7e5b36413ed3fc9b6e071a441a347bb2bc61aaf92eb66e550d9dbb1f3f0c"
     },
     {
       "path": "posts/salon-november-09-15/03.html",
       "mediaType": "text/html",
-      "bytes": 1834,
-      "sha256": "24293a01fe44500cd0bfb5a666f1ff8a73b5f557b769d1eceb5b9e08a4c4fac4"
+      "bytes": 1837,
+      "sha256": "5654c7056662012509ad0650970a1669e875716e8e766d785d34f13f5835077e"
     },
     {
       "path": "posts/salon-november-09-15/03.png",
       "mediaType": "image/png",
-      "bytes": 514532,
-      "sha256": "0ab88c4f9f292a0e5130547d54520189dda8dc5542c2053947f882626de176ff"
+      "bytes": 514808,
+      "sha256": "cd0114b48990719e602b70c91d1bdb61e3f99fbd1b5e5c950b0f82163eb2be96"
     },
     {
       "path": "posts/salon-november-09-15/04.html",
       "mediaType": "text/html",
-      "bytes": 1978,
-      "sha256": "4ce6cd51b8cff348d5fda585c7629b042b7e88baeb679724f456554881f89b6d"
+      "bytes": 2204,
+      "sha256": "805d181d2e01a9ab73cf960ee7b5bb9c9ee6a8c2dcdee9c099f93c3825a1e2b7"
     },
     {
       "path": "posts/salon-november-09-15/04.png",
       "mediaType": "image/png",
-      "bytes": 164937,
-      "sha256": "d2dc57ea4d990dcd4756c1af1086bd6c4d78380be853386387bd5737c3ee57a1"
+      "bytes": 281324,
+      "sha256": "37cbea17d617a386d97fc90753b242bbd55479eccbea1376d99e4fd403c1f80c"
     },
     {
       "path": "posts/salon-november-09-15/05.html",
       "mediaType": "text/html",
-      "bytes": 1852,
-      "sha256": "c0a5eadbe8faa3f9d5452a8b485911fa100a4f1dcea00c1682c8c233c7844c37"
+      "bytes": 1856,
+      "sha256": "1236d5ffa28f47cacf0fad20c7baf6985fbfe9d083535054f45881614504a81d"
     },
     {
       "path": "posts/salon-november-09-15/05.png",
       "mediaType": "image/png",
-      "bytes": 623561,
-      "sha256": "e497c0aba9d5f72d2a61dcf69a01f6edf40f74d102bd95fcfdf03faebd68f774"
+      "bytes": 623898,
+      "sha256": "9c36f84a794946b0f1aba2fdb4ac3fc70d13d6fdeecaad9e2509a3d17e28fb23"
     },
     {
       "path": "posts/salon-november-09-15/06.html",
       "mediaType": "text/html",
-      "bytes": 1744,
-      "sha256": "7d7846f2ce1280cbc96ca8ed8e51eef20242b8f0963b3c2be6c01824ab74385e"
+      "bytes": 1745,
+      "sha256": "3d4985f49dc62bab96a2fad76e5f67c3c2d9c6e19e19305b071f1ce5e5eee153"
     },
     {
       "path": "posts/salon-november-09-15/06.png",
       "mediaType": "image/png",
-      "bytes": 328370,
-      "sha256": "cf6e08ec6ba95f3600451ce276ea5bb81f4d98c5d8391834fb2e403810381cd9"
+      "bytes": 328748,
+      "sha256": "3f03dbf90b37b8e60e73756f533139c78a6f6ae936f7c9974782d753d41ad14e"
     },
     {
       "path": "posts/salon-november-09-15/07.html",
       "mediaType": "text/html",
-      "bytes": 1875,
-      "sha256": "54efe942649c41035597cfdb758ffaa0aeb251d1cf6822c43788189eff2e95f3"
+      "bytes": 1878,
+      "sha256": "1c047b49277483660e1c07b51ed6501964e403796d125c52a36eeabaf110d632"
     },
     {
       "path": "posts/salon-november-09-15/07.png",
       "mediaType": "image/png",
-      "bytes": 647540,
-      "sha256": "cb603062a36ea6e19f384ab6ff8c9f811c222aea2cdb9cb103cd3d474c07e857"
+      "bytes": 647698,
+      "sha256": "4791e7582f1e26dfc6b0b0006d8c931ddeaa538f7b3890c449d542d5dce14aac"
     },
     {
       "path": "posts/salon-november-09-15/08.html",
       "mediaType": "text/html",
-      "bytes": 1911,
-      "sha256": "7076adf5a5e6d5eccdac2412c0638d563521d1671dc62760df1e56357b156d31"
+      "bytes": 1917,
+      "sha256": "56faa8fe73f0deb69ae8d7e9d4a99a3e26e929d13089948967abf0c34d44ba5d"
     },
     {
       "path": "posts/salon-november-09-15/08.png",
       "mediaType": "image/png",
-      "bytes": 435609,
-      "sha256": "45cf06ee49e03b3f531cf4f39c195e321cc25a3038e6b3bed4cb819af18bda24"
+      "bytes": 435575,
+      "sha256": "9fc0cd4b91eb6b3e6608ea93842a06edda8b21a1272ae145f43d3815bad85af1"
     },
     {
       "path": "posts/salon-november-09-15/09.html",
       "mediaType": "text/html",
-      "bytes": 1783,
-      "sha256": "c9a3cc15f42d6f353df60ee7e5f735888ec7379264858530ac889517746e3b97"
+      "bytes": 1786,
+      "sha256": "4de3f76d5581e8482dccf10611bfbb4e6a3e8e8f1c3474ed1c1c7e2eb43dc4bb"
     },
     {
       "path": "posts/salon-november-09-15/09.png",
       "mediaType": "image/png",
-      "bytes": 713565,
-      "sha256": "18e1be07a7accbec7e085cedf489c3cd3fab68d8e98e3acd96ebf70019510a0d"
+      "bytes": 713870,
+      "sha256": "d7e78131f04cb739af689c5f026fc8fccf7d25b18d938ba384fbbf8cc027e643"
     },
     {
       "path": "posts/salon-november-09-15/10.html",
       "mediaType": "text/html",
-      "bytes": 1872,
-      "sha256": "bf8968e45ed4a7135911e3b0ec67f92fce465261549cd5aa0d505098ebe3c97a"
+      "bytes": 1877,
+      "sha256": "1650434c04ae1997a309ce9aa91b282cbe3d4dfe17601a83879ea5376c6daa9b"
     },
     {
       "path": "posts/salon-november-09-15/10.png",
       "mediaType": "image/png",
-      "bytes": 405579,
-      "sha256": "b9a6d800600c63f47e7004e6c2de0450fa827045cbdc64f0eb22c067da097bf8"
+      "bytes": 405541,
+      "sha256": "933926422ef5f2c821392c10c39228d11196375ec7987fa3a648a8f0e9175d25"
     },
     {
       "path": "posts/salon-november-09-15/11.html",
       "mediaType": "text/html",
-      "bytes": 1691,
-      "sha256": "e76e949cd16c230b496bd1797ed7e159de0d05d7db871e5daa4d12360e680a57"
+      "bytes": 1692,
+      "sha256": "bb33ddeb3b08a0f639c47013b2c3e963ed1135938c26507be398cc1f470acaa2"
     },
     {
       "path": "posts/salon-november-09-15/11.png",
       "mediaType": "image/png",
-      "bytes": 687468,
-      "sha256": "874525a4b29c3c1147593e9f70f8703bbed23c9940ef19337e339d618b2303f7"
+      "bytes": 688402,
+      "sha256": "b7b43a53676db9b6dabdc2c5ebeaf8bac58c36c0b571a35cb24cec1b0939cd8d"
     },
     {
       "path": "posts/salon-november-09-15/README.md",
       "mediaType": "text/markdown",
-      "bytes": 8645,
-      "sha256": "046c6b8600339877c8c0fc9d99c7270a2ce6472285caf8f1cfcd3e241453ef9f"
+      "bytes": 10678,
+      "sha256": "4b93b79af21cfb05d5c2bfadff922a283b17ee09d414052993617b09f3fde555"
     },
     {
       "path": "posts/salon-november-09-15/caption.txt",
       "mediaType": "text/plain",
-      "bytes": 1881,
-      "sha256": "5c47ca4f7db40e607ed0a662dadbce538bcd022be5ad4bcbe3e2f3bc4b4f4471"
+      "bytes": 1907,
+      "sha256": "8fb4ebd6f820f179c13f6c5e3a34371a75031f374f40ea08773ec77efabdb812"
     },
     {
       "path": "posts/salon-november-09-15/contact-sheet.png",
       "mediaType": "image/png",
-      "bytes": 1258869,
-      "sha256": "39d4542ad7d6e54dce666e9e990c37ef8284f2b18afcbf365253825793254131"
+      "bytes": 1283829,
+      "sha256": "2248630329e66d3a5eeb44255ff8b7eb98b3dde1c99a476522818b529c8a363d"
     },
     {
       "path": "posts/salon-november-09-15/content.json",
       "mediaType": "application/json",
-      "bytes": 6989,
-      "sha256": "5272c8747dd22d345b779f21f269bdadf38438c7d6e35ea7fe7d773c976bfded"
+      "bytes": 7228,
+      "sha256": "e1354413c1c416ed866b012725920511929e3d1ec61437c9a6aee9724a2f8751"
     },
     {
       "path": "posts/salon-november-09-15/cover-base.html",
@@ -2757,26 +4570,26 @@
     {
       "path": "posts/salon-november-09-15/covers/blue-flow.png",
       "mediaType": "image/png",
-      "bytes": 178231,
-      "sha256": "11ea32d6ed539086a2b637ddf3f7c7acc1b4633dfd16a4f6cdcc7b9c3050d389"
+      "bytes": 179649,
+      "sha256": "4182bae519cbe7049cc2c548df66a3b976c9e00a6e2e360fc3c4ac356acd559e"
     },
     {
       "path": "posts/salon-november-09-15/covers/blue-orbit.png",
       "mediaType": "image/png",
-      "bytes": 179104,
-      "sha256": "2d1e5033aa3d8c40c941622b91d502f2b43b45a452c5c78ad34f3cff3b21dc96"
+      "bytes": 180400,
+      "sha256": "85ae76e23660f58f6c71430502d25a5be8d5722fe51ceafa6c61db8c5148301e"
     },
     {
       "path": "posts/salon-november-09-15/covers/cream-flow.png",
       "mediaType": "image/png",
-      "bytes": 178355,
-      "sha256": "fd59ac9f55c8c6801d2ea39d8a968f4b70854d4bbf147534e9e466e492c222c8"
+      "bytes": 179770,
+      "sha256": "7bed67a86e40a18421496b56de4cec19fa9bf107e902a530b48c7fe5ca4d00a6"
     },
     {
       "path": "posts/salon-november-09-15/covers/cream-orbit.png",
       "mediaType": "image/png",
-      "bytes": 179157,
-      "sha256": "11697efef0b18476d63fe59dbad9530c176ccd6ca759723ff69e2efe88e042ab"
+      "bytes": 180463,
+      "sha256": "8f9897df6425d311e1bd816b80bb3e46953f018b2d32c7b646ef0de961f711bc"
     },
     {
       "path": "posts/salon-november-09-15/covers/dot-014b3e.svg",
@@ -2847,20 +4660,20 @@
     {
       "path": "posts/salon-november-09-15/covers/pink-flow.png",
       "mediaType": "image/png",
-      "bytes": 178367,
-      "sha256": "b127c329b3018a594eb4a249ea486255ace68b7440673b8f364d90fe29e47578"
+      "bytes": 179773,
+      "sha256": "dfca5bd95da1a63d763a23513b23ced7e3518d95fdfa8a44982dd674c856d0f7"
     },
     {
       "path": "posts/salon-november-09-15/covers/pink-orbit.png",
       "mediaType": "image/png",
-      "bytes": 178895,
-      "sha256": "f65edcd2bac3c7e545cdaf719fc469525c90e3735b10d014f992546f1366e68e"
+      "bytes": 180268,
+      "sha256": "2dba65c801e6c4bdd9d9b547f4c207e92ef776ead62fc31832ccd79870943e62"
     },
     {
       "path": "posts/salon-november-09-15/crop-media.js",
       "mediaType": "text/javascript",
-      "bytes": 5926937,
-      "sha256": "e86469d2bd002097ef84c4e04808a0c6ccc5214eb3332d29e0a5909a5e612309"
+      "bytes": 6100785,
+      "sha256": "e67762c40878fdec8cfd1fe4911af266143ff725ab06f719dc5925ac7ba22120"
     },
     {
       "path": "posts/salon-november-09-15/day-colors.json",
@@ -2935,70 +4748,88 @@
       "sha256": "05c55e558e7bb068e43a0ff916fa97c80ee79c1b7875153514f8798fb0624818"
     },
     {
+      "path": "posts/salon-november-09-15/images/chichis-figma-character.png",
+      "mediaType": "image/png",
+      "bytes": 2088401,
+      "sha256": "b632d5475a4f85e37b71e311dc4b401ca8dfdc2913a886416d74c5efafd3605a"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/chichis-figma-ellipse.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 352,
+      "sha256": "ebb32cbc1b9bf4005e70f164a83669717426ce0ee4ece9a1d682fe8772a3c45a"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/chichis-figma-mushroom.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 13295,
+      "sha256": "290830a10633fc16d6be89229e9f3a3a766992c60881cf388c277291981239ea"
+    },
+    {
       "path": "posts/salon-november-09-15/layers/02.png",
       "mediaType": "image/png",
-      "bytes": 134172,
-      "sha256": "6a0ebe81cfbd050a7a257b84832a203902dba8694c3ae8500efbaa26ce9302b3"
+      "bytes": 134645,
+      "sha256": "028d01f6023c3bdba4bd8f26853f5e888eaf919b0939152e1ac87035c097990e"
     },
     {
       "path": "posts/salon-november-09-15/layers/03.png",
       "mediaType": "image/png",
-      "bytes": 125566,
-      "sha256": "068877b539ec7e7891bc70b1a7bb76933ed897d4648432219b9e23dceff72711"
+      "bytes": 125960,
+      "sha256": "5f1cedf071c2ce462e9a654f0f47018467ca190d398d2943fb6ce8ca43a97347"
     },
     {
       "path": "posts/salon-november-09-15/layers/05.png",
       "mediaType": "image/png",
-      "bytes": 129423,
-      "sha256": "bb1ee8ea73d3a8638cf71bb9e890d6454571ac117fea9c9f4d3717eeee5da7a6"
+      "bytes": 129868,
+      "sha256": "40842ed56d8e2e88390a63bec34e3300090656781c327090791f6043ece2a53e"
     },
     {
       "path": "posts/salon-november-09-15/layers/06.png",
       "mediaType": "image/png",
-      "bytes": 109664,
-      "sha256": "1b162238fed9b7d8ded9758513d16a5502766b87c37a93fbdf19c162048b1996"
+      "bytes": 110147,
+      "sha256": "cba8e9ca6f07912d1ef644d0f6de76c85e78fd00a9b4734f5d6a9b3e401fea75"
     },
     {
       "path": "posts/salon-november-09-15/layers/07.png",
       "mediaType": "image/png",
-      "bytes": 131337,
-      "sha256": "a8f03a2339cdfef2864852993d74e62256b2a0c4ea488be1e92ea018d694fcfc"
+      "bytes": 131960,
+      "sha256": "2e891bb7933825e2e2f65c63cf40d249e5949c51b8a698fca13a401d7f2cdea8"
     },
     {
       "path": "posts/salon-november-09-15/layers/08.png",
       "mediaType": "image/png",
-      "bytes": 131662,
-      "sha256": "f6a82e8ed05ef27de5a909d8a157e2f072acde84d2e88c5c9f9ffd6736ab115f"
+      "bytes": 132071,
+      "sha256": "e906bf6e8418d8a91ca5478eaa38556459f1dea248496cba486e96c634cd82e3"
     },
     {
       "path": "posts/salon-november-09-15/layers/09.png",
       "mediaType": "image/png",
-      "bytes": 115559,
-      "sha256": "f85f3ba7538ae914e9f170002ea25e99db2b453f6f64f969acf6c1b5347e6bc1"
+      "bytes": 116011,
+      "sha256": "2a809dd51061852198c903653f08ba60e5d2cc0ad77806794f4ac9fee7839e65"
     },
     {
       "path": "posts/salon-november-09-15/layers/10.png",
       "mediaType": "image/png",
-      "bytes": 131029,
-      "sha256": "20eab879542fdfffae56c934682068e2a8b57425255ca87ae477b6b5b0fd70a1"
+      "bytes": 131477,
+      "sha256": "4a9d184a80ecdf2f5fb0f9f9b257faebdd76decda1ac41cbf48181c68df8e388"
     },
     {
       "path": "posts/salon-november-09-15/layers/11.png",
       "mediaType": "image/png",
-      "bytes": 98903,
-      "sha256": "c7012e6864bb03e3d7546bc18b872e4eb6d5950407bedcb6fc16b30ee9cce6a7"
+      "bytes": 100954,
+      "sha256": "88e382e8b522810ad27508d33557cad709e6245e8225c590752f279132bc39ee"
     },
     {
       "path": "posts/salon-november-09-15/layout-check.json",
       "mediaType": "application/json",
-      "bytes": 24133,
-      "sha256": "d5d3a28f1a5d3e214d46bc30b87ff8b08828a6b21b778c10b8e3e2aea944852d"
+      "bytes": 24158,
+      "sha256": "679ca50f321fa20c0c2d3b850f87fc0115b16fdd06dbab053a7967136eff4cba"
     },
     {
       "path": "posts/salon-november-09-15/post.css",
       "mediaType": "text/css",
-      "bytes": 696,
-      "sha256": "73d9c1c6cfa56629a585b8d667c74e6a4713353d0b2723836b462ed038e2379c"
+      "bytes": 1158,
+      "sha256": "466073a40e73b1e7ea2ba9952b16ab011a6deffdbce76c532adad37b7298d594"
     },
     {
       "path": "posts/salon-november-09-15/sources.json",
@@ -3007,22 +4838,46 @@
       "sha256": "5da1ab3686c87d9e5db9e1a4d47d325bf02587b7be7f4a8e1536a8cd68cb7666"
     },
     {
+      "path": "recommendations.css",
+      "mediaType": "text/css",
+      "bytes": 1793,
+      "sha256": "de3bf392bb9699d97d6c8b3b25b1e3ed6d7cf6e285be745684d14196bf80f1b6"
+    },
+    {
       "path": "scripts/build-agent-resources.cjs",
       "mediaType": "text/javascript",
-      "bytes": 7996,
-      "sha256": "8c6ed7a06c12a281da4f1859566fa1deb30a2d5dbe284ebc753aef6678f474cc"
+      "bytes": 8689,
+      "sha256": "4b2c49a431f572fe2a595a667850dd2078b2728a58d44beb7701139e9bab6971"
+    },
+    {
+      "path": "scripts/build-bureau-posts.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 11948,
+      "sha256": "09842b6c1c6508385f5398feaf2cf8650bb8d2741f03b5caf0ff0bdcafec08e8"
+    },
+    {
+      "path": "scripts/build-carousel-downloads.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 2073,
+      "sha256": "0032a5d1f5da57857457a418dca937ba1797fc20dcd5193d260ba1889f81c5e7"
     },
     {
       "path": "scripts/build-design-assets.cjs",
       "mediaType": "text/javascript",
-      "bytes": 19746,
-      "sha256": "0c33a31477560dc39902b4b4d3269c00dce8ecdecf928ba0ac86d2ca34d715d0"
+      "bytes": 24909,
+      "sha256": "07c4a083b2032262453ac485df18ffea22f86d0f4d7bd7d9e6e82d884ed54040"
+    },
+    {
+      "path": "scripts/build-design-examples.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 2673,
+      "sha256": "fc9e684f963ffc97aa20d8a568be2735dba27471fcfff8fbb8704d63d1a1e7f6"
     },
     {
       "path": "scripts/build-salon-week.cjs",
       "mediaType": "text/javascript",
-      "bytes": 9827,
-      "sha256": "551e271050c48ffe278e090013817ade62315b345509c8903213b2d35edaf2fc"
+      "bytes": 11837,
+      "sha256": "e3cb5d04213029ccbdc67e6f0b7853e501b2dd3df4cfd0cef579e70844a56616"
     },
     {
       "path": "scripts/build-site.cjs",
@@ -3031,10 +4886,28 @@
       "sha256": "7c7f133ffe8bb6e41ec58784823f3a041c3abb475b4de81e2cfcdd852d2292cc"
     },
     {
+      "path": "scripts/build-symbol-assets.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 3384,
+      "sha256": "e08c7d07d510abcda9c5f17e523109458656e9cc3498e1b7d910816bfbbc2fe8"
+    },
+    {
       "path": "scripts/download-kit.py",
       "mediaType": "text/plain",
       "bytes": 10365,
       "sha256": "b6daeb1f675162aaee81c5aba832f1f7bfa8d79d67b2d108b006726135e081a8"
+    },
+    {
+      "path": "scripts/export-ads.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 7735,
+      "sha256": "45f06435b45d3eda0d0670f5babbbea41cc591a64d0ea1016f1ca1b6c7265d10"
+    },
+    {
+      "path": "scripts/export-bureau.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 9109,
+      "sha256": "231d73ed698ed67849f371f05348f5a01d1ebf6f225eb52a6e0fdef8e52f65bd"
     },
     {
       "path": "scripts/export-club.cjs",
@@ -3049,16 +4922,58 @@
       "sha256": "c375138fe1488408b1b0516aa0fb6091e05c9bb7b5001b03fc655bc2b496dfcd"
     },
     {
+      "path": "scripts/export-library.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 4219,
+      "sha256": "2b581c615c77db405bc2408e388a56a26ee3491c731dd9c58ad162c84b91eac8"
+    },
+    {
+      "path": "scripts/export-publications.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 7313,
+      "sha256": "10f69da324f9b43c6670956a4ad9f9faef75f4b0951a18f57cbee5bd26ef50b9"
+    },
+    {
+      "path": "scripts/export-recommendations.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 8843,
+      "sha256": "145da2930482867d85586119c62926de8f0b6427c89e9c218a902b52848fcd11"
+    },
+    {
       "path": "scripts/export-transition.cjs",
       "mediaType": "text/javascript",
-      "bytes": 4180,
-      "sha256": "c4da8204b3296155b9032de6d6139b22060ce9b48bb4f896765ce9b086269c8a"
+      "bytes": 4179,
+      "sha256": "dc7ad3cfaf227f10db48eef5d01f27168ceada815edf4586ef22e1322b754453"
+    },
+    {
+      "path": "scripts/export-vertical.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 8054,
+      "sha256": "65bb876441601eca8404249ac3389c1190b72473cd452fe55c151fc0eb0d8ed1"
+    },
+    {
+      "path": "scripts/outline-design-text.py",
+      "mediaType": "text/plain",
+      "bytes": 1630,
+      "sha256": "1ed033f399604cd203562edfc7af524111bae14c9bf06119850c0f7529b09839"
     },
     {
       "path": "scripts/test-agent-resources.cjs",
       "mediaType": "text/javascript",
-      "bytes": 5327,
-      "sha256": "588e53dbe938ef96da6b0281771db88f872f5013e8e8292bdf0d9e87ddf685bc"
+      "bytes": 5610,
+      "sha256": "e9595b67f562bfae032204ed589c177ee85674c6fb16c2c3b79a84501831219a"
+    },
+    {
+      "path": "scripts/test-carousel-downloads.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 7680,
+      "sha256": "448b3875f3ef8f0dd09bd4824f3e8d6cb447e447b77bee045e5b0e1f02eae173"
+    },
+    {
+      "path": "scripts/test-design-system.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 9001,
+      "sha256": "eeef1eedb55e3832ca5ec3bf611123d0328d13c1590b41c34fdacbd82c2ec957"
     },
     {
       "path": "scripts/test-download-kit.py",
@@ -3067,22 +4982,52 @@
       "sha256": "288d9c74a0cbb9706b9af85fb103cbfa774f503d59d514d14145560212b32f13"
     },
     {
+      "path": "scripts/test-mobile.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 10452,
+      "sha256": "6c3419b2d3f47e279d4c58571ca52781eb181d9c86894795a4a2b0b6c8482ec1"
+    },
+    {
       "path": "scripts/test-photo-crop.cjs",
       "mediaType": "text/javascript",
       "bytes": 1508,
       "sha256": "328d97a21adaeba932dfc48314778c30fd88480a230ab495cb3f84eaeed747b7"
     },
     {
+      "path": "scripts/test-ribbon-assets.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 2751,
+      "sha256": "7bee48d5f2684f376ee7069c7d5446bc82c033f2c2e046ec7fea46d6c52cd64f"
+    },
+    {
       "path": "scripts/test-salon-week.cjs",
       "mediaType": "text/javascript",
-      "bytes": 7678,
-      "sha256": "7c962402a1c32c9f20499ef4fcb9dd15c4c14b2c6ef9742153d0deb034475bf1"
+      "bytes": 7897,
+      "sha256": "55c99c92b6109cda7ebbdf5ce395ec7df6c2b008e18da7bc2789eaf8cce6a530"
     },
     {
       "path": "scripts/test-site-build.cjs",
       "mediaType": "text/javascript",
       "bytes": 1450,
       "sha256": "922b1d0a110894a7584c72ad4dd33b1d59f203a14cec1acad35494a6b28c18f3"
+    },
+    {
+      "path": "scripts/test-symbol-assets.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 2036,
+      "sha256": "a4947c54572dd1b22654b9302f3cd0642c9a97fe38e3607e1f9f141f2f70600c"
+    },
+    {
+      "path": "scripts/test-typography.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 1203,
+      "sha256": "d482564bfcbd22134d5c6ac307c4101291b3ccaa0a29bf6a6cb063db900582a0"
+    },
+    {
+      "path": "scripts/typography.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 677,
+      "sha256": "356375ad124971b27187b641fb69d4741b8bf07821eecfdc5ae6d18a97063bc7"
     },
     {
       "path": "scripts/weekly-cover.cjs",
@@ -3093,94 +5038,184 @@
     {
       "path": "transition.css",
       "mediaType": "text/css",
-      "bytes": 2782,
-      "sha256": "e078bfb1bea89cd059ee009d226438c5e3ca14d1a70d984f6cd188d63780cd34"
+      "bytes": 2698,
+      "sha256": "09a38f6a86329e9efaee57d394635ceb256a6170f5ed56c3fc806bcc351e75b1"
+    },
+    {
+      "path": "vertical.css",
+      "mediaType": "text/css",
+      "bytes": 2777,
+      "sha256": "7ab57d50688910e135e06e5c08f66fcda600a7aefe49444d5f9051b30b5630ca"
     },
     {
       "path": "weekly-cover.js",
       "mediaType": "text/javascript",
-      "bytes": 1771,
-      "sha256": "35f825e280757a3677af633a3676097ab96d1d90d4112eb79c1003c091fc5a64"
+      "bytes": 1811,
+      "sha256": "86030f76875472dc605cbb7c03db26854b61ed4919c0232613611e891432a000"
     }
   ],
   "archives": [
     {
+      "path": "downloads/eb-garamond.zip",
+      "mediaType": "application/zip",
+      "bytes": 2556684,
+      "sha256": "ed222d8eee0869e784bbf6670be623dca75b09ee03ca08852c433f1edbd9cf7c"
+    },
+    {
       "path": "downloads/sarafan-design-kit.zip",
       "mediaType": "application/zip",
-      "bytes": 3226024,
-      "sha256": "52f038822cb293b59e27359ace6f672e8a797a00292060e9bd370bfed0ec148b"
+      "bytes": 30392694,
+      "sha256": "fe71ae794eb8536ff5cd4beefc93c3d32ec2c9d7b017a98696d720f4ebf0a132"
     },
     {
       "path": "downloads/sarafan-elements.zip",
       "mediaType": "application/zip",
-      "bytes": 262674,
-      "sha256": "332dfff6c18ef63c5e58619d595a6324f0ff922a766a0c5aabf0f03a36877696"
+      "bytes": 785463,
+      "sha256": "3f98965e067fbdcd83331fca7881ed418b77864ee62302d7e131b62f74e3e5ef"
     },
     {
       "path": "downloads/sarafan-fonts.zip",
       "mediaType": "application/zip",
-      "bytes": 1569486,
-      "sha256": "8ea4c089a6909ad881790f184d64fd7060d8e5813bb1f54815d34fb828ee5d16"
+      "bytes": 4211012,
+      "sha256": "9c1ad4e3d56574f8ff3546a2ff26d031d74bd8d824bd8a1770873c8ac49dd384"
     },
     {
       "path": "downloads/sarafan-logos.zip",
       "mediaType": "application/zip",
-      "bytes": 326279,
-      "sha256": "2cbc9d8c03d4d15eeede745053f46db202e7b82c7df1ddd77f104ee457d503bb"
+      "bytes": 7993897,
+      "sha256": "939fc73d99060426d3823def036ca1dff2b5231b14cf3c2351a2724c69d449cc"
+    },
+    {
+      "path": "posts/french-superlevel/carousel.zip",
+      "mediaType": "application/zip",
+      "bytes": 914905,
+      "sha256": "aaf6994e3ea7a21b3db7d4c75e7ba1d812d82a3b44f2f8a7f60799a9326d3622"
+    },
+    {
+      "path": "posts/french-superlevel/png.zip",
+      "mediaType": "application/zip",
+      "bytes": 862981,
+      "sha256": "d87f3ad675b250ccc22dc15349fee8b089cd3fcd55771a02b0a533e8f96189d4"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/carousel.zip",
+      "mediaType": "application/zip",
+      "bytes": 1928087,
+      "sha256": "9e19be2873240f075b58ad34090a683bd85f955d27599b28a47bfcaba9c8b96d"
     },
     {
       "path": "posts/ingrid-aromatherapy/ingrid-post-orange.zip",
       "mediaType": "application/zip",
-      "bytes": 2023170,
-      "sha256": "3db90b6172bebc6cb2e96a54f24c5cfc2346a1a1b0c5cc7333ead17514ae352e"
+      "bytes": 1890797,
+      "sha256": "45c8cad51b841c8bb70de5ebcc278d476295b87cc164548481f629e26ed5f681"
     },
     {
       "path": "posts/ingrid-aromatherapy/ingrid-post-png.zip",
       "mediaType": "application/zip",
-      "bytes": 1901932,
-      "sha256": "e23848615ae93b7a27d315e948e5c07999ffad1ab481bf26ae5a6e94d36996cc"
+      "bytes": 1901887,
+      "sha256": "27302f96e3107125d62b9c4dc47339ef9333f18481400701bfe8d459bcf68184"
+    },
+    {
+      "path": "posts/retirement-france/carousel.zip",
+      "mediaType": "application/zip",
+      "bytes": 1114694,
+      "sha256": "e55cc9e7e8a084bf886340c20285f8486c815002576f899f544ba85997695974"
+    },
+    {
+      "path": "posts/retirement-france/png.zip",
+      "mediaType": "application/zip",
+      "bytes": 1055764,
+      "sha256": "8f318f247a04555657bdd20b56a3e79b01e17980ba3d2f708e6918b69fd29338"
+    },
+    {
+      "path": "posts/salon-november-09-15/carousel.zip",
+      "mediaType": "application/zip",
+      "bytes": 5276285,
+      "sha256": "a8862f1293cd8e8cf1aca4887d6e683cade190cd9b37c07cd8ddb01090732236"
     },
     {
       "path": "posts/salon-november-09-15/salon-week-png.zip",
       "mediaType": "application/zip",
-      "bytes": 5100843,
-      "sha256": "951a44f28a4b0e5423dd0c80fa9d27046ebc83529eb02e95dcdddcd807889bbc"
+      "bytes": 5221230,
+      "sha256": "ed898cb6815ea0bbd3446260f2231cc8b0b686152a0529e74c385b98f7ac0f41"
+    },
+    {
+      "path": "sarafan-ads-retreat.zip",
+      "mediaType": "application/zip",
+      "bytes": 14650580,
+      "sha256": "3ce10bf45932f397bedf86a1675abffbbbe4b6202be9a3190d6e249b27d2ebb9"
+    },
+    {
+      "path": "sarafan-bureau-guide.zip",
+      "mediaType": "application/zip",
+      "bytes": 940681,
+      "sha256": "11668026432cc8570d6a2babbb8c5264c3aab7cb36159bda6a0435dd83a2df4d"
+    },
+    {
+      "path": "sarafan-bureau-live.zip",
+      "mediaType": "application/zip",
+      "bytes": 200995,
+      "sha256": "aff7399a003b5f3b218ef5310a946cbad6c0897b5222d39f7336646376f88d8f"
     },
     {
       "path": "sarafan-club-event.zip",
       "mediaType": "application/zip",
-      "bytes": 4348061,
-      "sha256": "e6e6855e9a6c128de0c1f5858bbf5c49df4739cd0ce5361d1528e8eed619890e"
+      "bytes": 4376149,
+      "sha256": "eebdf43127116150592f2b52f75488998d7484ea9d49549983334a9ffd642e78"
     },
     {
       "path": "sarafan-club-salon.zip",
       "mediaType": "application/zip",
-      "bytes": 2320101,
-      "sha256": "a60c0aeea1c6f5c1fba5f4a41c908082d34bee8ce65412ca6f398d9f2cd63781"
+      "bytes": 2330300,
+      "sha256": "f1e5964673c0c239b84daf879dc394ca3e3fa885a1c03591f43af0835d697f9e"
     },
     {
       "path": "sarafan-event.zip",
       "mediaType": "application/zip",
-      "bytes": 3020648,
-      "sha256": "76092d561e26c54ee105a0392fef0da2b22f7c04c63335faa78aef8f6f0d893d"
+      "bytes": 3028106,
+      "sha256": "71af2180056099af7586014b0415206b7f45742145177525efbb9539eb81b67f"
+    },
+    {
+      "path": "sarafan-expert.zip",
+      "mediaType": "application/zip",
+      "bytes": 1594982,
+      "sha256": "cf9434fac7d140bf334d704ecd7fd5d5e7fbcd41bda3d187f8021360e7a0f411"
     },
     {
       "path": "sarafan-intro.zip",
       "mediaType": "application/zip",
-      "bytes": 6448033,
-      "sha256": "3a304cfa47c89cf3a8cdeb9b6544acc67a885d585d459b6b380b9fc87e03d9c6"
+      "bytes": 6474785,
+      "sha256": "5f259b96893ed9d10aee7ad25be1701481f49db31546d1bf6760b38539a0c9f5"
+    },
+    {
+      "path": "sarafan-places.zip",
+      "mediaType": "application/zip",
+      "bytes": 8056916,
+      "sha256": "5748cd14da29614166eff112c652d6aa52644e99a5cb6f3e70e1d9916a417802"
     },
     {
       "path": "sarafan-proust.zip",
       "mediaType": "application/zip",
-      "bytes": 8888520,
-      "sha256": "7e3c77dd0d35b78ef1b5b398aa9c3a3ebeb8d1a9468f51cf20119f92f191cd75"
+      "bytes": 4544293,
+      "sha256": "ca41573e06e103116894e578efad6c484239b7716238d7e6cb5efe98d3fee59f"
+    },
+    {
+      "path": "sarafan-recommendations.zip",
+      "mediaType": "application/zip",
+      "bytes": 276225,
+      "sha256": "32f825e4395d372f595880f53a317b0a6a19c44d2f8dec93e6b677aa1f0c392d"
+    },
+    {
+      "path": "sarafan-reels-cover.zip",
+      "mediaType": "application/zip",
+      "bytes": 1069734,
+      "sha256": "bdeb92693404f0026294abe13969d469430bc03b9ac02b800f2ee33160201b9f"
     },
     {
       "path": "sarafan-transition.zip",
       "mediaType": "application/zip",
-      "bytes": 2794701,
-      "sha256": "7c27e7a4a5e47692948010252ecd68afaccceff7f80defad792918ba60d6f104"
+      "bytes": 2836577,
+      "sha256": "64d94f869c2217782b9ca21ca210bfadd3ebc818f5be520a65ca274d4ab4ff8d"
     }
   ]
 }

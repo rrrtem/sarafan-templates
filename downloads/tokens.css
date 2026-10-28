@@ -2,6 +2,10 @@
 :root {
   --sarafan-card-width: 1080px;
   --sarafan-card-height: 1350px;
+  --sarafan-grid-columns: 6;
+  --sarafan-grid-rows: 6;
+  --sarafan-grid-margin: 65px;
+  --sarafan-grid-gutter: 20px;
   --sarafan-cream: #FBEED2;
   --sarafan-brown: #553D3D;
   --sarafan-blue: #A9C9DF;
@@ -11,7 +15,8 @@
   --sarafan-slate: #606D82;
   --sarafan-sand: #E4D5B6;
   --sarafan-forest: #014B3E;
-  --sarafan-dusty-rose: #C98384;
+  --sarafan-plum: #67436F;
+  --sarafan-lemon: #E8D44D;
   --sarafan-terracotta: #B54F1A;
   --paper: var(--sarafan-cream);
   --ink: var(--sarafan-brown);
@@ -64,7 +69,7 @@
   --sarafan-type-body-2-line: 1.1;
   --sarafan-type-body-2-weight: 400;
   --sarafan-type-body-2-style: normal;
-  --sarafan-type-body-3-family: "Sarafan Expert Geist";
+  --sarafan-type-body-3-family: "Geist";
   --sarafan-type-body-3-size: 40px;
   --sarafan-type-body-3-line: 1.1;
   --sarafan-type-body-3-weight: 400;
@@ -74,7 +79,7 @@
   --sarafan-type-captions-1-line: 1.1;
   --sarafan-type-captions-1-weight: 400;
   --sarafan-type-captions-1-style: normal;
-  --sarafan-type-captions-2-family: "Sarafan Expert Geist";
+  --sarafan-type-captions-2-family: "Geist";
   --sarafan-type-captions-2-size: 25px;
   --sarafan-type-captions-2-line: 1.1;
   --sarafan-type-captions-2-weight: 400;

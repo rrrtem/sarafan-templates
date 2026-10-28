@@ -1,19 +1,25 @@
 # Сарафан — локальный набор дизайн-ассетов
 
 Источник — существующая библиотека HTML-шаблонов SARAFAN и локальные assets/.
-Новые знаки, иллюстрации и шрифты не создавались и из сети не загружались.
+Знаки, иллюстрации и шрифты взяты из локальных исходников. Типографические варианты собраны из оригинальных форм и контуров существующих шрифтов; загрузки из сети нет.
 
 ## Происхождение
 
-- bureau-orange: assets/expert-about-logo.svg; bureau-cream: assets/expert-contact-logo.svg.
+- Все четыре знака — оригинальные прозрачные SVG из Figma, страница 386:10081:
+  петух 391:13811, кольца Бюро 386:12392, конь Клуба 391:14070, сирин 391:14391.
+- Исходники: assets/symbol-{rooster,bureau,horse,sirin}-figma.svg. Контуры и viewBox не изменяются.
+  assets/symbols.json содержит узлы, SHA-256 исходников, цвета и совместимые имена.
+- Палитровые версии отличаются только цветом заливки. Сборка: node scripts/build-symbol-assets.cjs.
+- heart-orange / heart-cream, club и salon — совместимые имена новых цельных SVG, без прежних фрагментов и трассировки PNG.
 - journal-bookmark: assets/intro-2-rectangle72.svg.
-- heart-orange / heart-cream: 11 исходных фрагментов intro-1-group*.svg / intro-7-group*.svg;
-  координаты взяты из index.html (.intro-logo-piece), родительский масштаб — intro.css (.intro-original).
-  Выполнен только общий crop. Форма каждого фрагмента сохранена.
-- club: assets/intro-4910-logo.png; salon: assets/intro-3826-logo.png — только исходный PNG.
-- sarafan-wordmark-orange, если присутствует: реальные контуры EB Garamond Medium 500,
-  слово «Сарафан» из intro, кегль 140 px; HarfBuzz + fontTools. Шрифт не имитирован.
-- ribbon-journal / ribbon-bureau / ribbon-action: sarafan-ribbon.svg / expert-ribbon.svg / intro-2-vector.svg.
+- sarafan-wordmark-orange и sarafan-wordmark-since: реальные контуры EB Garamond Medium 500,
+  слово «Сарафан» из intro, кегль 140 px; подпись depuis 2021 — Bold 35 px, исходное положение. HarfBuzz + fontTools. Шрифт не имитирован.
+- Журнал — вертикальная красная лента с надписями из ads-retreat-brand.svg.
+- Бюро — горизонтальная бежевая или синяя лента; контуры и надписи из bureau-cover-1-brand.svg.
+- Клуб и Салон — горизонтальная лента на вылет: бежевая или зелёная, с прямым левым краем и оригинальным правым краем. Форма — club-5883-rectangle71.svg, типографика — локальный EB Garamond 50/86% по club.css.
+- ribbon-journal / ribbon-action — исходные формы sarafan-ribbon.svg / intro-2-vector.svg.
+- ribbon-action-labelled: оригинальная плашка действия и надпись «Открывать город» из интро, Geist 50 px; текст в контурах.
+- downloads/examples/: шесть HTML/PNG-примеров цветовых сочетаний 1080 × 1350 на сетке 6×6. Сборка: node scripts/build-design-examples.cjs.
 - expert-ovals / expert-mask / expert-rule: expert-cover-ovals.svg / expert-cover-mask.svg / expert-about-rule.svg.
 
 ## Форматы
@@ -21,17 +27,21 @@
 Для векторных знаков исходный SVG, прозрачный PNG с размером 4× от intrinsic,
 векторный PDF со страницей по bounds (1 px = 0.75 pt). В PDF исходные белые геометрические
 SVG-маски экспортируются как эквивалентные векторные clipping paths; SVG не меняется.
-PNG-only знаки не являются векторными: SVG/PDF для них не создаются.
+Все четыре знака экспортируются из оригинальных SVG; PNG и PDF создаются из тех же векторов. Две версии словесного логотипа и четыре знака доступны в шести основных цветах бренда; в реестре цветовые версии находятся в variants. Сирину рубрика пока не назначена.
 Кремовые элементы рассчитаны на контрастный фон и могут быть почти незаметны на белом.
 
 Шрифты копируются без модификации. Включены только существующие TTF/OTF и имеющийся
-expert-geist-OFL.txt. Geist Medium не включается, если его файла нет в assets/.
+expert-geist-OFL.txt. Geist — один вариативный файл expert-geist-v1.6.ttf, веса 100–900. Inter не используется и в набор не включается.
 Права и лицензия на CoFo Cinema 1909 данным проектом не установлены.
 Наличие файла CoFo в наборе не является предоставлением права использования или распространения.
 Для остальных файлов включены только уже имеющиеся сведения; новые лицензии не назначались.
 
 Палитра: cream #FBEED2, brown #553D3D, blue #A9C9DF, orange #FF3C00, pink #E19A9B, olive #91945B.
-Дополнительные цвета кругов из исходных макетов: slate #606D82, sand #E4D5B6, forest #014B3E, dusty-rose #C98384, terracotta #B54F1A.
+Дополнительные цвета: slate #606D82, sand #E4D5B6, forest #014B3E, plum #67436F, lemon #E8D44D, terracotta #B54F1A.
+Чистые фоны всех двенадцати цветов: backgrounds/{id}-1080x1350.png и backgrounds/{id}-1080x1920.png; подписи присутствуют только на странице.
+EB Garamond скачивается одним архивом eb-garamond.zip с оригинальными OTF из репозитория автора.
+Источник и хеши: assets/eb-garamond-otf/source.json. Локальные TTF шаблонов сохранены без изменений.
+Страницы семейств: https://fonts.google.com/specimen/EB+Garamond и https://vercel.com/font.
 На каждой недельной обложке восемь разных цветов кругов; фон всегда #FBEED2.
 Пути manifest.json и manifest.js указаны относительно корня исходного проекта.
 Для file:// используется window.SARAFAN_ASSETS из manifest.js, fetch не нужен.
@@ -43,6 +53,6 @@ expert-geist-OFL.txt. Geist Medium не включается, если его ф
 В исходном проекте: node scripts/build-design-assets.cjs
 Нужны локальные sharp, playwright (Chromium), pdf-lib, jszip.
 Если они не в обычном node_modules, задайте SARAFAN_NODE_MODULES.
-Для необязательного контурного словесного знака нужны hb-shape и python3 с fontTools;
-при их отсутствии он исключается. SARAFAN_PYTHON позволяет выбрать Python.
+Для контурных надписей нужны hb-shape и python3 с fontTools;
+при их отсутствии сборка контурной типографики останавливается. SARAFAN_PYTHON позволяет выбрать Python.
 Сборка работает офлайн и не получает зависимости из сети.

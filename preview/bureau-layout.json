@@ -1,0 +1,502 @@
+{
+  "fonts": [
+    {
+      "family": "CoFo Cinema 1909",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "family": "EB Garamond",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "family": "EB Garamond",
+      "weight": "500",
+      "style": "normal"
+    },
+    {
+      "family": "EB Garamond",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "family": "EB Garamond",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "family": "EB Garamond",
+      "weight": "500",
+      "style": "italic"
+    },
+    {
+      "family": "Geist",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "family": "Geist",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "family": "Geist",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "family": "Inter",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "family": "Sarafan Ads Geist",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "family": "Sarafan Bureau Geist",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "family": "EB Garamond",
+      "weight": "600",
+      "style": "italic"
+    },
+    {
+      "family": "Sarafan Expert Geist",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "family": "Sarafan Event Geist",
+      "weight": "100 900",
+      "style": "normal"
+    }
+  ],
+  "cards": [
+    {
+      "variant": "cover-1",
+      "width": 1080,
+      "height": 1350,
+      "grid": false,
+      "columns": 1,
+      "rows": 1,
+      "gap": "normal",
+      "padding": "0px",
+      "blocks": [],
+      "overlaps": [],
+      "overflow": [],
+      "images": [
+        {
+          "src": "assets/bureau-cover-1-ovals.svg",
+          "loaded": true,
+          "left": 133.46875,
+          "top": 251.515625,
+          "width": 813.03125,
+          "height": 732.546875
+        },
+        {
+          "src": "assets/bureau-cover-1-brand.svg",
+          "loaded": true,
+          "left": 0,
+          "top": 64.796875,
+          "width": 481,
+          "height": 82
+        },
+        {
+          "src": "assets/bureau-cover-1-rule.svg",
+          "loaded": true,
+          "left": 69.734375,
+          "top": 1283.796875,
+          "width": 945,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "variant": "cover-2",
+      "width": 1080,
+      "height": 1350,
+      "grid": false,
+      "columns": 1,
+      "rows": 1,
+      "gap": "normal",
+      "padding": "0px",
+      "blocks": [],
+      "overlaps": [],
+      "overflow": [],
+      "images": [
+        {
+          "src": "assets/bureau-cover-2-ovals.svg",
+          "loaded": true,
+          "left": 133.46875,
+          "top": 251.515625,
+          "width": 813.03125,
+          "height": 732.546875
+        },
+        {
+          "src": "assets/bureau-cover-2-brand.svg",
+          "loaded": true,
+          "left": 0,
+          "top": 64.796875,
+          "width": 479,
+          "height": 82
+        },
+        {
+          "src": "assets/bureau-cover-2-rule.svg",
+          "loaded": true,
+          "left": 69.734375,
+          "top": 1283.796875,
+          "width": 945,
+          "height": 1
+        }
+      ]
+    },
+    {
+      "variant": "change",
+      "width": 1080,
+      "height": 1350,
+      "grid": true,
+      "columns": 6,
+      "rows": 6,
+      "gap": "20px",
+      "padding": "65px",
+      "blocks": [
+        {
+          "text": "Что изменилось",
+          "left": 65,
+          "right": 1015,
+          "top": 65,
+          "bottom": 145,
+          "inkLeft": 65,
+          "inkRight": 699.234375,
+          "inkTop": 53,
+          "inkBottom": 157
+        },
+        {
+          "text": "Сформулируйте суть изменения в двух-трёх предложениях: что произошло и почему читателю стоит об этом знать.",
+          "left": 65,
+          "right": 1015,
+          "top": 271.65625,
+          "bottom": 453.15625,
+          "inkLeft": 65,
+          "inkRight": 934.390625,
+          "inkTop": 265.65625,
+          "inkBottom": 457.65625
+        },
+        {
+          "text": "РаньшеКратко опишите прежний порядок. Оставьте только то, что помогает понять разницу.",
+          "left": 65,
+          "right": 530,
+          "top": 685,
+          "bottom": 1097.5,
+          "inkLeft": 65,
+          "inkRight": 530,
+          "inkTop": 672,
+          "inkBottom": 1102
+        },
+        {
+          "text": "ТеперьПокажите новый порядок. Выделите главное отличие, без длинной предыстории.",
+          "left": 550,
+          "right": 1015,
+          "top": 685,
+          "bottom": 1097.5,
+          "inkLeft": 550,
+          "inkRight": 1015,
+          "inkTop": 672,
+          "inkBottom": 1102
+        }
+      ],
+      "overlaps": [],
+      "overflow": [],
+      "images": []
+    },
+    {
+      "variant": "audience",
+      "width": 1080,
+      "height": 1350,
+      "grid": true,
+      "columns": 6,
+      "rows": 6,
+      "gap": "20px",
+      "padding": "65px",
+      "blocks": [
+        {
+          "text": "Кого этокасается",
+          "left": 65,
+          "right": 1015,
+          "top": 65,
+          "bottom": 225,
+          "inkLeft": 65,
+          "inkRight": 423.671875,
+          "inkTop": 53,
+          "inkBottom": 237
+        },
+        {
+          "text": "ЖивётеОпишите статус или ситуацию читателя.",
+          "left": 65,
+          "right": 1015,
+          "top": 478.328125,
+          "bottom": 620.328125,
+          "inkLeft": 65,
+          "inkRight": 1015,
+          "inkTop": 493.328125,
+          "inkBottom": 624.828125
+        },
+        {
+          "text": "РаботаетеУточните, для кого важно изменение.",
+          "left": 65,
+          "right": 1015,
+          "top": 685,
+          "bottom": 827,
+          "inkLeft": 65,
+          "inkRight": 1015,
+          "inkTop": 700,
+          "inkBottom": 831.5
+        },
+        {
+          "text": "Открываете бизнесНазовите условия и ограничения.",
+          "left": 65,
+          "right": 1015,
+          "top": 891.65625,
+          "bottom": 1033.65625,
+          "inkLeft": 65,
+          "inkRight": 1015,
+          "inkTop": 906.65625,
+          "inkBottom": 1038.15625
+        },
+        {
+          "text": "Категории — пример структуры. Замените их теми, к кому относится ваш материал.",
+          "left": 65,
+          "right": 1015,
+          "top": 1197,
+          "bottom": 1285,
+          "inkLeft": 65,
+          "inkRight": 934.6875,
+          "inkTop": 1193,
+          "inkBottom": 1289
+        }
+      ],
+      "overlaps": [],
+      "overflow": [],
+      "images": []
+    },
+    {
+      "variant": "actions",
+      "width": 1080,
+      "height": 1350,
+      "grid": true,
+      "columns": 6,
+      "rows": 6,
+      "gap": "20px",
+      "padding": "65px",
+      "blocks": [
+        {
+          "text": "Что делать",
+          "left": 65,
+          "right": 1015,
+          "top": 65,
+          "bottom": 145,
+          "inkLeft": 65,
+          "inkRight": 510.828125,
+          "inkTop": 53,
+          "inkBottom": 157
+        },
+        {
+          "text": "Первый шагОдно конкретное действие, с которого начать.",
+          "left": 65,
+          "right": 1015,
+          "top": 271.65625,
+          "bottom": 413.65625,
+          "inkLeft": 65,
+          "inkRight": 1015,
+          "inkTop": 286.65625,
+          "inkBottom": 418.15625
+        },
+        {
+          "text": "Следующий шагКуда обратиться или что подготовить.",
+          "left": 65,
+          "right": 1015,
+          "top": 478.328125,
+          "bottom": 620.328125,
+          "inkLeft": 65,
+          "inkRight": 1015,
+          "inkTop": 493.328125,
+          "inkBottom": 624.828125
+        },
+        {
+          "text": "После этогоКак понять, что вопрос решён.",
+          "left": 65,
+          "right": 1015,
+          "top": 685,
+          "bottom": 827,
+          "inkLeft": 65,
+          "inkRight": 1015,
+          "inkTop": 700,
+          "inkBottom": 831.5
+        },
+        {
+          "text": "Один шаг — одно действие. Замените подсказки реальной последовательностью.",
+          "left": 65,
+          "right": 1015,
+          "top": 1164,
+          "bottom": 1285,
+          "inkLeft": 65,
+          "inkRight": 997.921875,
+          "inkTop": 1158,
+          "inkBottom": 1289.5
+        }
+      ],
+      "overlaps": [],
+      "overflow": [],
+      "images": []
+    },
+    {
+      "variant": "documents",
+      "width": 1080,
+      "height": 1350,
+      "grid": true,
+      "columns": 6,
+      "rows": 6,
+      "gap": "20px",
+      "padding": "65px",
+      "blocks": [
+        {
+          "text": "Документыи сроки",
+          "left": 65,
+          "right": 1015,
+          "top": 65,
+          "bottom": 225,
+          "inkLeft": 65,
+          "inkRight": 516.734375,
+          "inkTop": 53,
+          "inkBottom": 237
+        },
+        {
+          "text": "ДокументыПеречислите, что понадобится. Отметьте, где нужен оригинал, а где достаточно копии.",
+          "left": 65,
+          "right": 530,
+          "top": 478.328125,
+          "bottom": 854.828125,
+          "inkLeft": 65,
+          "inkRight": 530,
+          "inkTop": 474.328125,
+          "inkBottom": 859.328125
+        },
+        {
+          "text": "СрокиУкажите подтверждённую дату, период или условие. Не оставляйте читателю догадок.",
+          "left": 550,
+          "right": 1015,
+          "top": 478.328125,
+          "bottom": 915.328125,
+          "inkLeft": 550,
+          "inkRight": 1015,
+          "inkTop": 474.328125,
+          "inkBottom": 919.828125
+        },
+        {
+          "text": "В этом блоке — официальный источник и дата проверки материала.",
+          "left": 65,
+          "right": 1015,
+          "top": 1197,
+          "bottom": 1285,
+          "inkLeft": 65,
+          "inkRight": 970.8125,
+          "inkTop": 1193,
+          "inkBottom": 1289
+        }
+      ],
+      "overlaps": [],
+      "overflow": [],
+      "images": []
+    },
+    {
+      "variant": "nuance",
+      "width": 1080,
+      "height": 1350,
+      "grid": true,
+      "columns": 6,
+      "rows": 6,
+      "gap": "20px",
+      "padding": "65px",
+      "blocks": [
+        {
+          "text": "Здесь —важныйнюанс",
+          "left": 65,
+          "right": 1015,
+          "top": 369.15625,
+          "bottom": 774.15625,
+          "inkLeft": 65,
+          "inkRight": 573.5,
+          "inkTop": 338.15625,
+          "inkBottom": 804.15625
+        },
+        {
+          "text": "Одна оговорка, от которой зависит результат. Объясните её коротко и на понятном примере.",
+          "left": 65,
+          "right": 1015,
+          "top": 1103.5,
+          "bottom": 1285,
+          "inkLeft": 65,
+          "inkRight": 843.53125,
+          "inkTop": 1097.5,
+          "inkBottom": 1289.5
+        }
+      ],
+      "overlaps": [],
+      "overflow": [],
+      "images": []
+    },
+    {
+      "variant": "summary",
+      "width": 1080,
+      "height": 1350,
+      "grid": true,
+      "columns": 6,
+      "rows": 6,
+      "gap": "20px",
+      "padding": "65px",
+      "blocks": [
+        {
+          "text": "Коротко:что запомнить",
+          "left": 65,
+          "right": 1015,
+          "top": 65,
+          "bottom": 225,
+          "inkLeft": 65,
+          "inkRight": 640.203125,
+          "inkTop": 53,
+          "inkBottom": 237
+        },
+        {
+          "text": "Главное изменение — одним предложением.Первое действие — коротким понятным глаголом.Срок или условие, которое нельзя пропустить.",
+          "left": 65,
+          "right": 1015,
+          "top": 478.328125,
+          "bottom": 984.328125,
+          "inkLeft": 65,
+          "inkRight": 1015,
+          "inkTop": 478.328125,
+          "inkBottom": 988.828125
+        },
+        {
+          "text": "Сохраните карусель, чтобы вернуться к ней, когда понадобится.",
+          "left": 65,
+          "right": 1015,
+          "top": 1197,
+          "bottom": 1285,
+          "inkLeft": 65,
+          "inkRight": 928.40625,
+          "inkTop": 1193,
+          "inkBottom": 1289
+        }
+      ],
+      "overlaps": [],
+      "overflow": [],
+      "images": []
+    }
+  ]
+}

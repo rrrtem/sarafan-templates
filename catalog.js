@@ -1,6 +1,38 @@
 (() => {
   const templates = [
     {
+      id: 'recommendations', name: 'Рекомендации от человека', example: 'Места, бассейны и сувениры · Варвара Секиароли',
+      category: 'journal', categoryName: 'Журнал', exportPrefix: 'sarafan-recommendations', node: '386-13192',
+      summary: '3 обложки с автором', defaultView: 'grid', previewIndices: [0, 1, 2],
+      labels: ['Места · Из сохраненок Вари', 'Бассейны · Куда ходит Варя', 'Сувениры · Из вишлиста Вари']
+    },
+    {
+      id: 'reels-cover', name: 'Обложка рилса', example: 'Размытая фотография и заголовок · 1080 × 1920',
+      category: 'journal', categoryName: 'Журнал', exportPrefix: 'sarafan-reels-cover', node: '385-10072',
+      canvas: { width: 1080, height: 1920 }, previewIndices: [0],
+      labels: ['21-й округ Парижа']
+    },
+    {
+      id: 'bureau-live', name: 'Бюро · Эфир на тему', example: 'Тема эфира, фотография и имя ведущего · 1080 × 1920',
+      category: 'bureau', categoryName: 'Бюро', exportPrefix: 'sarafan-bureau-live', node: '385-10037',
+      canvas: { width: 1080, height: 1920 }, previewIndices: [0, 1],
+      labels: ['Прямой эфир · Тёмный', 'Прямой эфир · Светлый']
+    },
+    {
+      id: 'bureau-guide', name: 'Бюро · Полезная карусель', example: 'Что изменилось во французской бюрократии?',
+      category: 'bureau', categoryName: 'Бюро', exportPrefix: 'sarafan-bureau-guide', node: '381-9177',
+      summary: '2 обложки · 6 внутренних слайдов', defaultView: 'grid', previewIndices: [0, 2, 6],
+      formats: [['all', 'Все варианты (8)'], ['cover', 'Обложки (2)'], ['text', 'Полезные слайды (4)'], ['accent', 'Важный нюанс (1)'], ['finale', 'Итог (1)']],
+      groups: [['cover', 'Обложки'], ['text', 'Полезные слайды'], ['accent', 'Важный нюанс'], ['finale', 'Итог']],
+      labels: ['Обложка · Кремовые овалы', 'Обложка · Цветные контуры', 'Что изменилось', 'Кого касается', 'Что делать', 'Документы и сроки', 'Важный нюанс', 'Итог и сохранение']
+    },
+    {
+      id: 'ads-retreat', name: 'Рекламная карусель', example: 'Marrakech Girls Retreat · Galli × Oulena',
+      category: 'ads', categoryName: 'Реклама', exportPrefix: 'sarafan-ads-retreat', node: '381-9064',
+      defaultView: 'grid', previewIndices: [0, 3, 8],
+      labels: ['Обложка · Marrakech Girls Retreat', 'Йога в пустыне Агафай', 'Хаммам и массаж', 'Сад Мажорель и музей Yves Saint Laurent', 'Верблюды и квадроциклы', 'Медина и La Terrasse des Épices', 'Ужины и lounge', 'Бранч у бассейна', 'Стоимость и запись']
+    },
+    {
       id: 'club-event', name: 'Афиша мероприятия клуба', example: 'Сарафан Салон · шесть событий',
       category: 'club', categoryName: 'Клуб', exportPrefix: 'sarafan-club-event', node: '373-5883',
       defaultView: 'grid', previewIndices: [0, 1, 4],
@@ -59,6 +91,7 @@
   const next = root.querySelector('.arrow--next');
   const views = [...root.querySelectorAll('.view-switch button')];
   const download = document.getElementById('download-slide');
+  const carouselDownload = document.getElementById('download-carousel');
   root.querySelectorAll('[data-filter]').forEach(button => {
     button.querySelector('span').textContent = button.dataset.filter === 'all'
       ? entries.length
@@ -67,9 +100,10 @@
   const variantPicker = document.getElementById('variant-picker');
   const variantFilter = document.getElementById('variant-filter');
   const placesFormats = [...variantFilter.children].map(option => option.cloneNode(true));
-  const states = Object.fromEntries(entries.map(template => [template.id, { selected: 0, view: template.defaultView || 'carousel', filter: 'all' }]));
+  const states = Object.fromEntries(entries.map(template => [template.id, { selected: 0, view: matchMedia('(max-width: 640px), (hover: none) and (max-width: 1000px)').matches ? 'carousel' : template.defaultView || 'carousel', filter: 'all' }]));
   let active = null;
   let mounted = null;
+  let catalogScroll = 0;
 
   function scaleAll() {
     root.querySelectorAll('.preview-shell, .card-shell').forEach(shell => {
@@ -90,6 +124,10 @@
     link.setAttribute('aria-label', 'Открыть ' + (isReference ? 'образец' : 'шаблон') + ' «' + template.name + '»');
     const preview = document.createElement('div');
     preview.className = 'template-preview';
+    if (template.canvas) {
+      preview.style.setProperty('--card-aspect', template.canvas.width + ' / ' + template.canvas.height);
+      preview.dataset.vertical = '';
+    }
     preview.setAttribute('aria-hidden', 'true');
     const source = document.getElementById(template.source || 'template-' + template.id);
     const sourceCards = [...source.content.querySelectorAll('.ig-card')];
@@ -99,6 +137,7 @@
       shell.append(sourceCards[index].cloneNode(true));
       preview.append(shell);
     });
+    preview.dataset.count = preview.childElementCount;
     const info = document.createElement('div');
     info.className = 'template-info';
     info.innerHTML = '<div class="template-name-row"><h2></h2><span class="template-open" aria-hidden="true">↗</span></div>';
@@ -136,10 +175,17 @@
       unit.hidden = !indices.includes(index) || (state.view === 'carousel' && index !== state.selected);
       unit.querySelector('.card-shell').hidden = unit.hidden;
     });
+    cards.querySelectorAll('.card-group-heading').forEach(heading => {
+      heading.hidden = state.view !== 'grid' || !units.some(unit => !unit.hidden && unit.dataset.variantGroup === heading.dataset.variantGroup);
+    });
     pagination.querySelectorAll('button').forEach((button, index) => {
       button.hidden = !indices.includes(index);
       button.setAttribute('aria-current', String(index === state.selected));
     });
+    if (state.view === 'carousel') {
+      const current = pagination.children[state.selected];
+      pagination.scrollLeft = current.offsetLeft - pagination.offsetLeft - (pagination.clientWidth - current.offsetWidth) / 2;
+    }
     views.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.view === state.view)));
     previous.disabled = state.selected === indices[0];
     next.disabled = state.selected === indices.at(-1);
@@ -148,6 +194,10 @@
     document.getElementById('slide-number').textContent = String(indices.indexOf(state.selected) + 1).padStart(2, '0') + ' / ' + String(indices.length).padStart(2, '0');
     download.href = 'exports/' + active.exportPrefix + '-' + number + '.png';
     download.download = active.exportPrefix + '-' + number + '.png';
+    download.hidden = state.view === 'grid';
+    carouselDownload.href = active.exportPrefix + '.zip';
+    carouselDownload.download = active.exportPrefix + '.zip';
+    carouselDownload.setAttribute('aria-label', 'Скачать всю карусель: ' + active.name + ' (' + active.labels.length + ' PNG)');
     variantFilter.value = state.filter;
     scaleAll();
   }
@@ -167,23 +217,59 @@
   }
 
   function route() {
+    const previousActive = active;
     let match = location.hash.match(/^#([a-z-]+)(?:\/([1-9]\d*))?$/);
     const legacy = location.hash.match(/^#slide-([1-6])$/);
     if (legacy) match = [legacy[0], 'proust', legacy[1]];
     active = match ? entries.find(template => template.id === match[1]) : null;
+    if (!previousActive && active) catalogScroll = window.scrollY;
     catalog.hidden = Boolean(active);
     viewer.hidden = !active;
     variantPicker.hidden = active?.id !== 'places' && !active?.formats;
     if (!active) {
       document.title = 'Сарафан — Каталог шаблонов';
       scaleAll();
+      if (previousActive) window.scrollTo(0, catalogScroll);
       return;
     }
     if (mounted !== active.id) {
+      cards.style.setProperty('--card-aspect', (active.canvas?.width || 1080) + ' / ' + (active.canvas?.height || 1350));
+      cards.style.setProperty('--card-height', (active.canvas?.height || 1350) + 'px');
       variantFilter.replaceChildren(...(active.formats
         ? active.formats.map(([value, label]) => new Option(label, value))
         : placesFormats.map(option => option.cloneNode(true))));
       cards.replaceChildren(document.getElementById(active.source || 'template-' + active.id).content.cloneNode(true));
+      cards.querySelectorAll('.card-unit').forEach((unit, index) => {
+        const actions = document.createElement('div');
+        actions.className = 'card-actions';
+        const open = document.createElement('button');
+        open.type = 'button';
+        open.textContent = 'Открыть ↗';
+        open.setAttribute('aria-label', 'Открыть: ' + active.labels[index]);
+        open.addEventListener('click', () => {
+          states[active.id].view = 'carousel';
+          select(index);
+          viewer.scrollIntoView({ block: 'start' });
+        });
+        const png = document.createElement('a');
+        const filename = active.exportPrefix + '-' + String(index + 1).padStart(2, '0') + '.png';
+        png.href = 'exports/' + filename;
+        png.download = filename;
+        png.textContent = 'PNG ↓';
+        png.setAttribute('aria-label', 'Скачать PNG: ' + active.labels[index]);
+        actions.append(open, png);
+        unit.append(actions);
+      });
+      (active.groups || []).forEach(([value, label]) => {
+        const firstUnit = [...cards.querySelectorAll('.card-unit')].find(unit => unit.dataset.variantGroup === value);
+        if (!firstUnit) return;
+        const heading = document.createElement('h2');
+        heading.className = 'card-group-heading';
+        heading.dataset.variantGroup = value;
+        heading.textContent = label;
+        heading.hidden = true;
+        firstUnit.before(heading);
+      });
       pagination.replaceChildren();
       active.labels.forEach((label, index) => {
         const button = document.createElement('button');
@@ -200,6 +286,7 @@
     presentation.setAttribute('aria-label', active.name + ' — ' + active.example);
     document.title = active.name + ' — Сарафан';
     render();
+    if (previousActive?.id !== active.id) window.scrollTo(0, 0);
   }
 
   previous.addEventListener('click', () => move(-1));
@@ -223,8 +310,10 @@
   });
   let touchStart = null;
   cards.addEventListener('touchstart', event => {
+    if (event.touches.length !== 1) { touchStart = null; return; }
     touchStart = { x: event.changedTouches[0].clientX, y: event.changedTouches[0].clientY };
   }, { passive: true });
+  cards.addEventListener('touchcancel', () => { touchStart = null; }, { passive: true });
   cards.addEventListener('touchend', event => {
     if (!touchStart || !active || states[active.id].view !== 'carousel') return;
     const dx = event.changedTouches[0].clientX - touchStart.x;

@@ -1,0 +1,29 @@
+[
+  {
+    "variant": 1,
+    "reference_size": [
+      820,
+      1024
+    ],
+    "mean_absolute_difference": 0.8785326949949187,
+    "percent_pixels_over_24": 1.4182783917682926
+  },
+  {
+    "variant": 2,
+    "reference_size": [
+      820,
+      1024
+    ],
+    "mean_absolute_difference": 1.0168941342733742,
+    "percent_pixels_over_24": 1.6904058689024388
+  },
+  {
+    "variant": 3,
+    "reference_size": [
+      820,
+      1024
+    ],
+    "mean_absolute_difference": 0.7730675177845528,
+    "percent_pixels_over_24": 1.376000381097561
+  }
+]

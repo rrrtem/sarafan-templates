@@ -26,12 +26,12 @@
 <body>
 <div class="workspace">
   <header class="masthead">
-    <a class="wordmark" href="index.html">Сарафан<span class="brand-dot" aria-hidden="true">●</span></a>
-    <nav class="library-nav" aria-label="Библиотека проекта"><a href="index.html">Шаблоны</a><a href="design-system.html">Дизайн-система</a><a href="new-posts.html">Новые посты</a></nav>
+    <a class="wordmark" href="index.html">Сарафан<img class="brand-rooster" src="assets/symbol-rooster-orange.svg" alt="" aria-hidden="true"></a>
+    <nav class="library-nav" aria-label="Библиотека проекта"><a href="index.html">Шаблоны</a><a href="design-system.html">Дизайн-система</a><a href="new-posts.html">Примеры постов</a></nav>
   </header>
   <main class="agent-page">
     <h1>Для ИИ-агентов</h1>
-    <p class="agent-lead">Исходники карточек 1080 × 1350 px, правила бренда и локальные ресурсы для создания публикаций Сарафана. Начните с инструкции и выберите нужный макет.</p>
+    <p class="agent-lead">Исходники карточек 1080 × 1350 px и вертикальных обложек 1080 × 1920 px, правила бренда и локальные ресурсы для создания публикаций Сарафана. Начните с инструкции и выберите нужный макет.</p>
     <ul class="agent-links">
       <li><a href="llms.txt">llms.txt</a> — краткая точка входа со ссылками на материалы.</li>
       <li><a href="docs/agent-guide.md">Инструкция для агентов</a> — как скачать библиотеку, извлечь карточку, сохранить зависимости и проверить экспорт.</li>
@@ -47,6 +47,11 @@
       <table>
         <thead><tr><th scope="col">Макет</th><th scope="col">Селектор</th><th scope="col">Карточек</th><th scope="col">Стили макета</th><th scope="col">Документация</th></tr></thead>
         <tbody>
+          <tr><th scope="row"><a href="index.html#recommendations">Рекомендации от человека</a></th><td><code>#template-recommendations</code></td><td>3</td><td><a href="cards.css">cards.css</a>, <a href="recommendations.css">recommendations.css</a></td><td><a href="docs/recommendations-template.md">Рекомендации</a></td></tr>
+          <tr><th scope="row"><a href="index.html#reels-cover">Обложка рилса · 1080 × 1920</a></th><td><code>#template-reels-cover</code></td><td>1</td><td><a href="cards.css">cards.css</a>, <a href="vertical.css">vertical.css</a></td><td><a href="docs/vertical-templates.md">Рилс и эфир</a></td></tr>
+          <tr><th scope="row"><a href="index.html#bureau-live">Бюро · Эфир на тему · 1080 × 1920</a></th><td><code>#template-bureau-live</code></td><td>2</td><td><a href="cards.css">cards.css</a>, <a href="vertical.css">vertical.css</a></td><td><a href="docs/vertical-templates.md">Рилс и эфир</a></td></tr>
+          <tr><th scope="row"><a href="index.html#bureau-guide">Бюро · Полезная карусель</a></th><td><code>#template-bureau-guide</code></td><td>8</td><td><a href="cards.css">cards.css</a>, <a href="bureau.css">bureau.css</a></td><td><a href="docs/bureau-template.md">Бюро</a></td></tr>
+          <tr><th scope="row"><a href="index.html#ads-retreat">Рекламная карусель</a></th><td><code>#template-ads-retreat</code></td><td>9</td><td><a href="cards.css">cards.css</a>, <a href="ads.css">ads.css</a></td><td><a href="docs/ads-template.md">Реклама</a></td></tr>
           <tr><th scope="row"><a href="index.html#proust">Жизнь замечательных людей</a></th><td><code>#template-proust</code></td><td>6</td><td><a href="cards.css">cards.css</a></td><td><a href="docs/design-system.md">Правила бренда</a></td></tr>
           <tr><th scope="row"><a href="index.html#places">Подборка мест</a></th><td><code>#template-places</code></td><td>12</td><td><a href="cards.css">cards.css</a></td><td><a href="docs/design-system.md">Правила бренда</a></td></tr>
           <tr><th scope="row"><a href="index.html#expert">Пост про эксперта</a></th><td><code>#template-expert</code></td><td>5</td><td><a href="cards.css">cards.css</a>, <a href="expert.css">expert.css</a></td><td><a href="docs/expert-template.md">Эксперт</a></td></tr>
@@ -68,7 +73,7 @@
       <li><a href="downloads/README.md">Происхождение и лицензии ассетов</a> — сведения о файлах и лицензии Geist; права на CoFo Cinema1909 проектом не установлены.</li>
       <li><a href="docs/new-posts.md">Новые публикации</a> — файлы <code>posts/&lt;id&gt;/</code>, регистрация и настройки кадрирования.</li>
     </ul>
-    <p>В шаблоне эксперта сохраните семейство <code>Sarafan Expert Geist</code> и локальный файл версии 1.6: замена меняет кириллицу и переносы. Перед снимком установите <code>--card-scale: 1</code>, размер 1080 × 1350 и дождитесь <code>document.fonts.ready</code> и загрузки изображений.</p>
+    <p>В шаблоне эксперта сохраните семейство <code>Geist</code> и локальный файл версии 1.6: замена меняет кириллицу и переносы. Перед снимком установите <code>--card-scale: 1</code>, размер из поля <code>canvas</code> выбранного шаблона (1080 × 1350 или 1080 × 1920) и дождитесь <code>document.fonts.ready</code> и загрузки изображений.</p>
 
     <h2>Скачать локальную копию</h2>
     <p>Сохраните <a href="scripts/download-kit.py" download>download-kit.py</a> и запустите Python 3 с URL каталога этой библиотеки. Подойдёт любой статический хостинг, в корне сайта или подпапке:</p>

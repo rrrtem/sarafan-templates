@@ -2,10 +2,9 @@
 .transition-card{background:#e4d5b6;color:#553d3d;font-weight:500;line-height:1;font-synthesis:none}
 .transition-card em{font-weight:500}
 .transition-orange{color:#ff3c00}
-.transition-card p,.transition-photo,.transition-heart-piece{position:absolute}
+.transition-card p,.transition-photo{position:absolute}
 .transition-photo{overflow:hidden;border-radius:50%;width:239.569px;height:239.569px}
 .transition-photo>img{position:absolute;max-width:none;object-fit:cover}
-.transition-heart-piece>img{position:absolute;left:0;top:0}
 .transition-cover{background:#a9c9df}
 .transition-original{position:absolute;inset:0;width:1081.333374px;height:1351.75px;transform:scale(.998766945);transform-origin:0 0}
 .transition-cover-title{left:78.666px;top:542.07px;width:924px;font-size:150px;line-height:.9;text-align:center}

@@ -1,0 +1,431 @@
+{
+  "fonts": [
+    {
+      "family": "Geist",
+      "style": "normal",
+      "weight": "100 900"
+    },
+    {
+      "family": "CoFo Cinema 1909",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "EB Garamond",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "EB Garamond",
+      "style": "normal",
+      "weight": "500"
+    },
+    {
+      "family": "EB Garamond",
+      "style": "normal",
+      "weight": "600"
+    },
+    {
+      "family": "EB Garamond",
+      "style": "normal",
+      "weight": "700"
+    },
+    {
+      "family": "EB Garamond",
+      "style": "italic",
+      "weight": "500"
+    },
+    {
+      "family": "Sarafan Reels Garamond",
+      "style": "normal",
+      "weight": "400 800"
+    },
+    {
+      "family": "Sarafan Recommendations Garamond",
+      "style": "italic",
+      "weight": "400"
+    },
+    {
+      "family": "EB Garamond",
+      "style": "italic",
+      "weight": "600"
+    }
+  ],
+  "cards": [
+    {
+      "nodeId": "386:13193",
+      "left": 0,
+      "top": 0,
+      "width": 1080,
+      "height": 1350,
+      "background": "rgb(145, 148, 91)",
+      "color": "rgb(251, 238, 210)",
+      "text": [
+        {
+          "class": "recommendation-title",
+          "text": "5 местПарижаиз сохраненокВари",
+          "left": -94,
+          "top": 484.390625,
+          "width": 1268.015625,
+          "height": 320,
+          "ink": [
+            {
+              "left": 406.765625,
+              "top": 472.390625,
+              "right": 673.25,
+              "bottom": 576.390625
+            },
+            {
+              "left": 673.25,
+              "top": 472.390625,
+              "right": 673.25,
+              "bottom": 576.390625
+            },
+            {
+              "left": 382.640625,
+              "top": 552.390625,
+              "right": 697.375,
+              "bottom": 656.390625
+            },
+            {
+              "left": 697.375,
+              "top": 552.390625,
+              "right": 697.375,
+              "bottom": 656.390625
+            },
+            {
+              "left": 250.859375,
+              "top": 632.390625,
+              "right": 829.140625,
+              "bottom": 736.390625
+            },
+            {
+              "left": 829.140625,
+              "top": 632.390625,
+              "right": 829.140625,
+              "bottom": 736.390625
+            },
+            {
+              "left": 441.453125,
+              "top": 712.390625,
+              "right": 638.5625,
+              "bottom": 816.390625
+            }
+          ],
+          "overflow": false,
+          "font": "600 80px / 80px Geist, Arial, sans-serif"
+        },
+        {
+          "class": "recommendation-author",
+          "text": "Варвара Секиароли",
+          "left": 258.734375,
+          "top": 1164.796875,
+          "width": 640,
+          "height": 36,
+          "ink": [
+            {
+              "left": 258.734375,
+              "top": 1156.796875,
+              "right": 651.21875,
+              "bottom": 1208.796875
+            }
+          ],
+          "overflow": false,
+          "font": "500 40px / 36px Geist, Arial, sans-serif"
+        },
+        {
+          "class": "recommendation-bio",
+          "text": "создательница Сарафан, живет в Париже 10 лет и знает каждый уголок",
+          "left": 258.734375,
+          "top": 1214.609375,
+          "width": 537.84375,
+          "height": 54,
+          "ink": [
+            {
+              "left": 258.734375,
+              "top": 1208.609375,
+              "right": 764.359375,
+              "bottom": 1247.609375
+            },
+            {
+              "left": 258.734375,
+              "top": 1235.609375,
+              "right": 622.4375,
+              "bottom": 1274.609375
+            }
+          ],
+          "overflow": false,
+          "font": "italic 30px / 27px \"Sarafan Recommendations Garamond\", \"EB Garamond\", Georgia, serif"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/recommendations-ribbon.svg",
+          "loaded": true,
+          "left": 932.734375,
+          "top": -112,
+          "width": 82,
+          "height": 606
+        },
+        {
+          "src": "assets/recommendations-varvara.png",
+          "loaded": true,
+          "left": 92.546875,
+          "top": 1138.828125,
+          "width": 143.375,
+          "height": 143.375
+        }
+      ]
+    },
+    {
+      "nodeId": "386:13237",
+      "left": 0,
+      "top": 0,
+      "width": 1080,
+      "height": 1350,
+      "background": "rgb(169, 201, 223)",
+      "color": "rgb(116, 118, 72)",
+      "text": [
+        {
+          "class": "recommendation-title",
+          "text": "5 бассейновПарижакуда ходитВаря",
+          "left": -94,
+          "top": 484.390625,
+          "width": 1268.015625,
+          "height": 320,
+          "ink": [
+            {
+              "left": 292.75,
+              "top": 472.390625,
+              "right": 787.265625,
+              "bottom": 576.390625
+            },
+            {
+              "left": 787.265625,
+              "top": 472.390625,
+              "right": 787.265625,
+              "bottom": 576.390625
+            },
+            {
+              "left": 382.640625,
+              "top": 552.390625,
+              "right": 697.375,
+              "bottom": 656.390625
+            },
+            {
+              "left": 697.375,
+              "top": 552.390625,
+              "right": 697.375,
+              "bottom": 656.390625
+            },
+            {
+              "left": 313.625,
+              "top": 632.390625,
+              "right": 766.390625,
+              "bottom": 736.390625
+            },
+            {
+              "left": 766.390625,
+              "top": 632.390625,
+              "right": 766.390625,
+              "bottom": 736.390625
+            },
+            {
+              "left": 440.0625,
+              "top": 712.390625,
+              "right": 639.953125,
+              "bottom": 816.390625
+            }
+          ],
+          "overflow": false,
+          "font": "600 80px / 80px Geist, Arial, sans-serif"
+        },
+        {
+          "class": "recommendation-author",
+          "text": "Варвара Секиароли",
+          "left": 258.734375,
+          "top": 1164.796875,
+          "width": 640,
+          "height": 36,
+          "ink": [
+            {
+              "left": 258.734375,
+              "top": 1156.796875,
+              "right": 651.21875,
+              "bottom": 1208.796875
+            }
+          ],
+          "overflow": false,
+          "font": "500 40px / 36px Geist, Arial, sans-serif"
+        },
+        {
+          "class": "recommendation-bio",
+          "text": "создательница Сарафан, живет в Париже 10 лет и знает каждый уголок",
+          "left": 258.734375,
+          "top": 1214.609375,
+          "width": 537.84375,
+          "height": 54,
+          "ink": [
+            {
+              "left": 258.734375,
+              "top": 1208.609375,
+              "right": 764.359375,
+              "bottom": 1247.609375
+            },
+            {
+              "left": 258.734375,
+              "top": 1235.609375,
+              "right": 622.4375,
+              "bottom": 1274.609375
+            }
+          ],
+          "overflow": false,
+          "font": "italic 30px / 27px \"Sarafan Recommendations Garamond\", \"EB Garamond\", Georgia, serif"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/recommendations-ribbon.svg",
+          "loaded": true,
+          "left": 932.734375,
+          "top": -112,
+          "width": 82,
+          "height": 606
+        },
+        {
+          "src": "assets/recommendations-varvara.png",
+          "loaded": true,
+          "left": 92.546875,
+          "top": 1138.828125,
+          "width": 143.375,
+          "height": 143.375
+        }
+      ]
+    },
+    {
+      "nodeId": "386:13215",
+      "left": 0,
+      "top": 0,
+      "width": 1080,
+      "height": 1350,
+      "background": "rgb(201, 131, 132)",
+      "color": "rgb(251, 238, 210)",
+      "text": [
+        {
+          "class": "recommendation-title",
+          "text": "5 сувенировПарижаиз вишлистаВари",
+          "left": -94,
+          "top": 484.390625,
+          "width": 1268.015625,
+          "height": 320,
+          "ink": [
+            {
+              "left": 293.28125,
+              "top": 472.390625,
+              "right": 786.734375,
+              "bottom": 576.390625
+            },
+            {
+              "left": 786.734375,
+              "top": 472.390625,
+              "right": 786.734375,
+              "bottom": 576.390625
+            },
+            {
+              "left": 382.640625,
+              "top": 552.390625,
+              "right": 697.375,
+              "bottom": 656.390625
+            },
+            {
+              "left": 697.375,
+              "top": 552.390625,
+              "right": 697.375,
+              "bottom": 656.390625
+            },
+            {
+              "left": 288.0625,
+              "top": 632.390625,
+              "right": 791.9375,
+              "bottom": 736.390625
+            },
+            {
+              "left": 791.9375,
+              "top": 632.390625,
+              "right": 791.9375,
+              "bottom": 736.390625
+            },
+            {
+              "left": 441.453125,
+              "top": 712.390625,
+              "right": 638.5625,
+              "bottom": 816.390625
+            }
+          ],
+          "overflow": false,
+          "font": "600 80px / 80px Geist, Arial, sans-serif"
+        },
+        {
+          "class": "recommendation-author",
+          "text": "Варвара Секиароли",
+          "left": 258.734375,
+          "top": 1164.796875,
+          "width": 640,
+          "height": 36,
+          "ink": [
+            {
+              "left": 258.734375,
+              "top": 1156.796875,
+              "right": 651.21875,
+              "bottom": 1208.796875
+            }
+          ],
+          "overflow": false,
+          "font": "500 40px / 36px Geist, Arial, sans-serif"
+        },
+        {
+          "class": "recommendation-bio",
+          "text": "создательница Сарафан, живет в Париже 10 лет и знает каждый уголок",
+          "left": 258.734375,
+          "top": 1214.609375,
+          "width": 537.84375,
+          "height": 54,
+          "ink": [
+            {
+              "left": 258.734375,
+              "top": 1208.609375,
+              "right": 764.359375,
+              "bottom": 1247.609375
+            },
+            {
+              "left": 258.734375,
+              "top": 1235.609375,
+              "right": 622.4375,
+              "bottom": 1274.609375
+            }
+          ],
+          "overflow": false,
+          "font": "italic 30px / 27px \"Sarafan Recommendations Garamond\", \"EB Garamond\", Georgia, serif"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/recommendations-ribbon.svg",
+          "loaded": true,
+          "left": 932.734375,
+          "top": -112,
+          "width": 82,
+          "height": 606
+        },
+        {
+          "src": "assets/recommendations-varvara.png",
+          "loaded": true,
+          "left": 92.546875,
+          "top": 1138.828125,
+          "width": 143.375,
+          "height": 143.375
+        }
+      ]
+    }
+  ]
+}

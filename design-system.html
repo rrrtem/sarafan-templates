@@ -17,72 +17,77 @@
 <body class="ds-page">
 <div class="workspace">
   <header class="masthead">
-    <a class="wordmark" href="index.html">Сарафан<span class="brand-dot" aria-hidden="true">●</span></a>
-    <nav class="library-nav" aria-label="Библиотека проекта"><a href="index.html">Шаблоны</a><a href="design-system.html" aria-current="page">Дизайн-система</a><a href="new-posts.html">Новые посты</a></nav>
+    <a class="wordmark" href="index.html">Сарафан<img class="brand-rooster" src="assets/symbol-rooster-orange.svg" alt="" aria-hidden="true"></a>
+    <nav class="library-nav" aria-label="Библиотека проекта"><a href="index.html">Шаблоны</a><a href="design-system.html" aria-current="page">Дизайн-система</a><a href="new-posts.html">Примеры постов</a></nav>
   </header>
   <main>
-    <section class="ds-hero" aria-labelledby="page-title">
-      <h1 class="sr-only" id="page-title">Дизайн-система</h1>
-      <div class="ds-actions"><a class="ds-primary" href="downloads/sarafan-design-kit.zip" download>Скачать материалы ↓</a><a class="ds-text-link" href="docs/design-system.md" download>Правила .md ↓</a></div>
-    </section>
+    <h1 class="sr-only">Дизайн-система Сарафан</h1>
     <div class="ds-layout">
-      <aside class="ds-sidebar"><nav aria-label="На этой странице"><a href="#rules">Строгие правила</a><a href="#assets">Готовые элементы</a><a href="#recommendations">Рекомендации</a><a href="#avoid">Запреты</a></nav></aside>
+      <aside class="ds-sidebar"><nav aria-label="На этой странице"><a href="#logos">Логотип и символы</a><a href="#colors">Цвета</a><a href="#fonts">Шрифты</a><a href="#type">Типографика</a><a href="#assets">Элементы</a><a href="#recommendations">Рекомендации</a><a href="#avoid">Запреты</a></nav><a class="ds-kit-download" href="downloads/sarafan-design-kit.zip" download title="Логотипы, символы, шрифты, палитра и графические элементы · ZIP"><span>Скачать дизайн-кит</span><span aria-hidden="true">↓</span></a></aside>
       <div class="ds-content">
-        <section class="ds-section" id="rules" aria-labelledby="rules-title">
-          <h2 id="rules-title">Строгие правила</h2>
-          <div class="ds-subheading"><h3>Цвета</h3><button class="ds-text-link" type="button" data-copy="palette">Копировать CSS ↗</button></div>
+        <section class="ds-section ds-branding" id="logos" aria-labelledby="logos-title">
+          <div class="ds-section-heading"><h2 id="logos-title">Логотип и символы</h2><a class="ds-text-link" href="downloads/sarafan-logos.zip" download>Все цвета ↓</a></div>
+          <div class="ds-brand-tools"><span>Цвет</span><div class="ds-brand-colors" id="brand-colors" role="group" aria-label="Цвет логотипов и символов"></div></div>
+          <div class="ds-wordmarks" id="wordmarks"></div>
+          <div id="symbols"><div class="ds-symbols" id="symbol-assets"></div></div>
+        </section>
+        <section class="ds-section" id="colors" aria-labelledby="colors-title">
+          <div class="ds-section-heading"><h2 id="colors-title">Цвета и сочетания</h2><a class="ds-text-link" href="downloads/palette.css" download>Палитра .css ↓</a></div>
+          <p class="ds-note ds-palette-note">Нажмите на цвет, чтобы скопировать HEX. Скачайте чистый PNG-фон в нужном формате.</p>
           <div class="ds-palette" id="palette"></div>
-          <p class="ds-note">В афишах «Гостиной» / «Сарафан Салона» цвет кодирует день: все события одной даты получают одинаковый фон и цвет текста.</p>
-          <p class="ds-note">Нажмите на цвет, чтобы скопировать HEX. <a href="downloads/palette.json" download>JSON ↓</a> · <a href="downloads/palette.css" download>CSS ↓</a></p>
-          <div class="ds-subheading"><h3>Дополнительные цвета кругов</h3></div>
-          <p>Из исходных макетов Салона. На одной обложке каждый круг своего цвета; фон всегда бежевый #FBEED2.</p>
-          <div class="ds-palette" id="additional-palette"></div>
-          <div class="ds-subheading"><h3>Сочетания</h3><a class="ds-source" href="index.html#places/7">Пример ↗</a></div>
-          <p>Выбирайте сочетание целиком. Курсивом выделяйте смысловую фразу.</p>
+          <div class="ds-secondary-palette"><h3>Дополнительные цвета</h3><div class="ds-palette" id="additional-palette"></div></div>
           <div class="ds-combinations" id="combinations"></div>
-          <div class="ds-subheading" id="type"><h3>Типографика</h3><a class="ds-source" href="#fonts">Шрифты ↓</a></div>
-          <p>EB Garamond и Geist, для клуба и «Салона» — CoFo Cinema1909. Размеры — для карточки 1080 × 1350 px.</p>
-          <div class="ds-type-list" id="typography"></div>
-          <p class="ds-note">Сохраняйте параметры выбранного шаблона. Для эксперта используйте Geist 1.6.0, для «Салона» — CoFo Cinema 1909.</p>
+        </section>
+        <section class="ds-section" id="fonts" aria-labelledby="fonts-title">
+          <div class="ds-section-heading"><h2 id="fonts-title">Шрифты</h2><a class="ds-text-link" href="downloads/sarafan-fonts.zip" download>ZIP ↓</a></div>
+          <div id="font-downloads"></div>
+          <details class="ds-footnote"><summary>Версии и права</summary><p>Во всей библиотеке используется единый Geist 1.6 — один вариативный файл для всех начертаний. Права на CoFo Cinema1909 проектом не установлены; наличие файла не предоставляет лицензию. <a href="downloads/README.md">Сведения о наборе ↗</a></p></details>
+        </section>
+        <section class="ds-section" id="type" aria-labelledby="type-title">
+          <div class="ds-section-heading"><h2 id="type-title">Типографика в деле</h2><span class="ds-dimension">1080 × 1350</span></div>
+          <div class="ds-specimens" id="typography"></div>
         </section>
         <section class="ds-section" id="assets" aria-labelledby="assets-title">
-          <h2 id="assets-title">Готовые элементы</h2>
-          <p>Используйте оригиналы. Сохраняйте форму, пропорции и цвет.</p>
-          <div class="ds-subheading"><h3>Логотипы и знаки</h3><a class="ds-text-link" href="downloads/sarafan-logos.zip" download>ZIP ↓</a></div>
-          <div class="ds-asset-grid" id="logos"></div>
-          <div class="ds-subheading"><h3>Бирки и формы</h3><a class="ds-text-link" href="downloads/sarafan-elements.zip" download>ZIP ↓</a></div>
-          <div class="ds-asset-grid" id="elements"></div>
-          <p class="ds-note">Надписи на бирках берите из шаблона вместе с формой.</p>
-          <div class="ds-subheading" id="fonts"><h3>Шрифты</h3><a class="ds-text-link" href="downloads/sarafan-fonts.zip" download>ZIP ↓</a></div>
-          <div class="ds-fonts" id="font-downloads"></div>
+          <div class="ds-section-heading"><h2 id="assets-title">Элементы</h2><a class="ds-text-link" href="downloads/sarafan-elements.zip" download>ZIP ↓</a></div>
+          <div class="ds-ribbons" id="ribbons"></div>
+          <div class="ds-elements" id="elements"></div>
         </section>
-        <section class="ds-section" id="recommendations" aria-labelledby="recommendations-title">
-          <h2 id="recommendations-title">Рекомендации</h2>
-          <ul class="ds-rule-list">
-            <li>Выбирайте композицию под задачу: обложка, рассказ, место, цитата или контакт.</li>
-            <li>Один главный фокус: фраза, портрет или фотография. Сохраняйте свободное поле.</li>
-            <li>Берите поля и кадрирование из выбранного макета. Затемняйте фото для читаемости текста.</li>
-            <li>Для новой композиции возьмите ближайший шаблон. Сохраните палитру, шрифты и готовые элементы.</li>
-          </ul>
-          <p class="ds-note">Примеры: <a href="index.html#proust">Журнал ↗</a> · <a href="index.html#places">Места ↗</a> · <a href="index.html#expert">Бюро ↗</a></p>
-        </section>
-        <section class="ds-section" id="avoid" aria-labelledby="avoid-title">
-          <h2 id="avoid-title">Запреты</h2>
-          <ul class="ds-rule-list">
-            <li>Не добавляйте случайные иконки, искры, эмодзи и орнамент. Используйте готовые элементы.</li>
-            <li>Не переносите в посты тени, скруглённые кнопки и другие стили интерфейса каталога.</li>
-            <li>Не добавляйте декоративные градиенты, рамки и овалы без примера в шаблоне.</li>
-            <li>Не растягивайте знаки и шрифты. Длинный текст сокращайте, кегль сохраняйте.</li>
-            <li>Не вводите близкие дубли цветов и стилей. Конфликты согласовывайте с владельцем системы.</li>
-            <li>Не выдумывайте цифры, отзывы и подписи для заполнения макета.</li>
-          </ul>
-        </section>
+        <div id="rules">
+          <section class="ds-section" id="recommendations" aria-labelledby="recommendations-title">
+            <h2 id="recommendations-title">Рекомендации</h2>
+            <ul class="ds-rule-list">
+              <li>Один главный фокус на карточке. Сначала выберите композицию под содержание: историю, подборку, полезный материал, услугу или афишу.</li>
+              <li>Журнал — истории и жизнь города; Бюро — практические вопросы жизни во Франции; Клуб — встречи. Эксперт и его услуги всегда относятся к Рекламе, даже со старой лентой «Бюро».</li>
+              <li>В готовых шаблонах сохраняйте точные поля, кегли, переносы и кадрирование. Новые композиции стройте на сетке 6 × 6 с полями 65 px и промежутками 20 px.</li>
+              <li>В новых композициях оставляйте только содержательный текст. Угловые опоры помогают выравниванию; мелкие рубрики, колонтитулы и номера слайдов не нужны. Брендинг обложки необязателен.</li>
+              <li>В афишах связывайте предлоги со следующим словом: в&nbsp;Салоне, с&nbsp;Артёмом, о&nbsp;дизайне. Используйте неразрывный пробел и проверяйте переносы.</li>
+              <li>В афишах Салона выбирайте палитру на дату: все события одного дня получают одинаковые фон и текст. Для разных дат — разные фоны. Недельная обложка остаётся бежевой.</li>
+              <li>Подложку внутри эллипса можно подстроить под изображение через <code>matte</code>. В клубной афише описание закреплено у нижнего поля 65 px, заголовок центрируется между фото и описанием.</li>
+              <li>Перед экспортом дождитесь шрифтов и изображений, проверьте маски и переполнение. Карточки — 1080 × 1350; рилсы и эфиры — 1080 × 1920. Масштаб экспорта — 1.</li>
+            </ul>
+            <details class="ds-grid-details" id="grid"><summary>Сетка 6 × 6</summary><div class="ds-grid-explainer"><div class="ds-grid-canvas" role="img" aria-label="Сетка 6 на 6: поля 65 пикселей, промежутки 20 пикселей, четыре угловые опоры"><div class="ds-grid-modules" id="grid-modules" aria-hidden="true"></div></div><p>Рабочая область — 950 × 1220 px. Четыре угла задают выравнивание блоков; рисовать опоры на посте не требуется. Геометрию исходных шаблонов сохраняйте. <a href="docs/design-system.md#grid">Подробнее ↗</a></p></div></details>
+          </section>
+          <section class="ds-section" id="avoid" aria-labelledby="avoid-title">
+            <div class="ds-section-heading"><h2 id="avoid-title">Запреты</h2><a class="ds-text-link" href="docs/design-system.md" download>Правила .md ↓</a></div>
+            <ul class="ds-rule-list">
+              <li>Не перерисовывайте логотипы, символы, ленты и маски. Не растягивайте их, фотографии и буквы по одной оси.</li>
+              <li>Не заполняйте пустоту случайными иконками, эмодзи, орнаментом и сторонними иллюстрациями.</li>
+              <li>Не добавляйте декоративные градиенты, свечение, тени и стеклянные панели. На фото сохраняйте затемнение, предусмотренное шаблоном.</li>
+              <li>Не переносите кнопки, рамки и другие стили интерфейса каталога в посты.</li>
+              <li>Не уменьшайте кегль автоматически ради длинного текста. Сократите текст, разделите его на слайды или выберите более ёмкий макет.</li>
+              <li>Не смешивайте произвольно поля, шрифты и плашки разных композиций. Не вводите близкие дубли цветов и начертаний; частные цвета исходных афиш не расширяют общую палитру.</li>
+              <li>Не назначайте событиям одного дня разные палитры и не меняйте фон афиши из-за подложки внутри эллипса.</li>
+              <li>Не выдумывайте факты, даты, цены, отзывы и контакты. В Бюро указывайте источник и дату проверки там, где это важно для материала.</li>
+            </ul>
+          </section>
+        </div>
       </div>
     </div>
   </main>
   <footer class="agent-discovery"><a href="agents.html">Для ИИ-агентов ↗</a></footer>
 </div>
 <div class="ds-toast" id="copy-status" role="status" aria-live="polite"></div>
-<dialog id="copy-dialog"><form method="dialog"><h2>Скопируйте вручную</h2><p>Браузер ограничил доступ к буферу обмена.</p><textarea readonly aria-label="Текст для копирования"></textarea><button class="ds-primary">Закрыть</button></form></dialog>
+<dialog id="copy-dialog"><form method="dialog"><h2>Скопируйте вручную</h2><textarea readonly aria-label="Текст для копирования"></textarea><button class="ds-primary">Закрыть</button></form></dialog>
+<dialog class="ds-image-dialog" id="specimen-dialog" aria-labelledby="specimen-title"><div class="ds-dialog-toolbar"><span id="specimen-title"></span><a id="specimen-download" class="ds-text-link" download>PNG ↓</a><button type="button" id="specimen-close" aria-label="Закрыть пример">×</button></div><img id="specimen-image" alt=""></dialog>
 </body>
 </html>

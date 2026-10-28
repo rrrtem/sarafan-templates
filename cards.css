@@ -1,3 +1,4 @@
+@font-face{font-family:Geist;font-style:normal;font-weight:100 900;font-display:block;src:url("assets/expert-geist-v1.6.ttf") format("truetype")}
 
     @font-face{font-family:"CoFo Cinema 1909";font-style:normal;font-weight:400;font-display:block;src:url("assets/cofo-cinema1909-regular.otf") format("opentype")}
     @font-face{font-family:"EB Garamond";font-style:normal;font-weight:400;font-display:block;src:url("assets/eb-garamond-regular.ttf") format("truetype")}
@@ -5,10 +6,6 @@
     @font-face{font-family:"EB Garamond";font-style:normal;font-weight:600;font-display:block;src:url("assets/eb-garamond-semibold.ttf") format("truetype")}
     @font-face{font-family:"EB Garamond";font-style:normal;font-weight:700;font-display:block;src:url("assets/eb-garamond-bold.ttf") format("truetype")}
     @font-face{font-family:"EB Garamond";font-style:italic;font-weight:500;font-display:block;src:url("assets/eb-garamond-medium-italic.ttf") format("truetype")}
-    @font-face{font-family:Geist;font-style:normal;font-weight:600;font-display:block;src:url("assets/geist-semibold.ttf") format("truetype")}
-    @font-face{font-family:Geist;font-style:normal;font-weight:700;font-display:block;src:url("assets/geist-bold.ttf") format("truetype")}
-    @font-face{font-family:Geist;font-style:normal;font-weight:400;font-display:block;src:url("assets/geist-regular.ttf") format("truetype")}
-    @font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:block;src:url("assets/inter-regular.ttf") format("truetype")}
     .ig-card{position:absolute;top:0;left:0;width:1080px;height:1350px;overflow:hidden;transform:scale(var(--card-scale,.4));transform-origin:0 0;background:var(--paper);color:var(--ink);font-family:"EB Garamond",Georgia,serif;font-size:55px;line-height:1.1;font-weight:400}
     .ig-card p,.ig-card ul{margin:0}
     .ig-card strong{font-weight:700}
@@ -70,7 +67,7 @@
     .collection-landscape>img{inset:0;width:100%;height:100%}
     .collection-place-name{position:absolute;left:64px;top:934px;width:952px;font-family:Geist,Arial,sans-serif;font-size:80px;font-weight:600;line-height:1;margin:0}
     .collection-address{position:absolute;left:64px;top:1037px;width:952px;height:39px;display:flex;gap:14px;align-items:center;overflow:hidden;font-family:Geist,Arial,sans-serif;font-size:35px;line-height:1.1;font-weight:400}
-    .collection-pin{flex:0 0 32px;width:32px;font-family:Inter,"Apple Color Emoji",sans-serif;font-size:32px;line-height:normal}
+    .collection-pin{flex:0 0 32px;width:32px;font-family:Geist,"Apple Color Emoji",sans-serif;font-size:32px;line-height:normal}
     .collection-description{position:absolute;left:65px;top:1102px;width:826px;font-size:55px;line-height:1.1}
     .collection-credit{position:absolute;left:988px;top:1058px;width:28px;height:227px;display:flex;align-items:center;justify-content:center}
     .collection-credit>p{flex:none;transform:rotate(-90deg);font-family:Geist,Arial,sans-serif;font-size:25px;line-height:1.1;opacity:.68;white-space:nowrap}
@@ -119,3 +116,6 @@
     .text-brown{--text-surface:#553d3d;--text-ink:#fbeed2;--text-accent:#ff3c00}
     .text-orange{--text-surface:#ff3c00;--text-ink:#fbeed2;--text-accent:#553d3d;--number-ink:#553d3d}
     .text-brown .collection-text-copy,.text-orange .collection-text-copy{top:auto;bottom:478px}
+
+/* Current complete Figma symbols retain their original contours and each composition slot. */
+.ig-card .brand-symbol{position:absolute;object-fit:contain}

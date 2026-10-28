@@ -1,0 +1,36 @@
+/* Original 9:16 reels and broadcast frames, Figma page 385:10037. */
+/* Full original family: the older local subset omits the default oldstyle digits. */
+@font-face{font-family:"Sarafan Reels Garamond";font-style:normal;font-weight:400 800;font-display:block;src:url("assets/reels-eb-garamond-variable.ttf") format("truetype")}
+.vertical-card,.vertical-card *{box-sizing:border-box}
+.vertical-card{height:1920px;font-synthesis:none}
+.vertical-card h2{margin:0}
+
+/* Journal · blurred photo cover. Both original image layers remain editable. */
+.reels-cover{background:var(--paper);color:var(--paper)}
+.reels-photo-layer{position:absolute}
+.reels-photo-layer img{width:100%;height:100%;object-fit:cover}
+.reels-photo-layer::after{content:"";position:absolute;inset:0}
+.reels-underlay{left:-333.59px;top:-98.03px;width:1701.91px;height:3025.617px;filter:blur(15px)}
+.reels-underlay::after{background:rgb(0 0 0 / 30%)}
+.reels-photo{left:-369.83px;top:-229.97px;width:1904.487px;height:2539.315px;filter:blur(17.5px)}
+.reels-photo::after{background:rgb(0 0 0 / 20%)}
+/* SVG includes the original ellipse blur: keep its intrinsic dimensions. */
+.reels-title-shade{position:absolute;left:-18.86px;top:512.96px;mix-blend-mode:multiply}
+.reels-title{position:absolute;left:6.3925px;top:792.684px;width:1067.215px;text-align:center;font:400 150px/.86 "Sarafan Reels Garamond","EB Garamond",Georgia,serif;font-variant-numeric:oldstyle-nums proportional-nums}
+
+/* Bureau · live broadcast, original dark and light versions. */
+.bureau-live{--live-bg:var(--ink);--live-ink:var(--paper);background:var(--live-bg);color:var(--live-ink)}
+.bureau-live--light{--live-bg:var(--paper);--live-ink:var(--ink)}
+.live-ribbon{position:absolute;left:0;top:367px;width:368px;height:82px;display:flex;align-items:center;justify-content:center}
+.live-ribbon img{flex:none;transform:rotate(90deg)}
+.live-brand{position:absolute;left:29.5px;top:381.8008px;display:flex;gap:12.5px;color:var(--live-bg);font:500 50px/.86 "EB Garamond",Georgia,serif;white-space:nowrap}
+.live-brand span{width:180px;text-align:center}
+.live-brand em{font-weight:500;width:106px;text-align:center}
+.bureau-live--light .live-brand{color:var(--ink)}
+.live-mark{position:absolute;left:940px;top:367px;width:68px;height:82px;object-fit:contain}
+.live-title{position:absolute;left:110px;top:730px;width:861px;text-align:center;font:500 100px/.92 Geist,Arial,sans-serif}
+.live-speaker{position:absolute;left:210.5px;top:1428px;display:flex;align-items:center;gap:20px;height:93px;font:400 40px/1.1 Geist,Arial,sans-serif;white-space:nowrap}
+.live-speaker p{flex:none}
+.live-speaker .live-label{width:254px}
+.live-speaker .live-name{width:273px}
+.live-speaker img{flex:none;width:93px;height:93px;border-radius:50%;object-fit:cover}

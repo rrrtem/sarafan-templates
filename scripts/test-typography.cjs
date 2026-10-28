@@ -1,0 +1,11 @@
+const assert = require('node:assert/strict');
+const { bindPrepositions } = require('./typography.cjs');
+const nbsp = '\u00a0';
+assert.equal(bindPrepositions('В бизнесе и на встрече, с Артёмом — о дизайне.'), `В${nbsp}бизнесе и на${nbsp}встрече, с${nbsp}Артёмом — о${nbsp}дизайне.`);
+assert.equal(bindPrepositions('Из-за дома, из-под стола, для нас.'), `Из-за${nbsp}дома, из-под${nbsp}стола, для${nbsp}нас.`);
+assert.equal(bindPrepositions('С\tнами и об «искусстве»'), `С${nbsp}нами и об${nbsp}«искусстве»`);
+assert.equal(bindPrepositions('Салон, космос, вопросы, кутюрье Dior'), 'Салон, космос, вопросы, кутюрье Dior');
+assert.equal(bindPrepositions('В\nновом абзаце\n\nС '), 'В\nновом абзаце\n\nС ');
+const bound=`В${nbsp}гостях с${nbsp}нами`;
+assert.equal(bindPrepositions(bound), bound, 'Repeated builds preserve existing NBSP');
+console.log('PASS: prepositions stay attached; punctuation, word boundaries, paragraphs and existing NBSP are preserved.');

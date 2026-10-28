@@ -1,0 +1,325 @@
+{
+  "id": "retirement-france",
+  "title": "Пенсия во Франции: с чего начать?",
+  "template": "bureau-guide",
+  "category": "bureau",
+  "checkedAt": "2026-10-28",
+  "sources": [
+    {
+      "id": "sarafan",
+      "title": "Сарафан · Пенсия во Франции, материал Марины Поповой",
+      "url": "https://sarafan-buro.com/epargne_en_france"
+    },
+    {
+      "id": "career",
+      "title": "Info Retraite · Préparez votre retraite",
+      "url": "https://www.info-retraite.fr/portail-info/sites/PortailInformationnel/home/preparez-votre-retraite-et-envisagez-toutes-vos-possibilites.html"
+    },
+    {
+      "id": "estimate",
+      "title": "Info Retraite · Mon estimation retraite",
+      "url": "https://www.info-retraite.fr/portail-info/sites/PortailInformationnel/home/mon-estimation-retraite.html"
+    },
+    {
+      "id": "per",
+      "title": "Service-Public · PER individuel",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36526/0"
+    }
+  ],
+  "editorialNote": "Редакционная адаптация темы статьи Сарафана. Старые статистические данные и единый пенсионный возраст из статьи не воспроизводятся. PER описан без рекомендации конкретного продукта и расчётов доходности.",
+  "caption": "Пенсия во Франции: с чего начать?\n\nСначала — разобраться в своих пенсионных правах и оценить будущий бюджет. Затем — изучать, нужны ли вам дополнительные накопления и какие условия у выбранного инструмента.\n\nВ карусели собрали последовательность действий и объяснили, что важно знать о PER.\n\nПо материалу Сарафана «Пенсия во Франции» Марины Поповой; сервисы и общие условия проверены по Info Retraite и Service-Public 28.10.2026.\n\nСохраните пост, чтобы вернуться к проверке своей карьеры и расчёту пенсии.",
+  "cards": [
+    {
+      "templateIndex": 1,
+      "title": "Пенсия во Франции: с чего начать?",
+      "sources": [
+        "sarafan"
+      ],
+      "changes": [
+        {
+          "selector": ".bureau-cover-title",
+          "index": 0,
+          "html": "Пенсия<br>во Франции:<br>с чего начать?"
+        },
+        {
+          "selector": ".bureau-cover-description",
+          "index": 0,
+          "html": "Разбираемся, где увидеть свои пенсионные права, как оценить будущий доход и какие вопросы задать перед выбором накоплений."
+        }
+      ]
+    },
+    {
+      "templateIndex": 2,
+      "title": "Пенсия и накопления",
+      "sources": [
+        "sarafan",
+        "career"
+      ],
+      "changes": [
+        {
+          "selector": ".bureau-heading",
+          "index": 0,
+          "html": "Пенсия и<br>накопления"
+        },
+        {
+          "selector": ":scope > .bureau-body",
+          "index": 0,
+          "html": "В материале Сарафана о пенсии главный вопрос — не только когда перестать работать, но и на какой доход жить после этого."
+        },
+        {
+          "selector": ".bureau-prose h3",
+          "index": 0,
+          "html": "Ваши права"
+        },
+        {
+          "selector": ".bureau-prose p",
+          "index": 0,
+          "html": "Пенсионные права зависят от вашей карьеры. Сначала проверьте, какие периоды, кварталы и баллы уже учтены."
+        },
+        {
+          "selector": ".bureau-prose h3",
+          "index": 1,
+          "html": "Ваш план"
+        },
+        {
+          "selector": ".bureau-prose p",
+          "index": 1,
+          "html": "Отдельно оцените будущие расходы и дополнительные доходы. Пенсия и личные накопления — разные части бюджета."
+        }
+      ]
+    },
+    {
+      "templateIndex": 3,
+      "title": "Три вопроса о будущем",
+      "sources": [
+        "sarafan",
+        "estimate"
+      ],
+      "changes": [
+        {
+          "selector": ".bureau-heading",
+          "index": 0,
+          "html": "Три вопроса<br>о будущем"
+        },
+        {
+          "selector": ".bureau-row h3",
+          "index": 0,
+          "html": "Когда"
+        },
+        {
+          "selector": ".bureau-row p",
+          "index": 0,
+          "html": "Какие даты выхода доступны в вашей ситуации?"
+        },
+        {
+          "selector": ".bureau-row h3",
+          "index": 1,
+          "html": "Сколько"
+        },
+        {
+          "selector": ".bureau-row p",
+          "index": 1,
+          "html": "Какой доход показывает личный расчёт?"
+        },
+        {
+          "selector": ".bureau-row h3",
+          "index": 2,
+          "html": "Хватит ли"
+        },
+        {
+          "selector": ".bureau-row p",
+          "index": 2,
+          "html": "Как он соотносится с вашими расходами?"
+        },
+        {
+          "selector": ".bureau-note",
+          "index": 0,
+          "html": "Ориентируйтесь на личную оценку на info-retraite.fr: средняя пенсия не покажет вашу ситуацию."
+        }
+      ]
+    },
+    {
+      "templateIndex": 4,
+      "title": "Начните с учёта карьеры",
+      "sources": [
+        "career"
+      ],
+      "changes": [
+        {
+          "selector": ".bureau-heading",
+          "index": 0,
+          "html": "Начните<br>с учёта карьеры"
+        },
+        {
+          "selector": ".bureau-row h3",
+          "index": 0,
+          "html": "Откройте"
+        },
+        {
+          "selector": ".bureau-row p",
+          "index": 0,
+          "html": "Сервис «Ma carrière» на info-retraite.fr."
+        },
+        {
+          "selector": ".bureau-row h3",
+          "index": 1,
+          "html": "Сверьте"
+        },
+        {
+          "selector": ".bureau-row p",
+          "index": 1,
+          "html": "Периоды работы, доходы, кварталы и баллы."
+        },
+        {
+          "selector": ".bureau-row h3",
+          "index": 2,
+          "html": "Уточните"
+        },
+        {
+          "selector": ".bureau-row p",
+          "index": 2,
+          "html": "Как сообщить о пропусках в вашей кассе."
+        },
+        {
+          "selector": ":scope > .bureau-body",
+          "index": 0,
+          "html": "Сохраните документы о работе: они могут понадобиться для уточнения данных."
+        }
+      ]
+    },
+    {
+      "templateIndex": 5,
+      "title": "Посчитайте несколько сценариев",
+      "sources": [
+        "estimate",
+        "sarafan"
+      ],
+      "changes": [
+        {
+          "selector": ".bureau-heading",
+          "index": 0,
+          "html": "Посчитайте<br>несколько сценариев"
+        },
+        {
+          "selector": ".bureau-prose h3",
+          "index": 0,
+          "html": "Расчёт"
+        },
+        {
+          "selector": ".bureau-prose p",
+          "index": 0,
+          "html": "В «Mon estimation retraite» сравните даты выхода и суммы. Можно проверить, как меняется прогноз при другой занятости."
+        },
+        {
+          "selector": ".bureau-prose h3",
+          "index": 1,
+          "html": "Бюджет"
+        },
+        {
+          "selector": ".bureau-prose p",
+          "index": 1,
+          "html": "Сопоставьте прогноз с расходами на жильё, жизнь и здоровье. Оцените разницу до выбора финансового продукта."
+        },
+        {
+          "selector": ".bureau-note",
+          "index": 0,
+          "html": "Симуляция даёт ориентир. Возможные даты и суммы зависят от вашей карьеры и личной ситуации."
+        }
+      ]
+    },
+    {
+      "templateIndex": 2,
+      "title": "PER: накопления к пенсии",
+      "sources": [
+        "per"
+      ],
+      "changes": [
+        {
+          "selector": ".bureau-heading",
+          "index": 0,
+          "html": "PER: накопления<br>к пенсии"
+        },
+        {
+          "selector": ":scope > .bureau-body",
+          "index": 0,
+          "html": "PER — продукт долгосрочных пенсионных накоплений. Перед выбором разберитесь, когда можно получить деньги, как устроены выплаты, комиссии и налоги."
+        },
+        {
+          "selector": ".bureau-prose h3",
+          "index": 0,
+          "html": "Доступ"
+        },
+        {
+          "selector": ".bureau-prose p",
+          "index": 0,
+          "html": "Обычно деньги доступны при выходе на пенсию. Досрочное снятие возможно лишь в предусмотренных случаях."
+        },
+        {
+          "selector": ".bureau-prose h3",
+          "index": 1,
+          "html": "Выплата"
+        },
+        {
+          "selector": ".bureau-prose p",
+          "index": 1,
+          "html": "Капитал, рента или их сочетание: варианты зависят от происхождения средств и выбранных условий."
+        }
+      ]
+    },
+    {
+      "templateIndex": 6,
+      "title": "План — доходы и расходы",
+      "sources": [
+        "sarafan"
+      ],
+      "changes": [
+        {
+          "selector": ".bureau-statement",
+          "index": 0,
+          "html": "План —<br><em>доходы</em><br>и расходы"
+        },
+        {
+          "selector": ".bureau-body",
+          "index": 0,
+          "html": "Сначала оцените будущий бюджет. Потом сравнивайте инструменты, их риски, комиссии и ограничения."
+        }
+      ]
+    },
+    {
+      "templateIndex": 7,
+      "title": "Что можно сделать сейчас",
+      "sources": [
+        "career",
+        "estimate",
+        "per"
+      ],
+      "changes": [
+        {
+          "selector": ".bureau-heading",
+          "index": 0,
+          "html": "Что можно<br>сделать сейчас"
+        },
+        {
+          "selector": ".bureau-list li",
+          "index": 0,
+          "html": "Проверьте карьеру и сохраните документы."
+        },
+        {
+          "selector": ".bureau-list li",
+          "index": 1,
+          "html": "Сравните прогноз пенсии с будущими расходами."
+        },
+        {
+          "selector": ".bureau-list li",
+          "index": 2,
+          "html": "Изучите условия накоплений перед решением."
+        },
+        {
+          "selector": ".bureau-note",
+          "index": 0,
+          "html": "Материал Сарафана и официальные ссылки — в описании поста. Сохраните, чтобы вернуться к ним."
+        }
+      ]
+    }
+  ]
+}

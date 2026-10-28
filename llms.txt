@@ -1,6 +1,6 @@
 # SARAFAN · Сарафан
 
-> A static library of 1080 × 1350 HTML social cards, brand rules, local fonts, reusable assets, and Russian publication examples. Use it to create posts in the SARAFAN design system.
+> A static library of 1080 × 1350 HTML social cards, with 1080 × 1920 reels covers and live broadcast templates, brand rules, local fonts, reusable assets, and Russian publication examples. Use it to create posts in the SARAFAN design system.
 
 Start with the guide and brand rules, then fetch only the relevant template files. All relative links resolve from this directory, including when hosted at a subpath. Card source markup is inside HTML `<template>` elements in index.html; rendered previews alone do not expose those sources. Intro, transition, and club-salon are style references. Explicit user instructions take precedence over project defaults.
 
@@ -13,6 +13,11 @@ Start with the guide and brand rules, then fetch only the relevant template file
 
 ## Templates and publications
 
+- [Personal recommendations](docs/recommendations-template.md): Three Journal covers with editable title, author portrait and biography; original 1080 × 1350 compositions from Figma.
+- [Vertical reels and live broadcast templates](docs/vertical-templates.md): Journal reels cover and two Bureau broadcast variants, original 1080 × 1920 format. Use template-level `canvas` dimensions.
+
+- [Bureau practical carousel](docs/bureau-template.md): Two original covers and six reusable continuation layouts with editorial prompts, no invented administrative news. Bureau covers everyday life in France and includes the Expert template.
+- [Advertising template](docs/ads-template.md): Nine Marrakech Girls Retreat cards, original photos, typography, and brand ribbon.
 - [Expert template](docs/expert-template.md): Five cards; preserve the local Geist v1.6 font and source line breaks.
 - [Event template](docs/event-template.md): One photo cover and three supplied-poster containers.
 - [Club templates](docs/club-templates.md): Club event posters and the salon style reference.

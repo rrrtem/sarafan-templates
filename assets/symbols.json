@@ -1,0 +1,194 @@
+{
+  "fileKey": "oEldVQIQ9PsRezkqg1rdzy",
+  "pageId": "386:10081",
+  "updated": "2026-10-28",
+  "colors": {
+    "cream": "#FBEED2",
+    "brown": "#553D3D",
+    "blue": "#A9C9DF",
+    "orange": "#FF3C00",
+    "pink": "#E19A9B",
+    "olive": "#91945B"
+  },
+  "symbols": [
+    {
+      "id": "rooster",
+      "name": "Петух",
+      "nodeId": "391:13811",
+      "variants": [
+        "cream",
+        "brown",
+        "blue",
+        "orange",
+        "pink",
+        "olive"
+      ],
+      "source": "assets/symbol-rooster-figma.svg",
+      "sha256": "1a837727cd5f714c4fd97c619361fc1c3c2db01d516f80eb4ab94a4f7b89079b",
+      "files": {
+        "cream": "assets/symbol-rooster-cream.svg",
+        "brown": "assets/symbol-rooster-brown.svg",
+        "blue": "assets/symbol-rooster-blue.svg",
+        "orange": "assets/symbol-rooster-orange.svg",
+        "pink": "assets/symbol-rooster-pink.svg",
+        "olive": "assets/symbol-rooster-olive.svg"
+      }
+    },
+    {
+      "id": "bureau",
+      "name": "Кольца Бюро",
+      "nodeId": "386:12392",
+      "variants": [
+        "cream",
+        "brown",
+        "blue",
+        "orange",
+        "pink",
+        "olive"
+      ],
+      "source": "assets/symbol-bureau-figma.svg",
+      "sha256": "9ffc51344fdb0641dd0dac44e266267e832bf5fafe9c32a3c08bfe3dc8b08de0",
+      "files": {
+        "cream": "assets/symbol-bureau-cream.svg",
+        "brown": "assets/symbol-bureau-brown.svg",
+        "blue": "assets/symbol-bureau-blue.svg",
+        "orange": "assets/symbol-bureau-orange.svg",
+        "pink": "assets/symbol-bureau-pink.svg",
+        "olive": "assets/symbol-bureau-olive.svg"
+      }
+    },
+    {
+      "id": "horse",
+      "name": "Конь Клуба",
+      "nodeId": "391:14070",
+      "variants": [
+        "cream",
+        "brown",
+        "blue",
+        "orange",
+        "pink",
+        "olive"
+      ],
+      "source": "assets/symbol-horse-figma.svg",
+      "sha256": "24ab98e9f600874be3acd55c9bf82ecdc9d0503bcd1e2fb9a8868664cde02bcb",
+      "files": {
+        "cream": "assets/symbol-horse-cream.svg",
+        "brown": "assets/symbol-horse-brown.svg",
+        "blue": "assets/symbol-horse-blue.svg",
+        "orange": "assets/symbol-horse-orange.svg",
+        "pink": "assets/symbol-horse-pink.svg",
+        "olive": "assets/symbol-horse-olive.svg"
+      }
+    },
+    {
+      "id": "sirin",
+      "name": "Сирин",
+      "nodeId": "391:14391",
+      "variants": [
+        "cream",
+        "brown",
+        "blue",
+        "orange",
+        "pink",
+        "olive"
+      ],
+      "source": "assets/symbol-sirin-figma.svg",
+      "sha256": "fbfb8509102e0b9844eea4df55fc4628c7179a8390419eddaed44cb0a88a4ee6",
+      "files": {
+        "cream": "assets/symbol-sirin-cream.svg",
+        "brown": "assets/symbol-sirin-brown.svg",
+        "blue": "assets/symbol-sirin-blue.svg",
+        "orange": "assets/symbol-sirin-orange.svg",
+        "pink": "assets/symbol-sirin-pink.svg",
+        "olive": "assets/symbol-sirin-olive.svg"
+      }
+    }
+  ],
+  "aliases": [
+    {
+      "path": "assets/expert-about-logo.svg",
+      "symbol": "bureau",
+      "color": "orange"
+    },
+    {
+      "path": "assets/expert-questions-logo.svg",
+      "symbol": "bureau",
+      "color": "orange"
+    },
+    {
+      "path": "assets/expert-session-logo.svg",
+      "symbol": "bureau",
+      "color": "orange"
+    },
+    {
+      "path": "assets/expert-contact-logo.svg",
+      "symbol": "bureau",
+      "color": "cream"
+    },
+    {
+      "path": "assets/intro-3-group82.svg",
+      "symbol": "bureau",
+      "color": "orange"
+    },
+    {
+      "path": "assets/bureau-live-dark-mark.svg",
+      "symbol": "bureau",
+      "color": "orange"
+    },
+    {
+      "path": "assets/bureau-live-light-mark.svg",
+      "symbol": "bureau",
+      "color": "orange"
+    },
+    {
+      "path": "assets/club-5535-group93.svg",
+      "symbol": "horse",
+      "color": "orange"
+    },
+    {
+      "path": "assets/club-5883-group93.svg",
+      "symbol": "horse",
+      "color": "orange"
+    },
+    {
+      "path": "assets/club-6218-group93.svg",
+      "symbol": "horse",
+      "color": "orange"
+    },
+    {
+      "path": "assets/club-6554-group93.svg",
+      "symbol": "horse",
+      "color": "orange"
+    },
+    {
+      "path": "assets/club-6889-group93.svg",
+      "symbol": "horse",
+      "color": "orange"
+    },
+    {
+      "path": "assets/club-7225-group93.svg",
+      "symbol": "horse",
+      "color": "orange"
+    },
+    {
+      "path": "assets/club-7560-group93.svg",
+      "symbol": "horse",
+      "color": "orange"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/marks/mark-olive.svg",
+      "symbol": "bureau",
+      "color": "olive"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/marks/mark-cream.svg",
+      "symbol": "bureau",
+      "color": "cream"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/marks/mark-blue.svg",
+      "symbol": "bureau",
+      "color": "blue"
+    }
+  ]
+}

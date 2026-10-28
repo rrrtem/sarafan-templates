@@ -40,10 +40,10 @@
     "label": "Дизайн-приёмная и кастом-станция",
     "title": "Дизайн-приёмная<br>и кастом-станция",
     "date": "11/11",
-    "time": "среда,<br>весь день",
+    "time": "среда,<br>17:00–21:00",
     "price": null,
-    "description": "Дизайн-дуэт Артём Зайцев и Настя Самохина: два события в одном. Приносите дизайн-вопросы о бизнесе, блоге или проекте — посоветуем и поищем решения на месте. Параллельно делаем кастом-патчи на вашу одежду с нашими иллюстрациями.",
-    "photo": "images/chichis-circle.svg",
+    "description": "Дизайн-дуэт Артём Зайцев и Настя Самохина: два события в одном. Приносите дизайн-вопросы о бизнесе, блоге или проекте — посоветуем и поищем решения на месте. Параллельно делаем кастом-патчи на вашу одежду с нашими иллюстрациями. А после — танцы.",
+    "photo": "images/chichis-figma-character.png",
     "initial": {
       "x": 0.5,
       "y": 0.5,
@@ -51,8 +51,13 @@
       "fit": "cover"
     },
     "matte": "#ffffff",
-    "subtitle": "Дизайн-дуэт Chichis",
-    "graphic": true
+    "subtitle": "CHICHIS",
+    "graphic": true,
+    "illustration": {
+      "ellipse": "images/chichis-figma-ellipse.svg",
+      "mushroom": "images/chichis-figma-mushroom.svg",
+      "source": "https://www.figma.com/design/oEldVQIQ9PsRezkqg1rdzy/?node-id=379-8235"
+    }
   },
   {
     "number": 5,
@@ -122,7 +127,7 @@
       "zoom": 1,
       "fit": "contain"
     },
-    "matte": "#f7f4e9",
+    "matte": "#ffffff",
     "subtitle": "Мастер-класс с Ларисой"
   },
   {

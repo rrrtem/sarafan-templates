@@ -1,0 +1,274 @@
+{
+  "id": "french-superlevel",
+  "title": "Возможно ли выучить французский до суперуровня?",
+  "template": "bureau-guide",
+  "category": "bureau",
+  "checkedAt": "2026-10-28",
+  "sources": [
+    {
+      "id": "fei-c1",
+      "title": "France Éducation international · дескрипторы C1",
+      "url": "https://www.france-education-international.fr/document/cecrldescripteursc1"
+    },
+    {
+      "id": "fei-c2",
+      "title": "France Éducation international · дескрипторы C2",
+      "url": "https://www.france-education-international.fr/document/cecrldescripteursc2"
+    },
+    {
+      "id": "fei-dalf",
+      "title": "France Éducation international · описание DALF и уровня C2",
+      "url": "https://www.france-education-international.fr/document/manuel-rgc"
+    }
+  ],
+  "editorialNote": "Описание уровней основано на FEI; упражнения и примеры жизненных задач — редакционная разработка, без обещаний сроков.",
+  "caption": "Возможно ли выучить французский до суперуровня?\n\nДа, если превратить расплывчатую мечту в понятные задачи: понимать сложный текст, защищать свою позицию и выражать оттенки мысли. Уровни C1 и C2 помогают описать эти умения.\n\nВ карусели — ориентиры и пример практики: прочитать, пересказать, получить обратную связь и попробовать ещё раз. Выберите ситуацию, в которой хотите чувствовать себя свободнее.\n\nСохраните пост для следующего занятия. А что сейчас сложнее всего: говорить, понимать на слух или писать?\n\nИсточники: France Éducation international, дескрипторы C1/C2 и описание DALF. Проверено 28.10.2026.",
+  "cards": [
+    {
+      "templateIndex": 0,
+      "title": "Французский до суперуровня: это возможно?",
+      "sources": [
+        "fei-c1",
+        "fei-c2"
+      ],
+      "changes": [
+        {
+          "selector": ".bureau-cover-title",
+          "index": 0,
+          "html": "Французский<br>до суперуровня:<br>это возможно?"
+        },
+        {
+          "selector": ".bureau-cover-description",
+          "index": 0,
+          "html": "От «меня понимают» к свободной речи: разбираемся, что означают C1 и C2 и как превратить большую цель в понятную практику."
+        }
+      ]
+    },
+    {
+      "templateIndex": 2,
+      "title": "Что значит суперуровень",
+      "sources": [
+        "fei-c1",
+        "fei-c2"
+      ],
+      "changes": [
+        {
+          "selector": ".bureau-heading",
+          "index": 0,
+          "html": "Что значит<br>«суперуровень»"
+        },
+        {
+          "selector": ":scope > .bureau-body",
+          "index": 0,
+          "html": "У «суперуровня» нет официальной шкалы. В CEFR продвинутое владение описывают уровни C1 и C2. Это конкретные умения: понимать, объяснять и точно формулировать мысль."
+        },
+        {
+          "selector": ".bureau-prose h3",
+          "index": 0,
+          "html": "C1"
+        },
+        {
+          "selector": ".bureau-prose p",
+          "index": 0,
+          "html": "Понимать сложные тексты и скрытые смыслы, свободно выражать идеи, выбирать подходящий стиль общения."
+        },
+        {
+          "selector": ".bureau-prose h3",
+          "index": 1,
+          "html": "C2"
+        },
+        {
+          "selector": ".bureau-prose p",
+          "index": 1,
+          "html": "Обобщать информацию, передавать тонкие оттенки смысла, говорить точно и гибко."
+        }
+      ]
+    },
+    {
+      "templateIndex": 3,
+      "title": "Определите свою задачу",
+      "sources": [],
+      "changes": [
+        {
+          "selector": ".bureau-heading",
+          "index": 0,
+          "html": "Определите<br>свою задачу"
+        },
+        {
+          "selector": ".bureau-row h3",
+          "index": 0,
+          "html": "Работа"
+        },
+        {
+          "selector": ".bureau-row p",
+          "index": 0,
+          "html": "Объяснить решение и ответить на возражения."
+        },
+        {
+          "selector": ".bureau-row h3",
+          "index": 1,
+          "html": "Учёба"
+        },
+        {
+          "selector": ".bureau-row p",
+          "index": 1,
+          "html": "Обсудить текст и выстроить аргументацию."
+        },
+        {
+          "selector": ".bureau-row h3",
+          "index": 2,
+          "html": "Жизнь"
+        },
+        {
+          "selector": ".bureau-row p",
+          "index": 2,
+          "html": "Поддержать разговор и уточнить свою мысль."
+        },
+        {
+          "selector": ".bureau-note",
+          "index": 0,
+          "html": "Выберите ситуацию, в которой хотите говорить свободнее. Так большая цель станет конкретнее."
+        }
+      ]
+    },
+    {
+      "templateIndex": 4,
+      "title": "Одна тема — три действия",
+      "sources": [],
+      "changes": [
+        {
+          "selector": ".bureau-heading",
+          "index": 0,
+          "html": "Одна тема —<br>три действия"
+        },
+        {
+          "selector": ".bureau-row h3",
+          "index": 0,
+          "html": "Читайте"
+        },
+        {
+          "selector": ".bureau-row p",
+          "index": 0,
+          "html": "Возьмите статью и выпишите полезные обороты."
+        },
+        {
+          "selector": ".bureau-row h3",
+          "index": 1,
+          "html": "Говорите"
+        },
+        {
+          "selector": ".bureau-row p",
+          "index": 1,
+          "html": "Перескажите смысл и добавьте своё мнение."
+        },
+        {
+          "selector": ".bureau-row h3",
+          "index": 2,
+          "html": "Перепишите"
+        },
+        {
+          "selector": ".bureau-row p",
+          "index": 2,
+          "html": "Попросите обратную связь и улучшите текст."
+        },
+        {
+          "selector": ":scope > .bureau-body",
+          "index": 0,
+          "html": "Это пример упражнения, которое можно повторять с новыми темами."
+        }
+      ]
+    },
+    {
+      "templateIndex": 5,
+      "title": "Как замечать свой прогресс",
+      "sources": [
+        "fei-c1",
+        "fei-c2"
+      ],
+      "changes": [
+        {
+          "selector": ".bureau-heading",
+          "index": 0,
+          "html": "Как замечать<br>свой прогресс"
+        },
+        {
+          "selector": ".bureau-prose h3",
+          "index": 0,
+          "html": "В разговоре"
+        },
+        {
+          "selector": ".bureau-prose p",
+          "index": 0,
+          "html": "Запишите короткий ответ на знакомую тему. Через время повторите: легче ли строить фразы и точнее ли мысль?"
+        },
+        {
+          "selector": ".bureau-prose h3",
+          "index": 1,
+          "html": "В тексте"
+        },
+        {
+          "selector": ".bureau-prose p",
+          "index": 1,
+          "html": "Сохраните первый вариант письма и исправленный. Сравните связность, выбор слов и повторяющиеся ошибки."
+        },
+        {
+          "selector": ".bureau-note",
+          "index": 0,
+          "html": "Для оценки уровня можно сверяться с критериями DALF. Эти упражнения — способ наблюдать за своей работой."
+        }
+      ]
+    },
+    {
+      "templateIndex": 6,
+      "title": "C2 — точность и гибкость",
+      "sources": [
+        "fei-dalf",
+        "fei-c2"
+      ],
+      "changes": [
+        {
+          "selector": ".bureau-statement",
+          "index": 0,
+          "html": "C2 — это<br><em>точность</em><br>и гибкость"
+        },
+        {
+          "selector": ".bureau-body",
+          "index": 0,
+          "html": "Уровень C2 описывает владение языком. Сходство с носителем не служит его определением."
+        }
+      ]
+    },
+    {
+      "templateIndex": 7,
+      "title": "Выберите следующий шаг",
+      "sources": [],
+      "changes": [
+        {
+          "selector": ".bureau-heading",
+          "index": 0,
+          "html": "Выберите<br>следующий шаг"
+        },
+        {
+          "selector": ".bureau-list li",
+          "index": 0,
+          "html": "Назовите задачу, для которой нужен французский."
+        },
+        {
+          "selector": ".bureau-list li",
+          "index": 1,
+          "html": "Соедините понимание, речь и письменную практику."
+        },
+        {
+          "selector": ".bureau-list li",
+          "index": 2,
+          "html": "Сравнивайте свои работы по конкретным критериям."
+        },
+        {
+          "selector": ".bureau-note",
+          "index": 0,
+          "html": "В какой ситуации вам хочется чувствовать себя свободнее? Начните с неё."
+        }
+      ]
+    }
+  ]
+}

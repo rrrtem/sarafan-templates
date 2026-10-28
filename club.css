@@ -2,7 +2,7 @@
 .club-card{background:var(--paper);color:var(--ink);font-synthesis:none}
 .club-card h2{margin:0;font-weight:400}
 .club-cinema{font-family:"CoFo Cinema 1909",serif;font-weight:400;line-height:.86}
-.club-mark{position:absolute;left:913px;top:65px;width:101.883px;height:66.203px}
+.club-mark{position:absolute;left:913px;top:65px;width:101.883px;height:66.203px;object-fit:contain}
 .club-dot{position:absolute;width:174px;height:174px}
 .club-brand-title{position:absolute;left:65px;top:65px;width:857.794px;font-size:200px}
 .club-salon-title,.club-range,.club-month{position:absolute;font-size:200px;text-align:center;text-box-trim:trim-both;text-box-edge:cap alphabetic;white-space:nowrap}

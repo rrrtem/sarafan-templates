@@ -7,6 +7,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const crypto = require('node:crypto');
 const root = path.resolve(__dirname, '..');
+require('./build-carousel-downloads.cjs').buildCarouselDownloads();
 const read = name => fs.readFileSync(path.join(root, name), 'utf8');
 const write = (name, text) => fs.writeFileSync(path.join(root, name), text);
 const json = value => JSON.stringify(value, null, 2) + '\n';
@@ -41,10 +42,14 @@ const design = browserData('design-system-data.js', 'SARAFAN_DESIGN');
 const fonts = fontFaces();
 const colors = [...design.colors, ...design.additionalColors.map(color => ({ ...color, secondary: true }))];
 const tokens = { schemaVersion: 1, canvas: { width: 1080, height: 1350, unit: 'px' },
-  colors, combinations: design.combinations, typography: design.typography, fonts };
+  layout: design.layout, colors, combinations: design.combinations, typography: design.typography, fonts };
 write('downloads/tokens.json', json(tokens));
 const properties = [
   '  --sarafan-card-width: 1080px;', '  --sarafan-card-height: 1350px;',
+  `  --sarafan-grid-columns: ${design.layout.columns};`,
+  `  --sarafan-grid-rows: ${design.layout.rows};`,
+  `  --sarafan-grid-margin: ${design.layout.margin}px;`,
+  `  --sarafan-grid-gutter: ${design.layout.gutter}px;`,
   ...colors.map(color => `  --sarafan-${color.id}: ${color.hex};`),
   '  --paper: var(--sarafan-cream);', '  --ink: var(--sarafan-brown);',
   '  --blue: var(--sarafan-blue);', '  --ui-accent: var(--sarafan-orange);',
@@ -71,6 +76,11 @@ const catalogContext = {};
 vm.runInNewContext(catalog.slice(0, boundary) + '\n globalThis.entries = entries;\n})();',
   catalogContext, { timeout: 1000 });
 const profiles = {
+  recommendations: ['recommendations.css', 'docs/recommendations-template.md'],
+  'reels-cover': ['vertical.css', 'docs/vertical-templates.md'],
+  'bureau-live': ['vertical.css', 'docs/vertical-templates.md'],
+  'bureau-guide': ['bureau.css', 'docs/bureau-template.md'],
+  'ads-retreat': ['ads.css', 'docs/ads-template.md'],
   'club-event': ['club.css', 'docs/club-templates.md'],
   'club-salon': ['club.css', 'docs/club-templates.md'],
   proust: [null, 'docs/design-system.md'], places: [null, 'docs/design-system.md'],
@@ -81,7 +91,7 @@ const templates = JSON.parse(JSON.stringify(catalogContext.entries)).map(entry =
   const profile = profiles[entry.id];
   if (!profile) throw new Error(`Add an agent source profile for template ${entry.id}`);
   return { id: entry.id, title: entry.name, category: entry.category, kind: entry.kind || 'template',
-    href: `index.html#${entry.id}`, source: { path: 'index.html',
+    href: `index.html#${entry.id}`, canvas: entry.canvas || { width: 1080, height: 1350 }, source: { path: 'index.html',
       selector: '#' + (entry.source || 'template-' + entry.id), cardSelector: '.ig-card' },
     styles: ['downloads/tokens.css', 'downloads/fonts.css', 'cards.css', ...(profile[0] ? [profile[0]] : [])],
     documentation: profile[1], labels: entry.labels };

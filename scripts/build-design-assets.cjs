@@ -2,9 +2,10 @@
 'use strict';
 
 // Offline build. Uses only the project's original assets, local fonts and installed tools.
-// Node modules: sharp, playwright, pdf-lib, jszip. Optional wordmark: python3/fontTools + hb-shape.
+// Node modules: sharp, playwright, pdf-lib, jszip. Outlined type: python3/fontTools + hb-shape.
 const fs = require('node:fs');
 const path = require('node:path');
+const vm = require('node:vm');
 const { execFileSync } = require('node:child_process');
 const root = path.resolve(__dirname, '..');
 const destination = path.join(root, 'downloads');
@@ -24,93 +25,54 @@ const write = (relative, contents) => {
 const numeric = value => Number(Number(value).toFixed(9));
 const attribute = (svg, name) => new RegExp(`\\b${name}="([^"]+)"`).exec(svg)?.[1];
 
-const palette = [
-  { id: 'cream', title: 'Кремовый', hex: '#FBEED2' },
-  { id: 'brown', title: 'Коричневый', hex: '#553D3D' },
-  { id: 'blue', title: 'Голубой', hex: '#A9C9DF' },
-  { id: 'orange', title: 'Оранжевый', hex: '#FF3C00' },
-  { id: 'pink', title: 'Розовый', hex: '#E19A9B' },
-  { id: 'olive', title: 'Оливковый', hex: '#91945B' },
-  { id: 'slate', title: 'Серо-синий', hex: '#606D82', secondary: true },
-  { id: 'sand', title: 'Песочный', hex: '#E4D5B6', secondary: true },
-  { id: 'forest', title: 'Тёмно-зелёный', hex: '#014B3E', secondary: true },
-  { id: 'dusty-rose', title: 'Пыльно-розовый', hex: '#C98384', secondary: true },
-  { id: 'terracotta', title: 'Терракотовый', hex: '#B54F1A', secondary: true }
-];
+const designContext = {window:{}};
+vm.runInNewContext(read('design-system-data.js'),designContext);
+const design = designContext.window.SARAFAN_DESIGN;
+const palette = [...design.colors.map(c => ({id:c.id,title:c.name,hex:c.hex})),
+  ...design.additionalColors.map(c => ({id:c.id,title:c.name,hex:c.hex,secondary:true}))];
 
 const originalVector = (id, title, source, category = 'logo', note = '') => ({
   id, title, source: `assets/${source}`, category, note, svg: read(`assets/${source}`)
 });
 
-function composedHeart(variant) {
-  const html = read('index.html');
-  const className = variant === 'orange' ? 'intro-cover' : 'intro-finale';
-  const article = new RegExp(`<article[^>]*class="[^"]*\\b${className}\\b[^"]*"[\\s\\S]*?<\\/article>`).exec(html)?.[0];
-  if (!article) throw new Error(`Original ${className} article not found`);
-  const original = /\.intro-original\{[^}]*width:([\d.]+)px;height:([\d.]+)px;transform:scale\(([\d.]+)\)/.exec(read('intro.css'));
-  if (!original) throw new Error('Original introduction coordinate system not found');
-  const [, originalWidth, originalHeight, factor] = original.map(Number);
-  const pieces = [...article.matchAll(/<div class="intro-logo-piece" style="inset:([^"]+)"[^>]*><img src="(assets\/[^\"]+)"[^>]*><\/div>/g)].map(match => {
-    const [top, , , left] = match[1].split(/\s+/).map(parseFloat);
-    const svg = read(match[2]);
-    return { source: match[2], svg, x: originalWidth * left / 100,
-      y: originalHeight * top / 100, width: Number(attribute(svg, 'width')),
-      height: Number(attribute(svg, 'height')) };
-  });
-  if (pieces.length !== 11) throw new Error(`Expected 11 original pieces for ${variant}, got ${pieces.length}`);
-  const x0 = Math.min(...pieces.map(p => p.x));
-  const y0 = Math.min(...pieces.map(p => p.y));
-  const width = numeric((Math.max(...pieces.map(p => p.x + p.width)) - x0) * factor);
-  const height = numeric((Math.max(...pieces.map(p => p.y + p.height)) - y0) * factor);
-  // Nest each untouched source SVG. Only its original position and the existing parent scale apply.
-  const content = pieces.map(piece => piece.svg.replace('<svg ',
-    `<svg x="${numeric((piece.x - x0) * factor)}" y="${numeric((piece.y - y0) * factor)}" `)
-    .replace(/\bwidth="[^"]+"/, `width="${numeric(piece.width * factor)}"`)
-    .replace(/\bheight="[^"]+"/, `height="${numeric(piece.height * factor)}"`)).join('\n');
-  return { id: `heart-${variant}`, title: variant === 'orange' ? 'Сердце · оранжевое' : 'Сердце · кремовое',
-    category: 'logo', source: pieces.map(p => p.source),
-    note: '11 исходных SVG-фрагментов, позиции из index.html / intro-logo-piece; общий crop и исходный масштаб intro-original. Контуры не изменены.',
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">\n${content}\n</svg>\n` };
+function symbolVector(id, title, symbol, color = 'orange') {
+  const registry = JSON.parse(read('assets/symbols.json'));
+  const source = registry.symbols.find(item => item.id === symbol);
+  return { ...originalVector(id, title, `symbol-${symbol}-${color}.svg`),
+    figma: { fileKey: registry.fileKey, nodeId: source.nodeId },
+    note: 'Оригинальный прозрачный SVG из Figma, страница знаков. Контуры и пропорции сохранены; цветовая версия следует палитре шаблона.' };
 }
 
-function outlinedWordmark() {
-  // HarfBuzz supplies real OpenType positioning; fontTools extracts original glyph outlines.
-  // If either installed tool is unavailable, omit the optional mark instead of approximating it.
-  try {
-    const python = String.raw`
-import json, subprocess
-from fontTools.ttLib import TTFont
-from fontTools.pens.svgPathPen import SVGPathPen
-from fontTools.pens.boundsPen import BoundsPen
-from fontTools.pens.transformPen import TransformPen
-font = TTFont('assets/eb-garamond-medium.ttf')
-glyphs = font.getGlyphSet()
-run = json.loads(subprocess.check_output(['hb-shape', 'assets/eb-garamond-medium.ttf', 'Сарафан', '--output-format=json'], text=True))
-size = 140
-scale = size / font['head'].unitsPerEm
-outline = SVGPathPen(glyphs)
-bounds = BoundsPen(glyphs)
-x = y = 0
-for item in run:
-    glyph = glyphs[item['g']]
-    transform = (scale, 0, 0, -scale, (x + item['dx']) * scale, -(y + item['dy']) * scale)
-    glyph.draw(TransformPen(outline, transform))
-    glyph.draw(TransformPen(bounds, transform))
-    x += item['ax']
-    y += item['ay']
-x0, y0, x1, y1 = bounds.bounds
-print(json.dumps({'width': x1-x0, 'height': y1-y0, 'viewBox': [x0,y0,x1-x0,y1-y0], 'path': outline.getCommands()}))
-`;
-    const result = JSON.parse(execFileSync(process.env.SARAFAN_PYTHON || 'python3', ['-c', python],
-      { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }));
-    return { id: 'sarafan-wordmark-orange', title: 'Сарафан · словесный знак', category: 'logo',
-      source: 'assets/eb-garamond-medium.ttf',
-      note: 'Текст «Сарафан» из intro, EB Garamond Medium 500, 140 px. Настоящие контуры глифов; OpenType-позиционирование HarfBuzz. Crop по контурам.',
-      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="${numeric(result.width)}" height="${numeric(result.height)}" viewBox="${result.viewBox.map(numeric).join(' ')}"><path fill="#FF3C00" d="${result.path}"/></svg>\n` };
-  } catch (error) {
-    console.warn('Optional outlined wordmark omitted: local hb-shape or Python fontTools is unavailable.');
-    return null;
-  }
+// Text remains the real local type from the templates; no raster tracing.
+function outlinedRuns(runs) {
+  return JSON.parse(execFileSync(process.env.SARAFAN_PYTHON || 'python3',
+    ['scripts/outline-design-text.py', JSON.stringify(runs)], { cwd: root, encoding: 'utf8' }));
+}
+function croppedOutline(id, title, runs) {
+  const result = outlinedRuns(runs);
+  const [x0,y0,x1,y1] = result.bounds;
+  return { id, title, category: 'logo', source: ['index.html', ...new Set(runs.map(run => run.font))],
+    note: 'Оригинальная типографика интро: EB Garamond Medium 140 px; depuis 2021 — Bold 35 px, исходное смещение (510.334; 24). HarfBuzz и контуры локальных глифов.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="${numeric(x1-x0)}" height="${numeric(y1-y0)}" viewBox="${[x0,y0,x1-x0,y1-y0].map(numeric).join(' ')}">${result.paths}</svg>\n` };
+}
+function rotateVector(item, id, title, clockwise = true) {
+  const width = Number(attribute(item.svg, 'width'));
+  const height = Number(attribute(item.svg, 'height'));
+  const inner = item.svg.replace(/<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '');
+  return { ...item, id, title, category: 'element',
+    note: 'Исходные контуры с надписями, поворот целого элемента на 90°. Пропорции сохранены.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="${height}" height="${width}" viewBox="0 0 ${height} ${width}"><g transform="${clockwise ? `translate(${height} 0) rotate(90)` : `translate(0 ${width}) rotate(-90)`}">${inner}</g></svg>\n` };
+}
+function clubRibbon(label, id) {
+  const shape = rotateVector(originalVector('shape', '', 'club-5883-rectangle71.svg', 'element'), 'shape', '', false);
+  const type = outlinedRuns([
+    {text:'Сарафан',font:'assets/eb-garamond-medium.ttf',size:50,x:135,y:15,color:'#553D3D'},
+    {text:label,font:'assets/eb-garamond-medium-italic.ttf',size:50,x:329,y:15,color:'#553D3D'}
+  ]);
+  return { id, title: `Клуб${label === 'Салон' ? ' · Салон' : ''} · горизонтальная`, category:'element',
+    source:['assets/club-5883-rectangle71.svg','club.css','assets/eb-garamond-medium.ttf','assets/eb-garamond-medium-italic.ttf'],
+    note:'Клубная лента с прямым левым краем, исходным правым краем и типографикой 50/86%. Надписи — контуры локальных шрифтов.',
+    svg:shape.svg.replace('</svg>',type.paths+'</svg>') };
 }
 
 function clippingVersion(svg) {
@@ -141,38 +103,33 @@ async function exportVector(item, page) {
   pdf.setTitle(item.title); pdf.setAuthor('Сарафан'); pdf.setCreator('SARAFAN local design-assets build');
   pdf.setCreationDate(new Date('2021-01-01T00:00:00Z')); pdf.setModificationDate(new Date('2021-01-01T00:00:00Z'));
   write(formats.PDF, await pdf.save({ useObjectStreams: false }));
-  return { id: item.id, title: item.title, category: item.category, source: item.source, formats,
+  return { id: item.id, title: item.title, category: item.category, source: item.source, figma: item.figma, formats,
     svgText: item.svg, pngBase64: fs.readFileSync(path.join(root, formats.PNG)).toString('base64'),
     dimensions: { width, height }, note: item.note || 'Исходный SVG сохранён без изменения формы. PNG: прозрачный, 4×. PDF: вектор, страница по границам SVG; 1 px = 0.75 pt.' };
-}
-
-async function exportRaster(id, title, source) {
-  const relative = `downloads/logos/${id}.png`;
-  fs.mkdirSync(path.dirname(path.join(root, relative)), { recursive: true });
-  fs.copyFileSync(path.join(root, source), path.join(root, relative));
-  const metadata = await sharp(path.join(root, relative)).metadata();
-  return { id, title, category: 'logo', source, formats: { PNG: relative },
-    pngBase64: fs.readFileSync(path.join(root, relative)).toString('base64'),
-    dimensions: { width: metadata.width, height: metadata.height },
-    note: 'Исходный растровый PNG без увеличения и трассировки. Векторного исходника в проекте нет.' };
 }
 
 const readme = `# Сарафан — локальный набор дизайн-ассетов
 
 Источник — существующая библиотека HTML-шаблонов SARAFAN и локальные assets/.
-Новые знаки, иллюстрации и шрифты не создавались и из сети не загружались.
+Знаки, иллюстрации и шрифты взяты из локальных исходников. Типографические варианты собраны из оригинальных форм и контуров существующих шрифтов; загрузки из сети нет.
 
 ## Происхождение
 
-- bureau-orange: assets/expert-about-logo.svg; bureau-cream: assets/expert-contact-logo.svg.
+- Все четыре знака — оригинальные прозрачные SVG из Figma, страница 386:10081:
+  петух 391:13811, кольца Бюро 386:12392, конь Клуба 391:14070, сирин 391:14391.
+- Исходники: assets/symbol-{rooster,bureau,horse,sirin}-figma.svg. Контуры и viewBox не изменяются.
+  assets/symbols.json содержит узлы, SHA-256 исходников, цвета и совместимые имена.
+- Палитровые версии отличаются только цветом заливки. Сборка: node scripts/build-symbol-assets.cjs.
+- heart-orange / heart-cream, club и salon — совместимые имена новых цельных SVG, без прежних фрагментов и трассировки PNG.
 - journal-bookmark: assets/intro-2-rectangle72.svg.
-- heart-orange / heart-cream: 11 исходных фрагментов intro-1-group*.svg / intro-7-group*.svg;
-  координаты взяты из index.html (.intro-logo-piece), родительский масштаб — intro.css (.intro-original).
-  Выполнен только общий crop. Форма каждого фрагмента сохранена.
-- club: assets/intro-4910-logo.png; salon: assets/intro-3826-logo.png — только исходный PNG.
-- sarafan-wordmark-orange, если присутствует: реальные контуры EB Garamond Medium 500,
-  слово «Сарафан» из intro, кегль 140 px; HarfBuzz + fontTools. Шрифт не имитирован.
-- ribbon-journal / ribbon-bureau / ribbon-action: sarafan-ribbon.svg / expert-ribbon.svg / intro-2-vector.svg.
+- sarafan-wordmark-orange и sarafan-wordmark-since: реальные контуры EB Garamond Medium 500,
+  слово «Сарафан» из intro, кегль 140 px; подпись depuis 2021 — Bold 35 px, исходное положение. HarfBuzz + fontTools. Шрифт не имитирован.
+- Журнал — вертикальная красная лента с надписями из ads-retreat-brand.svg.
+- Бюро — горизонтальная бежевая или синяя лента; контуры и надписи из bureau-cover-1-brand.svg.
+- Клуб и Салон — горизонтальная лента на вылет: бежевая или зелёная, с прямым левым краем и оригинальным правым краем. Форма — club-5883-rectangle71.svg, типографика — локальный EB Garamond 50/86% по club.css.
+- ribbon-journal / ribbon-action — исходные формы sarafan-ribbon.svg / intro-2-vector.svg.
+- ribbon-action-labelled: оригинальная плашка действия и надпись «Открывать город» из интро, Geist 50 px; текст в контурах.
+- downloads/examples/: шесть HTML/PNG-примеров цветовых сочетаний 1080 × 1350 на сетке 6×6. Сборка: node scripts/build-design-examples.cjs.
 - expert-ovals / expert-mask / expert-rule: expert-cover-ovals.svg / expert-cover-mask.svg / expert-about-rule.svg.
 
 ## Форматы
@@ -180,17 +137,21 @@ const readme = `# Сарафан — локальный набор дизайн-
 Для векторных знаков исходный SVG, прозрачный PNG с размером 4× от intrinsic,
 векторный PDF со страницей по bounds (1 px = 0.75 pt). В PDF исходные белые геометрические
 SVG-маски экспортируются как эквивалентные векторные clipping paths; SVG не меняется.
-PNG-only знаки не являются векторными: SVG/PDF для них не создаются.
+Все четыре знака экспортируются из оригинальных SVG; PNG и PDF создаются из тех же векторов. Две версии словесного логотипа и четыре знака доступны в шести основных цветах бренда; в реестре цветовые версии находятся в variants. Сирину рубрика пока не назначена.
 Кремовые элементы рассчитаны на контрастный фон и могут быть почти незаметны на белом.
 
 Шрифты копируются без модификации. Включены только существующие TTF/OTF и имеющийся
-expert-geist-OFL.txt. Geist Medium не включается, если его файла нет в assets/.
+expert-geist-OFL.txt. Geist — один вариативный файл expert-geist-v1.6.ttf, веса 100–900. Inter не используется и в набор не включается.
 Права и лицензия на CoFo Cinema 1909 данным проектом не установлены.
 Наличие файла CoFo в наборе не является предоставлением права использования или распространения.
 Для остальных файлов включены только уже имеющиеся сведения; новые лицензии не назначались.
 
 Палитра: cream #FBEED2, brown #553D3D, blue #A9C9DF, orange #FF3C00, pink #E19A9B, olive #91945B.
-Дополнительные цвета кругов из исходных макетов: slate #606D82, sand #E4D5B6, forest #014B3E, dusty-rose #C98384, terracotta #B54F1A.
+Дополнительные цвета: slate #606D82, sand #E4D5B6, forest #014B3E, plum #67436F, lemon #E8D44D, terracotta #B54F1A.
+Чистые фоны всех двенадцати цветов: backgrounds/{id}-1080x1350.png и backgrounds/{id}-1080x1920.png; подписи присутствуют только на странице.
+EB Garamond скачивается одним архивом eb-garamond.zip с оригинальными OTF из репозитория автора.
+Источник и хеши: assets/eb-garamond-otf/source.json. Локальные TTF шаблонов сохранены без изменений.
+Страницы семейств: https://fonts.google.com/specimen/EB+Garamond и https://vercel.com/font.
 На каждой недельной обложке восемь разных цветов кругов; фон всегда #FBEED2.
 Пути manifest.json и manifest.js указаны относительно корня исходного проекта.
 Для file:// используется window.SARAFAN_ASSETS из manifest.js, fetch не нужен.
@@ -202,43 +163,101 @@ expert-geist-OFL.txt. Geist Medium не включается, если его ф
 В исходном проекте: node scripts/build-design-assets.cjs
 Нужны локальные sharp, playwright (Chromium), pdf-lib, jszip.
 Если они не в обычном node_modules, задайте SARAFAN_NODE_MODULES.
-Для необязательного контурного словесного знака нужны hb-shape и python3 с fontTools;
-при их отсутствии он исключается. SARAFAN_PYTHON позволяет выбрать Python.
+Для контурных надписей нужны hb-shape и python3 с fontTools;
+при их отсутствии сборка контурной типографики останавливается. SARAFAN_PYTHON позволяет выбрать Python.
 Сборка работает офлайн и не получает зависимости из сети.
 `;
 
 async function main() {
   fs.mkdirSync(destination, { recursive: true });
+  execFileSync(process.execPath, ['scripts/build-symbol-assets.cjs'], { cwd: root, stdio: 'inherit' });
   const vectors = [
-    originalVector('bureau-orange', 'Бюро · оранжевый знак', 'expert-about-logo.svg'),
-    originalVector('bureau-cream', 'Бюро · кремовый знак', 'expert-contact-logo.svg'),
-    originalVector('journal-bookmark', 'Журнал · закладка', 'intro-2-rectangle72.svg'),
-    composedHeart('orange'), composedHeart('cream'),
+    symbolVector('bureau-orange', 'Бюро · оранжевый знак', 'bureau'),
+    symbolVector('bureau-cream', 'Бюро · кремовый знак', 'bureau', 'cream'),
+    originalVector('journal-bookmark', 'Закладка Журнала', 'intro-2-rectangle72.svg', 'element'),
+    symbolVector('club-horse', 'Конь · Клуб', 'horse'),
+    symbolVector('sirin', 'Сирин · назначение открыто', 'sirin'),
+    symbolVector('rooster-orange', 'Петух · оранжевый', 'rooster'),
+    symbolVector('rooster-cream', 'Петух · кремовый', 'rooster', 'cream'),
+    symbolVector('heart-orange', 'Петух · совместимое имя', 'rooster'),
+    symbolVector('heart-cream', 'Петух · совместимое имя · кремовый', 'rooster', 'cream'),
+    symbolVector('club', 'Конь · совместимое имя', 'horse'),
+    symbolVector('salon', 'Сирин · совместимое имя', 'sirin'),
     originalVector('ribbon-journal', 'Лента · Журнал', 'sarafan-ribbon.svg', 'element'),
-    originalVector('ribbon-bureau', 'Лента · Бюро', 'expert-ribbon.svg', 'element'),
     originalVector('ribbon-action', 'Плашка действия · Журнал', 'intro-2-vector.svg', 'element'),
     originalVector('expert-ovals', 'Эксперт · контурные овалы', 'expert-cover-ovals.svg', 'element'),
     originalVector('expert-mask', 'Эксперт · овальная маска', 'expert-cover-mask.svg', 'element'),
     originalVector('expert-rule', 'Эксперт · пунктирная линия', 'expert-about-rule.svg', 'element')
   ];
-  const wordmark = outlinedWordmark();
-  if (wordmark) vectors.splice(5, 0, wordmark);
+  const wordmarkRuns = [{text:'Сарафан',font:'assets/eb-garamond-medium.ttf',size:140,color:'#FF3C00'}];
+  vectors.push(croppedOutline('sarafan-wordmark-orange','Сарафан',wordmarkRuns));
+  vectors.push(croppedOutline('sarafan-wordmark-since','Сарафан · depuis 2021',[
+    ...wordmarkRuns,{text:'depuis 2021',font:'assets/eb-garamond-bold.ttf',size:35,x:510.334,y:24,color:'#FF3C00'}]));
+  const journal = originalVector('ribbon-journal-vertical','Журнал · вертикальная','ads-retreat-brand.svg','element');
+  const bureau = originalVector('ribbon-bureau-horizontal','Бюро · горизонтальная','bureau-cover-1-brand.svg','element');
+  const club = clubRibbon('Клуб','ribbon-club-horizontal');
+  const salon = clubRibbon('Салон','ribbon-salon-horizontal');
+  const bureauBlue = { ...bureau, id:'ribbon-bureau-blue', title:'Бюро · синяя',
+    svg:bureau.svg.replace(/#FBEED2/gi,'#A9C9DF'),
+    note:'Горизонтальная лента Бюро: исходные контуры Figma; синий фон и коричневая надпись.' };
+  const greenClub = original => ({ ...original, id:original.id.replace('-horizontal','-green'),
+    title:original.title.replace('горизонтальная','зелёная'),
+    svg:original.svg.replace(/#FBEED2/gi,'#91945B').replace(/#553D3D/gi,'#FBEED2'),
+    note:'Горизонтальная лента с прямым левым краем: оливковый фон и кремовая надпись.' });
+  const action = originalVector('ribbon-action-labelled','Плашка действия','intro-2-vector.svg','element');
+  const actionType = outlinedRuns([{text:'Открывать город',font:'assets/expert-geist-v1.6.ttf',size:50,line:1.01,tracking:-1.5,x:31,y:24.5,color:'#E4D5B6'}]);
+  action.svg = action.svg.replace('</svg>',actionType.paths+'</svg>');
+  action.source = ['assets/intro-2-vector.svg','assets/expert-geist-v1.6.ttf','intro.css'];
+  action.note = 'Оригинальная форма и текст из интро: Geist Regular 50/101%, трекинг −1.5 px. Надпись в контурах.';
+  vectors.push(action);
+  vectors.push(journal,bureauBlue,bureau,greenClub(club),club,greenClub(salon),salon);
+  for (const obsolete of ['ribbon-journal-horizontal','ribbon-bureau-vertical','ribbon-club-vertical','ribbon-salon-vertical','ribbon-bureau']) {
+    for (const extension of ['svg','png','pdf']) fs.rmSync(path.join(destination,'elements',`${obsolete}.${extension}`),{force:true});
+  }
   const browser = await chromium.launch({ headless: true });
   const assets = [];
   try {
     const page = await browser.newPage();
     for (const vector of vectors) assets.push(await exportVector(vector, page));
+    const colorable = new Set(['sarafan-wordmark-orange','sarafan-wordmark-since','rooster-orange','bureau-orange','club-horse','sirin']);
+    for (const vector of vectors.filter(item => colorable.has(item.id))) {
+      const base = assets.find(item => item.id === vector.id);
+      base.variants = {};
+      for (const color of palette.filter(item => !item.secondary && item.id !== 'orange')) {
+        const id = vector.id.replace(/-orange$/, '') + '-' + color.id;
+        const existing = assets.find(item => item.id === id);
+        base.variants[color.id] = existing || await exportVector({ ...vector, id,
+          title: vector.title + ' · ' + color.title,
+          svg: vector.svg.replace(/#FF3C00/gi, color.hex),
+          note: 'Цветовая версия оригинального знака: ' + color.hex + '. Контуры, пропорции и прозрачность сохранены.' }, page);
+      }
+    }
   } finally { await browser.close(); }
-  assets.splice(wordmark ? 6 : 5, 0,
-    await exportRaster('club', 'Клуб · исходный растр', 'assets/intro-4910-logo.png'),
-    await exportRaster('salon', 'Салон · исходный растр', 'assets/intro-3826-logo.png'));
-  const fonts = fs.readdirSync(path.join(root, 'assets')).filter(name => /\.(ttf|otf)$/i.test(name)).sort().map(name => {
+  for (const obsolete of ['geist-regular.ttf','geist-semibold.ttf','geist-bold.ttf','inter-regular.ttf']) {
+    fs.rmSync(path.join(destination,'fonts',obsolete),{force:true});
+  }
+  const fonts = fs.readdirSync(path.join(root, 'assets')).filter(name => /^(?:eb-garamond-.+\.ttf|cofo-cinema1909-regular\.otf|expert-geist-v1\.6\.ttf)$/.test(name)).sort().map(name => {
     const relative = `downloads/fonts/${name}`;
     fs.mkdirSync(path.dirname(path.join(root, relative)), { recursive: true });
     fs.copyFileSync(path.join(root, 'assets', name), path.join(root, relative));
     return { id: name.replace(/\.[^.]+$/, ''), title: name, source: `assets/${name}`, path: relative, format: path.extname(name).slice(1).toUpperCase() };
   });
   fs.copyFileSync(path.join(root, 'assets/expert-geist-OFL.txt'), path.join(destination, 'fonts/expert-geist-OFL.txt'));
+  fs.copyFileSync(path.join(root,'assets/eb-garamond-OFL.txt'),path.join(destination,'fonts/eb-garamond-OFL.txt'));
+  const garamond = new JSZip();
+  const garamondSource = path.join(root,'assets/eb-garamond-otf');
+  for (const name of fs.readdirSync(garamondSource).sort()) {
+    garamond.file(name,fs.readFileSync(path.join(garamondSource,name)),{date:new Date('2021-01-01T00:00:00Z')});
+  }
+  write('downloads/eb-garamond.zip',await garamond.generateAsync({type:'nodebuffer',compression:'DEFLATE'}));
+  const backgroundPaths = [];
+  fs.mkdirSync(path.join(destination,'backgrounds'),{recursive:true});
+  for (const color of palette) for (const height of [1350,1920]) {
+    const relative = `downloads/backgrounds/${color.id}-1080x${height}.png`;
+    await sharp({create:{width:1080,height,channels:3,background:color.hex}}).png().toFile(path.join(root,relative));
+    backgroundPaths.push(relative);
+  }
+
   write('downloads/palette.json', JSON.stringify(palette, null, 2) + '\n');
   write('downloads/palette.css', ':root {\n' + palette.map(c => `  --sarafan-${c.id}: ${c.hex};`).join('\n') + '\n}\n');
   write('downloads/README.md', readme);
@@ -249,17 +268,18 @@ async function main() {
     { id: 'design-kit', title: 'Полный дизайн-набор', path: 'downloads/sarafan-design-kit.zip' }
   ];
   const manifest = { version: 1, assets, palette, fonts, archives,
-    notes: ['Исходные растровые знаки Клуба и Салона доступны только в PNG.',
+    notes: ['Все четыре знака доступны в оригинальном SVG, PNG и PDF; назначение сирина открыто.',
       'Права и лицензия на CoFo Cinema 1909 данным проектом не установлены.',
-      ...(!wordmark ? ['Контурный словесный знак исключён: локальные инструменты контурного экспорта недоступны.'] : [])] };
+      'Источник знаков — страница Figma 386:10081; происхождение записано в assets/symbols.json.'] };
   write('downloads/manifest.json', JSON.stringify(manifest, null, 2) + '\n');
   write('downloads/manifest.js', 'window.SARAFAN_ASSETS = ' + JSON.stringify(manifest, null, 2) + ';\n');
-  const assetPaths = category => assets.filter(a => a.category === category).flatMap(a => Object.values(a.formats));
-  const fontPaths = [...fonts.map(f => f.path), 'downloads/fonts/expert-geist-OFL.txt'];
+  const assetPaths = category => [...new Set(assets.filter(a => a.category === category).flatMap(a => [a,...Object.values(a.variants || {})].flatMap(v => Object.values(v.formats))))];
+  const fontPaths = [...fonts.map(f => f.path), 'downloads/fonts/expert-geist-OFL.txt', 'downloads/fonts/eb-garamond-OFL.txt'];
   const sets = {
-    logos: assetPaths('logo'), fonts: fontPaths, elements: assetPaths('element'),
-    'design-kit': [...assetPaths('logo'), ...assetPaths('element'), ...fontPaths,
-      'downloads/palette.css', 'downloads/palette.json', 'downloads/manifest.json', 'downloads/manifest.js', 'downloads/README.md']
+    logos: assetPaths('logo'), fonts: [...fontPaths,'downloads/eb-garamond.zip'], elements: assetPaths('element'),
+    'design-kit': [...assetPaths('logo'), ...assetPaths('element'), ...fontPaths, ...backgroundPaths, 'downloads/eb-garamond.zip',
+      'downloads/palette.css', 'downloads/palette.json', 'downloads/manifest.json', 'downloads/manifest.js', 'downloads/README.md',
+      ...fs.readdirSync(path.join(destination,'examples')).filter(name => /\.(html|png)$/.test(name)).map(name => 'downloads/examples/'+name)]
   };
   for (const archive of archives) {
     const zip = new JSZip();
@@ -269,7 +289,7 @@ async function main() {
       fs.readFileSync(path.join(root, relative)), { date: fixedDate });
     write(archive.path, await zip.generateAsync({ type: 'nodebuffer', compression: 'DEFLATE', compressionOptions: { level: 9 } }));
   }
-  console.log(`Built ${assets.length} assets (${assets.filter(a => a.formats.SVG).length} vector), ${fonts.length} fonts and ${archives.length} ZIP archives in downloads/.`);
+  console.log(`Built ${assets.length} assets (${assets.filter(a => a.formats.SVG).length} vector), ${fonts.length} fonts, six colors for logos/symbols and ${archives.length} ZIP archives in downloads/.`);
 }
 
 main().catch(error => { console.error(error); process.exitCode = 1; });

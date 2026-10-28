@@ -1,6 +1,4 @@
-@font-face{font-family:"Sarafan Expert Geist";font-style:normal;font-weight:100 900;font-display:block;src:url("assets/expert-geist-v1.6.ttf") format("truetype")}
-
-.expert-card{--expert-orange:#ff3c00;--expert-paper:#fbeed2;background:var(--expert-paper);color:var(--expert-orange);font-family:"Sarafan Expert Geist",Geist,Arial,sans-serif}
+.expert-card{--expert-orange:#ff3c00;--expert-paper:#fbeed2;background:var(--expert-paper);color:var(--expert-orange);font-family:Geist,Arial,sans-serif}
 .expert-cover,.expert-contact{background:var(--expert-orange);color:var(--expert-paper)}
 .expert-heading{position:absolute;font-size:80px;line-height:1;font-weight:500;overflow-wrap:break-word}
 .expert-cover-heading{left:65px;top:40.5508px;width:950px;text-align:center}
@@ -24,7 +22,7 @@
 .expert-cover-meta>p{position:absolute;top:0;width:350.4272px}
 .expert-cover-meta>p:first-child{left:0}
 .expert-cover-meta>p:last-child{right:0;text-align:right}
-.expert-logo{position:absolute;left:947px;top:44.2148px}
+.expert-logo{position:absolute;left:947px;top:44.2148px;width:68px;height:82px;object-fit:contain}
 .expert-footer-rule{position:absolute;left:70.2588px;top:1233.2217px}
 .expert-footer-name,.expert-footer-handle{position:absolute;top:1260.5889px;width:502.3367px;height:33.002px;font-size:25px;font-weight:400;line-height:1.1}
 .expert-footer-name{left:65px}

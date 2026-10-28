@@ -83,12 +83,17 @@
     const item={canvas,card,key,state:read(key,card.edit.initial)};
     item.ready=render(canvas,card.edit,item.state);
     item.ready.catch(error=>{document.getElementById('post-status').textContent=error.message;});
+    async function exportBlob() {
+      await render(canvas,card.edit,item.state);
+      const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));
+      if(!blob)throw new Error('Не удалось создать PNG.');
+      return blob;
+    }
     return {
       open:button=>open(item,button),
+      exportBlob,
       download:async()=>{
-        await render(canvas,card.edit,item.state);
-        const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));
-        if(!blob)throw new Error('Не удалось создать PNG.');
+        const blob=await exportBlob();
         const url=URL.createObjectURL(blob),link=document.createElement('a');
         link.href=url;link.download=card.src.split('/').at(-1);link.click();
         setTimeout(()=>URL.revokeObjectURL(url),10000);

@@ -1,14 +1,14 @@
 /* One-off introduction post, retained as a style reference. Coordinates follow Page 11. */
 @font-face{font-family:"EB Garamond";font-style:italic;font-weight:600;font-display:block;src:url("assets/eb-garamond-semibold-italic.ttf") format("truetype")}
-/* Geist Medium is absent from the original assets; use the existing nearest weight from cards.css. */
+/* One variable Geist 1.6 file supplies the original weights throughout the library. */
 .intro-card{--intro-orange:#ff3c00;--intro-cream:#fbeed2;--intro-photo-cream:#e4d5b6;background:var(--intro-cream);color:#553d3d;font-weight:500;font-synthesis:none}
 .intro-card h2,.intro-card h3{margin:0;font-weight:inherit}
 .intro-original{position:absolute;inset:0;width:1081.333374px;height:1351.75px;transform:scale(.998766945);transform-origin:0 0}
 .intro-card em{font-family:"EB Garamond",Georgia,serif;font-weight:500;font-style:italic}
 .intro-trim{text-box-trim:trim-both;text-box-edge:cap alphabetic}
-.intro-photo,.intro-art,.intro-logo-piece{position:absolute}
+.intro-photo,.intro-art{position:absolute}
 .intro-photo>img{display:block;width:100%;height:100%}
-.intro-art>img,.intro-logo-piece>img{position:absolute;left:0;top:0}
+.intro-art>img{position:absolute;left:0;top:0}
 .intro-cover{background:var(--intro-photo-cream)}
 .intro-cover-photo{left:-245px;top:-211px;width:1412px;height:2069px;overflow:hidden}
 .intro-cover-photo>img{position:absolute;left:-2.33%;top:0;width:97.69%;height:100%}
@@ -80,3 +80,5 @@
 .intro-finale-copy{position:absolute;left:36px;top:1070px;width:1005px;font-family:Geist,Arial,sans-serif;font-size:80px;line-height:1;font-weight:500}
 .intro-finale-copy em{font-family:"EB Garamond",Georgia,serif}
 .intro-finale-url{position:absolute;left:841px;top:1267px;font-size:20px;line-height:1;text-transform:uppercase}
+
+.intro-corner>img{width:100%;height:100%;object-fit:contain}

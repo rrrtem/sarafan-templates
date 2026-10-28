@@ -1,0 +1,552 @@
+{
+  "fonts": [
+    {
+      "family": "CoFo Cinema 1909",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "family": "EB Garamond",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "family": "EB Garamond",
+      "weight": "500",
+      "style": "normal"
+    },
+    {
+      "family": "EB Garamond",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "family": "EB Garamond",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "family": "EB Garamond",
+      "weight": "500",
+      "style": "italic"
+    },
+    {
+      "family": "Geist",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "family": "Geist",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "family": "Geist",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "family": "Inter",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "family": "Sarafan Ads Geist",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "family": "Sarafan Bureau Geist",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "family": "EB Garamond",
+      "weight": "600",
+      "style": "italic"
+    },
+    {
+      "family": "Sarafan Expert Geist",
+      "weight": "100 900",
+      "style": "normal"
+    },
+    {
+      "family": "Sarafan Event Geist",
+      "weight": "100 900",
+      "style": "normal"
+    }
+  ],
+  "cards": [
+    {
+      "node": "381:9114",
+      "width": 1080,
+      "height": 1350,
+      "text": [
+        {
+          "text": "Marrakech Girls Retreat",
+          "left": 23.996124267578125,
+          "top": 2.3692948818206787,
+          "right": 495.47174072265625,
+          "bottom": 219.78737044334412,
+          "boxTop": -0.0032212003134191036,
+          "boxBottom": 244.62821800867096,
+          "overflow": false
+        },
+        {
+          "text": "10 мест, только девушки",
+          "left": 82.5477523803711,
+          "top": 162.76678466796875,
+          "right": 537.6447677612305,
+          "bottom": 298.3556213378906,
+          "boxTop": 162.9999237060547,
+          "boxBottom": 304.03131103515625,
+          "overflow": false
+        },
+        {
+          "text": "26–29 ноября",
+          "left": 265.671875,
+          "top": 1098,
+          "right": 815.125,
+          "bottom": 1202,
+          "boxTop": 1114,
+          "boxBottom": 1187.59375,
+          "overflow": false
+        },
+        {
+          "text": "Galli × Oulena: частная вилла с бассейном и программа, в которой всё уже продумано за вас",
+          "left": 206.75,
+          "top": 1205.25,
+          "right": 872.390625,
+          "bottom": 1288.75,
+          "boxTop": 1209.25,
+          "boxBottom": 1286.25,
+          "overflow": false
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/ads-retreat-01.png",
+          "loaded": true,
+          "left": -0.40625,
+          "top": -268.484375,
+          "width": 1080,
+          "height": 1621.703125
+        },
+        {
+          "src": "assets/ads-retreat-brand.svg",
+          "loaded": true,
+          "left": 961,
+          "top": -53,
+          "width": 82,
+          "height": 547
+        }
+      ]
+    },
+    {
+      "node": "381:9101",
+      "width": 1080,
+      "height": 1350,
+      "text": [
+        {
+          "text": "Йога на рассветев пустыне Агафай",
+          "left": 201.53125,
+          "top": 583,
+          "right": 897.453125,
+          "bottom": 767,
+          "boxTop": 595,
+          "boxBottom": 755,
+          "overflow": false
+        },
+        {
+          "text": "Marrakech Girls Retreat Galli × Oulena:",
+          "left": 294.640625,
+          "top": 22,
+          "right": 786,
+          "bottom": 61,
+          "boxTop": 27,
+          "boxBottom": 57,
+          "overflow": false
+        },
+        {
+          "text": "26–29 ноября",
+          "left": 451.3125,
+          "top": 1248,
+          "right": 629.484375,
+          "bottom": 1287,
+          "boxTop": 1253,
+          "boxBottom": 1283,
+          "overflow": false
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/ads-retreat-03.png",
+          "loaded": true,
+          "left": 0,
+          "top": 0,
+          "width": 1080,
+          "height": 1350
+        }
+      ]
+    },
+    {
+      "node": "381:9108",
+      "width": 1080,
+      "height": 1350,
+      "text": [
+        {
+          "text": "Хаммам, массаж и уход в Baan Thai",
+          "left": 187.34375,
+          "top": 583,
+          "right": 911.65625,
+          "bottom": 767,
+          "boxTop": 595,
+          "boxBottom": 755,
+          "overflow": false
+        },
+        {
+          "text": "Marrakech Girls Retreat Galli × Oulena:",
+          "left": 294.640625,
+          "top": 22,
+          "right": 786,
+          "bottom": 61,
+          "boxTop": 27,
+          "boxBottom": 57,
+          "overflow": false
+        },
+        {
+          "text": "26–29 ноября",
+          "left": 451.3125,
+          "top": 1267,
+          "right": 629.484375,
+          "bottom": 1306,
+          "boxTop": 1272,
+          "boxBottom": 1302,
+          "overflow": false
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/ads-retreat-02.png",
+          "loaded": true,
+          "left": 0,
+          "top": 0,
+          "width": 1080,
+          "height": 1350
+        }
+      ]
+    },
+    {
+      "node": "381:9076",
+      "width": 1080,
+      "height": 1350,
+      "text": [
+        {
+          "text": "Сад Мажорельи музей Yves Saint Laurent",
+          "left": 241.4375,
+          "top": 543,
+          "right": 838.546875,
+          "bottom": 807,
+          "boxTop": 555,
+          "boxBottom": 795,
+          "overflow": false
+        },
+        {
+          "text": "Marrakech Girls Retreat Galli × Oulena:",
+          "left": 294.640625,
+          "top": 22,
+          "right": 786,
+          "bottom": 61,
+          "boxTop": 27,
+          "boxBottom": 57,
+          "overflow": false
+        },
+        {
+          "text": "26–29 ноября",
+          "left": 451.3125,
+          "top": 1267,
+          "right": 629.484375,
+          "bottom": 1306,
+          "boxTop": 1272,
+          "boxBottom": 1302,
+          "overflow": false
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/ads-retreat-08.png",
+          "loaded": true,
+          "left": 0,
+          "top": 0,
+          "width": 1080,
+          "height": 1350
+        }
+      ]
+    },
+    {
+      "node": "381:9081",
+      "width": 1080,
+      "height": 1350,
+      "text": [
+        {
+          "text": "Верблюдыили квадроциклыи фотосессияв дюнах",
+          "left": 178.890625,
+          "top": 463,
+          "right": 901.09375,
+          "bottom": 807,
+          "boxTop": 475,
+          "boxBottom": 795,
+          "overflow": false
+        },
+        {
+          "text": "Marrakech Girls Retreat Galli × Oulena:",
+          "left": 294.640625,
+          "top": 22,
+          "right": 786,
+          "bottom": 61,
+          "boxTop": 27,
+          "boxBottom": 57,
+          "overflow": false
+        },
+        {
+          "text": "26–29 ноября",
+          "left": 451.3125,
+          "top": 1267,
+          "right": 629.484375,
+          "bottom": 1306,
+          "boxTop": 1272,
+          "boxBottom": 1302,
+          "overflow": false
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/ads-retreat-07.png",
+          "loaded": true,
+          "left": -659.765625,
+          "top": 0,
+          "width": 2398.890625,
+          "height": 1350
+        }
+      ]
+    },
+    {
+      "node": "381:9086",
+      "width": 1080,
+      "height": 1350,
+      "text": [
+        {
+          "text": "Медина, сукии обед на La Terrasse des Épices",
+          "left": 277.328125,
+          "top": 503,
+          "right": 802.671875,
+          "bottom": 847,
+          "boxTop": 515,
+          "boxBottom": 835,
+          "overflow": false
+        },
+        {
+          "text": "Marrakech Girls Retreat Galli × Oulena:",
+          "left": 294.640625,
+          "top": 22,
+          "right": 786,
+          "bottom": 61,
+          "boxTop": 27,
+          "boxBottom": 57,
+          "overflow": false
+        },
+        {
+          "text": "26–29 ноября",
+          "left": 451.3125,
+          "top": 1267,
+          "right": 629.484375,
+          "bottom": 1306,
+          "boxTop": 1272,
+          "boxBottom": 1302,
+          "overflow": false
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/ads-retreat-06.png",
+          "loaded": true,
+          "left": 0,
+          "top": 0,
+          "width": 1080,
+          "height": 1350
+        }
+      ]
+    },
+    {
+      "node": "381:9091",
+      "width": 1080,
+      "height": 1350,
+      "text": [
+        {
+          "text": "Красивые ужины и, по желанию, выход в lounge",
+          "left": 199.5625,
+          "top": 543,
+          "right": 880.421875,
+          "bottom": 807,
+          "boxTop": 555,
+          "boxBottom": 795,
+          "overflow": false
+        },
+        {
+          "text": "Marrakech Girls Retreat Galli × Oulena:",
+          "left": 294.640625,
+          "top": 22,
+          "right": 786,
+          "bottom": 61,
+          "boxTop": 27,
+          "boxBottom": 57,
+          "overflow": false
+        },
+        {
+          "text": "26–29 ноября",
+          "left": 451.3125,
+          "top": 1267,
+          "right": 629.484375,
+          "bottom": 1306,
+          "boxTop": 1272,
+          "boxBottom": 1302,
+          "overflow": false
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/ads-retreat-05.png",
+          "loaded": true,
+          "left": 0,
+          "top": 0,
+          "width": 1080,
+          "height": 1350
+        }
+      ]
+    },
+    {
+      "node": "381:9096",
+      "width": 1080,
+      "height": 1350,
+      "text": [
+        {
+          "text": "Неспешный бранч у бассейна в последний день",
+          "left": 184.453125,
+          "top": 543,
+          "right": 895.546875,
+          "bottom": 807,
+          "boxTop": 555,
+          "boxBottom": 795,
+          "overflow": false
+        },
+        {
+          "text": "Marrakech Girls Retreat Galli × Oulena:",
+          "left": 294.640625,
+          "top": 22,
+          "right": 786,
+          "bottom": 61,
+          "boxTop": 27,
+          "boxBottom": 57,
+          "overflow": false
+        },
+        {
+          "text": "26–29 ноября",
+          "left": 451.3125,
+          "top": 1267,
+          "right": 629.484375,
+          "bottom": 1306,
+          "boxTop": 1272,
+          "boxBottom": 1302,
+          "overflow": false
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/ads-retreat-04.png",
+          "loaded": true,
+          "left": 0,
+          "top": -269.71875,
+          "width": 1080,
+          "height": 1619.59375
+        }
+      ]
+    },
+    {
+      "node": "381:9065",
+      "width": 1080,
+      "height": 1350,
+      "text": [
+        {
+          "text": "1790 €",
+          "left": 46,
+          "top": -6,
+          "right": 575.40625,
+          "bottom": 255,
+          "boxTop": 30,
+          "boxBottom": 220,
+          "overflow": false
+        },
+        {
+          "text": "В программу включено все, кроме билетов. Вам остаётся только отдыхать. Мест всего 10.",
+          "left": 743.515625,
+          "top": 58,
+          "right": 1007,
+          "bottom": 227.5,
+          "boxTop": 61,
+          "boxBottom": 248,
+          "overflow": false
+        },
+        {
+          "text": "Пишите",
+          "left": 64,
+          "top": 1096,
+          "right": 249.6875,
+          "bottom": 1167,
+          "boxTop": 1102,
+          "boxBottom": 1162.5,
+          "overflow": false
+        },
+        {
+          "text": "Марракеш",
+          "left": 306.671875,
+          "top": 1110,
+          "right": 495.3125,
+          "bottom": 1155,
+          "boxTop": 1102,
+          "boxBottom": 1164.5,
+          "overflow": false
+        },
+        {
+          "text": "в директ, и мы пришлёмвсе детали 💌",
+          "left": 64,
+          "top": 1157,
+          "right": 597.015625,
+          "bottom": 1288.5,
+          "boxTop": 1163,
+          "boxBottom": 1284,
+          "overflow": false
+        },
+        {
+          "text": "Marrakech Girls Retreat Galli × Oulena",
+          "left": 718.6875,
+          "top": 1221,
+          "right": 1016,
+          "bottom": 1290,
+          "boxTop": 1226,
+          "boxBottom": 1286,
+          "overflow": false
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/ads-retreat-09.png",
+          "loaded": true,
+          "left": -7.765625,
+          "top": -35.09375,
+          "width": 1087.4375,
+          "height": 1350
+        }
+      ]
+    }
+  ]
+}

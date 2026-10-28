@@ -1,5 +1,4 @@
 /* Афиша события · Figma Page 12. Card geometry uses the original 1080 × 1350 canvas. */
-@font-face{font-family:"Sarafan Event Geist";font-style:normal;font-weight:100 900;font-display:block;src:url("assets/expert-geist-v1.6.ttf") format("truetype")}
 .event-card{background:var(--paper);color:var(--ink);font-synthesis:none}
 .event-card h2{margin:0;font-family:"EB Garamond",Georgia,serif;font-weight:600}
 .event-brand{position:absolute;inset:0;pointer-events:none}
@@ -9,7 +8,7 @@
 .event-brand-name{left:978.999px;top:231.499px;height:180px}
 .event-brand-journal{left:979.499px;top:50px;height:168px;font-style:italic}
 .event-details{position:absolute;left:0;top:1181px;width:1080px;display:flex;flex-direction:column;align-items:center;gap:21.447px;text-align:center}
-.event-date{width:614.804px;font:500 80px/.92 "Sarafan Event Geist",Geist,Arial,sans-serif}
+.event-date{width:614.804px;font:500 80px/.92 Geist,Arial,sans-serif}
 .event-address{width:685.82px;font-size:35px;line-height:1.1;font-style:italic;font-weight:500}
 .event-badge{padding:5px 10px 10px;background:var(--ui-accent);color:var(--paper);border-radius:30px;font-size:45px;line-height:1;font-weight:500;white-space:nowrap;text-align:center}
 .event-photo{background:#014b3e;color:var(--paper)}

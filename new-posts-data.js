@@ -1,9 +1,100 @@
-// Публикации добавляются агентом по правилам docs/new-posts.md.
+// Примеры для проверки. Состав раздела меняет владелец через коммиты, не редактор v1.
 window.SARAFAN_POSTS = [
+  {
+    "id": "french-superlevel",
+    "title": "Возможно ли выучить французский до суперуровня?",
+    "description": "Возможно ли выучить французский до суперуровня?\n\nДа, если превратить расплывчатую мечту в понятные задачи: понимать сложный текст, защищать свою позицию и выражать оттенки мысли. Уровни C1 и C2 помогают описать эти умения.\n\nВ карусели — ориентиры и пример практики: прочитать, пересказать, получить обратную связь и попробовать ещё раз. Выберите ситуацию, в которой хотите чувствовать себя свободнее.\n\nСохраните пост для следующего занятия. А что сейчас сложнее всего: говорить, понимать на слух или писать?\n\nИсточники: France Éducation international, дескрипторы C1/C2 и описание DALF. Проверено 28.10.2026.\n\nИсточники:\nFrance Éducation international · дескрипторы C1\nhttps://www.france-education-international.fr/document/cecrldescripteursc1\n\nFrance Éducation international · дескрипторы C2\nhttps://www.france-education-international.fr/document/cecrldescripteursc2\n\nFrance Éducation international · описание DALF и уровня C2\nhttps://www.france-education-international.fr/document/manuel-rgc",
+    "source": "https://www.france-education-international.fr/document/cecrldescripteursc1",
+    "cards": [
+      {
+        "type": "html",
+        "src": "posts/french-superlevel/01.html",
+        "alt": "Французский до суперуровня: это возможно?"
+      },
+      {
+        "type": "html",
+        "src": "posts/french-superlevel/02.html",
+        "alt": "Что значит суперуровень"
+      },
+      {
+        "type": "html",
+        "src": "posts/french-superlevel/03.html",
+        "alt": "Определите свою задачу"
+      },
+      {
+        "type": "html",
+        "src": "posts/french-superlevel/04.html",
+        "alt": "Одна тема — три действия"
+      },
+      {
+        "type": "html",
+        "src": "posts/french-superlevel/05.html",
+        "alt": "Как замечать свой прогресс"
+      },
+      {
+        "type": "html",
+        "src": "posts/french-superlevel/06.html",
+        "alt": "C2 — точность и гибкость"
+      },
+      {
+        "type": "html",
+        "src": "posts/french-superlevel/07.html",
+        "alt": "Выберите следующий шаг"
+      }
+    ]
+  },
+  {
+    "id": "retirement-france",
+    "title": "Пенсия во Франции: с чего начать?",
+    "description": "Пенсия во Франции: с чего начать?\n\nСначала — разобраться в своих пенсионных правах и оценить будущий бюджет. Затем — изучать, нужны ли вам дополнительные накопления и какие условия у выбранного инструмента.\n\nВ карусели собрали последовательность действий и объяснили, что важно знать о PER.\n\nПо материалу Сарафана «Пенсия во Франции» Марины Поповой; сервисы и общие условия проверены по Info Retraite и Service-Public 28.10.2026.\n\nСохраните пост, чтобы вернуться к проверке своей карьеры и расчёту пенсии.\n\nИсточники:\nСарафан · Пенсия во Франции, материал Марины Поповой\nhttps://sarafan-buro.com/epargne_en_france\n\nInfo Retraite · Préparez votre retraite\nhttps://www.info-retraite.fr/portail-info/sites/PortailInformationnel/home/preparez-votre-retraite-et-envisagez-toutes-vos-possibilites.html\n\nInfo Retraite · Mon estimation retraite\nhttps://www.info-retraite.fr/portail-info/sites/PortailInformationnel/home/mon-estimation-retraite.html\n\nService-Public · PER individuel\nhttps://www.service-public.gouv.fr/particuliers/vosdroits/F36526/0",
+    "source": "https://sarafan-buro.com/epargne_en_france",
+    "cards": [
+      {
+        "type": "html",
+        "src": "posts/retirement-france/01.html",
+        "alt": "Пенсия во Франции: с чего начать?"
+      },
+      {
+        "type": "html",
+        "src": "posts/retirement-france/02.html",
+        "alt": "Пенсия и накопления"
+      },
+      {
+        "type": "html",
+        "src": "posts/retirement-france/03.html",
+        "alt": "Три вопроса о будущем"
+      },
+      {
+        "type": "html",
+        "src": "posts/retirement-france/04.html",
+        "alt": "Начните с учёта карьеры"
+      },
+      {
+        "type": "html",
+        "src": "posts/retirement-france/05.html",
+        "alt": "Посчитайте несколько сценариев"
+      },
+      {
+        "type": "html",
+        "src": "posts/retirement-france/06.html",
+        "alt": "PER: накопления к пенсии"
+      },
+      {
+        "type": "html",
+        "src": "posts/retirement-france/07.html",
+        "alt": "План — доходы и расходы"
+      },
+      {
+        "type": "html",
+        "src": "posts/retirement-france/08.html",
+        "alt": "Что можно сделать сейчас"
+      }
+    ]
+  },
   {
     "id": "salon-november-09-15",
     "title": "Сарафан Салон · 9–15 ноября",
-    "description": "Сарафан Салон · 9–15 ноября\n\nНа этой неделе встречаемся за кофе, говорим о театре и дизайне, поём, вышиваем, играем и пробуем новое.\n\n10/11 · вторник, 10:00–12:00 — Открытый кофе-нетворкинг · Вход свободный\n10/11 · вторник, 19:30 — Драматург и власть · €10\n11/11 · среда, весь день — Дизайн-приёмная и кастом-станция Chichis\n12/11 · четверг, 10:00–12:00 — Искусство сервировки · €30\n12/11 · четверг, 19:30–20:00 — Квартирник Димы Макарова · €20\n13/11 · пятница, 10:00–12:00 — Искусство радоваться · €30\n14/11 · суббота, 15:00–18:00 — Вышивка с кутюрье Dior · €50\n14/11 · суббота, 19:00 — Винное казино · €20\n15/11 · воскресенье, 14:00–16:30 — Керамическая мастерская · €70\n15/11 · воскресенье, 17:00 — Книжный своп · Вход свободный\n\n11 ноября — два события в одном от дизайн-дуэта Chichis: Артёма Зайцева и Насти Самохиной.\n\nПриносите свои дизайн-вопросы о вашем бизнесе, блоге или проекте: посоветуем, что к чему, а может, придумаем концептуальные решения прямо на месте. Параллельно будем делать кастом-патчи на вашу одежду с нашими иллюстрациями.\n\n66 rue Notre-Dame de Nazareth, 75003 Paris\nПрограмма и запись: https://sarafan-buro.com/sarafansalon",
+    "description": "Сарафан Салон · 9–15 ноября\n\nНа этой неделе встречаемся за кофе, говорим о театре и дизайне, поём, вышиваем, играем и пробуем новое.\n\n10/11 · вторник, 10:00–12:00 — Открытый кофе-нетворкинг · Вход свободный\n10/11 · вторник, 19:30 — Драматург и власть · €10\n11/11 · среда, 17:00–21:00 — Дизайн-приёмная и кастом-станция CHICHIS\n12/11 · четверг, 10:00–12:00 — Искусство сервировки · €30\n12/11 · четверг, 19:30–20:00 — Квартирник Димы Макарова · €20\n13/11 · пятница, 10:00–12:00 — Искусство радоваться · €30\n14/11 · суббота, 15:00–18:00 — Вышивка с кутюрье Dior · €50\n14/11 · суббота, 19:00 — Винное казино · €20\n15/11 · воскресенье, 14:00–16:30 — Керамическая мастерская · €70\n15/11 · воскресенье, 17:00 — Книжный своп · Вход свободный\n\n11 ноября — два события в одном от дизайн-дуэта Chichis: Артёма Зайцева и Насти Самохиной.\n\nПриносите свои дизайн-вопросы о вашем бизнесе, блоге или проекте: посоветуем, что к чему, а может, придумаем концептуальные решения прямо на месте. Параллельно будем делать кастом-патчи на вашу одежду с нашими иллюстрациями. А после — танцы.\n\n66 rue Notre-Dame de Nazareth, 75003 Paris\nПрограмма и запись: https://sarafan-buro.com/sarafansalon",
     "source": "https://sarafan-buro.com/sarafansalon",
     "cards": [
       {
@@ -177,7 +268,7 @@ window.SARAFAN_POSTS = [
           "image": "posts/salon-november-09-15/images/08.jpeg",
           "overlay": "posts/salon-november-09-15/layers/08.png",
           "background": "#FBEED2",
-          "matte": "#f7f4e9",
+          "matte": "#ffffff",
           "slot": {
             "x": 34,
             "y": 260,

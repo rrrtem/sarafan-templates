@@ -62,16 +62,20 @@ const design = JSON.parse(JSON.stringify(context.window.SARAFAN_DESIGN));
 const tokens = JSON.parse(read('downloads/tokens.json'));
 assert.deepEqual(tokens.canvas, { width: 1080, height: 1350, unit: 'px' });
 assert.deepEqual(tokens.colors.filter(color => !color.secondary), design.colors);
+assert.deepEqual(tokens.layout, design.layout, 'New-composition grid is portable');
 assert.deepEqual(tokens.combinations, design.combinations);
 assert.deepEqual(tokens.typography, design.typography);
 const css = read('downloads/tokens.css');
+for (const key of ['columns', 'rows', 'margin', 'gutter']) {
+  assert(css.includes(`--sarafan-grid-${key}: ${tokens.layout[key]}${['margin', 'gutter'].includes(key) ? 'px' : ''};`), `Portable grid CSS: ${key}`);
+}
 for (const color of tokens.colors) assert(css.includes(`--sarafan-${color.id}: ${color.hex};`));
 const fonts = read('downloads/fonts.css');
 for (const font of tokens.fonts) {
   assert(files.has(font.path), `Downloadable font: ${font.family}`);
   assert(fonts.includes(`../${font.path}`));
 }
-assert(tokens.fonts.some(font => font.family === 'Sarafan Expert Geist' && font.path === 'assets/expert-geist-v1.6.ttf'));
+assert(tokens.fonts.some(font => font.family === 'Geist' && font.path === 'assets/expert-geist-v1.6.ttf'));
 const sourceTemplates = [...read('index.html').matchAll(/<template\b[^>]*\bid="([^"]+)"/g)];
 assert.equal(manifest.templates.length, sourceTemplates.length, 'Every source template is registered');
 for (const template of manifest.templates) {

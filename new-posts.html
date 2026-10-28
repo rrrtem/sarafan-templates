@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>Новые посты — Сарафан</title>
+  <title>Примеры постов — Сарафан</title>
   <link rel="describedby" href="llms.txt">
-  <link rel="alternate" type="text/markdown" href="docs/new-posts.md" title="Добавление новых постов">
+  <link rel="alternate" type="text/markdown" href="docs/new-posts.md" title="Примеры постов и ведение каталога">
   <link rel="stylesheet" href="cards.css">
   <link rel="stylesheet" href="catalog.css">
   <link rel="stylesheet" href="new-posts.css">
@@ -15,23 +15,28 @@
   <script src="weekly-cover.js" defer></script>
   <script src="photo-crop.js" defer></script>
   <script src="photo-editor.js" defer></script>
+  <script src="carousel-zip.js" defer></script>
   <script src="new-posts.js" defer></script>
 </head>
 <body>
 <div class="workspace">
   <header class="masthead">
-    <a class="wordmark" href="index.html">Сарафан<span class="brand-dot" aria-hidden="true">●</span></a>
-    <nav class="library-nav" aria-label="Библиотека проекта"><a href="index.html">Шаблоны</a><a href="design-system.html">Дизайн-система</a><a href="new-posts.html" aria-current="page">Новые посты</a></nav>
+    <a class="wordmark" href="index.html">Сарафан<img class="brand-rooster" src="assets/symbol-rooster-orange.svg" alt="" aria-hidden="true"></a>
+    <nav class="library-nav" aria-label="Библиотека проекта"><a href="index.html">Шаблоны</a><a href="design-system.html">Дизайн-система</a><a href="new-posts.html" aria-current="page">Примеры постов</a></nav>
   </header>
   <main class="posts-layout">
     <aside class="posts-sidebar">
-      <div class="posts-index"><h2>Посты</h2><span id="post-count">0</span></div>
+      <div class="posts-index"><h2>Примеры постов</h2><span id="post-count">0</span></div>
+      <label class="mobile-post-picker" for="post-picker">Выбрать публикацию
+        <select id="post-picker"></select>
+      </label>
       <nav class="posts-nav" id="posts-nav" aria-label="Выбрать пост"></nav>
     </aside>
     <div class="posts-content">
-      <p class="posts-empty" id="posts-empty" role="status">Новых постов пока нет.</p>
+      <p class="posts-intro">Примеры для проверки шаблонов и редактора.</p>
+      <p class="posts-empty" id="posts-empty" role="status">Примеров постов пока нет.</p>
       <article id="post-detail" aria-labelledby="post-title" hidden>
-        <h1 id="post-title"></h1>
+        <div class="post-heading"><h1 id="post-title"></h1><button type="button" class="download" id="download-post">Весь пост · ZIP ↓</button></div>
         <p class="post-edit-hint" id="post-edit-hint" hidden>Кадрируйте фотографии под овал. Скачиваемый PNG учитывает выбранный кадр.</p>
         <p class="post-status" id="post-status" role="status" aria-live="polite"></p>
         <div class="post-cards" id="post-cards" role="group" aria-label="Карточки поста"></div>

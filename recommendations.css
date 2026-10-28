@@ -1,0 +1,17 @@
+/* Original Journal recommendation covers, Figma page 386:13192. */
+@font-face{font-family:"Sarafan Recommendations Garamond";font-style:italic;font-weight:400;font-display:block;src:url("assets/eb-garamond-italic.ttf") format("truetype")}
+.recommendation-card,.recommendation-card *{box-sizing:border-box}
+.recommendation-card{background:var(--sarafan-olive);color:var(--paper);font-synthesis:none}
+.recommendation-card--pools{background:var(--blue);color:#747648}
+.recommendation-card--souvenirs{background:var(--sarafan-dusty-rose)}
+/* The original SVG already includes the crop at the top of the card. */
+.recommendation-ribbon{position:absolute;left:932.739746px;top:-112px}
+/* Hide the original est. 2021 mark while retaining the supplied ribbon artwork. */
+.recommendation-card::after{content:"";position:absolute;left:932.739746px;top:-42px;width:82px;height:84px;background:var(--sarafan-orange)}
+.recommendation-title{position:absolute;left:-94.012451px;top:484.390625px;width:1268.025024px;margin:0;text-align:center;font:600 80px/1 Geist,Arial,sans-serif}
+.recommendation-asterisk{position:absolute;width:34px;text-align:center;color:var(--sarafan-orange);font:600 80px/1 Geist,Arial,sans-serif}
+.recommendation-title-note{left:639.685303px;top:720px}
+.recommendation-author-note{left:64.739746px;top:1116.882813px}
+.recommendation-portrait{position:absolute;left:92.54834px;top:1138.828125px;width:143.382813px;height:143.382813px;border-radius:300px;object-fit:cover}
+.recommendation-author{position:absolute;left:258.739746px;top:1164.800293px;width:640px;font:500 40px/.9 Geist,Arial,sans-serif}
+.recommendation-bio{position:absolute;left:258.739746px;top:1214.621582px;width:537.850098px;font:italic 400 30px/.9 "Sarafan Recommendations Garamond","EB Garamond",Georgia,serif}

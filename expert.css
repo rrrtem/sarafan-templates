@@ -1,0 +1,50 @@
+@font-face{font-family:"Sarafan Expert Geist";font-style:normal;font-weight:100 900;font-display:block;src:url("assets/expert-geist-v1.6.ttf") format("truetype")}
+
+.expert-card{--expert-orange:#ff3c00;--expert-paper:#fbeed2;background:var(--expert-paper);color:var(--expert-orange);font-family:"Sarafan Expert Geist",Geist,Arial,sans-serif}
+.expert-cover,.expert-contact{background:var(--expert-orange);color:var(--expert-paper)}
+.expert-heading{position:absolute;font-size:80px;line-height:1;font-weight:500;overflow-wrap:break-word}
+.expert-cover-heading{left:65px;top:40.5508px;width:950px;text-align:center}
+.expert-cover-ovals{position:absolute;left:176.3261px;top:293.2689px}
+.expert-cover-underlay,.expert-cover-portrait{position:absolute;overflow:hidden;mask-image:url("assets/expert-cover-mask.svg");mask-mode:alpha;mask-repeat:no-repeat;mask-size:438.131px 692.017px}
+.expert-cover-underlay{left:197.7908px;top:196.6029px;width:614.1299px;height:921.195px;mask-position:123.144px 96.666px}
+.expert-cover-underlay>img{position:absolute;left:-.04%;top:9.61%;width:114.21%;height:76.14%}
+.expert-cover-portrait{left:-32.85px;top:227.9423px;width:1144.1621px;height:1430.2026px;mask-position:353.785px 65.327px}
+.expert-cover-portrait>img{width:100%;height:100%;object-fit:cover}
+.expert-ribbon{position:absolute;left:-29.0723px;top:412.2149px;width:467px;height:82px;display:flex;align-items:center;justify-content:center}
+.expert-ribbon>img{flex:none;transform:rotate(90deg)}
+.expert-card .expert-ribbon-name,.expert-card .expert-ribbon-bureau{position:absolute;top:427.2148px;font:500 50px/.86 "EB Garamond",Georgia,serif;color:var(--ink);text-align:center;white-space:nowrap}
+.expert-card .expert-ribbon-name{left:55.1766px;width:180px}
+.expert-card .expert-ribbon-bureau{left:247.6766px;width:106px;font-style:italic}
+.expert-cover-info{position:absolute;left:69.4883px;top:1078px;width:939.4824px;display:flex;flex-direction:column;gap:20px}
+.expert-cover-copy{display:flex;flex-direction:column;gap:5px;font-size:40px;line-height:1.1}
+.expert-cover-name{width:870px;font-weight:600}
+.expert-cover-description{width:939.4824px;font-weight:300}
+.expert-cover-rule{position:relative;top:-1px;flex:none}
+.expert-cover-meta{position:relative;height:28px;color:rgb(251 238 210 / 60%);font-size:25px;line-height:1.1}
+.expert-cover-meta>p{position:absolute;top:0;width:350.4272px}
+.expert-cover-meta>p:first-child{left:0}
+.expert-cover-meta>p:last-child{right:0;text-align:right}
+.expert-logo{position:absolute;left:947px;top:44.2148px}
+.expert-footer-rule{position:absolute;left:70.2588px;top:1233.2217px}
+.expert-footer-name,.expert-footer-handle{position:absolute;top:1260.5889px;width:502.3367px;height:33.002px;font-size:25px;font-weight:400;line-height:1.1}
+.expert-footer-name{left:65px}
+.expert-footer-handle{left:511.4356px;text-align:right}
+.expert-question-1{left:65px;top:41.2148px;width:870.2441px}
+.expert-question-2{left:65px;top:381.2148px;width:940.1211px}
+.expert-question-3{left:65px;top:801.2148px;width:940.1211px}
+.expert-session{background:var(--blue);color:var(--expert-paper)}
+.expert-session-photo{left:-26.8805px;top:-26.4326px;width:1106.8805px;height:1383.6006px}
+.expert-session-photo>img{inset:0;width:100%;height:100%;object-fit:cover}
+.expert-session-shade{position:absolute;left:-245.7834px;top:391.1973px;width:1592.6036px;height:965.9707px;mix-blend-mode:multiply;background:linear-gradient(to bottom,rgba(37,37,37,0),rgba(37,37,37,.6) 43.277%,#252525)}
+.expert-session-copy{left:65px;top:709px;width:950.0078px}
+.expert-section-label{position:absolute;left:65px;top:65px;font-size:40px;font-weight:600;line-height:1.1}
+.expert-about-portrait{position:absolute;left:420.2156px;top:73.0332px;width:239.5689px;height:239.5689px;border-radius:772.803px;overflow:hidden;background:#9a1616}
+.expert-about-portrait>img{position:absolute;object-fit:cover}
+.expert-about-layer-1{left:-344.6157px;top:-157.0287px;width:737.7914px;height:1107.1196px}
+.expert-about-layer-2{left:-173.3701px;top:-212.1572px;width:586.3091px;height:879.8073px}
+.expert-about-layer-3{left:-120.3601px;top:0;width:480.289px;height:600.3612px}
+.expert-about-layer-4{left:-123.8384px;top:-14.8662px;width:455.3297px;height:569.1621px}
+.expert-about-layer-5{left:-241.2461px;top:-74.1027px;width:722.0656px;height:902.582px}
+.expert-about-quote{left:127.4531px;top:450.2217px;width:825.0938px;text-align:center}
+.expert-about-copy{position:absolute;left:70.2578px;top:1013px;width:944.748px;font-size:40px;font-weight:400;line-height:1.1}
+.expert-contact-copy{left:127.4531px;top:475px;width:825.0938px;text-align:center}

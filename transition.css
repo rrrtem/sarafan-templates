@@ -1,0 +1,32 @@
+/* Page 12 · Переходный пост. Original compositions retained as a style reference. */
+.transition-card{background:#e4d5b6;color:#553d3d;font-weight:500;line-height:1;font-synthesis:none}
+.transition-card em{font-weight:500}
+.transition-orange{color:#ff3c00}
+.transition-card p,.transition-photo,.transition-heart-piece{position:absolute}
+.transition-photo{overflow:hidden;border-radius:50%;width:239.569px;height:239.569px}
+.transition-photo>img{position:absolute;max-width:none;object-fit:cover}
+.transition-heart-piece>img{position:absolute;left:0;top:0}
+.transition-cover{background:#a9c9df}
+.transition-original{position:absolute;inset:0;width:1081.333374px;height:1351.75px;transform:scale(.998766945);transform-origin:0 0}
+.transition-cover-title{left:78.666px;top:542.07px;width:924px;font-size:150px;line-height:.9;text-align:center}
+.transition-more{left:440.381px;top:1287.07px;width:200.571px;height:44.229px;font-size:20px;line-height:.86;text-transform:uppercase;text-align:center}
+.transition-history-title{left:65px;top:65px;width:814.672px;font-size:80px;line-height:1}
+.transition-founder-varya{left:565px;top:709.07px}
+.transition-founder-yulia{left:770.625px;top:569.431px;background:#9a1616}
+.transition-history-note{left:65px;top:1026.864px;width:794.661px;font-size:40px;line-height:1.1}
+.transition-ribbon{height:44px;background:#ff3c00;color:#fbeed2;font-size:40px;line-height:1.1;white-space:nowrap}
+.transition-portrait{left:420.215px;top:73.033px;background:#9a1616}
+.transition-person-title{left:65px;top:395px;width:950.007px;font-size:80px;line-height:1;text-align:center}
+.transition-person-note{left:65px;bottom:65px;width:950.007px;font-size:40px;line-height:1.1}
+.transition-yulia{background:#91945b;color:#fbeed2}
+.transition-yulia .transition-person-title em{color:#585b1e}
+.transition-varya .transition-person-title{left:96.019px;width:887.961px}
+.transition-story{background:#fbeed2;color:#fbeed2}
+.transition-story-photo{left:-13.301px;top:-299.658px;width:1163.516px;height:1745.956px;border-radius:0}
+.transition-story-photo>img{inset:0;width:100%;height:100%}
+.transition-story-shade{position:absolute;left:-13.302px;top:598.26px;width:1109.906px;height:773.035px;background:linear-gradient(to bottom,rgba(65,65,65,0),rgba(65,65,65,.43) 37.988%,#414141 81.259%);mix-blend-mode:multiply}
+.transition-story-title{left:35px;top:809px;width:814.672px;font-size:80px;line-height:1}
+.transition-story-note{left:455.945px;top:1079px;width:508.601px;font-size:40px;line-height:1.1}
+.transition-finale{background:#e19a9b}
+.transition-quote{left:96px;top:240.07px;width:888px;font-size:80px;line-height:1;text-align:center}
+.transition-thanks{left:96.019px;top:1171.07px;width:887.961px;font-size:40px;line-height:1;text-align:center}

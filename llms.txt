@@ -1,0 +1,34 @@
+# SARAFAN · Сарафан
+
+> A static library of 1080 × 1350 HTML social cards, brand rules, local fonts, reusable assets, and Russian publication examples. Use it to create posts in the SARAFAN design system.
+
+Start with the guide and brand rules, then fetch only the relevant template files. All relative links resolve from this directory, including when hosted at a subpath. Card source markup is inside HTML `<template>` elements in index.html; rendered previews alone do not expose those sources. Intro, transition, and club-salon are style references. Explicit user instructions take precedence over project defaults.
+
+## Start here
+
+- [Agent guide](docs/agent-guide.md): Russian workflow, complete template source map, local download, dependencies, and export checks.
+- [Project instructions](AGENTS.md): Concise instructions for coding agents working in a local copy.
+- [Brand rules](docs/design-system.md): Palette, typography, spacing, composition, and restrictions.
+- [Machine file catalog](agent-manifest.json): schemaVersion 1; paths, media types, byte sizes, SHA-256 hashes, templates, posts, and separately listed archives. Resolve paths against base `./` beside this file.
+
+## Templates and publications
+
+- [Expert template](docs/expert-template.md): Five cards; preserve the local Geist v1.6 font and source line breaks.
+- [Event template](docs/event-template.md): Two cover layouts and three supplied-poster containers.
+- [Club templates](docs/club-templates.md): Club event posters and the salon style reference.
+- [Intro style reference](docs/intro-reference.md): Seven brand introduction cards.
+- [Transition style reference](docs/transition-reference.md): Six story cards.
+- [New posts](docs/new-posts.md): Standalone HTML cards, media paths, registry format, and crop/cover data.
+
+## Tokens and local files
+
+- [Design tokens JSON](downloads/tokens.json): Machine-readable colors, color combinations, and typography derived from design-system-data.js.
+- [Design tokens CSS](downloads/tokens.css): Namespaced CSS custom properties and legacy aliases for existing cards' inherited variables.
+- [Local font declarations](downloads/fonts.css): Font-face definitions with paths relative to this CSS file.
+- [Downloader](scripts/download-kit.py): Python 3, standard library only; SITE_URL --dest DIRECTORY, optional repeated --include PATH_OR_PREFIX and --overwrite; preserves paths and verifies hashes.
+- [Asset provenance and licenses](downloads/README.md): Existing local assets and font license information, including the unresolved CoFo license.
+
+## Optional
+
+- [Library overview](README.md): Human-oriented project documentation.
+- [Static agent page](agents.html): Clickable resource list and template source map without JavaScript.

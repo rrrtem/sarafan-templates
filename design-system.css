@@ -1,0 +1,67 @@
+.ds-page{color:var(--ink);font-size:13px;line-height:1.6}
+.ds-page .workspace{max-width:1180px}
+.ds-hero{display:flex;justify-content:flex-end;padding:24px 0;border-bottom:1px solid var(--ui-line)}
+.ds-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px}
+.ds-primary{display:inline-flex;justify-content:center;align-items:center;padding:11px 16px;background:var(--ink);color:var(--paper);text-decoration:none;border:0;font:400 12px/1.5 Geist,Arial,sans-serif}
+.ds-primary:hover{background:#6b4e4e}
+.ds-text-link{border:0;border-bottom:1px solid currentColor;padding:3px 0;background:transparent;font:inherit;font-size:11px;color:var(--ink);text-decoration:none;cursor:pointer}
+.ds-layout{display:grid;grid-template-columns:170px minmax(0,1fr);gap:36px}
+.ds-sidebar{padding-top:36px;align-self:start;position:sticky;top:20px}
+.ds-sidebar nav{display:grid;gap:14px}
+.ds-sidebar a{text-decoration:none;font-size:12px}
+.ds-sidebar a:hover{text-decoration:underline;text-underline-offset:4px}
+.ds-section{padding:34px 0;border-bottom:1px solid var(--ui-line);scroll-margin-top:20px}
+.ds-section:last-child{border:0}
+.ds-section h2{font:400 36px/1.1 "EB Garamond",Georgia,serif;letter-spacing:-.015em;margin:0 0 20px}
+.ds-content p{max-width:750px;margin:0 0 16px}
+.ds-subheading{display:flex;align-items:baseline;justify-content:space-between;gap:18px;margin:26px 0 14px;scroll-margin-top:24px}
+.ds-subheading h3{font-size:13px;font-weight:600;line-height:1.5;margin:0}
+.ds-section>.ds-subheading:first-of-type{margin-top:0}
+.ds-source,.ds-type-source{font-size:11px;color:var(--ui-muted);text-decoration:none}
+.ds-source{white-space:nowrap}
+.ds-source:hover,.ds-type-source:hover{text-decoration:underline}
+.ds-palette{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.ds-color{min-width:0}
+.ds-swatch{width:100%;height:80px;border:0;background:var(--swatch);display:block}
+.ds-color h4{font-size:11px;font-weight:400;margin:9px 0 0}
+.ds-copy-hex,.ds-copy-rgb{font:inherit;font-size:11px;border:0;background:none;padding:2px 0;color:var(--ink)}
+.ds-copy-rgb{display:block;color:var(--ui-muted);font-size:10px}
+.ds-content .ds-note{font-size:11px;color:var(--ui-muted);margin:12px 0 0}
+.ds-note a{text-underline-offset:3px}
+.ds-combinations{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.ds-combo{background:var(--combo-bg);color:var(--combo-ink);padding:16px;min-width:0;min-height:122px;display:flex;flex-direction:column;justify-content:space-between}
+.ds-combo p{font:400 21px/1.08 Geist,Arial,sans-serif;margin:0 0 18px}
+.ds-combo em{font-family:"EB Garamond",Georgia,serif;font-weight:500;color:var(--combo-accent)}
+.ds-combo button{font:400 11px/1.4 Geist,Arial,sans-serif;color:inherit;background:none;border:0;border-bottom:1px solid currentColor;padding:0 0 2px;align-self:flex-start}
+.ds-type{display:grid;grid-template-columns:175px minmax(0,1fr);gap:22px;border-top:1px solid var(--ui-line);padding:18px 0}
+.ds-type-group{margin-top:24px;scroll-margin-top:20px}
+.ds-type-group>h4{margin:0 0 12px;font-size:13px;font-weight:600}
+.ds-type h5{margin:0 0 4px;font-size:12px;font-weight:600}
+.ds-type .ds-spec{font-size:11px;color:var(--ui-muted);margin:0 0 6px}
+.ds-type-sample{margin:0!important;font-family:var(--type-family);font-weight:var(--type-weight);font-style:var(--type-style);font-size:var(--type-size);line-height:var(--type-line);overflow-wrap:break-word}
+.ds-type-source{display:block;margin-top:9px}
+.ds-asset-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 12px}
+#elements{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ds-asset{min-width:0}
+.ds-asset-preview{height:104px;background:var(--paper);display:grid;place-items:center;padding:20px;overflow:hidden}
+.ds-asset-preview[data-tone="dark"]{background:var(--ink)}
+.ds-asset-preview img{display:block;max-width:100%;max-height:64px;width:auto;height:auto}
+.ds-asset h4{font-size:11px;font-weight:400;margin:9px 0 3px}
+.ds-asset-links{display:flex;gap:12px;flex-wrap:wrap}
+.ds-asset-links a,.ds-font-files a{font-size:11px;text-decoration:none;border-bottom:1px solid var(--ui-line);padding:2px 0}
+.ds-font-group{display:grid;grid-template-columns:175px minmax(0,1fr);gap:22px;border-top:1px solid var(--ui-line);padding:13px 0}
+.ds-font-group h4{margin:0;font-size:12px;font-weight:400}
+.ds-font-files{display:flex;flex-wrap:wrap;gap:5px 16px}
+.ds-rule-list{padding:0 0 0 18px;margin:0}
+.ds-rule-list li{padding-left:4px;margin:0 0 12px}
+.ds-rule-list li:last-child{margin-bottom:0}
+.ds-toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);background:var(--ink);color:var(--paper);font-size:12px;padding:12px 20px;opacity:0;pointer-events:none;transition:opacity .15s,transform .15s;z-index:10;max-width:calc(100% - 32px);text-align:center}
+.ds-toast[data-visible]{opacity:1;transform:translate(-50%,0)}
+#copy-dialog{border:1px solid var(--ui-line);padding:28px;background:var(--workspace);color:var(--ink);width:min(90vw,550px)}
+#copy-dialog::backdrop{background:#553d3d55}
+#copy-dialog h2{font:400 30px/1.1 "EB Garamond",Georgia,serif;margin-top:0}
+#copy-dialog textarea{width:100%;min-height:140px;margin:0 0 18px;border:1px solid var(--ui-line);padding:12px;background:var(--paper);color:var(--ink)}
+@media(max-width:1000px){.ds-layout{grid-template-columns:150px minmax(0,1fr);gap:26px}.ds-asset-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.ds-type,.ds-font-group{grid-template-columns:150px minmax(0,1fr)}}
+@media(max-width:760px){.ds-layout{display:block}.ds-sidebar{position:static;padding:18px 0 0}.ds-sidebar nav{display:flex;flex-wrap:wrap;gap:10px 20px}.ds-hero{padding:24px 0}.ds-asset-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:560px){.ds-page .workspace{padding:20px}.ds-actions{gap:16px}.ds-section{padding:28px 0}.ds-section h2{font-size:32px}.ds-subheading{gap:12px}.ds-palette{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 8px}.ds-swatch{height:68px}.ds-combinations{grid-template-columns:repeat(2,minmax(0,1fr))}.ds-combo{padding:14px;min-height:115px}.ds-combo p{font-size:19px}.ds-type{display:block}.ds-type-sample{margin-top:14px!important}.ds-type .ds-spec{display:inline;margin-right:12px}.ds-font-group{display:block}.ds-font-group h4{margin-bottom:8px}.ds-asset-grid,#elements{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}.ds-asset-preview{height:96px;padding:16px}.ds-asset-preview img{max-height:64px}}
+@media print{.ds-page .workspace{padding:20px;max-width:none}.ds-sidebar,.ds-actions,.ds-toast{display:none}.ds-layout{display:block}.ds-hero{padding-top:0}.ds-section{break-inside:auto}.ds-asset-preview{break-inside:avoid}}

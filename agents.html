@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Материалы Сарафана для ИИ-агентов: инструкция, каталог файлов, исходники HTML-карточек, дизайн-токены и локальные ресурсы.">
+  <title>Для ИИ-агентов — Сарафан</title>
+  <link rel="describedby" href="llms.txt">
+  <link rel="alternate" type="text/markdown" href="docs/agent-guide.md" title="Инструкция для ИИ-агентов">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="catalog.css">
+  <style>
+    .agent-page{max-width:1000px;margin:38px auto 0;font-size:15px;line-height:1.65}
+    .agent-page h1,.agent-page h2{font-family:"EB Garamond",Georgia,serif;font-weight:400;line-height:1.1}
+    .agent-page h1{font-size:48px;margin:0 0 18px}.agent-page h2{font-size:32px;margin:36px 0 16px}
+    .agent-page p{max-width:850px;margin:12px 0}.agent-page a{text-underline-offset:3px}
+    .agent-lead{font-size:18px}.agent-links{padding-left:22px}.agent-links li{margin:8px 0}
+    .agent-page code{font-size:.9em;overflow-wrap:anywhere}.agent-page pre{padding:18px;background:#fffdf7;overflow:auto;font-size:13px;line-height:1.6}
+    .agent-table-wrap{overflow-x:auto}.agent-page table{width:100%;border-collapse:collapse;font-size:13px;text-align:left}
+    .agent-page th,.agent-page td{border-bottom:1px solid var(--ui-line);padding:12px 14px 12px 0;vertical-align:top}
+    .agent-page th{font-weight:500}.agent-page thead th{color:var(--ui-muted)}.agent-page td:nth-child(2){min-width:190px}
+    @media(max-width:640px){.agent-page{margin-top:28px}.agent-page h1{font-size:39px}.agent-lead{font-size:16px}}
+  </style>
+</head>
+<body>
+<div class="workspace">
+  <header class="masthead">
+    <a class="wordmark" href="index.html">Сарафан<span class="brand-dot" aria-hidden="true">●</span></a>
+    <nav class="library-nav" aria-label="Библиотека проекта"><a href="index.html">Шаблоны</a><a href="design-system.html">Дизайн-система</a><a href="new-posts.html">Новые посты</a></nav>
+  </header>
+  <main class="agent-page">
+    <h1>Для ИИ-агентов</h1>
+    <p class="agent-lead">Исходники карточек 1080 × 1350 px, правила бренда и локальные ресурсы для создания публикаций Сарафана. Начните с инструкции и выберите нужный макет.</p>
+    <ul class="agent-links">
+      <li><a href="llms.txt">llms.txt</a> — краткая точка входа со ссылками на материалы.</li>
+      <li><a href="docs/agent-guide.md">Инструкция для агентов</a> — как скачать библиотеку, извлечь карточку, сохранить зависимости и проверить экспорт.</li>
+      <li><a href="AGENTS.md">AGENTS.md</a> — инструкции для работы в локальной папке.</li>
+      <li><a href="docs/design-system.md">Правила дизайн-системы</a> — палитра, типографика, композиция и ограничения.</li>
+      <li><a href="agent-manifest.json">Машинный каталог файлов</a> — пути, MIME-типы, размеры и SHA-256, селекторы шаблонов, CSS и публикации.</li>
+    </ul>
+    <p>Эта страница и все ссылки доступны без JavaScript. Наличие llms.txt и AGENTS.md помогает обнаружить ресурсы, но не гарантирует автоматическое чтение всеми агентами. В задании можно явно указать ссылку на инструкцию.</p>
+
+    <h2>Исходники шаблонов</h2>
+    <p>Разметка лежит в элементах <code>&lt;template&gt;</code> внутри <a href="index.html">index.html</a>. Найдите селектор в исходном HTML, затем нужную <code>.ig-card</code>. Интро, переходный пост и Салон сохранены как образцы стиля.</p>
+    <div class="agent-table-wrap">
+      <table>
+        <thead><tr><th scope="col">Макет</th><th scope="col">Селектор</th><th scope="col">Карточек</th><th scope="col">Стили макета</th><th scope="col">Документация</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><a href="index.html#proust">Жизнь замечательных людей</a></th><td><code>#template-proust</code></td><td>6</td><td><a href="cards.css">cards.css</a></td><td><a href="docs/design-system.md">Правила бренда</a></td></tr>
+          <tr><th scope="row"><a href="index.html#places">Подборка мест</a></th><td><code>#template-places</code></td><td>12</td><td><a href="cards.css">cards.css</a></td><td><a href="docs/design-system.md">Правила бренда</a></td></tr>
+          <tr><th scope="row"><a href="index.html#expert">Пост про эксперта</a></th><td><code>#template-expert</code></td><td>5</td><td><a href="cards.css">cards.css</a>, <a href="expert.css">expert.css</a></td><td><a href="docs/expert-template.md">Эксперт</a></td></tr>
+          <tr><th scope="row"><a href="index.html#event">Афиша события</a></th><td><code>#template-event</code></td><td>5</td><td><a href="cards.css">cards.css</a>, <a href="event.css">event.css</a></td><td><a href="docs/event-template.md">Афиша</a></td></tr>
+          <tr><th scope="row"><a href="index.html#club-event">Афиша мероприятия клуба</a></th><td><code>#template-club-event</code></td><td>6</td><td><a href="cards.css">cards.css</a>, <a href="club.css">club.css</a></td><td><a href="docs/club-templates.md">Клуб</a></td></tr>
+          <tr><th scope="row"><a href="index.html#club-salon">Салон — образец стиля</a></th><td><code>#reference-club-salon</code></td><td>3</td><td><a href="cards.css">cards.css</a>, <a href="club.css">club.css</a></td><td><a href="docs/club-templates.md">Клуб</a></td></tr>
+          <tr><th scope="row"><a href="index.html#intro">Интро-пост — образец стиля</a></th><td><code>#reference-intro</code></td><td>7</td><td><a href="cards.css">cards.css</a>, <a href="intro.css">intro.css</a></td><td><a href="docs/intro-reference.md">Интро</a></td></tr>
+          <tr><th scope="row"><a href="index.html#transition">Переходный пост — образец стиля</a></th><td><code>#reference-transition</code></td><td>6</td><td><a href="cards.css">cards.css</a>, <a href="transition.css">transition.css</a></td><td><a href="docs/transition-reference.md">Переход</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Сохраняйте CSS выбранного макета и его локальные ресурсы. Карточки наследуют переменные <code>--paper</code>, <code>--ink</code>, <code>--blue</code> и reset размеров из <a href="catalog.css">catalog.css</a>. Для самостоятельной карточки можно использовать <a href="downloads/tokens.css">токены CSS с совместимыми алиасами</a> и локальный <code>box-sizing: border-box</code>. Подробный пример — в <a href="docs/agent-guide.md">инструкции</a>.</p>
+
+    <h2>Токены и ресурсы</h2>
+    <ul class="agent-links">
+      <li><a href="downloads/tokens.json">Токены JSON</a> — цвета, сочетания, типографика, формат карточки и шрифты.</li>
+      <li><a href="downloads/tokens.css">Токены CSS</a> — переменные <code>--sarafan-*</code> и совместимые алиасы для готовых карточек.</li>
+      <li><a href="downloads/fonts.css">Локальные шрифты CSS</a> — объявления <code>@font-face</code> с путями от этого файла.</li>
+      <li><a href="downloads/README.md">Происхождение и лицензии ассетов</a> — сведения о файлах и лицензии Geist; права на CoFo Cinema1909 проектом не установлены.</li>
+      <li><a href="docs/new-posts.md">Новые публикации</a> — файлы <code>posts/&lt;id&gt;/</code>, регистрация и настройки кадрирования.</li>
+    </ul>
+    <p>В шаблоне эксперта сохраните семейство <code>Sarafan Expert Geist</code> и локальный файл версии 1.6: замена меняет кириллицу и переносы. Перед снимком установите <code>--card-scale: 1</code>, размер 1080 × 1350 и дождитесь <code>document.fonts.ready</code> и загрузки изображений.</p>
+
+    <h2>Скачать локальную копию</h2>
+    <p>Сохраните <a href="scripts/download-kit.py" download>download-kit.py</a> и запустите Python 3 с URL каталога этой библиотеки. Подойдёт любой статический хостинг, в корне сайта или подпапке:</p>
+    <pre><code>python3 download-kit.py https://example.org/sarafan/ --dest ./sarafan-local</code></pre>
+    <p>Скрипт сохраняет структуру и проверяет контрольные суммы. Совпадающие файлы пропускаются, отличающиеся требуют флага <code>--overwrite</code>. Для отдельных путей или префиксов повторяйте <code>--include</code>; зависимости укажите самостоятельно. Синтаксис и пример частичного набора — в <a href="docs/agent-guide.md">инструкции</a>.</p>
+    <p>Полный каталог — корневой <code>agent-manifest.json</code>. Старый <code>downloads/manifest.json</code> содержит встроенные SVG/PNG и предназначен для интерфейса скачивания ассетов; его не нужно загружать в контекст первым. Архивы перечислены отдельно, устаревший <code>sarafan-templates.zip</code> исключён.</p>
+  </main>
+  <footer class="agent-discovery"><a href="index.html">← Шаблоны</a> · <a href="docs/agent-guide.md">Инструкция Markdown</a></footer>
+</div>
+</body>
+</html>

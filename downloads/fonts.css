@@ -1,0 +1,14 @@
+/* Generated from existing CSS; URLs resolve relative to this file. */
+@font-face { font-family: "CoFo Cinema 1909"; font-style: normal; font-weight: 400; font-display: block; src: url("../assets/cofo-cinema1909-regular.otf") format("opentype"); }
+@font-face { font-family: "EB Garamond"; font-style: normal; font-weight: 400; font-display: block; src: url("../assets/eb-garamond-regular.ttf") format("truetype"); }
+@font-face { font-family: "EB Garamond"; font-style: normal; font-weight: 500; font-display: block; src: url("../assets/eb-garamond-medium.ttf") format("truetype"); }
+@font-face { font-family: "EB Garamond"; font-style: normal; font-weight: 600; font-display: block; src: url("../assets/eb-garamond-semibold.ttf") format("truetype"); }
+@font-face { font-family: "EB Garamond"; font-style: normal; font-weight: 700; font-display: block; src: url("../assets/eb-garamond-bold.ttf") format("truetype"); }
+@font-face { font-family: "EB Garamond"; font-style: italic; font-weight: 500; font-display: block; src: url("../assets/eb-garamond-medium-italic.ttf") format("truetype"); }
+@font-face { font-family: "Geist"; font-style: normal; font-weight: 600; font-display: block; src: url("../assets/geist-semibold.ttf") format("truetype"); }
+@font-face { font-family: "Geist"; font-style: normal; font-weight: 700; font-display: block; src: url("../assets/geist-bold.ttf") format("truetype"); }
+@font-face { font-family: "Geist"; font-style: normal; font-weight: 400; font-display: block; src: url("../assets/geist-regular.ttf") format("truetype"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400; font-display: block; src: url("../assets/inter-regular.ttf") format("truetype"); }
+@font-face { font-family: "Sarafan Event Geist"; font-style: normal; font-weight: 100 900; font-display: block; src: url("../assets/expert-geist-v1.6.ttf") format("truetype"); }
+@font-face { font-family: "Sarafan Expert Geist"; font-style: normal; font-weight: 100 900; font-display: block; src: url("../assets/expert-geist-v1.6.ttf") format("truetype"); }
+@font-face { font-family: "EB Garamond"; font-style: italic; font-weight: 600; font-display: block; src: url("../assets/eb-garamond-semibold-italic.ttf") format("truetype"); }

@@ -1,0 +1,82 @@
+/* One-off introduction post, retained as a style reference. Coordinates follow Page 11. */
+@font-face{font-family:"EB Garamond";font-style:italic;font-weight:600;font-display:block;src:url("assets/eb-garamond-semibold-italic.ttf") format("truetype")}
+/* Geist Medium is absent from the original assets; use the existing nearest weight from cards.css. */
+.intro-card{--intro-orange:#ff3c00;--intro-cream:#fbeed2;--intro-photo-cream:#e4d5b6;background:var(--intro-cream);color:#553d3d;font-weight:500;font-synthesis:none}
+.intro-card h2,.intro-card h3{margin:0;font-weight:inherit}
+.intro-original{position:absolute;inset:0;width:1081.333374px;height:1351.75px;transform:scale(.998766945);transform-origin:0 0}
+.intro-card em{font-family:"EB Garamond",Georgia,serif;font-weight:500;font-style:italic}
+.intro-trim{text-box-trim:trim-both;text-box-edge:cap alphabetic}
+.intro-photo,.intro-art,.intro-logo-piece{position:absolute}
+.intro-photo>img{display:block;width:100%;height:100%}
+.intro-art>img,.intro-logo-piece>img{position:absolute;left:0;top:0}
+.intro-cover{background:var(--intro-photo-cream)}
+.intro-cover-photo{left:-245px;top:-211px;width:1412px;height:2069px;overflow:hidden}
+.intro-cover-photo>img{position:absolute;left:-2.33%;top:0;width:97.69%;height:100%}
+.intro-cover-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(9.1091927deg,rgba(0,0,0,.8) 11.745%,rgba(0,0,0,0) 39.367%)}
+.intro-wordmark{position:absolute;left:31px;top:36px;width:1060.457px;font-size:140px;line-height:.86;font-weight:500;color:var(--intro-orange)}
+.intro-since{position:absolute;left:541.334px;top:60px;font-size:35px;line-height:.86;font-weight:700;color:var(--intro-orange)}
+.intro-cover-sections{position:absolute;left:541.333px;top:1082px;width:471px;font-size:70px;line-height:1;text-align:right;color:var(--intro-photo-cream);font-weight:400}
+.intro-cover-tagline{position:absolute;left:65.334px;top:1244px;font-size:50px;line-height:1;white-space:nowrap;color:var(--intro-photo-cream);font-style:italic}
+.intro-journal{background:#a9c9df;color:#1e1e1e}
+.intro-bureau{background:#91945b;color:var(--intro-cream)}
+.intro-club{background:#e19a9b;color:var(--intro-cream)}
+.intro-section-name{position:absolute;left:34px;top:50px;font-size:100px;line-height:.86;letter-spacing:2px;font-style:italic;white-space:nowrap}
+.intro-section-topline{position:absolute;left:276px;top:33.0947px;font-size:35px;line-height:.86;white-space:nowrap}
+.intro-oval{left:34px;top:313px;width:1011px;height:476px}
+.intro-action{position:absolute;top:539.5px;height:36px;font-family:Geist,Arial,sans-serif;font-weight:400;font-size:50px;line-height:1.01;letter-spacing:-1.5px;color:var(--intro-photo-cream);white-space:nowrap}
+.intro-body{position:absolute;left:34px;top:1018px;width:1011px;font-size:60px;line-height:.95;font-weight:500}
+.intro-journal .intro-section-name{left:40.502px;top:44px}
+.intro-journal .intro-section-topline{left:407px;top:33px}
+.intro-journal .intro-body{left:40.502px;width:1004.498px}
+.intro-journal .intro-ribbon{left:308px;top:515px;width:465px;height:85px}
+.intro-journal .intro-action{left:339px}
+.intro-journal .intro-corner{left:957px;top:-49px;width:88px;height:179px}
+.intro-bureau .intro-section-name{left:35.5px}
+.intro-bureau .intro-section-topline{left:273.5px;top:32px}
+.intro-bureau .intro-body{left:35.5px;top:961.25px;width:1015.518px}
+.intro-bureau .intro-ribbon{left:218px;top:515px;width:623px;height:85px;transform:rotate(180deg)}
+.intro-bureau .intro-action{left:260.5px}
+.intro-bureau .intro-corner{left:977px;top:44px;width:68px;height:82px}
+.intro-club .intro-ribbon{left:298px;top:521px;width:456.179px;height:73px;transform:rotate(180deg)}
+.intro-club .intro-action{left:345.5px}
+.intro-club .intro-corner{left:946.1764px;top:44px;width:98.8234px;height:75.389px}
+.intro-salon-name{position:absolute;left:443px;top:204.5px;width:418px;font-family:"CoFo Cinema 1909",serif;font-size:180px;line-height:.86;text-align:center;text-transform:uppercase}
+.intro-salon-brand{position:absolute;left:26.5px;top:67px;width:593px;font-family:"CoFo Cinema 1909",serif;font-size:180px;line-height:.86;text-align:center}
+.intro-salon-note{position:absolute;left:34px;top:287px;width:194px;font-size:35px;line-height:.86}
+.intro-salon-copy{position:absolute;left:66px;top:995px;width:948px;font-size:60px;line-height:1;text-align:center}
+.intro-salon-copy em{color:var(--intro-orange)}
+.intro-salon .intro-corner{left:970px;top:44px;width:75px;height:84.1033px}
+.intro-source-circle{position:absolute;width:244px;height:244px;overflow:hidden;border-radius:813.333px}
+.intro-source-circle>img{position:absolute;max-width:none}
+.intro-salon-food{left:666px;top:491px}
+.intro-salon-table{left:510px;top:625px}
+.intro-salon-talk{left:54px;top:732px}
+.intro-salon-underlay{left:-99.41px;top:-334.81px;width:509.471px;height:636.838px;object-fit:cover}
+.intro-salon-circle-underlay{left:-144.23px;top:-228.74px;width:504.163px;height:504.163px}
+.intro-salon-table-photo{left:-70.75px;top:-142.58px;width:385.188px;height:385.188px}
+.intro-salon-talk-photo{left:-1.35px;top:-34.67px;width:313.35px;height:313.35px}
+.intro-salon-group{left:142px;top:554.5px;width:241px;height:241px}
+.intro-salon-bottom-left{left:-99px;top:1257px;width:241px;height:241px}
+.intro-salon-bottom-right{left:142px;top:1314px;width:241px;height:241px}
+.intro-salon-books{left:332.0496px;top:474.6116px;width:244px;height:244px;border-radius:291.633px;overflow:hidden}
+.intro-salon-books>img{object-position:bottom}
+/* Original masked artwork exported from Figma, so file:// previews also work. */
+.intro-salon-party-circle{left:759.6104px;top:326.5px;width:244.298px;height:244.298px}
+.intro-salon-top-circle{left:317.0994px;top:0;width:244.298px;height:72.6663px}
+.intro-ad-title{position:absolute;left:34.0625px;top:32.1182px;font-size:100px;line-height:.86}
+.intro-stats{margin:0;position:absolute;left:34.0625px;top:270.125px;width:1009px;display:flex;flex-direction:column;gap:32px}
+.intro-stat{display:flex;align-items:center;justify-content:space-between;height:46px;color:var(--intro-orange)}
+.intro-stat dt{background:var(--intro-orange);color:var(--intro-cream);border-radius:10px;padding:10px 5px;font-size:40px;line-height:1.01;letter-spacing:-1.2px;text-box-trim:trim-both;text-box-edge:cap alphabetic}
+.intro-stat dd{margin:0;font-family:Geist,Arial,sans-serif;font-weight:500;font-size:50px;line-height:.86;text-align:right}
+.intro-ad-copy{position:absolute;left:32.7051px;top:902px;width:914.1855px;font-family:Geist,Arial,sans-serif;font-size:60px;font-weight:500;line-height:1.1}
+.intro-ad-copy em{font-weight:600}
+.intro-ad-copy .intro-highlight{color:var(--intro-orange)}
+.intro-finale{background:var(--intro-orange);color:var(--intro-cream)}
+.intro-finale .intro-wordmark{font-size:100px;color:var(--intro-cream)}
+.intro-finale-topline{position:absolute;left:400px;top:46px;font-size:35px;line-height:.86;font-weight:700}
+.intro-finale-party{left:613px;top:188px;width:399px;height:850px}
+.intro-finale-paris{left:341px;top:188px;width:398px;height:850px}
+.intro-finale-picnic{left:90px;top:188px;width:399px;height:850px}
+.intro-finale-copy{position:absolute;left:36px;top:1070px;width:1005px;font-family:Geist,Arial,sans-serif;font-size:80px;line-height:1;font-weight:500}
+.intro-finale-copy em{font-family:"EB Garamond",Georgia,serif}
+.intro-finale-url{position:absolute;left:841px;top:1267px;font-size:20px;line-height:1;text-transform:uppercase}

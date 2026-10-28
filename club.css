@@ -1,0 +1,50 @@
+/* Клуб · Салон. Оригинальная геометрия Figma: 1080 × 1350. */
+.club-card{background:var(--paper);color:var(--ink);font-synthesis:none}
+.club-card h2{margin:0;font-weight:400}
+.club-cinema{font-family:"CoFo Cinema 1909",serif;font-weight:400;line-height:.86}
+.club-mark{position:absolute;left:913px;top:65px;width:101.883px;height:66.203px}
+.club-dot{position:absolute;width:174px;height:174px}
+.club-brand-title{position:absolute;left:65px;top:65px;width:857.794px;font-size:200px}
+.club-salon-title,.club-range,.club-month{position:absolute;font-size:200px;text-align:center;text-box-trim:trim-both;text-box-edge:cap alphabetic;white-space:nowrap}
+.club-salon-title{left:555px;top:234px;width:464px}
+.club-range{left:65px;top:370px;width:351px}
+.club-month{left:256px;top:547px;width:527px}
+.club-address{position:absolute;left:165px;top:856px;width:390px;font-size:45px;line-height:1;font-weight:500}
+.club-address-photo{position:absolute;left:65px;top:857px;width:88px;height:86px;object-fit:cover}
+.club-program-list{position:absolute;left:65px;top:1010px;width:950px;font:400 45px/1 Geist,Arial,sans-serif}
+.club-cta{position:absolute;top:1250px;right:65px;padding:0 10px 5px;border-radius:30px;background:var(--ui-accent);color:var(--paper);font-size:30px;font-weight:500;line-height:1;text-align:center}
+.club-room-photo{position:absolute;left:65px;top:65px;width:950px;height:476px}
+.club-story-copy{position:absolute;left:68px;top:654px;width:945px;font:400 45px/1.1 Geist,Arial,sans-serif}
+.club-story-copy p{text-indent:100px;margin-bottom:20px}
+.club-story-copy p:last-child{margin-bottom:0}
+.club-story-copy em{font-family:"EB Garamond",serif;font-style:italic;font-weight:500;color:var(--ui-accent)}
+.club-partner-photo{position:absolute;left:0;top:-170px;width:1080px;height:1539px;object-fit:cover}
+.club-partner-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(21,25,19,0) 1.037%,rgba(21,25,19,.03) 46.57%,rgba(21,25,19,.96) 102.22%)}
+.club-partner-copy{position:absolute;left:70px;top:70px;width:945px;color:var(--paper);font:400 45px/1.1 Geist,Arial,sans-serif;text-indent:100px}
+.club-partner-copy em{font-family:"EB Garamond",serif;font-style:italic;font-weight:600;color:var(--blue)}
+.club-poster{background:var(--club-background);color:var(--club-color)}
+.club-poster .club-mark{left:918px}
+.club-poster--film .club-mark{left:913px}
+.club-poster-photo{position:absolute;left:34px;top:260px;width:1012px;height:476px}
+.club-poster--film .club-poster-photo{top:250px}
+.club-poster-date{position:absolute;left:647px;top:65.576px;font-size:120px;text-box-trim:trim-both;text-box-edge:cap alphabetic}
+.club-poster-time{position:absolute;left:647px;top:165.612px;width:174px;font-size:30px;line-height:1}
+.club-poster-copy{position:absolute;left:68px;right:65px;top:736px;bottom:65px;display:flex;flex-direction:column}
+.club-poster--film .club-poster-copy{top:726px}
+.club-poster-heading-zone{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:25px}
+.club-poster-title{position:static;width:705px;flex:none;font-size:110px;text-transform:uppercase;text-align:center}
+.club-poster--film .club-poster-title,.club-poster--georgia .club-poster-title{width:987px}
+.club-poster-subtitle{position:static;width:987px;flex:none;font-size:70px;text-transform:uppercase;text-align:center}
+.club-poster-description{position:static;width:947px;flex:none;font-size:40px;line-height:1}
+.club-ribbon{position:absolute;left:-141px;top:65px;width:651px;height:82px;display:flex;align-items:center;justify-content:center}
+.club-ribbon-vertical{position:relative;width:82px;height:651px;transform:rotate(-90deg);flex:none}
+.club-ribbon-vertical img{position:absolute;left:0;top:0}
+.club-ribbon-name,.club-ribbon-salon{position:absolute;top:80px;color:var(--ink);font-size:50px;line-height:.86;font-weight:500;text-align:center;white-space:nowrap}
+.club-ribbon-name{left:65px;width:180px}
+.club-ribbon-salon{left:259px;width:131px;font-style:italic}
+.club-poster--workshop .club-ribbon-name,.club-poster--workshop .club-ribbon-salon{color:var(--paper)}
+.club-price-wrap{position:absolute;left:496px;top:695px;width:89.361px;height:54.672px;display:flex;align-items:center;justify-content:center}
+.club-price{flex:none;padding:10px;border-radius:4px;background:var(--ui-accent);color:var(--paper);font-size:40px;line-height:1.01;letter-spacing:-1.2px;white-space:nowrap;transform:rotate(-6.03deg);text-box-trim:trim-both;text-box-edge:cap alphabetic}
+.club-poster--film .club-price-wrap,.club-poster--georgia .club-price-wrap{left:505px;top:688px;width:92.472px;height:62.041px}
+.club-poster--film .club-price,.club-poster--georgia .club-price{transform:rotate(-11.51deg)}
+.club-poster--party .club-price-wrap{left:417px;top:677px;width:267.371px;height:73.469px}

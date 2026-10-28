@@ -1,0 +1,121 @@
+
+    @font-face{font-family:"CoFo Cinema 1909";font-style:normal;font-weight:400;font-display:block;src:url("assets/cofo-cinema1909-regular.otf") format("opentype")}
+    @font-face{font-family:"EB Garamond";font-style:normal;font-weight:400;font-display:block;src:url("assets/eb-garamond-regular.ttf") format("truetype")}
+    @font-face{font-family:"EB Garamond";font-style:normal;font-weight:500;font-display:block;src:url("assets/eb-garamond-medium.ttf") format("truetype")}
+    @font-face{font-family:"EB Garamond";font-style:normal;font-weight:600;font-display:block;src:url("assets/eb-garamond-semibold.ttf") format("truetype")}
+    @font-face{font-family:"EB Garamond";font-style:normal;font-weight:700;font-display:block;src:url("assets/eb-garamond-bold.ttf") format("truetype")}
+    @font-face{font-family:"EB Garamond";font-style:italic;font-weight:500;font-display:block;src:url("assets/eb-garamond-medium-italic.ttf") format("truetype")}
+    @font-face{font-family:Geist;font-style:normal;font-weight:600;font-display:block;src:url("assets/geist-semibold.ttf") format("truetype")}
+    @font-face{font-family:Geist;font-style:normal;font-weight:700;font-display:block;src:url("assets/geist-bold.ttf") format("truetype")}
+    @font-face{font-family:Geist;font-style:normal;font-weight:400;font-display:block;src:url("assets/geist-regular.ttf") format("truetype")}
+    @font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:block;src:url("assets/inter-regular.ttf") format("truetype")}
+    .ig-card{position:absolute;top:0;left:0;width:1080px;height:1350px;overflow:hidden;transform:scale(var(--card-scale,.4));transform-origin:0 0;background:var(--paper);color:var(--ink);font-family:"EB Garamond",Georgia,serif;font-size:55px;line-height:1.1;font-weight:400}
+    .ig-card p,.ig-card ul{margin:0}
+    .ig-card strong{font-weight:700}
+    .ig-card img{display:block;max-width:none;user-select:none;pointer-events:none}
+    .image-layer{position:absolute;overflow:hidden}
+    .image-layer>img{position:absolute;object-fit:cover}
+    .cover-underlay{left:-456.4517px;top:-840.0754px;width:1589.5436px;height:2331.8079px}
+    .cover-underlay>img{inset:0;width:100%;height:100%}
+    .cover-portrait{left:-101.1568px;top:-33.3889px;width:1282.3136px;height:1562.2854px}
+    .cover-portrait>img{inset:0;width:100%;height:100%}
+    .cover-portrait:after{content:"";position:absolute;inset:0;background:rgb(0 0 0 / 10%)}
+    .ribbon-art{position:absolute;left:889.9805px;top:-147.6668px}
+    .ribbon-word{position:absolute;display:flex;align-items:center;justify-content:center;width:43px;color:var(--paper);font-size:50px;line-height:.86;white-space:nowrap;font-weight:500}
+    .ribbon-word>span{display:block;transform:rotate(-90deg)}
+    .ribbon-sarafan{left:904.9807px;top:243.3613px;height:180px}
+    .ribbon-journal{left:904.9807px;top:64.3613px;height:168px;font-style:italic}
+    .ribbon-back-sarafan{left:904.9811px;top:289.8341px;height:180px}
+    .ribbon-back-journal{left:904.9811px;top:108.8341px;height:168px;font-style:italic}
+    .ribbon-est{left:908.9811px;top:21.6055px;height:76px;width:17px;font-size:20px;font-weight:700}
+    .cover-title{position:absolute;left:65px;top:1055.7778px;width:950px;font-family:Geist,Arial,sans-serif;font-weight:600;font-size:80px;line-height:.85;color:var(--paper)}
+    .cover-subtitle{position:absolute;left:453px;top:1207px;width:522.5461px;font-size:50px;line-height:.9;color:var(--paper);text-box-trim:trim-both;text-box-edge:cap alphabetic}
+    .biography,.bedroom{background:var(--blue)}
+    .young-photo{left:65px;top:65px;width:950px;height:724px}
+    .young-photo>img{left:-9.19%;top:-4.11%;width:118.37%;height:108.21%;object-fit:fill}
+    .biography-copy{position:absolute;left:65px;top:928.315px;width:950px;font-size:55px;line-height:1.1}
+    .bedroom-copy{position:absolute;left:65px;top:37.5196px;width:950px;font-size:55px;line-height:1.1}
+    .bedroom-photo{left:65px;top:625.6016px;width:950px;height:659.3984px}
+    .bedroom-photo>img{left:-4.8%;top:-94.53%;width:109.6%;height:231.64%;object-fit:fill}
+    .madeleine{background:var(--ink);color:var(--paper)}
+    .madeleine-copy{position:absolute;left:34px;top:28.1659px;width:1011px;font-size:80px;line-height:1.1}
+    .madeleine-note{position:absolute;left:34px;bottom:65px;width:1011px;font-size:40px;line-height:1.1;font-weight:500;font-style:italic}
+    .book-underlay{left:-527px;top:0;width:1771px;height:1350px}
+    .book-underlay>img{left:-4.82%;top:-79.28%;width:109.6%;height:210.97%;object-fit:fill}
+    .book-photo{left:-101.5166px;top:-365.3865px;width:1283.0332px;height:1818.696px}
+    .book-photo>img{inset:0;width:100%;height:100%}
+    .places-title{position:absolute;left:65px;top:37.7367px;width:950px;font-size:55px;font-weight:700;line-height:1.1}
+    .places-list{position:absolute;left:34px;top:625px;width:950px;padding:0 0 0 82.5px;list-style:disc;font-size:55px;line-height:1.1}
+    .places-list li{padding:0;margin:0 0 60.5px}
+    .places-list li:last-child{margin:0}
+    .places-list li:last-child strong{font-weight:600}
+    .collection-cover{background:#000;color:var(--paper)}
+    .collection-cover-photo{left:0;top:0;width:1080px;height:1354px;opacity:.7}
+    .collection-cover-photo>img{inset:0;width:100%;height:100%}
+    .collection-cover-shade{position:absolute;left:-784px;top:-352px;width:2058.059px;height:1203.125px;display:flex;align-items:center;justify-content:center;mix-blend-mode:multiply}
+    .collection-cover-shade>div{width:1954px;height:646.883px;flex:none;transform:rotate(162.55deg);background:linear-gradient(to bottom,rgba(51,51,51,0),#333)}
+    .collection-ribbon-art{position:absolute;display:flex;align-items:center;justify-content:center;left:560.9658px;top:1112.1925px;width:657.9735px;height:82px}
+    .collection-ribbon-art>img{flex:none;transform:rotate(90deg)}
+    .collection-cover .collection-ribbon-name,.collection-cover .collection-ribbon-journal,.collection-cover .collection-ribbon-back-name,.collection-cover .collection-ribbon-back-journal,.collection-cover .collection-ribbon-est{position:absolute;white-space:nowrap;line-height:.86;font-size:50px;font-weight:500;top:1127.1927px}
+    .collection-cover .collection-ribbon-name{left:647.9113px;width:180px;text-align:center}
+    .collection-cover .collection-ribbon-journal{left:838.9113px;font-style:italic}
+    .collection-cover .collection-ribbon-back-name{left:601.4385px;width:180px;text-align:center}
+    .collection-cover .collection-ribbon-back-journal{left:794.4385px;width:168px;text-align:center;font-style:italic}
+    .collection-cover .collection-ribbon-est{left:973.667px;top:1131.1931px;font-size:20px;font-weight:700}
+    .collection-cover-heading{position:absolute;left:-98.7493px;top:13.959px;width:725.7493px;height:383.6918px;display:flex;align-items:center;justify-content:center}
+    .collection-cover-heading>div{width:689.69px;flex:none;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center;transform:rotate(-10deg)}
+    .collection-cover-heading h2{font-family:Geist,Arial,sans-serif;font-size:80px;font-weight:600;line-height:1;margin:0;white-space:nowrap}
+    .collection-cover-heading p{font-size:50px;font-weight:500;font-style:italic;line-height:.9;width:640px}
+    .collection-landscape{left:65px;top:65px;width:946px;height:600px}
+    .collection-landscape>img{inset:0;width:100%;height:100%}
+    .collection-place-name{position:absolute;left:64px;top:934px;width:952px;font-family:Geist,Arial,sans-serif;font-size:80px;font-weight:600;line-height:1;margin:0}
+    .collection-address{position:absolute;left:64px;top:1037px;width:952px;height:39px;display:flex;gap:14px;align-items:center;overflow:hidden;font-family:Geist,Arial,sans-serif;font-size:35px;line-height:1.1;font-weight:400}
+    .collection-pin{flex:0 0 32px;width:32px;font-family:Inter,"Apple Color Emoji",sans-serif;font-size:32px;line-height:normal}
+    .collection-description{position:absolute;left:65px;top:1102px;width:826px;font-size:55px;line-height:1.1}
+    .collection-credit{position:absolute;left:988px;top:1058px;width:28px;height:227px;display:flex;align-items:center;justify-content:center}
+    .collection-credit>p{flex:none;transform:rotate(-90deg);font-family:Geist,Arial,sans-serif;font-size:25px;line-height:1.1;opacity:.68;white-space:nowrap}
+    .collection-fullscreen{color:var(--paper)}
+    .collection-fullscreen-photo{inset:0;width:1080px;height:1350px}
+    .collection-fullscreen-photo>img{left:-3.41%;top:-28.22%;width:106.82%;height:128.19%;object-fit:fill}
+    .collection-fullscreen-shade{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(21,25,19,.4),rgba(21,25,19,.03) 45%,rgba(21,25,19,.96))}
+    .collection-fullscreen .collection-place-name{top:995px}
+    .collection-fullscreen .collection-address{top:1098px}
+    .collection-fullscreen .collection-description{top:1163px}
+    .collection-cover-v2 .collection-cover-photo{transform:scaleX(-1)}
+    .collection-cover-v2 .collection-cover-photo>img{object-fit:fill}
+    .cover-khachapuri .collection-cover-photo{transform:rotate(180deg)}
+    .cover-khachapuri .collection-cover-photo>img{left:-46.11%;top:0;width:188.06%;height:100%}
+    .cover-table .collection-cover-photo{opacity:1}
+    .cover-table .collection-cover-photo>img{inset:0;width:100%;height:100%;object-fit:cover}
+    .cover-table .collection-cover-photo:after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.2)}
+    .cover-khinkali .collection-cover-photo>img{left:0;top:-6.37%;width:118.7%;height:142.06%}
+    .collection-vertical-ribbon{position:absolute;left:933px;top:-53px}
+    .collection-vertical-word{position:absolute;left:952.5px;width:43px;display:flex;align-items:center;justify-content:center;font-size:50px;font-weight:500;line-height:.86;white-space:nowrap}
+    .collection-vertical-word>span{transform:rotate(90deg);flex:none}
+    .collection-vertical-name{top:59.5px;height:180px}
+    .collection-vertical-journal{top:252px;height:168px;font-style:italic}
+    .collection-fullscreen-v2 .collection-fullscreen-photo>img{inset:0;width:100%;height:100%;object-fit:cover}
+    .collection-fullscreen-v2 .collection-place-name{top:934px}
+    .collection-fullscreen-v2 .collection-address{top:1037px}
+    .collection-fullscreen-v2 .collection-description{top:1102px}
+    .collection-oval .collection-place-name{top:65px;font-family:"EB Garamond",Georgia,serif}
+    .collection-oval .collection-address{top:168px}
+    .collection-oval-photo{position:absolute;left:80px;top:299px;width:936px;height:573px}
+    .collection-oval .collection-description{top:auto;bottom:65px;left:65px;width:831px;font-family:Geist,Arial,sans-serif;font-size:70px;line-height:1}
+    .collection-oval .collection-credit{top:1064px}
+    .collection-text{background:var(--text-surface);color:var(--text-ink,var(--ink))}
+    .collection-text-number{position:absolute;left:226px;top:65px;width:627px;text-align:center;font-family:Geist,Arial,sans-serif;font-weight:700;font-size:30px;line-height:1;color:var(--number-ink,inherit)}
+    .collection-text-copy{position:absolute;left:226px;top:272px;width:627px;text-align:center;font-family:Geist,Arial,sans-serif;font-weight:400;font-size:90px;line-height:0}
+    .collection-text-copy>span,.collection-text-copy>em{line-height:1}
+    .collection-text-copy em{font-family:"EB Garamond",Georgia,serif;font-style:italic;font-weight:500;color:var(--text-accent)}
+    .collection-text-name{position:absolute;top:1143px;left:540px;transform:translateX(-50%);font-family:"EB Garamond",Georgia,serif;font-size:80px;font-weight:600;line-height:1;white-space:nowrap}
+    .collection-text-address{position:absolute;left:540.5px;top:1246px;transform:translateX(-50%);display:flex;gap:14px;align-items:center;white-space:nowrap;font-family:Geist,Arial,sans-serif;font-size:35px;font-weight:400;line-height:1.1}
+    .text-blue{--text-surface:#a9c9df;--text-accent:#ff3c00}
+    .text-cream{--text-surface:#fbeed2;--text-accent:#91945b}
+    .text-pink{--text-surface:#e19a9b;--text-accent:#fbeed2}
+    .text-pink .collection-text-copy{top:242px}
+    .text-olive{--text-surface:#91945b;--text-accent:#a9c9df}
+    .text-olive .collection-text-copy{left:166px;width:747px}
+    .text-brown{--text-surface:#553d3d;--text-ink:#fbeed2;--text-accent:#ff3c00}
+    .text-orange{--text-surface:#ff3c00;--text-ink:#fbeed2;--text-accent:#553d3d;--number-ink:#553d3d}
+    .text-brown .collection-text-copy,.text-orange .collection-text-copy{top:auto;bottom:478px}

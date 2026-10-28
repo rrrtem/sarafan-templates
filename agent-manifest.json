@@ -1,0 +1,3175 @@
+{
+  "schemaVersion": 1,
+  "base": "./",
+  "description": "Current SARAFAN sources and design resources. Resolve each path relative to this manifest URL.",
+  "resources": {
+    "instructions": "AGENTS.md",
+    "guide": "docs/agent-guide.md",
+    "entry": "agents.html",
+    "tokens": "downloads/tokens.json",
+    "tokenStyles": "downloads/tokens.css",
+    "fonts": "downloads/fonts.css",
+    "rules": "docs/design-system.md",
+    "curatedAssets": "downloads/manifest.json",
+    "downloader": "scripts/download-kit.py"
+  },
+  "templates": [
+    {
+      "id": "club-event",
+      "title": "Афиша мероприятия клуба",
+      "category": "club",
+      "kind": "template",
+      "href": "index.html#club-event",
+      "source": {
+        "path": "index.html",
+        "selector": "#template-club-event",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css",
+        "club.css"
+      ],
+      "documentation": "docs/club-templates.md",
+      "labels": [
+        "Ниночка · Кинопоказ",
+        "Дегустация грузинских вин",
+        "Вечеринка-открытие Салона",
+        "Король белых вин",
+        "Концерт EDVA",
+        "Воркшоп по бумажному коллажу"
+      ]
+    },
+    {
+      "id": "proust",
+      "title": "Жизнь замечательных людей",
+      "category": "journal",
+      "kind": "template",
+      "href": "index.html#proust",
+      "source": {
+        "path": "index.html",
+        "selector": "#template-proust",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css"
+      ],
+      "documentation": "docs/design-system.md",
+      "labels": [
+        "Мадленка, постель и Париж",
+        "Парижская жизнь",
+        "Роман из постели",
+        "Прустовская мадленка",
+        "Книга и мадленка",
+        "Места Пруста в Париже"
+      ]
+    },
+    {
+      "id": "places",
+      "title": "Подборка мест",
+      "category": "journal",
+      "kind": "template",
+      "href": "index.html#places",
+      "source": {
+        "path": "index.html",
+        "selector": "#template-places",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css"
+      ],
+      "documentation": "docs/design-system.md",
+      "labels": [
+        "Обложка · Хачапури",
+        "Обложка · Грузинский стол",
+        "Обложка · Хинкали",
+        "Горизонтальное фото · Tbilissi",
+        "Фото на весь слайд · Tbilissi",
+        "Овальное фото · Tbilissi",
+        "Без фото · Голубой",
+        "Без фото · Кремовый",
+        "Без фото · Розовый",
+        "Без фото · Оливковый",
+        "Без фото · Коричневый",
+        "Без фото · Оранжевый"
+      ]
+    },
+    {
+      "id": "event",
+      "title": "Афиша события",
+      "category": "journal",
+      "kind": "template",
+      "href": "index.html#event",
+      "source": {
+        "path": "index.html",
+        "selector": "#template-event",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css",
+        "event.css"
+      ],
+      "documentation": "docs/event-template.md",
+      "labels": [
+        "Обложка · Чистый фон",
+        "Обложка · Фото",
+        "Готовая афиша · Концерт",
+        "Готовая афиша · Стендап",
+        "Готовая афиша · Розыгрыш"
+      ]
+    },
+    {
+      "id": "expert",
+      "title": "Пост про эксперта",
+      "category": "bureau",
+      "kind": "template",
+      "href": "index.html#expert",
+      "source": {
+        "path": "index.html",
+        "selector": "#template-expert",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css",
+        "expert.css"
+      ],
+      "documentation": "docs/expert-template.md",
+      "labels": [
+        "Обложка эксперта",
+        "Вопросы к читателю",
+        "Стратегическая сессия",
+        "Обо мне",
+        "Контакты"
+      ]
+    },
+    {
+      "id": "club-salon",
+      "title": "Салон — образец стиля",
+      "category": "club",
+      "kind": "reference",
+      "href": "index.html#club-salon",
+      "source": {
+        "path": "index.html",
+        "selector": "#reference-club-salon",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css",
+        "club.css"
+      ],
+      "documentation": "docs/club-templates.md",
+      "labels": [
+        "Обложка и типографика",
+        "Приглашение на встречи",
+        "Партнёр и программа"
+      ]
+    },
+    {
+      "id": "intro",
+      "title": "Интро-пост",
+      "category": "general",
+      "kind": "reference",
+      "href": "index.html#intro",
+      "source": {
+        "path": "index.html",
+        "selector": "#reference-intro",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css",
+        "intro.css"
+      ],
+      "documentation": "docs/intro-reference.md",
+      "labels": [
+        "Сарафан · Жизнь во Франции",
+        "Журнал · Открывать город",
+        "Бюро · Справляться с жизнью",
+        "Клуб · Находить своих",
+        "Сарафан Салон",
+        "Рекламная площадка",
+        "Становитесь частью сообщества"
+      ]
+    },
+    {
+      "id": "transition",
+      "title": "Переходный пост",
+      "category": "general",
+      "kind": "reference",
+      "href": "index.html#transition",
+      "source": {
+        "path": "index.html",
+        "selector": "#reference-transition",
+        "cardSelector": ".ig-card"
+      },
+      "styles": [
+        "downloads/tokens.css",
+        "downloads/fonts.css",
+        "cards.css",
+        "transition.css"
+      ],
+      "documentation": "docs/transition-reference.md",
+      "labels": [
+        "В Сарафане скоро всё изменится",
+        "История проекта · Варя и Юля",
+        "Юля · Новые направления",
+        "Варя · Новая глава Сарафана",
+        "Часть общей истории",
+        "Спасибо, что вы с нами"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "salon-november-09-15",
+      "title": "Сарафан Салон · 9–15 ноября",
+      "description": "Сарафан Салон · 9–15 ноября\n\nНа этой неделе встречаемся за кофе, говорим о театре и дизайне, поём, вышиваем, играем и пробуем новое.\n\n10/11 · вторник, 10:00–12:00 — Открытый кофе-нетворкинг · Вход свободный\n10/11 · вторник, 19:30 — Драматург и власть · €10\n11/11 · среда, весь день — Дизайн-приёмная и кастом-станция Chichis\n12/11 · четверг, 10:00–12:00 — Искусство сервировки · €30\n12/11 · четверг, 19:30–20:00 — Квартирник Димы Макарова · €20\n13/11 · пятница, 10:00–12:00 — Искусство радоваться · €30\n14/11 · суббота, 15:00–18:00 — Вышивка с кутюрье Dior · €50\n14/11 · суббота, 19:00 — Винное казино · €20\n15/11 · воскресенье, 14:00–16:30 — Керамическая мастерская · €70\n15/11 · воскресенье, 17:00 — Книжный своп · Вход свободный\n\n11 ноября — два события в одном от дизайн-дуэта Chichis: Артёма Зайцева и Насти Самохиной.\n\nПриносите свои дизайн-вопросы о вашем бизнесе, блоге или проекте: посоветуем, что к чему, а может, придумаем концептуальные решения прямо на месте. Параллельно будем делать кастом-патчи на вашу одежду с нашими иллюстрациями.\n\n66 rue Notre-Dame de Nazareth, 75003 Paris\nПрограмма и запись: https://sarafan-buro.com/sarafansalon",
+      "source": "https://sarafan-buro.com/sarafansalon",
+      "cards": [
+        {
+          "type": "image",
+          "src": "posts/salon-november-09-15/01.png",
+          "alt": "Сарафан Салон · программа 9–15 ноября",
+          "cover": {
+            "initial": {
+              "palette": "blue",
+              "layout": "flow"
+            },
+            "palettes": [
+              {
+                "id": "blue",
+                "name": "Холодный акцент"
+              },
+              {
+                "id": "pink",
+                "name": "Тёплый акцент"
+              },
+              {
+                "id": "cream",
+                "name": "Смешанные"
+              }
+            ],
+            "layouts": [
+              {
+                "id": "flow",
+                "name": "Свободно"
+              },
+              {
+                "id": "orbit",
+                "name": "По кругу"
+              }
+            ],
+            "variants": {
+              "blue-flow": "posts/salon-november-09-15/covers/blue-flow.png",
+              "blue-orbit": "posts/salon-november-09-15/covers/blue-orbit.png",
+              "pink-flow": "posts/salon-november-09-15/covers/pink-flow.png",
+              "pink-orbit": "posts/salon-november-09-15/covers/pink-orbit.png",
+              "cream-flow": "posts/salon-november-09-15/covers/cream-flow.png",
+              "cream-orbit": "posts/salon-november-09-15/covers/cream-orbit.png"
+            }
+          }
+        },
+        {
+          "type": "image",
+          "src": "posts/salon-november-09-15/02.png",
+          "alt": "10/11 · Открытый кофе-нетворкинг",
+          "edit": {
+            "image": "posts/salon-november-09-15/images/02.jpeg",
+            "overlay": "posts/salon-november-09-15/layers/02.png",
+            "background": "#FBEED2",
+            "matte": "#ffffff",
+            "slot": {
+              "x": 34,
+              "y": 260,
+              "width": 1012,
+              "height": 476
+            },
+            "initial": {
+              "x": 0.5,
+              "y": 0.5,
+              "zoom": 1,
+              "fit": "cover"
+            }
+          }
+        },
+        {
+          "type": "image",
+          "src": "posts/salon-november-09-15/03.png",
+          "alt": "10/11 · Драматург и власть",
+          "edit": {
+            "image": "posts/salon-november-09-15/images/03.jpeg",
+            "overlay": "posts/salon-november-09-15/layers/03.png",
+            "background": "#91945B",
+            "matte": "#ffffff",
+            "slot": {
+              "x": 34,
+              "y": 260,
+              "width": 1012,
+              "height": 476
+            },
+            "initial": {
+              "x": 0.5,
+              "y": 0.25,
+              "zoom": 1,
+              "fit": "cover"
+            }
+          }
+        },
+        {
+          "type": "image",
+          "src": "posts/salon-november-09-15/04.png",
+          "alt": "11/11 · Дизайн-приёмная и кастом-станция"
+        },
+        {
+          "type": "image",
+          "src": "posts/salon-november-09-15/05.png",
+          "alt": "12/11 · Искусство сервировки",
+          "edit": {
+            "image": "posts/salon-november-09-15/images/05.png",
+            "overlay": "posts/salon-november-09-15/layers/05.png",
+            "background": "#E19A9B",
+            "matte": "#ffffff",
+            "slot": {
+              "x": 34,
+              "y": 260,
+              "width": 1012,
+              "height": 476
+            },
+            "initial": {
+              "x": 0.5,
+              "y": 0.08,
+              "zoom": 1,
+              "fit": "cover"
+            }
+          }
+        },
+        {
+          "type": "image",
+          "src": "posts/salon-november-09-15/06.png",
+          "alt": "12/11 · Квартирник Димы Макарова",
+          "edit": {
+            "image": "posts/salon-november-09-15/images/06.jpeg",
+            "overlay": "posts/salon-november-09-15/layers/06.png",
+            "background": "#553D3D",
+            "matte": "#ffffff",
+            "slot": {
+              "x": 34,
+              "y": 260,
+              "width": 1012,
+              "height": 476
+            },
+            "initial": {
+              "x": 0.5,
+              "y": 0.52,
+              "zoom": 1,
+              "fit": "cover"
+            }
+          }
+        },
+        {
+          "type": "image",
+          "src": "posts/salon-november-09-15/07.png",
+          "alt": "13/11 · Искусство радоваться",
+          "edit": {
+            "image": "posts/salon-november-09-15/images/07.jpeg",
+            "overlay": "posts/salon-november-09-15/layers/07.png",
+            "background": "#A9C9DF",
+            "matte": "#ffffff",
+            "slot": {
+              "x": 34,
+              "y": 260,
+              "width": 1012,
+              "height": 476
+            },
+            "initial": {
+              "x": 0.5,
+              "y": 0.34,
+              "zoom": 1,
+              "fit": "cover"
+            }
+          }
+        },
+        {
+          "type": "image",
+          "src": "posts/salon-november-09-15/08.png",
+          "alt": "14/11 · Вышивка с кутюрье Dior",
+          "edit": {
+            "image": "posts/salon-november-09-15/images/08.jpeg",
+            "overlay": "posts/salon-november-09-15/layers/08.png",
+            "background": "#FBEED2",
+            "matte": "#f7f4e9",
+            "slot": {
+              "x": 34,
+              "y": 260,
+              "width": 1012,
+              "height": 476
+            },
+            "initial": {
+              "x": 0.5,
+              "y": 0.5,
+              "zoom": 1,
+              "fit": "contain"
+            }
+          }
+        },
+        {
+          "type": "image",
+          "src": "posts/salon-november-09-15/09.png",
+          "alt": "14/11 · Винное казино",
+          "edit": {
+            "image": "posts/salon-november-09-15/images/09.jpeg",
+            "overlay": "posts/salon-november-09-15/layers/09.png",
+            "background": "#91945B",
+            "matte": "#ffffff",
+            "slot": {
+              "x": 34,
+              "y": 260,
+              "width": 1012,
+              "height": 476
+            },
+            "initial": {
+              "x": 0.5,
+              "y": 0.5,
+              "zoom": 1,
+              "fit": "cover"
+            }
+          }
+        },
+        {
+          "type": "image",
+          "src": "posts/salon-november-09-15/10.png",
+          "alt": "15/11 · Керамическая мастерская",
+          "edit": {
+            "image": "posts/salon-november-09-15/images/10.png",
+            "overlay": "posts/salon-november-09-15/layers/10.png",
+            "background": "#E19A9B",
+            "matte": "#ffffff",
+            "slot": {
+              "x": 34,
+              "y": 260,
+              "width": 1012,
+              "height": 476
+            },
+            "initial": {
+              "x": 0.5,
+              "y": 0.05,
+              "zoom": 1,
+              "fit": "cover"
+            }
+          }
+        },
+        {
+          "type": "image",
+          "src": "posts/salon-november-09-15/11.png",
+          "alt": "15/11 · Книжный своп",
+          "edit": {
+            "image": "posts/salon-november-09-15/images/11.jpeg",
+            "overlay": "posts/salon-november-09-15/layers/11.png",
+            "background": "#FBEED2",
+            "matte": "#ffffff",
+            "slot": {
+              "x": 34,
+              "y": 260,
+              "width": 1012,
+              "height": 476
+            },
+            "initial": {
+              "x": 0.5,
+              "y": 0.5,
+              "zoom": 1,
+              "fit": "cover"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ingrid-aromatherapy",
+      "title": "Ингрид · натуропат и ароматерапевт",
+      "description": "Знакомьтесь: Ингрид Гекьер — натуропат, арома- и ольфактотерапевт. Более 20 лет работает с эфирными маслами во Франции.\n\nИнгрид ведёт практику в Париже и Версале, преподаёт ароматерапию и делится знаниями о применении эфирных масел.\n\nСреди её направлений — практические курсы, работа с ароматами и поездки к местам выращивания эфиромасличных растений.\n\nПодойдёт тем, кто хочет разобраться в ароматерапии, научиться выбирать эфирные масла и познакомиться с французским подходом к их применению.\n\nКурсы и подробности: https://www.aroma.education/",
+      "cards": [
+        {
+          "type": "html",
+          "src": "posts/ingrid-aromatherapy/01.html",
+          "alt": "Ингрид Гекьер · знакомство"
+        },
+        {
+          "type": "html",
+          "src": "posts/ingrid-aromatherapy/02.html",
+          "alt": "Вопросы об ароматерапии"
+        },
+        {
+          "type": "html",
+          "src": "posts/ingrid-aromatherapy/03.html",
+          "alt": "Практика, курсы и поездки"
+        },
+        {
+          "type": "html",
+          "src": "posts/ingrid-aromatherapy/04.html",
+          "alt": "Об эксперте"
+        },
+        {
+          "type": "html",
+          "src": "posts/ingrid-aromatherapy/05.html",
+          "alt": "Контакты и обучение"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "mediaType": "text/markdown",
+      "bytes": 3349,
+      "sha256": "834aae75d44ddac84e82a1ddffa509963c4b56eb01462abf312d3360e92e53a6"
+    },
+    {
+      "path": "README.md",
+      "mediaType": "text/markdown",
+      "bytes": 16239,
+      "sha256": "3a7cf1eadc2f8b8cddfcd437ffc36764d9412a4319da3fff5b250621d3c34a1a"
+    },
+    {
+      "path": "agents.html",
+      "mediaType": "text/html",
+      "bytes": 10982,
+      "sha256": "dda93892246bb1e007efcd7b3e624dde85b162417085004b1f9e8bad0696d79d"
+    },
+    {
+      "path": "assets/club-5535-ellipse30.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "b49ee1f74f95c5a1c16ccfaa9eb9ce2b79c90767ce48b913c5f625cb148eb3ad"
+    },
+    {
+      "path": "assets/club-5535-ellipse31.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "c8d4d7ef802d3ce84e14d8eaf31e14f8a1b0b2163cf2ab47ce3285be3724d79d"
+    },
+    {
+      "path": "assets/club-5535-ellipse32.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "cd8c42a20daac6728cccc4f22dd33db7ed02554a99043c7a960fb32c60416780"
+    },
+    {
+      "path": "assets/club-5535-ellipse33.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "277f4c78ebd177c5fce21f7a8180c9aba8730e26ec9d8aacd761597503a062c6"
+    },
+    {
+      "path": "assets/club-5535-ellipse34.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "23a55102b06f4ac64df6694d4291275bbd665d298510a9438cfe4375951a7c14"
+    },
+    {
+      "path": "assets/club-5535-ellipse35.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "38df07fc726617a0bac7a6ca4a3b408b7bdfd0b40f1d1788daf1814be6475d26"
+    },
+    {
+      "path": "assets/club-5535-ellipse36.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "c89d39674cd87aae4e773f03ce99fcfff7af3e39380ab39694fd79a951d40a35"
+    },
+    {
+      "path": "assets/club-5535-ellipse37.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "3a0052736de7d30bdc74263f3925bbca4b2c8f9e972402fd7203d9d2f0cf1ce2"
+    },
+    {
+      "path": "assets/club-5535-group93.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 139943,
+      "sha256": "99ed81c8664133bf6a23b1d521615ccce9501395439bddde806c4fe7b27a036f"
+    },
+    {
+      "path": "assets/club-5535-screenshot20261027at1436031.png",
+      "mediaType": "image/png",
+      "bytes": 160062,
+      "sha256": "c82c530838f9036702858d5b1d5d7c29f0be1ff90048aa25cde78659b67dfd23"
+    },
+    {
+      "path": "assets/club-5874-ellipse17.png",
+      "mediaType": "image/png",
+      "bytes": 1872575,
+      "sha256": "d5f52181211ca903497b1bbed5ba84d868ed72cb0b7ce34a00fb2b39c5726a25"
+    },
+    {
+      "path": "assets/club-5877-telegramcloudphotosize45972135932305543156y1.png",
+      "mediaType": "image/png",
+      "bytes": 85868,
+      "sha256": "b4081f74778072dd8a06235c8212b476ee2dd884195de957527b3b02df156d4a"
+    },
+    {
+      "path": "assets/club-5883-ellipse17.png",
+      "mediaType": "image/png",
+      "bytes": 683683,
+      "sha256": "86f3daea473af6c8e61ddcba3b39db5d283385829bdc5258635d514fbd8ac1c1"
+    },
+    {
+      "path": "assets/club-5883-group93.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 139730,
+      "sha256": "317e150b403313cc506868ea1b852803f213a37c92b146c6d09dbe64792598f1"
+    },
+    {
+      "path": "assets/club-5883-rectangle71.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 423,
+      "sha256": "55d4449c28cd1f513a38b70bd89610ef54c1e4cf364b50217393288e5dbbf8f6"
+    },
+    {
+      "path": "assets/club-6218-ellipse17.png",
+      "mediaType": "image/png",
+      "bytes": 1367750,
+      "sha256": "ff11b7718f167bdb14b586a2e61951d9ee8c70a80b0fc349726083d5b10363b7"
+    },
+    {
+      "path": "assets/club-6218-group93.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 139747,
+      "sha256": "ee1b42f052d47e2799e7a8dcad43ea6e85a5abd69bfedda3070bf632c340d534"
+    },
+    {
+      "path": "assets/club-6218-rectangle71.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 423,
+      "sha256": "55d4449c28cd1f513a38b70bd89610ef54c1e4cf364b50217393288e5dbbf8f6"
+    },
+    {
+      "path": "assets/club-6554-ellipse17.png",
+      "mediaType": "image/png",
+      "bytes": 3232536,
+      "sha256": "34040caae920aa5cb84636d0f78c63c10ce1b1e8dc4ebb36f6e0d27c23e8833e"
+    },
+    {
+      "path": "assets/club-6554-group93.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 139729,
+      "sha256": "563c1039fc8f85807dca6513b90028fa53ca1b03f273c945cf8b8519eac338dc"
+    },
+    {
+      "path": "assets/club-6554-rectangle71.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 423,
+      "sha256": "55d4449c28cd1f513a38b70bd89610ef54c1e4cf364b50217393288e5dbbf8f6"
+    },
+    {
+      "path": "assets/club-6889-ellipse17.png",
+      "mediaType": "image/png",
+      "bytes": 3144005,
+      "sha256": "4c07279d2b85beb731c6fe1de37a2d2816b5ab9ec7b0821b940840806e98ecdb"
+    },
+    {
+      "path": "assets/club-6889-group93.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 139729,
+      "sha256": "563c1039fc8f85807dca6513b90028fa53ca1b03f273c945cf8b8519eac338dc"
+    },
+    {
+      "path": "assets/club-6889-rectangle71.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 423,
+      "sha256": "55d4449c28cd1f513a38b70bd89610ef54c1e4cf364b50217393288e5dbbf8f6"
+    },
+    {
+      "path": "assets/club-7225-ellipse17.png",
+      "mediaType": "image/png",
+      "bytes": 2689351,
+      "sha256": "a17db340de18d54d91db44821284619d1b6909e5c4274e89491dc9e9b05fbed8"
+    },
+    {
+      "path": "assets/club-7225-group93.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 139785,
+      "sha256": "4fb42d62107467fc1310d0d1770fe604e41ac9dbd64c218ac36872e1402653d7"
+    },
+    {
+      "path": "assets/club-7225-rectangle71.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 423,
+      "sha256": "3ff9d8f92dcff492710f5a966939f2798732d4ce7227dfbfa349b0fe27d0a177"
+    },
+    {
+      "path": "assets/club-7560-ellipse17.png",
+      "mediaType": "image/png",
+      "bytes": 3291260,
+      "sha256": "d6fa1033575d2150213a5f383fd464014e83f3fbac3ec20c609841db25c8206d"
+    },
+    {
+      "path": "assets/club-7560-group93.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 139785,
+      "sha256": "4fb42d62107467fc1310d0d1770fe604e41ac9dbd64c218ac36872e1402653d7"
+    },
+    {
+      "path": "assets/club-7560-rectangle71.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 423,
+      "sha256": "55d4449c28cd1f513a38b70bd89610ef54c1e4cf364b50217393288e5dbbf8f6"
+    },
+    {
+      "path": "assets/cofo-cinema1909-regular.otf",
+      "mediaType": "font/otf",
+      "bytes": 60236,
+      "sha256": "f0071d058ddc230c3bdee948a3dbd54a4737a5c9f27df9b167aee3144d254154"
+    },
+    {
+      "path": "assets/eb-garamond-bold.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 392040,
+      "sha256": "40b4eb8a3c92f651728bc285ac3acacec1005ef5436cf33a337ab5ffe86daf29"
+    },
+    {
+      "path": "assets/eb-garamond-medium-italic.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 341640,
+      "sha256": "1051266691bf470e46920bb64e81c901cf82111caa81ff45fcbe50e2bccb274e"
+    },
+    {
+      "path": "assets/eb-garamond-medium.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 392064,
+      "sha256": "45fad23db0ff6cc8f2ce5a6f9802d499e8ab737c039a7944a6f2f617d224af14"
+    },
+    {
+      "path": "assets/eb-garamond-regular.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 389868,
+      "sha256": "934aa932b4bc1a75d883f7c3d4d5bbc8278e5e7fcc96d5440bbffd61050cf958"
+    },
+    {
+      "path": "assets/eb-garamond-semibold-italic.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 467016,
+      "sha256": "def54111c77ca6eb224f07742fd68604ccf0c08699616c0c34f8a1e49a0ae4aa"
+    },
+    {
+      "path": "assets/eb-garamond-semibold.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 392328,
+      "sha256": "b536adfa0f5746cfbd148d8a1a669540366edef2c85c4b49450798a037bd928c"
+    },
+    {
+      "path": "assets/event-concert-poster.png",
+      "mediaType": "image/png",
+      "bytes": 466760,
+      "sha256": "53414bf0bfc613bf1b5eeba601ae04c2f0b86a90b9c694da382b6444926cdd20"
+    },
+    {
+      "path": "assets/event-giveaway-poster.png",
+      "mediaType": "image/png",
+      "bytes": 396932,
+      "sha256": "bfcd4634b53ee25576cace027144cb90322a4aba455d8ee8a9e3e399c331d9c1"
+    },
+    {
+      "path": "assets/event-khavtan-portrait.png",
+      "mediaType": "image/png",
+      "bytes": 248803,
+      "sha256": "34611a96497a02612e8813c6dd05b6ef634dcca0c1c9fa5e289eb18fdc5ff905"
+    },
+    {
+      "path": "assets/event-ribbon.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 290,
+      "sha256": "0c8c335449e406328d5081880aeb50b7f965898699e56fc0fff689961550f024"
+    },
+    {
+      "path": "assets/event-standup-poster.png",
+      "mediaType": "image/png",
+      "bytes": 238826,
+      "sha256": "ea500737d27aaf5dad1b75a41aa09991dab425c8da91ac701a06589bc6bacf7b"
+    },
+    {
+      "path": "assets/expert-about-layer-1.png",
+      "mediaType": "image/png",
+      "bytes": 149125,
+      "sha256": "2c65a762c4dea27b449f4897a2057d073d1bed522245e74e2558b67818a07078"
+    },
+    {
+      "path": "assets/expert-about-layer-2.png",
+      "mediaType": "image/png",
+      "bytes": 1218554,
+      "sha256": "569c6680bcc40a81d94deb6c1ecbc037dc20faf6ed797564023f512b436c9f0e"
+    },
+    {
+      "path": "assets/expert-about-layer-3.png",
+      "mediaType": "image/png",
+      "bytes": 186275,
+      "sha256": "7b7a03b61a5a1f7ac404f0d86da85deab0e893bd17b73867383352ea692efc1c"
+    },
+    {
+      "path": "assets/expert-about-layer-4.png",
+      "mediaType": "image/png",
+      "bytes": 92719,
+      "sha256": "6e3cce886ad10736cebe7ce55618b2b4071fb1abde0d1282bb44a610bd8a6cd6"
+    },
+    {
+      "path": "assets/expert-about-logo.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1522,
+      "sha256": "dd996d150916e465a3b16b370ca8012be26f223aaf924e6c918211b10dcd1fe5"
+    },
+    {
+      "path": "assets/expert-about-portrait.png",
+      "mediaType": "image/png",
+      "bytes": 133560,
+      "sha256": "8d1f47d7be4a8bb824d1ecedd1385f1aa5793345b1367de9f8c6f562b120fa8f"
+    },
+    {
+      "path": "assets/expert-about-rule.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2098,
+      "sha256": "f2a09a2e48a885f31189d7c01701f6600a8826b9094a2469a0d78503b2eb45c6"
+    },
+    {
+      "path": "assets/expert-contact-logo.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1522,
+      "sha256": "597f06059699bef46ddc2dc889e739cac03877ffbda7ddeb3056dbbcebf26b57"
+    },
+    {
+      "path": "assets/expert-contact-rule.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2098,
+      "sha256": "0e9d55ecb5912f6f98bfd90c75c7c6dcfc1a8cfa707815719d85e8979ee8f9d6"
+    },
+    {
+      "path": "assets/expert-cover-mask.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 286,
+      "sha256": "1b74a2dccdf2823c19e3cbb23891ed23f8716fbec129fc4ffb455abaa374b2b8"
+    },
+    {
+      "path": "assets/expert-cover-ovals.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1242,
+      "sha256": "7526d13c78c2fa234d8a712fe85a7dacf93f60a3a8a7f5017a8039cc2b5c624c"
+    },
+    {
+      "path": "assets/expert-cover-rule.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2098,
+      "sha256": "0e9d55ecb5912f6f98bfd90c75c7c6dcfc1a8cfa707815719d85e8979ee8f9d6"
+    },
+    {
+      "path": "assets/expert-cover-underlay.png",
+      "mediaType": "image/png",
+      "bytes": 353914,
+      "sha256": "ca00f8cf008121fa781011fe697368d2c30f080cea5f161f51fa4a4dd0ebbf95"
+    },
+    {
+      "path": "assets/expert-geist-OFL.txt",
+      "mediaType": "text/plain",
+      "bytes": 4387,
+      "sha256": "1781d2806a07d91c4edf4740b88449fab7d0eadad53f7c351b94cd4d4eb8c00f"
+    },
+    {
+      "path": "assets/expert-geist-v1.6.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 168532,
+      "sha256": "a0d3d05d83b39a89429962aef900bb25f4789160f5d635c101d0a6d67b5d974a"
+    },
+    {
+      "path": "assets/expert-portrait.png",
+      "mediaType": "image/png",
+      "bytes": 133560,
+      "sha256": "8d1f47d7be4a8bb824d1ecedd1385f1aa5793345b1367de9f8c6f562b120fa8f"
+    },
+    {
+      "path": "assets/expert-questions-logo.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1522,
+      "sha256": "17df9e5c274447a04e4d6a29d15b4a1e4fbd652d1bbd098486b1ed4d4c5f19dd"
+    },
+    {
+      "path": "assets/expert-questions-rule.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2098,
+      "sha256": "f2a09a2e48a885f31189d7c01701f6600a8826b9094a2469a0d78503b2eb45c6"
+    },
+    {
+      "path": "assets/expert-ribbon.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 321,
+      "sha256": "9786f7bb33820c1036519574522845c13707931180edfe2fc6be068c905609aa"
+    },
+    {
+      "path": "assets/expert-session-logo.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1522,
+      "sha256": "dd996d150916e465a3b16b370ca8012be26f223aaf924e6c918211b10dcd1fe5"
+    },
+    {
+      "path": "assets/expert-session-photo.png",
+      "mediaType": "image/png",
+      "bytes": 92719,
+      "sha256": "6e3cce886ad10736cebe7ce55618b2b4071fb1abde0d1282bb44a610bd8a6cd6"
+    },
+    {
+      "path": "assets/expert-session-rule.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2098,
+      "sha256": "0e9d55ecb5912f6f98bfd90c75c7c6dcfc1a8cfa707815719d85e8979ee8f9d6"
+    },
+    {
+      "path": "assets/geist-bold.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 72984,
+      "sha256": "1a9874b3be0fc168692a3d2327bccb4d28835653d3b91537a755296a467a83e3"
+    },
+    {
+      "path": "assets/geist-regular.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 72916,
+      "sha256": "ccce59465ae5c61930ada5453834f60500fbd95084d85db63e0e65fad0125455"
+    },
+    {
+      "path": "assets/geist-semibold.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 73048,
+      "sha256": "7171f481b121803d007f5c6c76cd9988c0d41cce4202db9a18dff9945505d36d"
+    },
+    {
+      "path": "assets/inter-regular.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 324820,
+      "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba"
+    },
+    {
+      "path": "assets/intro-1-group58.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 5267,
+      "sha256": "c4b08217e000f23cbdb310fb40e1059cbc0212cd8772bb50f515228a9f4ed414"
+    },
+    {
+      "path": "assets/intro-1-group59.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 6951,
+      "sha256": "500d29051b6e3873724297e2efa2b91f366e601be7553fefed7375d1be071188"
+    },
+    {
+      "path": "assets/intro-1-group60.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 8646,
+      "sha256": "132b33831797628e71fc4b3ea83e38effc51f3bc75efba99704ed1e247368d9d"
+    },
+    {
+      "path": "assets/intro-1-group61.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 10314,
+      "sha256": "d93c3bb171d9b7680469d06b8af52f8f960c6fd6165868066d83a2562ebcad2b"
+    },
+    {
+      "path": "assets/intro-1-group62.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 11956,
+      "sha256": "aa308dd39ab55a82aa726b81ed5733e08b0a3e30b5d2a361e2bc6d0188ffd67e"
+    },
+    {
+      "path": "assets/intro-1-group63.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 10295,
+      "sha256": "74c87179301807d55f8e9594ca136f14a65bc263a30d55d030792cc840b7063e"
+    },
+    {
+      "path": "assets/intro-1-group65.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 13684,
+      "sha256": "6e00df272d61990177de942b2d4d2ea3e312f9f91fdbc5fd78e8f54e97810edd"
+    },
+    {
+      "path": "assets/intro-1-group66.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 13644,
+      "sha256": "ac26793af92cf511406c1d02cacecf3a6ba0bff29889f55853606b074079d47c"
+    },
+    {
+      "path": "assets/intro-1-group67.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 8647,
+      "sha256": "c68542504b8be7a7f58a5809f1a8db9efbcf2d5692a2e2e61affa38fd667eb23"
+    },
+    {
+      "path": "assets/intro-1-group68.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 3587,
+      "sha256": "af32fa9211f9eb9318bcd638ec0f47da96d66d1f9b670690686cbc8a2b615ea7"
+    },
+    {
+      "path": "assets/intro-1-group69.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 12026,
+      "sha256": "92e5272cf48d21f51d756e2cb60051b97cb3c7924460ce80b7798c421bbeb600"
+    },
+    {
+      "path": "assets/intro-1-image79.png",
+      "mediaType": "image/png",
+      "bytes": 19412178,
+      "sha256": "d4a074cb3858eb5c851db78f8d4953fbb72ee5c45514352f6ba5ac8761b97ce4"
+    },
+    {
+      "path": "assets/intro-2-ellipse17.png",
+      "mediaType": "image/png",
+      "bytes": 1462162,
+      "sha256": "b9987a8e9392a8893d5e78ec290f278035f92ed77041e8c4407032a24f772336"
+    },
+    {
+      "path": "assets/intro-2-rectangle72.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 262,
+      "sha256": "9c79b482c8926c38c4812e866c5ffadbdacc0c567c8d9d2305c10b4081dbed50"
+    },
+    {
+      "path": "assets/intro-2-vector.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 5745,
+      "sha256": "d1ab92334b326652dc0685ddcf2a9d04a6610e7c9bb877edcdaae79a3aa99144"
+    },
+    {
+      "path": "assets/intro-3-ellipse17.png",
+      "mediaType": "image/png",
+      "bytes": 2227605,
+      "sha256": "4f4a0bcbd226ed2a67759534d2a2e0bd5acffdb4357839107a0681d4ebffc5c8"
+    },
+    {
+      "path": "assets/intro-3-group82.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1522,
+      "sha256": "17df9e5c274447a04e4d6a29d15b4a1e4fbd652d1bbd098486b1ed4d4c5f19dd"
+    },
+    {
+      "path": "assets/intro-3-vector.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 5734,
+      "sha256": "75f8923f815d2ebae7904b011e8771b9995179c7c691854e67128d4cc8cc1dff"
+    },
+    {
+      "path": "assets/intro-3811-ellipse28.png",
+      "mediaType": "image/png",
+      "bytes": 428762,
+      "sha256": "c4751fd211cb3f5792877d0156fd0faf9aba655d15a135ab00ded962ba61ecf8"
+    },
+    {
+      "path": "assets/intro-3812-ellipse21.png",
+      "mediaType": "image/png",
+      "bytes": 1435134,
+      "sha256": "089b8c0256567e20ad993d1fdf794b340566fbf431515b1425f7b3c6f4a1f9ef"
+    },
+    {
+      "path": "assets/intro-3812-image75.png",
+      "mediaType": "image/png",
+      "bytes": 5012497,
+      "sha256": "4d91c9a45d9e61a78065135960ab037bf83bf7c7c77d467df9aa6fbab379d58d"
+    },
+    {
+      "path": "assets/intro-3815-ellipse20.png",
+      "mediaType": "image/png",
+      "bytes": 1190956,
+      "sha256": "debebd24764b01b39a1a5ca0ca34f51509fc2dfdb6b55192e1181eccec58819d"
+    },
+    {
+      "path": "assets/intro-3815-ellipse21.png",
+      "mediaType": "image/png",
+      "bytes": 1435134,
+      "sha256": "089b8c0256567e20ad993d1fdf794b340566fbf431515b1425f7b3c6f4a1f9ef"
+    },
+    {
+      "path": "assets/intro-3815-image75.png",
+      "mediaType": "image/png",
+      "bytes": 5012497,
+      "sha256": "4d91c9a45d9e61a78065135960ab037bf83bf7c7c77d467df9aa6fbab379d58d"
+    },
+    {
+      "path": "assets/intro-3819-ellipse21.png",
+      "mediaType": "image/png",
+      "bytes": 1435134,
+      "sha256": "089b8c0256567e20ad993d1fdf794b340566fbf431515b1425f7b3c6f4a1f9ef"
+    },
+    {
+      "path": "assets/intro-3819-ellipse24.png",
+      "mediaType": "image/png",
+      "bytes": 681897,
+      "sha256": "10e986517178d5f9c545ad4a1522ba3e58acec5ccc6bf4d81583977d7f19f1e3"
+    },
+    {
+      "path": "assets/intro-3819-image75.png",
+      "mediaType": "image/png",
+      "bytes": 5012497,
+      "sha256": "4d91c9a45d9e61a78065135960ab037bf83bf7c7c77d467df9aa6fbab379d58d"
+    },
+    {
+      "path": "assets/intro-3823-ellipse22.png",
+      "mediaType": "image/png",
+      "bytes": 445003,
+      "sha256": "4aba44d881052969156a189e75652e37a78799b85e4ff0cbc74d351d5979e28b"
+    },
+    {
+      "path": "assets/intro-3824-ellipse27.png",
+      "mediaType": "image/png",
+      "bytes": 380603,
+      "sha256": "2385721ce63655a207d833268fb8a78b991493e111229ebf4b14fe03d78077e0"
+    },
+    {
+      "path": "assets/intro-3826-logo.png",
+      "mediaType": "image/png",
+      "bytes": 16057,
+      "sha256": "e44a155375d3d0bc34787d67f0a589066f8d4dc44afb8d7c999d102e628076bf"
+    },
+    {
+      "path": "assets/intro-4875-image74.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 272,
+      "sha256": "f376d1eb371a6b5be4e18579a2d5b012615d3ff190fa70992101b1a00ce4e39b"
+    },
+    {
+      "path": "assets/intro-4875-image75.png",
+      "mediaType": "image/png",
+      "bytes": 1292542,
+      "sha256": "2752fdf20a137805249a1af82f7c104c56426913d08fb20ab27c322a9fc8d26b"
+    },
+    {
+      "path": "assets/intro-4875-image76.png",
+      "mediaType": "image/png",
+      "bytes": 2358189,
+      "sha256": "183a6400196b18749126e2919805c7f9ecbee506d51acad6f7393420aa11542d"
+    },
+    {
+      "path": "assets/intro-4875-original.png",
+      "mediaType": "image/png",
+      "bytes": 409826,
+      "sha256": "61db64a0dbe20117d1a4acb0104333a144d6ea1e4e4c8f65a781a3f7a97b5af3"
+    },
+    {
+      "path": "assets/intro-4879-rectangle102.png",
+      "mediaType": "image/png",
+      "bytes": 918220,
+      "sha256": "43c09afe066c5b98bbe1db7b525a0c8c3e8de2edb7f0861555b0f12481e93a13"
+    },
+    {
+      "path": "assets/intro-4880-image74.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 272,
+      "sha256": "f376d1eb371a6b5be4e18579a2d5b012615d3ff190fa70992101b1a00ce4e39b"
+    },
+    {
+      "path": "assets/intro-4880-image75.png",
+      "mediaType": "image/png",
+      "bytes": 1292542,
+      "sha256": "2752fdf20a137805249a1af82f7c104c56426913d08fb20ab27c322a9fc8d26b"
+    },
+    {
+      "path": "assets/intro-4880-image76.png",
+      "mediaType": "image/png",
+      "bytes": 4596527,
+      "sha256": "fc7814a2a6e039996cf291d4a70f9e222ccd24711b248f155b424c7fe2cac270"
+    },
+    {
+      "path": "assets/intro-4880-original.png",
+      "mediaType": "image/png",
+      "bytes": 115139,
+      "sha256": "14ceba36b7112ed166ad1b97783122f7039ea186264005412f9f62ccf16ce555"
+    },
+    {
+      "path": "assets/intro-4904-ellipse17.png",
+      "mediaType": "image/png",
+      "bytes": 2869245,
+      "sha256": "063c51db64bbdbf70c8aadd6fa97936e9e2a05633a6caa2a6a6e504139bfd375"
+    },
+    {
+      "path": "assets/intro-4905-vector.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 5792,
+      "sha256": "542dd139d77d3d4af0d0fb0b19220dd6e918537ed8420b49e03625ef94085ac6"
+    },
+    {
+      "path": "assets/intro-4910-logo.png",
+      "mediaType": "image/png",
+      "bytes": 13441,
+      "sha256": "ba69517809c5c8b8c907a3ec9f5520183038134d5fb9b9110c868b93944c53f9"
+    },
+    {
+      "path": "assets/intro-7-ellipse17.png",
+      "mediaType": "image/png",
+      "bytes": 2091328,
+      "sha256": "5b41082ef208a124a2d6c046038d3465bf3e4ce6c6fdde0720c7b35c4466c154"
+    },
+    {
+      "path": "assets/intro-7-ellipse18.png",
+      "mediaType": "image/png",
+      "bytes": 2471015,
+      "sha256": "843059294a9741022cc3e5a34be6acfe3c5a2efcc5b22262a5c8ac35c015a495"
+    },
+    {
+      "path": "assets/intro-7-ellipse19.png",
+      "mediaType": "image/png",
+      "bytes": 2240882,
+      "sha256": "e3ad01d1706c597877896a737f7df76891b1e6a054a11588995f3bb9b0d7ec3f"
+    },
+    {
+      "path": "assets/intro-7-group58.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 5227,
+      "sha256": "a8e11fe6eabf2b9523208786daa3e2eef9fd0d693c0b10f1d1915e6147d9f772"
+    },
+    {
+      "path": "assets/intro-7-group59.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 6906,
+      "sha256": "1e58b92dedf0c969b140c446c97fe7211eccca74a2b20430d8d10c6aaac80839"
+    },
+    {
+      "path": "assets/intro-7-group60.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 8606,
+      "sha256": "59976ce66038cfe87e72a5e28f67df4b4117b0ec0c55a06ace5ce3482cca7f3d"
+    },
+    {
+      "path": "assets/intro-7-group61.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 10283,
+      "sha256": "a99b4b93342974e30ca8cef3496dc7a5560d6cc4e92d2f5e605f5a96a2a96725"
+    },
+    {
+      "path": "assets/intro-7-group62.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 12006,
+      "sha256": "14f8763676006ca27139bd63a56a567435a9fff8cc6257791d793e8cc46dfd69"
+    },
+    {
+      "path": "assets/intro-7-group63.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 10322,
+      "sha256": "4fe85dbafa0ec80e4b17593b94a2e18e04b6107553640b65fd0620d3523c11a9"
+    },
+    {
+      "path": "assets/intro-7-group65.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 13674,
+      "sha256": "f0dff81e612f080d0eef9e1a1be328e39aee01540c46fca56895bf0db673347b"
+    },
+    {
+      "path": "assets/intro-7-group66.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 13701,
+      "sha256": "cde77b850e0ab2752643da658baa4b455eebfed617d53ebc2f312305b61accf5"
+    },
+    {
+      "path": "assets/intro-7-group67.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 8604,
+      "sha256": "8ddb56db73e2a8279ec645bc9d5e886f766b636df3524fbc39b6a6ee4add1ab6"
+    },
+    {
+      "path": "assets/intro-7-group68.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 3553,
+      "sha256": "2bb5a689d21ef4abfb94ad43a73305c99c285e97abfe82de32edb068ad929a22"
+    },
+    {
+      "path": "assets/intro-7-group69.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 12007,
+      "sha256": "3c2bebc764aae0ea1705a2c77ecd435c6349112437769cad10c1bd77c4162c67"
+    },
+    {
+      "path": "assets/places-cover-khachapuri.png",
+      "mediaType": "image/png",
+      "bytes": 3761753,
+      "sha256": "f39007dddcd457a2836a7d2baf012a06f7a7b05a45b25f8aa143d808bacc8693"
+    },
+    {
+      "path": "assets/places-cover-khinkali.png",
+      "mediaType": "image/png",
+      "bytes": 1740622,
+      "sha256": "64be823e9132e047c3080cc0a8aa7243d01a8537c275d95e5fd5feec72b01c3b"
+    },
+    {
+      "path": "assets/places-cover-table.png",
+      "mediaType": "image/png",
+      "bytes": 1487954,
+      "sha256": "fa492c3938d738973ad6de94ac83b17415e609dbb97699e56b88631edfc29752"
+    },
+    {
+      "path": "assets/places-khinkali.png",
+      "mediaType": "image/png",
+      "bytes": 1740622,
+      "sha256": "64be823e9132e047c3080cc0a8aa7243d01a8537c275d95e5fd5feec72b01c3b"
+    },
+    {
+      "path": "assets/places-ribbon-vertical.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 290,
+      "sha256": "0c8c335449e406328d5081880aeb50b7f965898699e56fc0fff689961550f024"
+    },
+    {
+      "path": "assets/places-ribbon.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 323,
+      "sha256": "7a459135e4f99e70e6db2458320d58a073d55de4cd7da601eddd4a683fcdb4f7"
+    },
+    {
+      "path": "assets/places-tamada.png",
+      "mediaType": "image/png",
+      "bytes": 900851,
+      "sha256": "89f95b8d2253949b8574e8b7d83368ecf59a1752eb932014692605e5ca8de0db"
+    },
+    {
+      "path": "assets/places-tbilissi-full.png",
+      "mediaType": "image/png",
+      "bytes": 167144,
+      "sha256": "9257d1cc782dd5bf7f36ee212cd0e48c0afef2fbce2309dc9077d20a4d03c6a7"
+    },
+    {
+      "path": "assets/places-tbilissi-landscape.png",
+      "mediaType": "image/png",
+      "bytes": 167144,
+      "sha256": "9257d1cc782dd5bf7f36ee212cd0e48c0afef2fbce2309dc9077d20a4d03c6a7"
+    },
+    {
+      "path": "assets/places-tbilissi-oval.png",
+      "mediaType": "image/png",
+      "bytes": 1455464,
+      "sha256": "6713c0a67ba19fbd6963cb92fc56744fd52d2169773fc32800bbc37b6e8a33f9"
+    },
+    {
+      "path": "assets/places-tbilissi.png",
+      "mediaType": "image/png",
+      "bytes": 167144,
+      "sha256": "9257d1cc782dd5bf7f36ee212cd0e48c0afef2fbce2309dc9077d20a4d03c6a7"
+    },
+    {
+      "path": "assets/proust-bed-cover.png",
+      "mediaType": "image/png",
+      "bytes": 87439,
+      "sha256": "11989291751082deeed5ed68ea63fa468333474aedd8ecc99111016f59ae95d2"
+    },
+    {
+      "path": "assets/proust-bed-underlay.png",
+      "mediaType": "image/png",
+      "bytes": 87439,
+      "sha256": "11989291751082deeed5ed68ea63fa468333474aedd8ecc99111016f59ae95d2"
+    },
+    {
+      "path": "assets/proust-bed.png",
+      "mediaType": "image/png",
+      "bytes": 87439,
+      "sha256": "11989291751082deeed5ed68ea63fa468333474aedd8ecc99111016f59ae95d2"
+    },
+    {
+      "path": "assets/proust-book-madeleine.png",
+      "mediaType": "image/png",
+      "bytes": 1336394,
+      "sha256": "c38f70d2e9608144d3a56240ccd2d7e22141b26f588043f9a6da5ac2979a1167"
+    },
+    {
+      "path": "assets/proust-portrait.png",
+      "mediaType": "image/png",
+      "bytes": 463925,
+      "sha256": "e3a181e2b83ced010e19ffec7c5d5e9f2ef14080651faa5ceac1a0f08cdc91c5"
+    },
+    {
+      "path": "assets/proust-young.png",
+      "mediaType": "image/png",
+      "bytes": 1318833,
+      "sha256": "80e5011fce092d84a50c2b809887dd29a0b6d645cc74a379a79c7342f1b480e3"
+    },
+    {
+      "path": "assets/sarafan-ribbon.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 323,
+      "sha256": "7a459135e4f99e70e6db2458320d58a073d55de4cd7da601eddd4a683fcdb4f7"
+    },
+    {
+      "path": "assets/transition-6289-image202610042121411.png",
+      "mediaType": "image/png",
+      "bytes": 1181995,
+      "sha256": "33111af3e582bf75b2b87372e346fe1bb0ab0bebfd15527829703b8b458110cc"
+    },
+    {
+      "path": "assets/transition-6294-image202610041820251.png",
+      "mediaType": "image/png",
+      "bytes": 393795,
+      "sha256": "7a375cd8b552d75ea2c7bd25f6bab99cc18a29c43487301af918cc3159dc732f"
+    },
+    {
+      "path": "assets/transition-6294-image202610041820252.png",
+      "mediaType": "image/png",
+      "bytes": 770379,
+      "sha256": "9f33518282d5f3aeabce177ad5982fedcbd175647ad8d168c5594360e8932454"
+    },
+    {
+      "path": "assets/transition-6319-image202610041820251.png",
+      "mediaType": "image/png",
+      "bytes": 149125,
+      "sha256": "2c65a762c4dea27b449f4897a2057d073d1bed522245e74e2558b67818a07078"
+    },
+    {
+      "path": "assets/transition-6319-image202610042104491.png",
+      "mediaType": "image/png",
+      "bytes": 1199977,
+      "sha256": "73cea220fdc14bf82531fda132f393bd1c811b19bd0d08e5723768991afe196e"
+    },
+    {
+      "path": "assets/transition-6325-image202610041820251.png",
+      "mediaType": "image/png",
+      "bytes": 149125,
+      "sha256": "2c65a762c4dea27b449f4897a2057d073d1bed522245e74e2558b67818a07078"
+    },
+    {
+      "path": "assets/transition-6325-image202610042104491.png",
+      "mediaType": "image/png",
+      "bytes": 1140765,
+      "sha256": "76aa69568fcd57853e037ff3a58cd3be1f4d06f0a3e9dd6f529d85f4ccec4803"
+    },
+    {
+      "path": "assets/transition-6331-group58.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 5257,
+      "sha256": "e06e11557898de88593278b9fa43ae2b631e36dabc98ba89feed3b81bcf472fe"
+    },
+    {
+      "path": "assets/transition-6331-group59.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 6930,
+      "sha256": "9534ca15993e00f4ad6340402a05ad6ac6ee3cd8eadfbbb373bca6783c2ade55"
+    },
+    {
+      "path": "assets/transition-6331-group60.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 8597,
+      "sha256": "40bc028c11d10c65468bebbe03b285746391dd7a91aae81b959cd1dfccd4bcfb"
+    },
+    {
+      "path": "assets/transition-6331-group61.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 10306,
+      "sha256": "cff5173cd1499c0aeef02ea6a58dc6b8fd339ca4cb24a1ec31753b02b66012c0"
+    },
+    {
+      "path": "assets/transition-6331-group62.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 11994,
+      "sha256": "599770534c9d3a8a08d4f67e5e7923cced6c03ae8dd1895b6898e8a014a1f7d7"
+    },
+    {
+      "path": "assets/transition-6331-group63.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 10277,
+      "sha256": "6cda3a6e8f2856d66f49f163a2ac45e18b8425a91c06d8825bb558c1172d252b"
+    },
+    {
+      "path": "assets/transition-6331-group65.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 13557,
+      "sha256": "f7a5fa81c3e0df8357f9c57eee0581892e9c618bd5c0b4bac2d93f408c3aabe5"
+    },
+    {
+      "path": "assets/transition-6331-group66.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 13629,
+      "sha256": "91f33f0d877131e0a50eb23b2cc7a64573904e99fc18929d0a496b5c7edcdc40"
+    },
+    {
+      "path": "assets/transition-6331-group67.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 8597,
+      "sha256": "aafa0904165558f953ebe27dab674e5c34a7bb7770260805b6f8cc01874f59b2"
+    },
+    {
+      "path": "assets/transition-6331-group68.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 3571,
+      "sha256": "55f0f3d8f8aaff603d4f10a15e09eb92e88fa86108bc7026da73414e82b614f2"
+    },
+    {
+      "path": "assets/transition-6331-group69.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 11919,
+      "sha256": "ab9dddaa4f48671a7391ab46ec021303ac14d81ba8143123ea936c928e448d4d"
+    },
+    {
+      "path": "assets/transition-6591-group58.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 5257,
+      "sha256": "702a8493e61add190e6b06a2a223d264424a89aa276600f59613203d2287790c"
+    },
+    {
+      "path": "assets/transition-6591-group59.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 6930,
+      "sha256": "d30c278457124b5d41855613073e35ac7e829acc9e24fabaca8b3f165282327c"
+    },
+    {
+      "path": "assets/transition-6591-group60.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 8597,
+      "sha256": "40bc028c11d10c65468bebbe03b285746391dd7a91aae81b959cd1dfccd4bcfb"
+    },
+    {
+      "path": "assets/transition-6591-group61.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 10306,
+      "sha256": "c44f78d370d84063ccc27c248a9f2e128d5403721a15b73218c9593b6a6c9389"
+    },
+    {
+      "path": "assets/transition-6591-group62.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 11994,
+      "sha256": "84e54e94758bc0768a031465670cce32e745ca329e99dfdc5344c5f6a6971ffb"
+    },
+    {
+      "path": "assets/transition-6591-group63.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 10277,
+      "sha256": "6cda3a6e8f2856d66f49f163a2ac45e18b8425a91c06d8825bb558c1172d252b"
+    },
+    {
+      "path": "assets/transition-6591-group65.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 13557,
+      "sha256": "f7a5fa81c3e0df8357f9c57eee0581892e9c618bd5c0b4bac2d93f408c3aabe5"
+    },
+    {
+      "path": "assets/transition-6591-group66.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 13629,
+      "sha256": "91f33f0d877131e0a50eb23b2cc7a64573904e99fc18929d0a496b5c7edcdc40"
+    },
+    {
+      "path": "assets/transition-6591-group67.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 8597,
+      "sha256": "aafa0904165558f953ebe27dab674e5c34a7bb7770260805b6f8cc01874f59b2"
+    },
+    {
+      "path": "assets/transition-6591-group68.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 3560,
+      "sha256": "c3706d96c241107f8328500d7d2855984f40abd876f8f49cc5d70972175c730f"
+    },
+    {
+      "path": "assets/transition-6591-group69.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 11966,
+      "sha256": "3f09f555ad39099c55898e1ff9becd35e8acf8d1dbcac44d805050d0bf37aa05"
+    },
+    {
+      "path": "cards.css",
+      "mediaType": "text/css",
+      "bytes": 12537,
+      "sha256": "9f58251af020ea3dd8b1da416a9c06f5e6983a5389c107225cdb4b84689d6d7c"
+    },
+    {
+      "path": "catalog.css",
+      "mediaType": "text/css",
+      "bytes": 7773,
+      "sha256": "a0aaf3826a99ade62530461718c7b6a5eade0ddfc209103e8011b8d94fe25efa"
+    },
+    {
+      "path": "catalog.js",
+      "mediaType": "text/javascript",
+      "bytes": 14384,
+      "sha256": "df1f17edaad1e9367aa167aacfb07c82c5ab8becf6369a668ebde1e55b056928"
+    },
+    {
+      "path": "club.css",
+      "mediaType": "text/css",
+      "bytes": 4865,
+      "sha256": "1e952d51ef0a903c15ef631affccfbb1c893bf60f59225402f41e294e91cbaad"
+    },
+    {
+      "path": "design-system-data.js",
+      "mediaType": "text/javascript",
+      "bytes": 5303,
+      "sha256": "6345386d2f418e8f1b2250714a597f09a6ad1ab19458dc04d385105be1e16724"
+    },
+    {
+      "path": "design-system.css",
+      "mediaType": "text/css",
+      "bytes": 6689,
+      "sha256": "696c379611646e5c9ad491b9f21eddd2b705f993985531f6c07aedf1f48d5bd8"
+    },
+    {
+      "path": "design-system.html",
+      "mediaType": "text/html",
+      "bytes": 7743,
+      "sha256": "04a9093aeb08b4e05d31a32054ff37aa5639be9b0c314da395460a75eb616969"
+    },
+    {
+      "path": "design-system.js",
+      "mediaType": "text/javascript",
+      "bytes": 10739,
+      "sha256": "80d0c2a014b7f9e74423f27eff2f4a3f059db5f9bfbecc158bcc199cad13bac8"
+    },
+    {
+      "path": "docs/agent-guide.md",
+      "mediaType": "text/markdown",
+      "bytes": 16254,
+      "sha256": "d758dbe07b9105c1e27dabef27e4c048dd64837f4791f35489c761451faabb74"
+    },
+    {
+      "path": "docs/club-templates.md",
+      "mediaType": "text/markdown",
+      "bytes": 5064,
+      "sha256": "a3e44e047c5a8623dadd89ab91c1e7819e44aa850e62b9709ddf97098d1bd0ce"
+    },
+    {
+      "path": "docs/design-system.md",
+      "mediaType": "text/markdown",
+      "bytes": 8140,
+      "sha256": "e354bfdc5b71965e4597cc517eaae8041252c948635e9b393201eb109ed36e7a"
+    },
+    {
+      "path": "docs/event-template.md",
+      "mediaType": "text/markdown",
+      "bytes": 4264,
+      "sha256": "10db6e5ca855ca3e465e2152fdcd0065c4d9fde931e51d1ebd9435fcded4450a"
+    },
+    {
+      "path": "docs/expert-template.md",
+      "mediaType": "text/markdown",
+      "bytes": 3785,
+      "sha256": "28ad48ef483e795ac5940cff97a041b8c7b116e8dde9aa079912a97300c937ba"
+    },
+    {
+      "path": "docs/intro-reference.md",
+      "mediaType": "text/markdown",
+      "bytes": 3932,
+      "sha256": "0fa59d0e6dded030d36e6ee3ef5d85a136fba8df80946ebceb993fcd6df35e6b"
+    },
+    {
+      "path": "docs/new-posts.md",
+      "mediaType": "text/markdown",
+      "bytes": 6335,
+      "sha256": "bc2b511016224c4108798fd906bca9593cbb45029e98610159c9375b7e0e8ce4"
+    },
+    {
+      "path": "docs/transition-reference.md",
+      "mediaType": "text/markdown",
+      "bytes": 3228,
+      "sha256": "c43ed2825b230edfd99db67e14d4579dd437e547ed3d03405546ed096d05b9cb"
+    },
+    {
+      "path": "downloads/README.md",
+      "mediaType": "text/markdown",
+      "bytes": 4421,
+      "sha256": "5ae857fe5d058aaae0a5e4fd9651ed49ea88e1f3dd1d4611bce9255d749e6820"
+    },
+    {
+      "path": "downloads/elements/expert-mask.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 4367,
+      "sha256": "f290fa27706e37091f9d1bf44f2e0de8ca024714970525bac9abdab1993e03b4"
+    },
+    {
+      "path": "downloads/elements/expert-mask.png",
+      "mediaType": "image/png",
+      "bytes": 126686,
+      "sha256": "7bd20ca9e78dd9d326709c7d7955e27658b5350ccabd73dcf800a066e8400b36"
+    },
+    {
+      "path": "downloads/elements/expert-mask.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 286,
+      "sha256": "1b74a2dccdf2823c19e3cbb23891ed23f8716fbec129fc4ffb455abaa374b2b8"
+    },
+    {
+      "path": "downloads/elements/expert-ovals.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 1748,
+      "sha256": "aae7a4e3495743218dced745304e896d397f61c323e0b2440b5d8215ff0051f0"
+    },
+    {
+      "path": "downloads/elements/expert-ovals.png",
+      "mediaType": "image/png",
+      "bytes": 192518,
+      "sha256": "e1e64216f56a3774633cc439f9fe3e1205f15553aee0acc5aa41c72d6f294983"
+    },
+    {
+      "path": "downloads/elements/expert-ovals.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1242,
+      "sha256": "7526d13c78c2fa234d8a712fe85a7dacf93f60a3a8a7f5017a8039cc2b5c624c"
+    },
+    {
+      "path": "downloads/elements/expert-rule.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 2317,
+      "sha256": "b701bf57a8c0feec18ecd00e22ffb5948c32582f5639c6ec623f4f5303dc8f86"
+    },
+    {
+      "path": "downloads/elements/expert-rule.png",
+      "mediaType": "image/png",
+      "bytes": 1395,
+      "sha256": "c7ad1b069e059854858fc96106314e4bf04e9f8b9f0e09ecf25f43b37d336223"
+    },
+    {
+      "path": "downloads/elements/expert-rule.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2098,
+      "sha256": "f2a09a2e48a885f31189d7c01701f6600a8826b9094a2469a0d78503b2eb45c6"
+    },
+    {
+      "path": "downloads/elements/ribbon-action.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 4259,
+      "sha256": "26fc8a3312edd3ba281e6455e72fbccb590ca59f7abff6c89b1b40ccf3a70f2b"
+    },
+    {
+      "path": "downloads/elements/ribbon-action.png",
+      "mediaType": "image/png",
+      "bytes": 20650,
+      "sha256": "8325bf2b1d8ef3dc5238a7e64c8d39e861c63b570370a6cf2ff19b2590fc3e63"
+    },
+    {
+      "path": "downloads/elements/ribbon-action.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 5745,
+      "sha256": "d1ab92334b326652dc0685ddcf2a9d04a6610e7c9bb877edcdaae79a3aa99144"
+    },
+    {
+      "path": "downloads/elements/ribbon-bureau.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 1360,
+      "sha256": "45f24475f5fa4a6efbc3d66c58c10203e2e696f3b4b79361a76816d9f6acd33c"
+    },
+    {
+      "path": "downloads/elements/ribbon-bureau.png",
+      "mediaType": "image/png",
+      "bytes": 20210,
+      "sha256": "3d4ea780450e9ce63d20e80a5dddb6e2fb92ede633fab999b5a74b5345b1224d"
+    },
+    {
+      "path": "downloads/elements/ribbon-bureau.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 321,
+      "sha256": "9786f7bb33820c1036519574522845c13707931180edfe2fc6be068c905609aa"
+    },
+    {
+      "path": "downloads/elements/ribbon-journal.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 1370,
+      "sha256": "3ace0af3125aeab37a98b6d7b5c98646f20d195e49206fdbba392b19d30aefd0"
+    },
+    {
+      "path": "downloads/elements/ribbon-journal.png",
+      "mediaType": "image/png",
+      "bytes": 26701,
+      "sha256": "899fca24cc9acad1e726a3bdb3f1facf36c74748e3cf770839cb6bb1edc99b96"
+    },
+    {
+      "path": "downloads/elements/ribbon-journal.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 323,
+      "sha256": "7a459135e4f99e70e6db2458320d58a073d55de4cd7da601eddd4a683fcdb4f7"
+    },
+    {
+      "path": "downloads/fonts.css",
+      "mediaType": "text/css",
+      "bytes": 2246,
+      "sha256": "65365128507102029c6cc332410126d9b63bfa15008d1606c713357454a8913c"
+    },
+    {
+      "path": "downloads/fonts/cofo-cinema1909-regular.otf",
+      "mediaType": "font/otf",
+      "bytes": 60236,
+      "sha256": "f0071d058ddc230c3bdee948a3dbd54a4737a5c9f27df9b167aee3144d254154"
+    },
+    {
+      "path": "downloads/fonts/eb-garamond-bold.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 392040,
+      "sha256": "40b4eb8a3c92f651728bc285ac3acacec1005ef5436cf33a337ab5ffe86daf29"
+    },
+    {
+      "path": "downloads/fonts/eb-garamond-medium-italic.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 341640,
+      "sha256": "1051266691bf470e46920bb64e81c901cf82111caa81ff45fcbe50e2bccb274e"
+    },
+    {
+      "path": "downloads/fonts/eb-garamond-medium.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 392064,
+      "sha256": "45fad23db0ff6cc8f2ce5a6f9802d499e8ab737c039a7944a6f2f617d224af14"
+    },
+    {
+      "path": "downloads/fonts/eb-garamond-regular.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 389868,
+      "sha256": "934aa932b4bc1a75d883f7c3d4d5bbc8278e5e7fcc96d5440bbffd61050cf958"
+    },
+    {
+      "path": "downloads/fonts/eb-garamond-semibold-italic.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 467016,
+      "sha256": "def54111c77ca6eb224f07742fd68604ccf0c08699616c0c34f8a1e49a0ae4aa"
+    },
+    {
+      "path": "downloads/fonts/eb-garamond-semibold.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 392328,
+      "sha256": "b536adfa0f5746cfbd148d8a1a669540366edef2c85c4b49450798a037bd928c"
+    },
+    {
+      "path": "downloads/fonts/expert-geist-OFL.txt",
+      "mediaType": "text/plain",
+      "bytes": 4387,
+      "sha256": "1781d2806a07d91c4edf4740b88449fab7d0eadad53f7c351b94cd4d4eb8c00f"
+    },
+    {
+      "path": "downloads/fonts/expert-geist-v1.6.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 168532,
+      "sha256": "a0d3d05d83b39a89429962aef900bb25f4789160f5d635c101d0a6d67b5d974a"
+    },
+    {
+      "path": "downloads/fonts/geist-bold.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 72984,
+      "sha256": "1a9874b3be0fc168692a3d2327bccb4d28835653d3b91537a755296a467a83e3"
+    },
+    {
+      "path": "downloads/fonts/geist-regular.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 72916,
+      "sha256": "ccce59465ae5c61930ada5453834f60500fbd95084d85db63e0e65fad0125455"
+    },
+    {
+      "path": "downloads/fonts/geist-semibold.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 73048,
+      "sha256": "7171f481b121803d007f5c6c76cd9988c0d41cce4202db9a18dff9945505d36d"
+    },
+    {
+      "path": "downloads/fonts/inter-regular.ttf",
+      "mediaType": "font/ttf",
+      "bytes": 324820,
+      "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba"
+    },
+    {
+      "path": "downloads/logos/bureau-cream.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 1750,
+      "sha256": "9e35092b4569d217a7de1399046ddf684e9b0a2e6c7d5f143dae0764555dce13"
+    },
+    {
+      "path": "downloads/logos/bureau-cream.png",
+      "mediaType": "image/png",
+      "bytes": 16442,
+      "sha256": "f030ce761c9cd805629d8513f3a55a1eeaa243325ef5e1fd425bccf47e977ea1"
+    },
+    {
+      "path": "downloads/logos/bureau-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1522,
+      "sha256": "597f06059699bef46ddc2dc889e739cac03877ffbda7ddeb3056dbbcebf26b57"
+    },
+    {
+      "path": "downloads/logos/bureau-orange.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 1748,
+      "sha256": "e3074c8635c28d24c17b6a0f7049682f900bad5850041659c0d0215ad88c499f"
+    },
+    {
+      "path": "downloads/logos/bureau-orange.png",
+      "mediaType": "image/png",
+      "bytes": 15141,
+      "sha256": "63074d23f27e79fd943f8fe85477e5f2f455da21c3b0f7c6c5d15bfe4e8e8b8c"
+    },
+    {
+      "path": "downloads/logos/bureau-orange.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1522,
+      "sha256": "dd996d150916e465a3b16b370ca8012be26f223aaf924e6c918211b10dcd1fe5"
+    },
+    {
+      "path": "downloads/logos/club.png",
+      "mediaType": "image/png",
+      "bytes": 13441,
+      "sha256": "ba69517809c5c8b8c907a3ec9f5520183038134d5fb9b9110c868b93944c53f9"
+    },
+    {
+      "path": "downloads/logos/heart-cream.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 30025,
+      "sha256": "7698cc65f005c91cd08419a217097ea778a50def3e1c21f66ed3b074a7943a8f"
+    },
+    {
+      "path": "downloads/logos/heart-cream.png",
+      "mediaType": "image/png",
+      "bytes": 37073,
+      "sha256": "9e7fb76d4f471553b4b9054e4c120588d993f113fc075859cf3c48be7b10a475"
+    },
+    {
+      "path": "downloads/logos/heart-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 105456,
+      "sha256": "c5901116ec33ebaa98c727651645864d9a978fe563c9f4a930442f1db0c42fac"
+    },
+    {
+      "path": "downloads/logos/heart-orange.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 28802,
+      "sha256": "0bcaf3943824ebc252de824b606182c5d6459670c526656d954b23abbbf15aa9"
+    },
+    {
+      "path": "downloads/logos/heart-orange.png",
+      "mediaType": "image/png",
+      "bytes": 42423,
+      "sha256": "2eb943a9aea5dfd25d89a29c2101607fe6df4037bc7bcb5dd770555722d88450"
+    },
+    {
+      "path": "downloads/logos/heart-orange.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 105600,
+      "sha256": "f91748e3eae980bc440dbea4ce12a09f7cd32795e3746e46e8ba5d9622f5d5c4"
+    },
+    {
+      "path": "downloads/logos/journal-bookmark.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 1355,
+      "sha256": "86a490f22cd3780895bb70e77e942421c2f02ac86b46a3d21f316c033bcb264b"
+    },
+    {
+      "path": "downloads/logos/journal-bookmark.png",
+      "mediaType": "image/png",
+      "bytes": 9406,
+      "sha256": "097ddbe539d5ee64c3e3bd1ec3977467530b60710f6411f9b5c1a9ee60ebaf02"
+    },
+    {
+      "path": "downloads/logos/journal-bookmark.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 262,
+      "sha256": "9c79b482c8926c38c4812e866c5ffadbdacc0c567c8d9d2305c10b4081dbed50"
+    },
+    {
+      "path": "downloads/logos/salon.png",
+      "mediaType": "image/png",
+      "bytes": 16057,
+      "sha256": "e44a155375d3d0bc34787d67f0a589066f8d4dc44afb8d7c999d102e628076bf"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-orange.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 9712,
+      "sha256": "7ff51248946c4006cede65173d7fec102d390d7f35f246153142fec874555c50"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-orange.png",
+      "mediaType": "image/png",
+      "bytes": 54103,
+      "sha256": "0c06937fce523e9dffdd1e9679563b4bc4514b29b5f97db4ed7840964ef7b0fc"
+    },
+    {
+      "path": "downloads/logos/sarafan-wordmark-orange.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 24615,
+      "sha256": "e518c7064b764ea628cd70bee156c9b422726b55d358ae2aff8e4a3d682a3b4a"
+    },
+    {
+      "path": "downloads/manifest.js",
+      "mediaType": "text/javascript",
+      "bytes": 1057914,
+      "sha256": "47af36c9be8cb5ed693e80feb9c522178e1545462b5d560da4fa644dfdb48a03"
+    },
+    {
+      "path": "downloads/manifest.json",
+      "mediaType": "application/json",
+      "bytes": 1057889,
+      "sha256": "b4088906239dfec406e158467b50d4cd49769f3edb9363e599fd2315588cc60f"
+    },
+    {
+      "path": "downloads/palette.css",
+      "mediaType": "text/css",
+      "bytes": 327,
+      "sha256": "728ddc1b944bc026488b6129a5a09acc0bb9e75697e6babfdca2f3dc74386be4"
+    },
+    {
+      "path": "downloads/palette.json",
+      "mediaType": "application/json",
+      "bytes": 1064,
+      "sha256": "1ed526571076c64cb127daa3861df90f84eee4f63794bfc47ababb560b88f48a"
+    },
+    {
+      "path": "downloads/tokens.css",
+      "mediaType": "text/css",
+      "bytes": 3324,
+      "sha256": "699199ff249a00194ce3c65dda2702f6e9791440596db2c1cb2c7df9546a9eb5"
+    },
+    {
+      "path": "downloads/tokens.json",
+      "mediaType": "application/json",
+      "bytes": 9785,
+      "sha256": "e90c8fe735ac1fc531b53593986abf4ae3c600a4bdb3e53857928286e36c7e46"
+    },
+    {
+      "path": "event.css",
+      "mediaType": "text/css",
+      "bytes": 3313,
+      "sha256": "c35bd7e44758dc8f2801ff16686776fd2d63aa07def8a7b706dce9426d4abce7"
+    },
+    {
+      "path": "expert.css",
+      "mediaType": "text/css",
+      "bytes": 4629,
+      "sha256": "79ab66a24365dde9fa61ab836e678b2652daffeb85a819713fba45fbbece9f7c"
+    },
+    {
+      "path": "exports/sarafan-club-event-01.png",
+      "mediaType": "image/png",
+      "bytes": 429052,
+      "sha256": "730d5201f0f46147ca487813995e18248c08cd0680a3c9cc4b791454991d80b7"
+    },
+    {
+      "path": "exports/sarafan-club-event-02.png",
+      "mediaType": "image/png",
+      "bytes": 681468,
+      "sha256": "fc497ec1ce0bf01cb2db19125d782b800bc490c7c869fb6b14b91b938a1efa2a"
+    },
+    {
+      "path": "exports/sarafan-club-event-03.png",
+      "mediaType": "image/png",
+      "bytes": 795745,
+      "sha256": "83c2f382f6b12e4e84961f58129f33e1162d3ab3dfebf4f8052ff976d48accc6"
+    },
+    {
+      "path": "exports/sarafan-club-event-04.png",
+      "mediaType": "image/png",
+      "bytes": 779652,
+      "sha256": "9d3965c63105d5e093840ecf0e2bf42823f789bf0aaee91a7ad11ef89847eef1"
+    },
+    {
+      "path": "exports/sarafan-club-event-05.png",
+      "mediaType": "image/png",
+      "bytes": 828927,
+      "sha256": "4c486f18125bdd106ead422d7d390156615bb4c2a27ed647c327537ba9f7091c"
+    },
+    {
+      "path": "exports/sarafan-club-event-06.png",
+      "mediaType": "image/png",
+      "bytes": 859096,
+      "sha256": "1153182581852bf82dea74287c312e435c773b9802d85ae7e396e87e512526b8"
+    },
+    {
+      "path": "exports/sarafan-club-salon-01.png",
+      "mediaType": "image/png",
+      "bytes": 194069,
+      "sha256": "23f4184a05ef5af2ce3d6617d0f2ef6e015ccd93522ccf318b8cd00e35b3b487"
+    },
+    {
+      "path": "exports/sarafan-club-salon-02.png",
+      "mediaType": "image/png",
+      "bytes": 691372,
+      "sha256": "a2c15dd06efb0eb15d6d447608e6f3f3dab0ddcab0e9328898290b7c84999ac2"
+    },
+    {
+      "path": "exports/sarafan-club-salon-03.png",
+      "mediaType": "image/png",
+      "bytes": 1444050,
+      "sha256": "f1b0db00f1b0143bbda55fd24b3aac3ac80bf0299c73fae6c5ef4eb4924d0cc9"
+    },
+    {
+      "path": "exports/sarafan-event-01.png",
+      "mediaType": "image/png",
+      "bytes": 100273,
+      "sha256": "8e8e8129215bda47f3fcf00bb77a75989f9d749be515e2b563712f1ebe1cd4af"
+    },
+    {
+      "path": "exports/sarafan-event-02.png",
+      "mediaType": "image/png",
+      "bytes": 941411,
+      "sha256": "6ce1780d7382c0122a68939ce668ab32c0dee6af1100bb6d7742b3232022b8ce"
+    },
+    {
+      "path": "exports/sarafan-event-03.png",
+      "mediaType": "image/png",
+      "bytes": 557384,
+      "sha256": "db3f950b3b2ca5fe04dbc4c1044b8a75ffca14798cd622a8b00843c5d1ccdca8"
+    },
+    {
+      "path": "exports/sarafan-event-04.png",
+      "mediaType": "image/png",
+      "bytes": 682560,
+      "sha256": "a23814dc0a2c2312bc1c37a129fd36f569082a41e237bcb654268e41637da808"
+    },
+    {
+      "path": "exports/sarafan-event-05.png",
+      "mediaType": "image/png",
+      "bytes": 846913,
+      "sha256": "d3abbc7caed44f28b1883b25661a69220fb5b17d3d9179450af51655b5f94f6d"
+    },
+    {
+      "path": "exports/sarafan-expert-01.png",
+      "mediaType": "image/png",
+      "bytes": 386626,
+      "sha256": "355b635d6a4d08d6a2ad266268218585b98211b2ab81a9bdbc4b5bf55027f7c5"
+    },
+    {
+      "path": "exports/sarafan-expert-02.png",
+      "mediaType": "image/png",
+      "bytes": 112517,
+      "sha256": "119af4b07138baed19c309ae7c0e4dae3cd0dd200a3c9ec99b700b4e8d494879"
+    },
+    {
+      "path": "exports/sarafan-expert-03.png",
+      "mediaType": "image/png",
+      "bytes": 1092981,
+      "sha256": "a6241052549af612e65899d67e213e91b6de1918aa256cbd2112d48067cd2286"
+    },
+    {
+      "path": "exports/sarafan-expert-04.png",
+      "mediaType": "image/png",
+      "bytes": 218779,
+      "sha256": "defca25af9821156ed83a591f8bf8f3f70b202d7940bf1cbf1b33de1394841c9"
+    },
+    {
+      "path": "exports/sarafan-expert-05.png",
+      "mediaType": "image/png",
+      "bytes": 65061,
+      "sha256": "1aaefa40decf880dd6bf44d72c50725bb4bfa52b4157a36a8fb1b75af8505ae0"
+    },
+    {
+      "path": "exports/sarafan-intro-01.png",
+      "mediaType": "image/png",
+      "bytes": 2315106,
+      "sha256": "d557f228284ed62cd3a06ed7bca90477e9662cd5c1b96398700f5d4da2cac14e"
+    },
+    {
+      "path": "exports/sarafan-intro-02.png",
+      "mediaType": "image/png",
+      "bytes": 503848,
+      "sha256": "c81729a92d7f39d8ca0cad88cd53c9e6b296d2e789cc99c19f6c3c0d80ed85d6"
+    },
+    {
+      "path": "exports/sarafan-intro-03.png",
+      "mediaType": "image/png",
+      "bytes": 637901,
+      "sha256": "17aba8ce6c20c60adaf7b07a128bde86cc16005e9b49c83c23aa6a2c4edc33e1"
+    },
+    {
+      "path": "exports/sarafan-intro-04.png",
+      "mediaType": "image/png",
+      "bytes": 830079,
+      "sha256": "14a96a28213a21faa45e2f9c46ef365204a39a6c90a1993c8252f721c143bc18"
+    },
+    {
+      "path": "exports/sarafan-intro-05.png",
+      "mediaType": "image/png",
+      "bytes": 740963,
+      "sha256": "c5e7e700e27b6729311c853da5677bd316fed8fac007033929ab29e8e84e18f1"
+    },
+    {
+      "path": "exports/sarafan-intro-06.png",
+      "mediaType": "image/png",
+      "bytes": 162997,
+      "sha256": "87abd508e84e286e964e2902dc05ed4f0fe61b6a89e1c6400927a3aab2099df9"
+    },
+    {
+      "path": "exports/sarafan-intro-07.png",
+      "mediaType": "image/png",
+      "bytes": 1286924,
+      "sha256": "336f1da9a02833ea04403c22a58e56b51b5274c0a1e4a39eaeb721d7220cc2f0"
+    },
+    {
+      "path": "exports/sarafan-places-01.png",
+      "mediaType": "image/png",
+      "bytes": 1521867,
+      "sha256": "ecc2acdae3772021f6be038d51be0252c61024df4f434532910e454f5e65d84a"
+    },
+    {
+      "path": "exports/sarafan-places-02.png",
+      "mediaType": "image/png",
+      "bytes": 1797564,
+      "sha256": "bc8ec729cc4db3ce9932f7a0b99300bbd9ddf9c83450e02ece1949e65d2155b9"
+    },
+    {
+      "path": "exports/sarafan-places-03.png",
+      "mediaType": "image/png",
+      "bytes": 941183,
+      "sha256": "2606ff052291c03a39aed8aaff7cd4709a1031940bda028aede4599f81f3a5c1"
+    },
+    {
+      "path": "exports/sarafan-places-04.png",
+      "mediaType": "image/png",
+      "bytes": 868513,
+      "sha256": "6acb2eaa0fa6188aa0114b7d26b024bb87ded0f6f0ec4f46dc2a29eba3ac26d9"
+    },
+    {
+      "path": "exports/sarafan-places-05.png",
+      "mediaType": "image/png",
+      "bytes": 1644772,
+      "sha256": "4685f32859dc1effafd781ee84943fc31a14e7ac20c37d04c98219635f173112"
+    },
+    {
+      "path": "exports/sarafan-places-06.png",
+      "mediaType": "image/png",
+      "bytes": 769481,
+      "sha256": "108769ac1460d4d9ac9c1726631edcbe804711a7ef7324499fff84329d16fbf7"
+    },
+    {
+      "path": "exports/sarafan-places-07.png",
+      "mediaType": "image/png",
+      "bytes": 86099,
+      "sha256": "14c26cff5a0a7df79d274b93527e6eeb6bb54e7302d4c2c72054bf81bcb81f06"
+    },
+    {
+      "path": "exports/sarafan-places-08.png",
+      "mediaType": "image/png",
+      "bytes": 93855,
+      "sha256": "088e883b74b9c0e098e40050bfc191c5160668a619f52eda68a1cde194ba239c"
+    },
+    {
+      "path": "exports/sarafan-places-09.png",
+      "mediaType": "image/png",
+      "bytes": 81227,
+      "sha256": "c1fc09410458a19a45241210546354c3daab3ed36361346ef89075cba8ea83bd"
+    },
+    {
+      "path": "exports/sarafan-places-10.png",
+      "mediaType": "image/png",
+      "bytes": 73188,
+      "sha256": "0a27643e0390e0d0c37d0a15d616fb2285de683826bc676b49a6aeff5670683a"
+    },
+    {
+      "path": "exports/sarafan-places-11.png",
+      "mediaType": "image/png",
+      "bytes": 89491,
+      "sha256": "a2046b7f4926f894fdd4194144c5b9969ffef7eed5c49838985c5db68623c442"
+    },
+    {
+      "path": "exports/sarafan-places-12.png",
+      "mediaType": "image/png",
+      "bytes": 85697,
+      "sha256": "8a04acb05a385d0b482f15f76791abff85725d1402dab27108ec461f6c0dae58"
+    },
+    {
+      "path": "exports/sarafan-proust-01.png",
+      "mediaType": "image/png",
+      "bytes": 950933,
+      "sha256": "2abcbcef2da2eb8e249a5b0cfaa503e3f5585d62490ad55a441ed9d38dbdf661"
+    },
+    {
+      "path": "exports/sarafan-proust-02.png",
+      "mediaType": "image/png",
+      "bytes": 971912,
+      "sha256": "51971d5f31edd5a570ae9876f8d966f0a42c060298c6c30119fc73fb241b4454"
+    },
+    {
+      "path": "exports/sarafan-proust-03.png",
+      "mediaType": "image/png",
+      "bytes": 607940,
+      "sha256": "ef803157752cd9893ce66d18cfcabd4f9b8b215e90bb25d26913ebdc77640ab8"
+    },
+    {
+      "path": "exports/sarafan-proust-04.png",
+      "mediaType": "image/png",
+      "bytes": 201156,
+      "sha256": "b59fe065fbf43e8cb414e1d199cb81cc23c1421ba1de68ba531ff2d136615068"
+    },
+    {
+      "path": "exports/sarafan-proust-05.png",
+      "mediaType": "image/png",
+      "bytes": 1665473,
+      "sha256": "3162aab1fc816530e0b24785272506f1f24bb6c584c1efef35db78a410a1b53e"
+    },
+    {
+      "path": "exports/sarafan-proust-06.png",
+      "mediaType": "image/png",
+      "bytes": 145858,
+      "sha256": "5bad8905264ccb32ab7ecbe23166295c6ad3a212e22dc9443c5737ec8e76541f"
+    },
+    {
+      "path": "exports/sarafan-transition-01.png",
+      "mediaType": "image/png",
+      "bytes": 88967,
+      "sha256": "8cb6f336c06977453a5da1ba649a577e81e89562b61b96597e76e5c5c10cbbb4"
+    },
+    {
+      "path": "exports/sarafan-transition-02.png",
+      "mediaType": "image/png",
+      "bytes": 341103,
+      "sha256": "0ca46f50d5ebec46d8ea6dd2ca00d307b6942897b0ab9756f2012f9bf0dfb893"
+    },
+    {
+      "path": "exports/sarafan-transition-03.png",
+      "mediaType": "image/png",
+      "bytes": 231246,
+      "sha256": "53be6297f5fe6f6a09e158ea9029c1d3896a098c94bc5a4b27d47fdb11971a7a"
+    },
+    {
+      "path": "exports/sarafan-transition-04.png",
+      "mediaType": "image/png",
+      "bytes": 235567,
+      "sha256": "798ab608a00e1c01f3036b521f2362a893622d597e7619422c8216962ff3de11"
+    },
+    {
+      "path": "exports/sarafan-transition-05.png",
+      "mediaType": "image/png",
+      "bytes": 1748698,
+      "sha256": "23f75587773b854802309d1d559a6a0eecf3560887d3b0db771f3a1e81c30b00"
+    },
+    {
+      "path": "exports/sarafan-transition-06.png",
+      "mediaType": "image/png",
+      "bytes": 185697,
+      "sha256": "f5daf4113fc5f82a7a5c57d502eb198d2b3e161dc1c4886aa518d55d861d8f31"
+    },
+    {
+      "path": "index.html",
+      "mediaType": "text/html",
+      "bytes": 76216,
+      "sha256": "ef02297867b05e2600182a8803d1f37d2925e237178c2ac5d817128fe5638a21"
+    },
+    {
+      "path": "intro.css",
+      "mediaType": "text/css",
+      "bytes": 7485,
+      "sha256": "b61cd29b2fdd28b5fd1ab22a4056722554dd2297336c7f6adf5c7b196594dc99"
+    },
+    {
+      "path": "llms.txt",
+      "mediaType": "text/plain",
+      "bytes": 2759,
+      "sha256": "a50ead901adf03c53eea2904b66e45b16198cae7ea824008e3d0b146e5c8d337"
+    },
+    {
+      "path": "new-posts-data.js",
+      "mediaType": "text/javascript",
+      "bytes": 11464,
+      "sha256": "ce8c5d2fa4242c875ff9d3f8c80a3b9aa200abf80661aefc524cdf31655fcbd0"
+    },
+    {
+      "path": "new-posts.css",
+      "mediaType": "text/css",
+      "bytes": 6263,
+      "sha256": "3f70863807eac9ebf695e9e233dc15d894e54c85b9bfb869022014921de53cc3"
+    },
+    {
+      "path": "new-posts.html",
+      "mediaType": "text/html",
+      "bytes": 4682,
+      "sha256": "b8fd9cbf8161562e30f9c406161c738ca219c9ad06a2fe31d624b1bb7ffd6040"
+    },
+    {
+      "path": "new-posts.js",
+      "mediaType": "text/javascript",
+      "bytes": 4597,
+      "sha256": "e0e83bea12739475d173b4be81a114fedece86b1fb994eee2bc37e25924e2093"
+    },
+    {
+      "path": "photo-crop.js",
+      "mediaType": "text/javascript",
+      "bytes": 2504,
+      "sha256": "9f2aa2534808e70198af006d7ef9b90c715f4548696a8aed2ac71ff50095fbba"
+    },
+    {
+      "path": "photo-editor.js",
+      "mediaType": "text/javascript",
+      "bytes": 6048,
+      "sha256": "81f4bdf6a1e040068a999b0904f05c3480ec22fb005cdcbf455861e90f159eb8"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/01.html",
+      "mediaType": "text/html",
+      "bytes": 1587,
+      "sha256": "79b4ed621cfa8427b4d3627760e72bdc71b8edd49b66ee30df2a27661871df05"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/01.png",
+      "mediaType": "image/png",
+      "bytes": 446834,
+      "sha256": "d038371859449b9e972060a0857cad5f07201d2d82933724e94a800cb6444bca"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/02.html",
+      "mediaType": "text/html",
+      "bytes": 1289,
+      "sha256": "842eb17c3a83433865366d76f8f3426485891ab68712b986d1fbe8553928739c"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/02.png",
+      "mediaType": "image/png",
+      "bytes": 118432,
+      "sha256": "7f2fe745ebed16309de4a045d1ef727d1753b5ab996f73c9b937cd72ad47416b"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/03.html",
+      "mediaType": "text/html",
+      "bytes": 1235,
+      "sha256": "6a2f624e4749275e5dc39b67816d0e65af61dc4d981431f65abd53a8416b944c"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/03.png",
+      "mediaType": "image/png",
+      "bytes": 1145987,
+      "sha256": "369cea2204d413841e60ca0426b8be934c40b0690bf57a0094c6ec48630fdb50"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/04.html",
+      "mediaType": "text/html",
+      "bytes": 1393,
+      "sha256": "c46272f711a35a5eaca54f61f0e1485f4f421bb9a82a2875644942a934994f99"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/04.png",
+      "mediaType": "image/png",
+      "bytes": 168686,
+      "sha256": "8404091d2bab46e6c0f471ba4d9c3f9143c3065108cb92e78dee88bac421deaf"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/05.html",
+      "mediaType": "text/html",
+      "bytes": 990,
+      "sha256": "b9e5220898b26564a6074f67d0ffee62b8e363299f6f246f0d66fc8160065131"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/05.png",
+      "mediaType": "image/png",
+      "bytes": 47539,
+      "sha256": "3f2e22c6c02074538afaa85772b99f8c0181a63b214f2a69c497bd50ca6707a7"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/README.md",
+      "mediaType": "text/markdown",
+      "bytes": 3698,
+      "sha256": "c7e9536e78d51366321016b11a93d7c9cf985f17c9737d3631106711062285d8"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/caption.txt",
+      "mediaType": "text/plain",
+      "bytes": 973,
+      "sha256": "c07dfbbc00d21c94d4aa8bcb6f3a7c9a1d100c3b7f608478d09049971a30a58b"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/contact-sheet.png",
+      "mediaType": "image/png",
+      "bytes": 586880,
+      "sha256": "cfbeec603d212877b2b21d56550b06bd144ecbf171eef853718fa8f32cd2447f"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/lavender-unsplash.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 1076612,
+      "sha256": "490e3d084233264103c1b81fa91b6ac17fba9627421ffccdc3300e1ef4cbbde2"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/layout-check.json",
+      "mediaType": "application/json",
+      "bytes": 8771,
+      "sha256": "a547537aae591f0a8c439decd0deecce7ea551682edcc857c34829356c907266"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/marks/cover-rule-brown.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2098,
+      "sha256": "e5de63f033334be64c39ca5e471b0b78f35ffba41980904d3c029135e80bcc40"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/marks/mark-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1522,
+      "sha256": "f72e5afcc36cbfbba72e73c7edcd62b28117eb806f97614aeacb568a15a0a8b5"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/marks/mark-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1522,
+      "sha256": "597f06059699bef46ddc2dc889e739cac03877ffbda7ddeb3056dbbcebf26b57"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/marks/mark-olive.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1522,
+      "sha256": "6944c8689f79a55eb8191ab338b03f47a9ca18b3cb13fb33eef6b84215f62abb"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/marks/ovals-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 1242,
+      "sha256": "10a7233cb9db2ba638adcdc1face11ee2a4c021054b2fc8e940ffa2fa1b2ffb0"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/marks/ribbon-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 321,
+      "sha256": "854db61a34addf5012e3829f3eccecd8683c9bf83573f69ee73636c16307e084"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/marks/rule-blue.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2098,
+      "sha256": "de8a98dc0799e82e900f2cef0385544b40033035b5b4b458bb563a5e4fdee3ee"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/marks/rule-brown.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2098,
+      "sha256": "e5de63f033334be64c39ca5e471b0b78f35ffba41980904d3c029135e80bcc40"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/marks/rule-cream.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 2098,
+      "sha256": "0e9d55ecb5912f6f98bfd90c75c7c6dcfc1a8cfa707815719d85e8979ee8f9d6"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/oil-unsplash.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 559827,
+      "sha256": "4a87ce247069a02bc5a7727d70ceb317612b1f439fab2197b5d2f1122676c6d8"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/photo-sources.json",
+      "mediaType": "application/json",
+      "bytes": 628,
+      "sha256": "914fc7d258a8eb70091ddb5b54cef88232e74c9d6d0a95d0f5c59b739ab72a2a"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/portrait.png",
+      "mediaType": "image/png",
+      "bytes": 920177,
+      "sha256": "d5dee63db97e6fce369784a25bc513079c733d8fdac8071422a78078a6e32403"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/post.css",
+      "mediaType": "text/css",
+      "bytes": 1414,
+      "sha256": "215c22fcefaff5489923492428253520ed8da408e91dc8d6b18b972e4001fd65"
+    },
+    {
+      "path": "posts/salon-november-09-15/01.html",
+      "mediaType": "text/html",
+      "bytes": 2537,
+      "sha256": "c0a9325963d4439d1276169f83c03bc9b10f169f47197fac048a3fdeab6b749e"
+    },
+    {
+      "path": "posts/salon-november-09-15/01.png",
+      "mediaType": "image/png",
+      "bytes": 178231,
+      "sha256": "11ea32d6ed539086a2b637ddf3f7c7acc1b4633dfd16a4f6cdcc7b9c3050d389"
+    },
+    {
+      "path": "posts/salon-november-09-15/02.html",
+      "mediaType": "text/html",
+      "bytes": 1893,
+      "sha256": "7a7d7918d46031030b9c2ae620ef64d7658150d16e883990be134c664abd6205"
+    },
+    {
+      "path": "posts/salon-november-09-15/02.png",
+      "mediaType": "image/png",
+      "bytes": 459210,
+      "sha256": "3daac534f1db58a902f013ea06ee15ae6f2e8520379d81c239284eae97555071"
+    },
+    {
+      "path": "posts/salon-november-09-15/03.html",
+      "mediaType": "text/html",
+      "bytes": 1802,
+      "sha256": "124d460df757e24072e1157b65178fcaa3f2270f0ee9b57e95ef1ca2d6fc2c6e"
+    },
+    {
+      "path": "posts/salon-november-09-15/03.png",
+      "mediaType": "image/png",
+      "bytes": 514532,
+      "sha256": "0ab88c4f9f292a0e5130547d54520189dda8dc5542c2053947f882626de176ff"
+    },
+    {
+      "path": "posts/salon-november-09-15/04.html",
+      "mediaType": "text/html",
+      "bytes": 1946,
+      "sha256": "525fc16d02908ec29cc91e9fcd6a9176027702db50c0211185c428b08da0253c"
+    },
+    {
+      "path": "posts/salon-november-09-15/04.png",
+      "mediaType": "image/png",
+      "bytes": 164937,
+      "sha256": "d2dc57ea4d990dcd4756c1af1086bd6c4d78380be853386387bd5737c3ee57a1"
+    },
+    {
+      "path": "posts/salon-november-09-15/05.html",
+      "mediaType": "text/html",
+      "bytes": 1820,
+      "sha256": "f326d2369531760502da986a301544832968e600d6dc532f65889269bfbbff5f"
+    },
+    {
+      "path": "posts/salon-november-09-15/05.png",
+      "mediaType": "image/png",
+      "bytes": 623561,
+      "sha256": "e497c0aba9d5f72d2a61dcf69a01f6edf40f74d102bd95fcfdf03faebd68f774"
+    },
+    {
+      "path": "posts/salon-november-09-15/06.html",
+      "mediaType": "text/html",
+      "bytes": 1712,
+      "sha256": "567728146bb11f4e28d5bb0d9ccf9f8742e2094579b4ef629525d01da85e02a5"
+    },
+    {
+      "path": "posts/salon-november-09-15/06.png",
+      "mediaType": "image/png",
+      "bytes": 336523,
+      "sha256": "3665c3e2c7b0221d29d261a62f4afadfd43e709c01cd626ade688cf207739b2a"
+    },
+    {
+      "path": "posts/salon-november-09-15/07.html",
+      "mediaType": "text/html",
+      "bytes": 1843,
+      "sha256": "f4b2044c7650018e2ec0f4831a98d4a64b91a0e025cabaafab08044b8330753e"
+    },
+    {
+      "path": "posts/salon-november-09-15/07.png",
+      "mediaType": "image/png",
+      "bytes": 646178,
+      "sha256": "603b70e82ebd0cd14e7854defd9f276a953cd131213dd12aac7f2856f70bf5cb"
+    },
+    {
+      "path": "posts/salon-november-09-15/08.html",
+      "mediaType": "text/html",
+      "bytes": 1879,
+      "sha256": "194712362a837d1a808e83cd7b3ce5e71723ec740dc10332d31449a5d74e3976"
+    },
+    {
+      "path": "posts/salon-november-09-15/08.png",
+      "mediaType": "image/png",
+      "bytes": 435609,
+      "sha256": "45cf06ee49e03b3f531cf4f39c195e321cc25a3038e6b3bed4cb819af18bda24"
+    },
+    {
+      "path": "posts/salon-november-09-15/09.html",
+      "mediaType": "text/html",
+      "bytes": 1731,
+      "sha256": "6d87d89a5ebeb3aeee7c46282c5161fe3daadb5e344d9ce8a9582289eb970541"
+    },
+    {
+      "path": "posts/salon-november-09-15/09.png",
+      "mediaType": "image/png",
+      "bytes": 709649,
+      "sha256": "467473e9096279bce037fcf73c1d0f7bc86c34d4c4d0bddff469d447f5e795cd"
+    },
+    {
+      "path": "posts/salon-november-09-15/10.html",
+      "mediaType": "text/html",
+      "bytes": 1840,
+      "sha256": "cd409a23446a1c1547727579aaada97bf41dd28b05f6feab7bca37965eb995bc"
+    },
+    {
+      "path": "posts/salon-november-09-15/10.png",
+      "mediaType": "image/png",
+      "bytes": 404604,
+      "sha256": "191b4d0570e1dc4056b995294d543006a640050545f2cf5f15785f84e1322eaf"
+    },
+    {
+      "path": "posts/salon-november-09-15/11.html",
+      "mediaType": "text/html",
+      "bytes": 1679,
+      "sha256": "c9bdee096ccd6998fcb6c223bb2c3583417fc07944c0c7ffe1103e4cfaad67be"
+    },
+    {
+      "path": "posts/salon-november-09-15/11.png",
+      "mediaType": "image/png",
+      "bytes": 695450,
+      "sha256": "336778210af0893bb8b3b00d3a8f57d602beca8020aeb1dc5581a96ece962f8f"
+    },
+    {
+      "path": "posts/salon-november-09-15/README.md",
+      "mediaType": "text/markdown",
+      "bytes": 8023,
+      "sha256": "0049fcfc26e058cc334db4bc5e1b6ac2d8abf3a97f0de4f482242e6264c86b6c"
+    },
+    {
+      "path": "posts/salon-november-09-15/caption.txt",
+      "mediaType": "text/plain",
+      "bytes": 1881,
+      "sha256": "5c47ca4f7db40e607ed0a662dadbce538bcd022be5ad4bcbe3e2f3bc4b4f4471"
+    },
+    {
+      "path": "posts/salon-november-09-15/contact-sheet.png",
+      "mediaType": "image/png",
+      "bytes": 1299466,
+      "sha256": "22cfdef3b67a10f4d873f19db4f7b4b224bb8517bb30d423a71463defc1fe7c1"
+    },
+    {
+      "path": "posts/salon-november-09-15/content.json",
+      "mediaType": "application/json",
+      "bytes": 7519,
+      "sha256": "eb4fafbb7614b11bc21eac23a97b3431c0dfdfba4bb79c18de3b3f17de94fef3"
+    },
+    {
+      "path": "posts/salon-november-09-15/cover-base.html",
+      "mediaType": "text/html",
+      "bytes": 2348,
+      "sha256": "3204905ee105adfdd619f0084795d3369210fbe98769c69eff977540f41a7fa8"
+    },
+    {
+      "path": "posts/salon-november-09-15/cover-blue-flow.html",
+      "mediaType": "text/html",
+      "bytes": 2537,
+      "sha256": "c0a9325963d4439d1276169f83c03bc9b10f169f47197fac048a3fdeab6b749e"
+    },
+    {
+      "path": "posts/salon-november-09-15/cover-blue-orbit.html",
+      "mediaType": "text/html",
+      "bytes": 2536,
+      "sha256": "c85841dd6fedd37903cdac07f6cbcb20e02c4e2914e0448c4c6bed9e28beeb5b"
+    },
+    {
+      "path": "posts/salon-november-09-15/cover-cream-flow.html",
+      "mediaType": "text/html",
+      "bytes": 2537,
+      "sha256": "74ef805b991df0676c33f28a9fd43c666e4e5100e5eebe14f97f5a9f9e46bcf4"
+    },
+    {
+      "path": "posts/salon-november-09-15/cover-cream-orbit.html",
+      "mediaType": "text/html",
+      "bytes": 2536,
+      "sha256": "f840882e262f1e3c1420fc1c68494f0f936b4744051e04b893652c34311d806e"
+    },
+    {
+      "path": "posts/salon-november-09-15/cover-pink-flow.html",
+      "mediaType": "text/html",
+      "bytes": 2537,
+      "sha256": "a64bdba2c51c6bdfdc034d398b0a5f7629cdf54987a4725a9e93203eacee7bf0"
+    },
+    {
+      "path": "posts/salon-november-09-15/cover-pink-orbit.html",
+      "mediaType": "text/html",
+      "bytes": 2536,
+      "sha256": "4f17f882aa4426a67f0868e5536f9bb99d4b1f37eee6bcd014e70627442b8fc0"
+    },
+    {
+      "path": "posts/salon-november-09-15/cover.json",
+      "mediaType": "application/json",
+      "bytes": 1957,
+      "sha256": "d1805d07112a9add4a57a14ba1266c8b18a07d1ae4640d098a76f7ca56addb6b"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/blue-flow.png",
+      "mediaType": "image/png",
+      "bytes": 178231,
+      "sha256": "11ea32d6ed539086a2b637ddf3f7c7acc1b4633dfd16a4f6cdcc7b9c3050d389"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/blue-orbit.png",
+      "mediaType": "image/png",
+      "bytes": 179104,
+      "sha256": "2d1e5033aa3d8c40c941622b91d502f2b43b45a452c5c78ad34f3cff3b21dc96"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/cream-flow.png",
+      "mediaType": "image/png",
+      "bytes": 178355,
+      "sha256": "fd59ac9f55c8c6801d2ea39d8a968f4b70854d4bbf147534e9e466e492c222c8"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/cream-orbit.png",
+      "mediaType": "image/png",
+      "bytes": 179157,
+      "sha256": "11697efef0b18476d63fe59dbad9530c176ccd6ca759723ff69e2efe88e042ab"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/dot-014b3e.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "48e9193ba5229fce9961c6927bf4fafa82dbc060f757a7d10b9121c4c20c42f5"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/dot-553d3d.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "c78c9cd4e7dc4d4fd794baee280f944931769788a3350763fc4217ee121cf662"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/dot-606d82.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "c8d4d7ef802d3ce84e14d8eaf31e14f8a1b0b2163cf2ab47ce3285be3724d79d"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/dot-91945b.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "3887700e60c61ef46cd6ba5416bc1322af8ff060c74cfb6264ccf5a0f37242ac"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/dot-a9c9df.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "dd5c6c84cc93c533d7b5860364a13810cf5d4602ef3bc939f7ff19faafdbf445"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/dot-b54f1a.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "3be54dd5ed882eb66f4e33e2cc4f523d8a809c78d8bf114863565ac5cde70777"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/dot-c98384.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "8dbaf4eeeb6e96bbad8b93b18b325514acd01973e9dc12e07710672093712489"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/dot-e19a9b.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "34282e4b31cdcd6e6056b22fc71cae8cb5c1b73bdae1b49e704aed73513bec2b"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/dot-e4d5b6.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "fd41c4915cfd99d325797caba888790db58b3447bffe940d647187e84ce63886"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/dot-fbeed2.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "190f3c310200026bc0af02aa6ae692e3a1d91ce1e757844461d01a8460d2a599"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/dot-ff3c00.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 241,
+      "sha256": "5cfcf0844b47dc0b04d73972e90750b1ab7eebd2d6661b4996343ebb09db93e3"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/pink-flow.png",
+      "mediaType": "image/png",
+      "bytes": 178367,
+      "sha256": "b127c329b3018a594eb4a249ea486255ace68b7440673b8f364d90fe29e47578"
+    },
+    {
+      "path": "posts/salon-november-09-15/covers/pink-orbit.png",
+      "mediaType": "image/png",
+      "bytes": 178895,
+      "sha256": "f65edcd2bac3c7e545cdaf719fc469525c90e3735b10d014f992546f1366e68e"
+    },
+    {
+      "path": "posts/salon-november-09-15/crop-media.js",
+      "mediaType": "text/javascript",
+      "bytes": 5923749,
+      "sha256": "690138912307426ee7c0428c341c8d0b3fb0d840c0cef6967438fab5769e4728"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/02.jpeg",
+      "mediaType": "image/jpeg",
+      "bytes": 72314,
+      "sha256": "0b98f3f3118dfa53d91d0b5c839591669946d8227abb4816cadb1ad1b9ca55d0"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/03.jpeg",
+      "mediaType": "image/jpeg",
+      "bytes": 55967,
+      "sha256": "2867646126c4fa0ab9c908f0f0bdcb6b022f5e3349285ef3d95d91e191485a2c"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/04.jpeg",
+      "mediaType": "image/jpeg",
+      "bytes": 21895,
+      "sha256": "c3177e05f2e05ea27b1e358f2ecf638d4eeb8cde13f5114d5f215e55ebeb26b8"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/05.png",
+      "mediaType": "image/png",
+      "bytes": 814763,
+      "sha256": "592bcbef948f43d9d271529d4fcabad81b249eecab9f863d1732b0c7e53f3127"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/06.jpeg",
+      "mediaType": "image/jpeg",
+      "bytes": 73779,
+      "sha256": "d7c7a2602d3fbda9f0322aad3b0df9bc1ab8edaa2bd8ac194477071b2ed3cf94"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/07.jpeg",
+      "mediaType": "image/jpeg",
+      "bytes": 139657,
+      "sha256": "caad082bc2324357c04ad6f3efb09aca42edf1ff9fbc1e8e8bfb93cab353e986"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/08.jpeg",
+      "mediaType": "image/jpeg",
+      "bytes": 110588,
+      "sha256": "a784bcfa79103e70d59f5bef77f17020d47a9638cc334e3fc88ecf5661baadcf"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/09.jpeg",
+      "mediaType": "image/jpeg",
+      "bytes": 62191,
+      "sha256": "1dd9e2019ae9b467933559e610e663df99ad28ae9cc8ada88e52e8c5acaee33c"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/10.png",
+      "mediaType": "image/png",
+      "bytes": 684994,
+      "sha256": "74465ad46b3677d29fe6d4b8aaa4ef8c6921e2685c00da73b5a3097ba5549a4b"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/11.jpeg",
+      "mediaType": "image/jpeg",
+      "bytes": 85186,
+      "sha256": "a291fcda3f54e6375138d129c87eb36ca2f7abfbff19c6d495ba2058cdca035c"
+    },
+    {
+      "path": "posts/salon-november-09-15/images/chichis-circle.svg",
+      "mediaType": "image/svg+xml",
+      "bytes": 214,
+      "sha256": "05c55e558e7bb068e43a0ff916fa97c80ee79c1b7875153514f8798fb0624818"
+    },
+    {
+      "path": "posts/salon-november-09-15/layers/02.png",
+      "mediaType": "image/png",
+      "bytes": 133587,
+      "sha256": "ebafdd2f8522ed2bd6e9206eb27e3c82c99aa7ce454c92ae749cc56878778649"
+    },
+    {
+      "path": "posts/salon-november-09-15/layers/03.png",
+      "mediaType": "image/png",
+      "bytes": 125566,
+      "sha256": "068877b539ec7e7891bc70b1a7bb76933ed897d4648432219b9e23dceff72711"
+    },
+    {
+      "path": "posts/salon-november-09-15/layers/05.png",
+      "mediaType": "image/png",
+      "bytes": 129423,
+      "sha256": "bb1ee8ea73d3a8638cf71bb9e890d6454571ac117fea9c9f4d3717eeee5da7a6"
+    },
+    {
+      "path": "posts/salon-november-09-15/layers/06.png",
+      "mediaType": "image/png",
+      "bytes": 109664,
+      "sha256": "1b162238fed9b7d8ded9758513d16a5502766b87c37a93fbdf19c162048b1996"
+    },
+    {
+      "path": "posts/salon-november-09-15/layers/07.png",
+      "mediaType": "image/png",
+      "bytes": 131122,
+      "sha256": "1fc3881583f31128f98836b5c10c294f8eecb8140dd03ca5ff5aae9891d09db2"
+    },
+    {
+      "path": "posts/salon-november-09-15/layers/08.png",
+      "mediaType": "image/png",
+      "bytes": 131662,
+      "sha256": "f6a82e8ed05ef27de5a909d8a157e2f072acde84d2e88c5c9f9ffd6736ab115f"
+    },
+    {
+      "path": "posts/salon-november-09-15/layers/09.png",
+      "mediaType": "image/png",
+      "bytes": 115917,
+      "sha256": "13be7879a0357123d439371f8011cb5fb67fe75e3f43aecc5815b2a379adc40d"
+    },
+    {
+      "path": "posts/salon-november-09-15/layers/10.png",
+      "mediaType": "image/png",
+      "bytes": 130528,
+      "sha256": "41765f985a93de7a658d9b9a2d85cc17d709af8a2a39ebb123e233adfa1a72a1"
+    },
+    {
+      "path": "posts/salon-november-09-15/layers/11.png",
+      "mediaType": "image/png",
+      "bytes": 97454,
+      "sha256": "04f0bf4f94cc2162f68c5a9f7e5b790f0c4bff5ba8e1774e03b31b99e0c2e12f"
+    },
+    {
+      "path": "posts/salon-november-09-15/layout-check.json",
+      "mediaType": "application/json",
+      "bytes": 24133,
+      "sha256": "d5d3a28f1a5d3e214d46bc30b87ff8b08828a6b21b778c10b8e3e2aea944852d"
+    },
+    {
+      "path": "posts/salon-november-09-15/post.css",
+      "mediaType": "text/css",
+      "bytes": 611,
+      "sha256": "bba4c00e0166776ca572765b66c79419cd5160db908e56948cdbf109aaea3e26"
+    },
+    {
+      "path": "posts/salon-november-09-15/sources.json",
+      "mediaType": "application/json",
+      "bytes": 11076,
+      "sha256": "5da1ab3686c87d9e5db9e1a4d47d325bf02587b7be7f4a8e1536a8cd68cb7666"
+    },
+    {
+      "path": "scripts/build-agent-resources.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 7996,
+      "sha256": "8c6ed7a06c12a281da4f1859566fa1deb30a2d5dbe284ebc753aef6678f474cc"
+    },
+    {
+      "path": "scripts/build-design-assets.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 19746,
+      "sha256": "0c33a31477560dc39902b4b4d3269c00dce8ecdecf928ba0ac86d2ca34d715d0"
+    },
+    {
+      "path": "scripts/build-salon-week.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 9280,
+      "sha256": "1650d7003d0f5722f1bece4815614da4b764383b30cab9f5e7abfbdd9ab2965d"
+    },
+    {
+      "path": "scripts/download-kit.py",
+      "mediaType": "text/plain",
+      "bytes": 10365,
+      "sha256": "b6daeb1f675162aaee81c5aba832f1f7bfa8d79d67b2d108b006726135e081a8"
+    },
+    {
+      "path": "scripts/export-club.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 7405,
+      "sha256": "5d0da8a26d990698b036975381bc7634361da1c061726e0df016d2ebf6cb0d4a"
+    },
+    {
+      "path": "scripts/export-event.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 5622,
+      "sha256": "6e2648ddf139f786c11900d9da4b8a1c3bd310e8cafbed9b1d1dd0b87b2b7eaf"
+    },
+    {
+      "path": "scripts/export-transition.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 4180,
+      "sha256": "c4da8204b3296155b9032de6d6139b22060ce9b48bb4f896765ce9b086269c8a"
+    },
+    {
+      "path": "scripts/test-agent-resources.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 5327,
+      "sha256": "588e53dbe938ef96da6b0281771db88f872f5013e8e8292bdf0d9e87ddf685bc"
+    },
+    {
+      "path": "scripts/test-download-kit.py",
+      "mediaType": "text/plain",
+      "bytes": 14345,
+      "sha256": "288d9c74a0cbb9706b9af85fb103cbfa774f503d59d514d14145560212b32f13"
+    },
+    {
+      "path": "scripts/test-photo-crop.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 1508,
+      "sha256": "328d97a21adaeba932dfc48314778c30fd88480a230ab495cb3f84eaeed747b7"
+    },
+    {
+      "path": "scripts/test-salon-week.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 7678,
+      "sha256": "7c962402a1c32c9f20499ef4fcb9dd15c4c14b2c6ef9742153d0deb034475bf1"
+    },
+    {
+      "path": "scripts/weekly-cover.cjs",
+      "mediaType": "text/javascript",
+      "bytes": 2401,
+      "sha256": "e1246b3aafb555dd3aba9a36fb9956019e80be6b0083d406cb1a00373faf0c90"
+    },
+    {
+      "path": "transition.css",
+      "mediaType": "text/css",
+      "bytes": 2782,
+      "sha256": "e078bfb1bea89cd059ee009d226438c5e3ca14d1a70d984f6cd188d63780cd34"
+    },
+    {
+      "path": "weekly-cover.js",
+      "mediaType": "text/javascript",
+      "bytes": 1771,
+      "sha256": "35f825e280757a3677af633a3676097ab96d1d90d4112eb79c1003c091fc5a64"
+    }
+  ],
+  "archives": [
+    {
+      "path": "downloads/sarafan-design-kit.zip",
+      "mediaType": "application/zip",
+      "bytes": 3226024,
+      "sha256": "52f038822cb293b59e27359ace6f672e8a797a00292060e9bd370bfed0ec148b"
+    },
+    {
+      "path": "downloads/sarafan-elements.zip",
+      "mediaType": "application/zip",
+      "bytes": 262674,
+      "sha256": "332dfff6c18ef63c5e58619d595a6324f0ff922a766a0c5aabf0f03a36877696"
+    },
+    {
+      "path": "downloads/sarafan-fonts.zip",
+      "mediaType": "application/zip",
+      "bytes": 1569486,
+      "sha256": "8ea4c089a6909ad881790f184d64fd7060d8e5813bb1f54815d34fb828ee5d16"
+    },
+    {
+      "path": "downloads/sarafan-logos.zip",
+      "mediaType": "application/zip",
+      "bytes": 326279,
+      "sha256": "2cbc9d8c03d4d15eeede745053f46db202e7b82c7df1ddd77f104ee457d503bb"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/ingrid-post-orange.zip",
+      "mediaType": "application/zip",
+      "bytes": 2023170,
+      "sha256": "3db90b6172bebc6cb2e96a54f24c5cfc2346a1a1b0c5cc7333ead17514ae352e"
+    },
+    {
+      "path": "posts/ingrid-aromatherapy/ingrid-post-png.zip",
+      "mediaType": "application/zip",
+      "bytes": 1901932,
+      "sha256": "e23848615ae93b7a27d315e948e5c07999ffad1ab481bf26ae5a6e94d36996cc"
+    },
+    {
+      "path": "posts/salon-november-09-15/salon-week-png.zip",
+      "mediaType": "application/zip",
+      "bytes": 5114794,
+      "sha256": "089c73ac9a1ae5f9e9139da147e7d35956ef5e4fae5a99b1cec9d6953f2333de"
+    },
+    {
+      "path": "sarafan-club-event.zip",
+      "mediaType": "application/zip",
+      "bytes": 4348061,
+      "sha256": "e6e6855e9a6c128de0c1f5858bbf5c49df4739cd0ce5361d1528e8eed619890e"
+    },
+    {
+      "path": "sarafan-club-salon.zip",
+      "mediaType": "application/zip",
+      "bytes": 2320101,
+      "sha256": "a60c0aeea1c6f5c1fba5f4a41c908082d34bee8ce65412ca6f398d9f2cd63781"
+    },
+    {
+      "path": "sarafan-event.zip",
+      "mediaType": "application/zip",
+      "bytes": 3114550,
+      "sha256": "843135878808b43a661eec3b916fac0028e8be4f7770913b7a6eb0245f4a29d1"
+    },
+    {
+      "path": "sarafan-intro.zip",
+      "mediaType": "application/zip",
+      "bytes": 6448033,
+      "sha256": "3a304cfa47c89cf3a8cdeb9b6544acc67a885d585d459b6b380b9fc87e03d9c6"
+    },
+    {
+      "path": "sarafan-proust.zip",
+      "mediaType": "application/zip",
+      "bytes": 8888520,
+      "sha256": "7e3c77dd0d35b78ef1b5b398aa9c3a3ebeb8d1a9468f51cf20119f92f191cd75"
+    },
+    {
+      "path": "sarafan-transition.zip",
+      "mediaType": "application/zip",
+      "bytes": 2794701,
+      "sha256": "7c27e7a4a5e47692948010252ecd68afaccceff7f80defad792918ba60d6f104"
+    }
+  ]
+}

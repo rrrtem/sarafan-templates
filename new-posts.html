@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Новые посты — Сарафан</title>
+  <link rel="describedby" href="llms.txt">
+  <link rel="alternate" type="text/markdown" href="docs/new-posts.md" title="Добавление новых постов">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="catalog.css">
+  <link rel="stylesheet" href="new-posts.css">
+  <script src="new-posts-data.js" defer></script>
+  <script src="posts/salon-november-09-15/crop-media.js" defer></script>
+  <script src="weekly-cover.js" defer></script>
+  <script src="photo-crop.js" defer></script>
+  <script src="photo-editor.js" defer></script>
+  <script src="new-posts.js" defer></script>
+</head>
+<body>
+<div class="workspace">
+  <header class="masthead">
+    <a class="wordmark" href="index.html">Сарафан<span class="brand-dot" aria-hidden="true">●</span></a>
+    <nav class="library-nav" aria-label="Библиотека проекта"><a href="index.html">Шаблоны</a><a href="design-system.html">Дизайн-система</a><a href="new-posts.html" aria-current="page">Новые посты</a></nav>
+  </header>
+  <main class="posts-layout">
+    <aside class="posts-sidebar">
+      <div class="posts-index"><h2>Посты</h2><span id="post-count">0</span></div>
+      <nav class="posts-nav" id="posts-nav" aria-label="Выбрать пост"></nav>
+    </aside>
+    <div class="posts-content">
+      <p class="posts-empty" id="posts-empty" role="status">Новых постов пока нет.</p>
+      <article id="post-detail" aria-labelledby="post-title" hidden>
+        <h1 id="post-title"></h1>
+        <p class="post-edit-hint" id="post-edit-hint" hidden>Кадрируйте фотографии под овал. Скачиваемый PNG учитывает выбранный кадр.</p>
+        <p class="post-status" id="post-status" role="status" aria-live="polite"></p>
+        <div class="post-cards" id="post-cards" role="group" aria-label="Карточки поста"></div>
+        <section class="post-description" id="post-description" aria-labelledby="post-description-title" hidden>
+          <h2 id="post-description-title">Описание</h2>
+          <p id="post-description-text"></p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="agent-discovery"><a href="agents.html">Для ИИ-агентов ↗</a></footer>
+</div>
+<dialog class="photo-editor" id="photo-editor" aria-labelledby="crop-title">
+  <div class="crop-heading"><h2 id="crop-title">Кадрирование фотографии</h2><button type="button" id="crop-close" aria-label="Закрыть кадрирование">×</button></div>
+  <div class="crop-layout">
+    <div class="crop-preview-wrap"><canvas id="crop-preview" width="1080" height="1350" tabindex="0" aria-label="Предпросмотр афиши. Перетащите фотографию или используйте стрелки для смещения."></canvas><p>Перетащите фото внутри овала.<br>Можно использовать стрелки на клавиатуре.</p></div>
+    <div class="crop-controls">
+      <p class="crop-card-name" id="crop-card-name"></p>
+      <label>Размещение<select id="crop-fit"><option value="cover">Заполнить овал</option><option value="contain">Показать целиком</option></select></label>
+      <label for="crop-zoom">Масштаб <output id="crop-zoom-value">100%</output></label><input id="crop-zoom" type="range" min="1" max="3" step="0.01" value="1">
+      <label for="crop-x">По горизонтали <output id="crop-x-value">50%</output></label><input id="crop-x" type="range" min="0" max="100" step="1" value="50">
+      <label for="crop-y">По вертикали <output id="crop-y-value">50%</output></label><input id="crop-y" type="range" min="0" max="100" step="1" value="50">
+      <button type="button" class="crop-reset" id="crop-reset">Вернуть исходный кадр</button>
+      <p class="crop-note">Кадр сохраняется в этом браузере. Оригинал фотографии остаётся целым.</p>
+      <p class="crop-status" id="crop-status" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+  <div class="crop-actions"><button type="button" id="crop-cancel">Отмена</button><button type="button" class="crop-save" id="crop-save">Сохранить кадр</button></div>
+</dialog>
+</body>
+</html>

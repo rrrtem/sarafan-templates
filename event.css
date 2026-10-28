@@ -1,0 +1,33 @@
+/* Афиша события · Figma Page 12. Card geometry uses the original 1080 × 1350 canvas. */
+@font-face{font-family:"Sarafan Event Geist";font-style:normal;font-weight:100 900;font-display:block;src:url("assets/expert-geist-v1.6.ttf") format("truetype")}
+.event-card{background:var(--paper);color:var(--ink);font-synthesis:none}
+.event-card h2{margin:0;font-family:"EB Garamond",Georgia,serif;font-weight:600}
+.event-brand{position:absolute;inset:0;pointer-events:none}
+.event-ribbon{position:absolute;left:961px;top:-53px}
+.event-brand-word{position:absolute;display:flex;align-items:center;justify-content:center;width:43px;font-size:50px;font-weight:500;line-height:.86;white-space:nowrap;color:var(--paper)}
+.event-brand-word>span{transform:rotate(-90deg);flex:none}
+.event-brand-name{left:978.999px;top:231.499px;height:180px}
+.event-brand-journal{left:979.499px;top:50px;height:168px;font-style:italic}
+.event-details{position:absolute;left:0;top:1181px;width:1080px;display:flex;flex-direction:column;align-items:center;gap:21.447px;text-align:center}
+.event-date{width:614.804px;font:500 80px/.92 "Sarafan Event Geist",Geist,Arial,sans-serif}
+.event-address{width:685.82px;font-size:35px;line-height:1.1;font-style:italic;font-weight:500}
+.event-badge{padding:5px 10px 10px;background:var(--ui-accent);color:var(--paper);border-radius:30px;font-size:45px;line-height:1;font-weight:500;white-space:nowrap;text-align:center}
+.event-clean-copy{position:absolute;left:65px;top:230px;width:814px;display:flex;flex-direction:column;align-items:flex-start;gap:50px}
+.event-clean-kicker{font:400 35px/1.1 Geist,Arial,sans-serif}
+.event-card .event-clean-title{font-size:110px;line-height:1}
+.event-photo{background:#014b3e;color:var(--paper)}
+.event-portrait{position:absolute;left:-.4166px;top:-.1917px;width:1080px;height:1353px;overflow:hidden}
+.event-portrait>img{position:absolute;left:-64.12%;top:0;width:187.92%;height:100%}
+.event-photo-shade-top{position:absolute;left:-786.55px;top:-106.11px;width:1954px;height:646.883px;transform:rotate(162.55deg);background:linear-gradient(to bottom,transparent,#333);mix-blend-mode:multiply}
+.event-photo-shade-bottom{position:absolute;left:-39.539px;top:1150.568px;width:1158.58px;height:233.369px;background:linear-gradient(to bottom,transparent,#333);mix-blend-mode:multiply}
+.event-photo-title-wrap{position:absolute;left:0;top:-2px;width:641.93px;height:313.569px;display:flex;align-items:center;justify-content:center}
+.event-photo-title{flex:none;width:614.804px;font-size:70px;line-height:1;text-align:center;transform:rotate(-10deg)}
+.event-photo-badge-wrap{position:absolute;left:159px;top:238px;width:431.763px;height:133.383px;display:flex;align-items:center;justify-content:center}
+.event-photo-badge-wrap .event-badge{flex:none;width:427.844px;transform:rotate(-10deg)}
+.event-container-title{position:absolute;left:65.417px;top:52.849px;width:614.804px;font-size:70px;line-height:1}
+.event-poster{position:absolute;left:65px;top:267px;width:814px;height:1018px;object-fit:cover;border-radius:5px}
+.event-concert{background:#e3fc81}
+.event-standup{background:#5c7789;color:var(--paper)}
+.event-standup .event-poster{width:811px}
+.event-giveaway{background:#231820;color:var(--paper)}
+.event-giveaway .event-poster{left:65.417px;width:721px}

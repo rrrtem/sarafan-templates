@@ -1,0 +1,367 @@
+[
+  {
+    "card": "01",
+    "width": 1080,
+    "height": 1350,
+    "paragraphs": [
+      {
+        "class": "expert-ribbon-name",
+        "text": "Сарафан",
+        "box": {
+          "x": 55.671875,
+          "y": 416.203125,
+          "right": 234.671875,
+          "bottom": 481.203125
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-ribbon-bureau",
+        "text": "Бюро",
+        "box": {
+          "x": 247.6875,
+          "y": 416.203125,
+          "right": 353.640625,
+          "bottom": 481.203125
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-heading expert-cover-heading",
+        "text": "Хотите разобратьсяв эфирных маслах?",
+        "box": {
+          "x": 145.9375,
+          "y": 28.546875,
+          "right": 934.0625,
+          "bottom": 212.546875
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-cover-name",
+        "text": "Ингрид Гекьер,натуропат · ароматерапевт",
+        "box": {
+          "x": 69.484375,
+          "y": 1074,
+          "right": 610.703125,
+          "bottom": 1170
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-cover-description",
+        "text": "Практика и обучение работес эфирными маслами",
+        "box": {
+          "x": 69.484375,
+          "y": 1167,
+          "right": 611.34375,
+          "bottom": 1263
+        },
+        "overflow": false
+      },
+      {
+        "class": "",
+        "text": "Париж · Версаль",
+        "box": {
+          "x": 69.484375,
+          "y": 1296.984375,
+          "right": 272.34375,
+          "bottom": 1328.984375
+        },
+        "overflow": false
+      },
+      {
+        "class": "",
+        "text": "aroma.education",
+        "box": {
+          "x": 819.34375,
+          "y": 1296.984375,
+          "right": 1008.953125,
+          "bottom": 1328.984375
+        },
+        "overflow": false
+      }
+    ],
+    "images": [
+      {
+        "src": "marks/ovals-blue.svg",
+        "loaded": true
+      },
+      {
+        "src": "portrait.png",
+        "loaded": true
+      },
+      {
+        "src": "marks/ribbon-blue.svg",
+        "loaded": true
+      },
+      {
+        "src": "marks/cover-rule-brown.svg",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "card": "02",
+    "width": 1080,
+    "height": 1350,
+    "paragraphs": [
+      {
+        "class": "expert-heading expert-question-1",
+        "text": "Хотите понять,как выбиратьэфирные масла?",
+        "box": {
+          "x": 65,
+          "y": 29.203125,
+          "right": 723.375,
+          "bottom": 293.203125
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-heading expert-question-2",
+        "text": "Интересно,как запахи связаныс эмоциямии самочувствием?",
+        "box": {
+          "x": 65,
+          "y": 369.203125,
+          "right": 850.984375,
+          "bottom": 713.203125
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-heading expert-question-3",
+        "text": "Ищете практикуи обучениеароматерапии?",
+        "box": {
+          "x": 65,
+          "y": 789.203125,
+          "right": 708.109375,
+          "bottom": 1053.203125
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-footer-name",
+        "text": "Ингрид Гекьер · натуропат",
+        "box": {
+          "x": 65,
+          "y": 1257.578125,
+          "right": 384.609375,
+          "bottom": 1289.578125
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-footer-handle",
+        "text": "aroma.education",
+        "box": {
+          "x": 824.140625,
+          "y": 1257.578125,
+          "right": 1013.75,
+          "bottom": 1289.578125
+        },
+        "overflow": false
+      }
+    ],
+    "images": [
+      {
+        "src": "marks/mark-olive.svg",
+        "loaded": true
+      },
+      {
+        "src": "marks/rule-brown.svg",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "card": "03",
+    "width": 1080,
+    "height": 1350,
+    "paragraphs": [
+      {
+        "class": "expert-heading expert-session-copy",
+        "text": "Практические курсыпо ароматерапиии поездки к местам,где выращиваютрастения для масел",
+        "box": {
+          "x": 65,
+          "y": 697,
+          "right": 887.875,
+          "bottom": 1121
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-footer-name",
+        "text": "Ингрид Гекьер · натуропат",
+        "box": {
+          "x": 65,
+          "y": 1257.578125,
+          "right": 384.609375,
+          "bottom": 1289.578125
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-footer-handle",
+        "text": "aroma.education",
+        "box": {
+          "x": 824.140625,
+          "y": 1257.578125,
+          "right": 1013.75,
+          "bottom": 1289.578125
+        },
+        "overflow": false
+      }
+    ],
+    "images": [
+      {
+        "src": "lavender-unsplash.jpg",
+        "loaded": true
+      },
+      {
+        "src": "marks/mark-cream.svg",
+        "loaded": true
+      },
+      {
+        "src": "marks/rule-cream.svg",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "card": "04",
+    "width": 1080,
+    "height": 1350,
+    "paragraphs": [
+      {
+        "class": "expert-section-label",
+        "text": "Об эксперте",
+        "box": {
+          "x": 65,
+          "y": 61,
+          "right": 315.0625,
+          "bottom": 113
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-heading expert-about-quote",
+        "text": "Ароматерапия.Ольфактотерапия.Натуропатия.",
+        "box": {
+          "x": 174.78125,
+          "y": 438.21875,
+          "right": 905.1875,
+          "bottom": 702.21875
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-about-copy",
+        "text": "Более 20 лет практики с эфирными маслами во Франции. Ингрид преподаёт и делится знаниями о работе с ароматами.",
+        "box": {
+          "x": 70.25,
+          "y": 1009,
+          "right": 998.734375,
+          "bottom": 1149
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-footer-name",
+        "text": "Ингрид Гекьер · натуропат",
+        "box": {
+          "x": 65,
+          "y": 1257.578125,
+          "right": 384.609375,
+          "bottom": 1289.578125
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-footer-handle",
+        "text": "aroma.education",
+        "box": {
+          "x": 824.140625,
+          "y": 1257.578125,
+          "right": 1013.75,
+          "bottom": 1289.578125
+        },
+        "overflow": false
+      }
+    ],
+    "images": [
+      {
+        "src": "oil-unsplash.jpg",
+        "loaded": true
+      },
+      {
+        "src": "marks/mark-olive.svg",
+        "loaded": true
+      },
+      {
+        "src": "marks/rule-brown.svg",
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "card": "05",
+    "width": 1080,
+    "height": 1350,
+    "paragraphs": [
+      {
+        "class": "expert-section-label",
+        "text": "Контакты",
+        "box": {
+          "x": 65,
+          "y": 61,
+          "right": 259.9375,
+          "bottom": 113
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-heading expert-contact-copy",
+        "text": "Курсыи консультации:aroma.education",
+        "box": {
+          "x": 218.234375,
+          "y": 463,
+          "right": 861.71875,
+          "bottom": 807
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-footer-name",
+        "text": "Ингрид Гекьер · натуропат",
+        "box": {
+          "x": 65,
+          "y": 1257.578125,
+          "right": 384.609375,
+          "bottom": 1289.578125
+        },
+        "overflow": false
+      },
+      {
+        "class": "expert-footer-handle",
+        "text": "aroma.education",
+        "box": {
+          "x": 824.140625,
+          "y": 1257.578125,
+          "right": 1013.75,
+          "bottom": 1289.578125
+        },
+        "overflow": false
+      }
+    ],
+    "images": [
+      {
+        "src": "marks/mark-blue.svg",
+        "loaded": true
+      },
+      {
+        "src": "marks/rule-blue.svg",
+        "loaded": true
+      }
+    ]
+  }
+]

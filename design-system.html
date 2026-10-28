@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Дизайн-система — Сарафан</title>
+  <link rel="describedby" href="llms.txt">
+  <link rel="alternate" type="text/markdown" href="docs/design-system.md" title="Правила дизайн-системы">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="expert.css">
+  <link rel="stylesheet" href="catalog.css">
+  <link rel="stylesheet" href="design-system.css">
+  <script src="design-system-data.js" defer></script>
+  <script src="downloads/manifest.js" defer></script>
+  <script src="design-system.js" defer></script>
+</head>
+<body class="ds-page">
+<div class="workspace">
+  <header class="masthead">
+    <a class="wordmark" href="index.html">Сарафан<span class="brand-dot" aria-hidden="true">●</span></a>
+    <nav class="library-nav" aria-label="Библиотека проекта"><a href="index.html">Шаблоны</a><a href="design-system.html" aria-current="page">Дизайн-система</a><a href="new-posts.html">Новые посты</a></nav>
+  </header>
+  <main>
+    <section class="ds-hero" aria-labelledby="page-title">
+      <h1 class="sr-only" id="page-title">Дизайн-система</h1>
+      <div class="ds-actions"><a class="ds-primary" href="downloads/sarafan-design-kit.zip" download>Скачать материалы ↓</a><a class="ds-text-link" href="docs/design-system.md" download>Правила .md ↓</a></div>
+    </section>
+    <div class="ds-layout">
+      <aside class="ds-sidebar"><nav aria-label="На этой странице"><a href="#rules">Строгие правила</a><a href="#assets">Готовые элементы</a><a href="#recommendations">Рекомендации</a><a href="#avoid">Запреты</a></nav></aside>
+      <div class="ds-content">
+        <section class="ds-section" id="rules" aria-labelledby="rules-title">
+          <h2 id="rules-title">Строгие правила</h2>
+          <div class="ds-subheading"><h3>Цвета</h3><button class="ds-text-link" type="button" data-copy="palette">Копировать CSS ↗</button></div>
+          <div class="ds-palette" id="palette"></div>
+          <p class="ds-note">Нажмите на цвет, чтобы скопировать HEX. <a href="downloads/palette.json" download>JSON ↓</a> · <a href="downloads/palette.css" download>CSS ↓</a></p>
+          <div class="ds-subheading"><h3>Дополнительные цвета кругов</h3></div>
+          <p>Из исходных макетов Салона. На одной обложке каждый круг своего цвета; фон всегда бежевый #FBEED2.</p>
+          <div class="ds-palette" id="additional-palette"></div>
+          <div class="ds-subheading"><h3>Сочетания</h3><a class="ds-source" href="index.html#places/7">Пример ↗</a></div>
+          <p>Выбирайте сочетание целиком. Курсивом выделяйте смысловую фразу.</p>
+          <div class="ds-combinations" id="combinations"></div>
+          <div class="ds-subheading" id="type"><h3>Типографика</h3><a class="ds-source" href="#fonts">Шрифты ↓</a></div>
+          <p>EB Garamond и Geist, для клуба и «Салона» — CoFo Cinema1909. Размеры — для карточки 1080 × 1350 px.</p>
+          <div class="ds-type-list" id="typography"></div>
+          <p class="ds-note">Сохраняйте параметры выбранного шаблона. Для эксперта используйте Geist 1.6.0, для «Салона» — CoFo Cinema 1909.</p>
+        </section>
+        <section class="ds-section" id="assets" aria-labelledby="assets-title">
+          <h2 id="assets-title">Готовые элементы</h2>
+          <p>Используйте оригиналы. Сохраняйте форму, пропорции и цвет.</p>
+          <div class="ds-subheading"><h3>Логотипы и знаки</h3><a class="ds-text-link" href="downloads/sarafan-logos.zip" download>ZIP ↓</a></div>
+          <div class="ds-asset-grid" id="logos"></div>
+          <div class="ds-subheading"><h3>Бирки и формы</h3><a class="ds-text-link" href="downloads/sarafan-elements.zip" download>ZIP ↓</a></div>
+          <div class="ds-asset-grid" id="elements"></div>
+          <p class="ds-note">Надписи на бирках берите из шаблона вместе с формой.</p>
+          <div class="ds-subheading" id="fonts"><h3>Шрифты</h3><a class="ds-text-link" href="downloads/sarafan-fonts.zip" download>ZIP ↓</a></div>
+          <div class="ds-fonts" id="font-downloads"></div>
+        </section>
+        <section class="ds-section" id="recommendations" aria-labelledby="recommendations-title">
+          <h2 id="recommendations-title">Рекомендации</h2>
+          <ul class="ds-rule-list">
+            <li>Выбирайте композицию под задачу: обложка, рассказ, место, цитата или контакт.</li>
+            <li>Один главный фокус: фраза, портрет или фотография. Сохраняйте свободное поле.</li>
+            <li>Берите поля и кадрирование из выбранного макета. Затемняйте фото для читаемости текста.</li>
+            <li>Для новой композиции возьмите ближайший шаблон. Сохраните палитру, шрифты и готовые элементы.</li>
+          </ul>
+          <p class="ds-note">Примеры: <a href="index.html#proust">Журнал ↗</a> · <a href="index.html#places">Места ↗</a> · <a href="index.html#expert">Бюро ↗</a></p>
+        </section>
+        <section class="ds-section" id="avoid" aria-labelledby="avoid-title">
+          <h2 id="avoid-title">Запреты</h2>
+          <ul class="ds-rule-list">
+            <li>Не добавляйте случайные иконки, искры, эмодзи и орнамент. Используйте готовые элементы.</li>
+            <li>Не переносите в посты тени, скруглённые кнопки и другие стили интерфейса каталога.</li>
+            <li>Не добавляйте декоративные градиенты, рамки и овалы без примера в шаблоне.</li>
+            <li>Не растягивайте знаки и шрифты. Длинный текст сокращайте, кегль сохраняйте.</li>
+            <li>Не вводите близкие дубли цветов и стилей. Конфликты согласовывайте с владельцем системы.</li>
+            <li>Не выдумывайте цифры, отзывы и подписи для заполнения макета.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="agent-discovery"><a href="agents.html">Для ИИ-агентов ↗</a></footer>
+</div>
+<div class="ds-toast" id="copy-status" role="status" aria-live="polite"></div>
+<dialog id="copy-dialog"><form method="dialog"><h2>Скопируйте вручную</h2><p>Браузер ограничил доступ к буферу обмена.</p><textarea readonly aria-label="Текст для копирования"></textarea><button class="ds-primary">Закрыть</button></form></dialog>
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Сарафан — Каталог шаблонов</title>
+  <link rel="describedby" href="llms.txt">
+  <link rel="alternate" type="text/markdown" href="docs/agent-guide.md" title="Инструкция для ИИ-агентов">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="intro.css">
+  <link rel="stylesheet" href="transition.css">
+  <link rel="stylesheet" href="expert.css">
+  <link rel="stylesheet" href="event.css">
+  <link rel="stylesheet" href="club.css">
+  <link rel="stylesheet" href="catalog.css">
+  <script src="catalog.js" defer></script>
+</head>
+<body>
+<main class="workspace" id="sarafan-canvas">
+  <header class="masthead">
+    <a class="wordmark" href="#" aria-label="Сарафан — все шаблоны">Сарафан<span class="brand-dot" aria-hidden="true">●</span></a>
+    <nav class="library-nav" aria-label="Библиотека проекта"><a href="#" aria-current="page">Шаблоны</a><a href="design-system.html">Дизайн-система</a><a href="new-posts.html">Новые посты</a></nav>
+  </header>
+  <section id="catalog" aria-labelledby="catalog-title">
+    <h1 class="sr-only" id="catalog-title">Шаблоны</h1>
+    <div class="catalog-navigation">
+      <div class="filters" role="group" aria-label="Раздел каталога">
+        <button type="button" data-filter="all" aria-pressed="true">Все <span>8</span></button>
+        <button type="button" data-filter="journal" aria-pressed="false">Журнал <span>3</span></button>
+        <button type="button" data-filter="club" aria-pressed="false">Клуб <span>2</span></button>
+        <button type="button" data-filter="bureau" aria-pressed="false">Бюро <span>1</span></button>
+        <button type="button" data-filter="ads" aria-pressed="false">Реклама <span>0</span></button>
+        <button type="button" data-filter="general" aria-pressed="false">Общие <span>2</span></button>
+      </div>
+    </div>
+    <p class="category-empty" id="category-empty" role="status" hidden>В этой категории пока нет шаблонов.</p>
+    <div class="template-list" id="template-list"></div>
+  </section>
+  <section id="viewer" hidden aria-labelledby="viewer-title">
+    <div class="toolbar">
+      <h1 class="project-title" id="viewer-title"></h1>
+      <div class="toolbar-actions">
+        <div class="view-switch" role="group" aria-label="Режим просмотра">
+          <button type="button" data-view="carousel" aria-pressed="true">Карусель</button>
+          <button type="button" data-view="grid" aria-pressed="false">Все карточки</button>
+        </div>
+        <a class="download" id="download-slide" href="exports/sarafan-proust-01.png" download>Скачать PNG ↓</a>
+      </div>
+    </div>
+    <label class="variant-picker" id="variant-picker" hidden>Формат
+      <select id="variant-filter" aria-label="Формат карточки">
+        <option value="all">Все варианты</option>
+        <optgroup label="Обложки"><option value="cover">Обложки — 3 варианта</option></optgroup>
+        <optgroup label="Карточка места">
+          <option value="landscape">Горизонтальное фото</option>
+          <option value="fullscreen">Фото на весь слайд</option>
+          <option value="oval">Овальное фото</option>
+          <option value="text">Без фото — 6 вариантов</option>
+        </optgroup>
+      </select>
+    </label>
+    <section class="presentation" data-view="carousel" aria-label="Карточки шаблона" aria-roledescription="карусель">
+      <div class="cards" id="viewer-cards"></div>
+      <button class="arrow arrow--previous" type="button" aria-label="Предыдущая карточка" disabled>←</button>
+      <button class="arrow arrow--next" type="button" aria-label="Следующая карточка">→</button>
+      <div class="caption" aria-live="polite" aria-atomic="true"><span class="sr-only" id="slide-caption"></span><span class="slide-number" id="slide-number"></span></div>
+      <nav class="pagination" aria-label="Выбрать карточку"></nav>
+    </section>
+  </section>
+  <footer class="agent-discovery"><a href="agents.html">Для ИИ-агентов ↗</a></footer>
+</main>
+<template id="reference-club-salon">
+<div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="Салон · Обложка и типографика"><article class="ig-card club-card club-salon-cover" data-node-id="373:5535" aria-label="Салон · Обложка и типографика" style=""><img class="club-dot" src="assets/club-5535-ellipse31.svg" alt="" style="left:109px;top:580px" aria-hidden="true"><img class="club-dot" src="assets/club-5535-ellipse37.svg" alt="" style="left:453px;top:-47px" aria-hidden="true"><img class="club-dot" src="assets/club-5535-ellipse32.svg" alt="" style="left:933px;top:332px" aria-hidden="true"><p class="club-address">66 rue Notre-Dame de Nazareth, 75003</p><h2 class="club-cinema club-salon-title">Салон</h2><p class="club-cinema club-range">5—30</p><p class="club-cinema club-month">ноября</p><p class="club-cinema club-brand-title">сарафан</p><p class="club-program-list">открытые встречи за кофе ✚ концерты и&nbsp;музыкальные вечера ✚ лекции<br>✚ чтения ✚ дегустации ✚ винное казино ✚&nbsp;перформанс ✚ творческие вечера ✚&nbsp;детские мастерские ✚ …многое-многое другое</p><p class="club-cta">подробнее →</p><img class="club-dot" src="assets/club-5535-ellipse30.svg" alt="" style="left:393px;top:390px" aria-hidden="true"><img class="club-dot" src="assets/club-5535-ellipse35.svg" alt="" style="left:748px;top:596px" aria-hidden="true"><img class="club-dot" src="assets/club-5535-ellipse36.svg" alt="" style="left:153px;top:174px" aria-hidden="true"><img class="club-dot" src="assets/club-5535-ellipse33.svg" alt="" style="left:712px;top:79px" aria-hidden="true"><img class="club-dot" src="assets/club-5535-ellipse34.svg" alt="" style="left:609px;top:754px" aria-hidden="true"><img class="club-address-photo" src="assets/club-5535-screenshot20261027at1436031.png" alt="Интерьер Салона" ><img class="club-mark" src="assets/club-5535-group93.svg" alt="" aria-hidden="true"></article></div></div>
+<div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="Салон · Приглашение на встречи"><article class="ig-card club-card club-salon-story" data-node-id="373:5874" aria-label="Салон · Приглашение на встречи" style=""><img class="club-room-photo" src="assets/club-5874-ellipse17.png" alt="Общий стол в пространстве Салона" ><div class="club-story-copy"><p>Друзья, мы снова приглашаем вас на встречи друг с другом! </p><p>В марте этого года мы попробовали перенести наше сообщество из экранов телефона в настоящее пространство — и это был месяц, который мы до сих пор вспоминаем. <em>Вы приходили на кофе, оставались на лекции, знакомились, спорили, смеялись, учились, танцевали и возвращались снова. </em></p><p>Стало понятно: такому месту быть. Поэтому в ноябре — новая глава, больше, смелее и насыщеннее.</p></div></article></div></div>
+<div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="Салон · Партнёр и программа"><article class="ig-card club-card club-salon-partner" data-node-id="373:5877" aria-label="Салон · Партнёр и программа" style=""><img class="club-partner-photo" src="assets/club-5877-telegramcloudphotosize45972135932305543156y1.png" alt="Дима Макаров и Варя в Париже" ><div class="club-partner-shade"></div><p class="club-partner-copy">В этот раз партнёром Салона выступает <em>Дима Макаров</em>, и вместе мы собрали программу, в которой каждый вечер — повод выйти из дома.</p><p class="club-cta">программа →</p></article></div></div>
+</template>
+<template id="template-club-event">
+<div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="Просмотр и обсуждение фильма «Ниночка»"><article class="ig-card club-card club-poster club-poster--film" data-node-id="373:5883" aria-label="Просмотр и обсуждение фильма «Ниночка»" style="--club-background:#91945B;--club-color:#FBEED2"><img class="club-poster-photo" src="assets/club-5883-ellipse17.png" alt="Кадр из фильма «Ниночка»" ><p class="club-cinema club-poster-date">5/11</p><p class="club-poster-time">четверг, <br>19:00</p><div class="club-ribbon" aria-hidden="true"><div class="club-ribbon-vertical"><img class="" src="assets/club-5883-rectangle71.svg" alt="" ></div></div><p class="club-ribbon-name">Сарафан</p><p class="club-ribbon-salon">Салон</p><div class="club-price-wrap"><p class="club-price">€10</p></div><img class="club-mark" src="assets/club-5883-group93.svg" alt="" aria-hidden="true"><div class="club-poster-copy"><div class="club-poster-heading-zone"><h2 class="club-cinema club-poster-title">Просмотр<br>и обсуждение фильма<br>«Ниночка»</h2></div><p class="club-poster-description">Смотрим комедию 1939 года Эрнста Любича с Гретой Гарбо о советской комиссарше, которая приезжает в Париж и неожиданно влюбляется. После показа обсудим фильм, столкновение двух миров и удивительную историю его создания вместе с Дмитрием Макаровым.</p></div></article></div></div>
+<div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="дегустация грузинских вин"><article class="ig-card club-card club-poster club-poster--georgia" data-node-id="373:6218" aria-label="дегустация грузинских вин" style="--club-background:#E19A9B;--club-color:#FBEED2"><img class="club-poster-photo" src="assets/club-6218-ellipse17.png" alt="Сомелье Наталья с бутылкой вина" ><p class="club-cinema club-poster-date">6/11</p><p class="club-poster-time">пятница, 12:30–14:30</p><div class="club-ribbon" aria-hidden="true"><div class="club-ribbon-vertical"><img class="" src="assets/club-6218-rectangle71.svg" alt="" ></div></div><p class="club-ribbon-name">Сарафан</p><p class="club-ribbon-salon">Салон</p><div class="club-price-wrap"><p class="club-price">€50</p></div><img class="club-mark" src="assets/club-6218-group93.svg" alt="" aria-hidden="true"><div class="club-poster-copy"><div class="club-poster-heading-zone"><h2 class="club-cinema club-poster-title">дегустация<br>грузинских вин</h2><p class="club-cinema club-poster-subtitle">С сомелье Натальей</p></div><p class="club-poster-description">Открываем для себя грузинское виноделие за пределами привычных Хванчкары и Киндзмараули. Сомелье Наталья расскажет о древней традиции квеври, развеет популярные мифы и познакомит с неожиданными винами Грузии. В программе дегустация и обед.</p></div></article></div></div>
+<div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="Вечеринка-открытие салона"><article class="ig-card club-card club-poster club-poster--party" data-node-id="373:6554" aria-label="Вечеринка-открытие салона" style="--club-background:#E19A9B;--club-color:#FBEED2"><img class="club-poster-photo" src="assets/club-6554-ellipse17.png" alt="Танцы на вечеринке Салона" ><p class="club-cinema club-poster-date">6/11</p><p class="club-poster-time">пятница, 19:00</p><div class="club-ribbon" aria-hidden="true"><div class="club-ribbon-vertical"><img class="" src="assets/club-6554-rectangle71.svg" alt="" ></div></div><p class="club-ribbon-name">Сарафан</p><p class="club-ribbon-salon">Салон</p><div class="club-price-wrap"><p class="club-price">Вход свободный</p></div><img class="club-mark" src="assets/club-6554-group93.svg" alt="" aria-hidden="true"><div class="club-poster-copy"><div class="club-poster-heading-zone"><h2 class="club-cinema club-poster-title">Вечеринка-<br>открытие<br>салона</h2></div><p class="club-poster-description">Собираемся на большую вечеринку в честь открытия ноябрьского Салона! Будем знакомиться, встречаться со старыми друзьями, пить вино и строить планы на месяц. Приходите провести вечер с Варей, Димой и нашим сообществом.</p></div></article></div></div>
+<div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="Король белых вин"><article class="ig-card club-card club-poster club-poster--riesling" data-node-id="373:6889" aria-label="Король белых вин" style="--club-background:#A9C9DF;--club-color:#553D3D"><img class="club-poster-photo" src="assets/club-6889-ellipse17.png" alt="Дегустация белого вина" ><p class="club-cinema club-poster-date">7/11</p><p class="club-poster-time">суббота, 16:00–18:00</p><div class="club-ribbon" aria-hidden="true"><div class="club-ribbon-vertical"><img class="" src="assets/club-6889-rectangle71.svg" alt="" ></div></div><p class="club-ribbon-name">Сарафан</p><p class="club-ribbon-salon">Салон</p><div class="club-price-wrap"><p class="club-price">€70</p></div><img class="club-mark" src="assets/club-6889-group93.svg" alt="" aria-hidden="true"><div class="club-poster-copy"><div class="club-poster-heading-zone"><h2 class="club-cinema club-poster-title">Король<br>белых вин</h2><p class="club-cinema club-poster-subtitle">расшифровываем рислинг</p></div><p class="club-poster-description">Отправляемся в винное путешествие по Франции, Германии и Австралии, чтобы узнать, насколько разным бывает рислинг. Вместе с винным журналистом Яшей Лысенко сравним вина, разберемся в особенностях сорта и научимся узнавать его характер в бокале.</p></div></article></div></div>
+<div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="Концерт группы EDVA"><article class="ig-card club-card club-poster club-poster--edva" data-node-id="373:7560" aria-label="Концерт группы EDVA" style="--club-background:#A9C9DF;--club-color:#553D3D"><img class="club-poster-photo" src="assets/club-7560-ellipse17.png" alt="Группа EDVA" ><p class="club-cinema club-poster-date">7/11</p><p class="club-poster-time">суббота, <br>19:30</p><div class="club-ribbon" aria-hidden="true"><div class="club-ribbon-vertical"><img class="" src="assets/club-7560-rectangle71.svg" alt="" ></div></div><p class="club-ribbon-name">Сарафан</p><p class="club-ribbon-salon">Салон</p><div class="club-price-wrap"><p class="club-price">€25</p></div><img class="club-mark" src="assets/club-7560-group93.svg" alt="" aria-hidden="true"><div class="club-poster-copy"><div class="club-poster-heading-zone"><h2 class="club-cinema club-poster-title">Концерт<br>группы<br>EDVA</h2></div><p class="club-poster-description">Камерный концерт EDVA — проекта на пересечении авант-попа и экспериментальной электроники. Необычный голос, атмосферные аранжировки и музыка, в которой слышны отголоски Björk, Erykah Badu и Kate Bush. В этот вечер группа исполнит авторскую программу.</p></div></article></div></div>
+<div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="Воркшоп по бумажному коллажу"><article class="ig-card club-card club-poster club-poster--workshop" data-node-id="373:7225" aria-label="Воркшоп по бумажному коллажу" style="--club-background:#FBEED2;--club-color:#553D3D"><img class="club-poster-photo" src="assets/club-7225-ellipse17.png" alt="Участники мастерской бумажного коллажа" ><p class="club-cinema club-poster-date">8/11</p><p class="club-poster-time">воскресенье, 13:00–16:00</p><div class="club-ribbon" aria-hidden="true"><div class="club-ribbon-vertical"><img class="" src="assets/club-7225-rectangle71.svg" alt="" ></div></div><p class="club-ribbon-name">Сарафан</p><p class="club-ribbon-salon">Салон</p><div class="club-price-wrap"><p class="club-price">€40</p></div><img class="club-mark" src="assets/club-7225-group93.svg" alt="" aria-hidden="true"><div class="club-poster-copy"><div class="club-poster-heading-zone"><h2 class="club-cinema club-poster-title">Воркшоп<br>по бумажному<br>коллажу</h2></div><p class="club-poster-description">Создаем собственные коллажи вместе с художником и иллюстратором Олегом Бородиным. Будем экспериментировать с цветом, формой и композицией, вырезать, сочетать неожиданное и искать свой визуальный язык. Опыт не нужен, все материалы предоставим.</p></div></article></div></div>
+</template>
+<template id="template-event">
+  <div class="card-unit" data-variant-group="cover">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="1 из 5. Обложка на чистом фоне">
+      <article class="ig-card event-card event-clean" aria-label="Афиша события. Обложка на чистом фоне">
+        <div class="event-clean-copy">
+          <p class="event-clean-kicker">Концерт</p>
+          <h2 class="event-clean-title">Евгений Хавтан<br>Лучшие хиты<br>группы Браво</h2>
+          <p class="event-badge">Разыгрываем билет</p>
+        </div>
+        <div class="event-details"><p class="event-date">10 ноября</p><p class="event-address">Café de la Danse, Louis-Philippe 5 Pass., 75011</p></div>
+        <div class="event-brand" aria-hidden="true"><img class="event-ribbon" src="assets/event-ribbon.svg" alt=""><div class="event-brand-word event-brand-name"><span>Сарафан</span></div><div class="event-brand-word event-brand-journal"><span>Журнал</span></div></div>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit" data-variant-group="cover">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="2 из 5. Фотообложка">
+      <article class="ig-card event-card event-photo" data-node-id="356:6935" aria-label="Евгений Хавтан. Фотообложка">
+        <div class="event-portrait" data-node-id="356:6982"><img src="assets/event-khavtan-portrait.png" alt="Чёрно-белый портрет Евгения Хавтана"></div>
+        <div class="event-photo-shade-top"></div><div class="event-photo-shade-bottom"></div>
+        <div class="event-photo-title-wrap"><h2 class="event-photo-title" data-node-id="356:6984">Евгений Хавтан /<br>Лучшие хит группы<br>Браво</h2></div>
+        <div class="event-photo-badge-wrap"><p class="event-badge" data-node-id="356:6987">Разыгрываем билет</p></div>
+        <div class="event-details"><p class="event-date" data-node-id="356:6989">10 ноября</p><p class="event-address" data-node-id="356:6988">Café de la Danse, Louis-Philippe 5 Pass., 75011</p></div>
+        <div class="event-brand" aria-hidden="true"><img class="event-ribbon" src="assets/event-ribbon.svg" alt=""><div class="event-brand-word event-brand-name"><span>Сарафан</span></div><div class="event-brand-word event-brand-journal"><span>Журнал</span></div></div>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit" data-variant-group="container">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="3 из 5. Готовая афиша концерта">
+      <article class="ig-card event-card event-container event-concert" data-node-id="356:7019" aria-label="Концерт. Контейнер для готовой афиши">
+        <h2 class="event-container-title" data-node-id="356:7022">Концерт</h2>
+        <img class="event-poster" src="assets/event-concert-poster.png" data-node-id="356:7021" alt="Готовая афиша концерта Верки Сердючки 21 октября">
+        <div class="event-brand" aria-hidden="true"><img class="event-ribbon" src="assets/event-ribbon.svg" alt=""><div class="event-brand-word event-brand-name"><span>Сарафан</span></div><div class="event-brand-word event-brand-journal"><span>Журнал</span></div></div>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit" data-variant-group="container">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="4 из 5. Готовая афиша стендапа">
+      <article class="ig-card event-card event-container event-standup" data-node-id="356:7008" aria-label="Стендап. Контейнер для готовой афиши">
+        <h2 class="event-container-title" data-node-id="356:7011">Стендап</h2>
+        <img class="event-poster" src="assets/event-standup-poster.png" data-node-id="356:7010" alt="Готовая афиша Urgant Live в Париже 25 октября">
+        <div class="event-brand" aria-hidden="true"><img class="event-ribbon" src="assets/event-ribbon.svg" alt=""><div class="event-brand-word event-brand-name"><span>Сарафан</span></div><div class="event-brand-word event-brand-journal"><span>Журнал</span></div></div>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit" data-variant-group="container">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="5 из 5. Готовая афиша розыгрыша">
+      <article class="ig-card event-card event-container event-giveaway" data-node-id="356:6997" aria-label="Розыгрыш билета на концерт. Контейнер для готовой афиши">
+        <h2 class="event-container-title" data-node-id="356:7000">Розыгрыш билета<br>на концерт</h2>
+        <img class="event-poster" src="assets/event-giveaway-poster.png" data-node-id="356:6999" alt="Готовая афиша концерта Евгения Хавтана и группы Браво 10 ноября">
+        <div class="event-brand" aria-hidden="true"><img class="event-ribbon" src="assets/event-ribbon.svg" alt=""><div class="event-brand-word event-brand-name"><span>Сарафан</span></div><div class="event-brand-word event-brand-journal"><span>Журнал</span></div></div>
+      </article>
+    </div>
+  </div>
+</template>
+<template id="template-proust">
+
+      <div class="card-unit">
+        <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="1 из 6. Марсель Пруст">
+          <article class="ig-card cover" data-node-id="287:45" aria-label="Марсель Пруст. Мадленка, постель и Париж">
+            <div class="image-layer cover-underlay" data-node-id="287:46"><img src="assets/proust-bed-cover.png" alt=""></div>
+            <div class="image-layer cover-portrait" data-node-id="287:47"><img src="assets/proust-portrait.png" alt="Портрет Марселя Пруста с белым цветком в петлице"></div>
+            <div aria-hidden="true">
+              <div class="ribbon-word ribbon-back-sarafan"><span>Сарафан</span></div>
+              <div class="ribbon-word ribbon-back-journal"><span>Журнал</span></div>
+              <div class="ribbon-word ribbon-est"><span>est. 2021</span></div>
+              <img class="ribbon-art" src="assets/sarafan-ribbon.svg" alt="">
+              <div class="ribbon-word ribbon-sarafan"><span>Сарафан</span></div>
+              <div class="ribbon-word ribbon-journal"><span>Журнал</span></div>
+            </div>
+            <h2 class="cover-title" data-node-id="287:61" style="margin:0">Марсель Пруст</h2>
+            <p class="cover-subtitle" data-node-id="287:62">Мадленка, постель<br>и Париж</p>
+          </article>
+        </div>
+      </div>
+      <div class="card-unit">
+        <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="2 из 6. Парижская жизнь" hidden>
+          <article class="ig-card biography" data-node-id="287:63" aria-label="Парижская жизнь Пруста">
+            <div class="image-layer young-photo" data-node-id="287:65"><img src="assets/proust-young.png" alt="Молодой Марсель Пруст у окна"></div>
+            <p class="biography-copy" data-node-id="287:64">Пруст родился в 1871 году в Париже,<br>в 16-м округе, в семье известного врача.<br>Учился в лицее Кондорсе в 9-м, потом<br>в Сорбонне, вёл отдел салонной хроники<br>в «Фигаро», <strong>с друзьями основал<br>журнал «Пир»</strong></p>
+          </article>
+        </div>
+      </div>
+      <div class="card-unit">
+        <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="3 из 6. Роман из постели" hidden>
+          <article class="ig-card bedroom" data-node-id="287:66" aria-label="Пруст писал лежа">
+            <p class="bedroom-copy" data-node-id="287:68">Свою огромную эпопею <strong>Пруст писал<br>лежа.</strong> Из-за тяжелой астмы он почти<br>не выходил из дома: спал днём, работал<br>ночью в постели, укрывшись пальто.<br>Стены спальни он обил пробкой, чтобы<br>не слышать шума города. В 1919 году<br>он получил Гонкуровскую премию,<br>а в 1922-м умер, успев закончить роман</p>
+            <div class="image-layer bedroom-photo" data-node-id="287:67"><img src="assets/proust-bed.png" alt="Чёрно-белая фотография Пруста, читающего в постели"></div>
+          </article>
+        </div>
+      </div>
+      <div class="card-unit">
+        <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="4 из 6. Прустовская мадленка" hidden>
+          <article class="ig-card madeleine" data-node-id="287:72" aria-label="Прустовская мадленка и непроизвольная память">
+            <p class="madeleine-copy" data-node-id="287:73">В романе «В поисках<br>утраченного времени»<br>герой макает мадленку<br>в липовый чай, и вкус вдруг<br>возвращает ему все детство.<br>Пруст назвал это<br>«непроизвольной памятью»,<br>а выражение <strong>«прустовская<br>мадленка»</strong> стало крылатым</p>
+            <p class="madeleine-note" data-node-id="287:74">Кстати, в черновиках вместо мадленки был обычный<br>поджаренный хлеб и сухарик</p>
+          </article>
+        </div>
+      </div>
+      <div class="card-unit">
+        <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="5 из 6. Книга и мадленка" hidden>
+          <article class="ig-card book" data-node-id="287:69" aria-label="Книга о Прусте, мадленка и чашка кофе">
+            <div class="image-layer book-underlay" data-node-id="287:70"><img src="assets/proust-bed-underlay.png" alt=""></div>
+            <div class="image-layer book-photo" data-node-id="287:71"><img src="assets/proust-book-madeleine.png" alt="Синяя книга Marcel Proust, мадленка и чашка кофе на деревянном столе"></div>
+          </article>
+        </div>
+      </div>
+      <div class="card-unit">
+        <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="6 из 6. Места Пруста в Париже" hidden>
+          <article class="ig-card places" data-node-id="287:75" aria-label="Места Пруста в Париже">
+            <h2 class="places-title" data-node-id="287:76" style="margin:0">Места Пруста в Париже:</h2>
+            <ul class="places-list" data-node-id="287:77">
+              <li><strong>Музей Карнавале</strong> — там воссоздана<br>его спальня с настоящей кроватью</li>
+              <li><strong>Бульвар Осман, 102</strong> — дом, где он<br>написал большую часть романа</li>
+              <li><strong>Отель «Ритц»</strong> — одно из немногих<br>мест, куда он выбирался по вечерам.<br>Там есть салон его имени</li>
+              <li><strong>Кладбище Пер-Лашез</strong> — его могила</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+</template>
+<template id="template-places">
+  <div class="card-unit" data-variant-group="cover">
+    <div class="card-shell" role="group" aria-roledescription="макет" aria-label="1 из 12. Обложка · Хачапури">
+      <article class="ig-card collection-cover collection-cover-v2 cover-khachapuri" data-node-id="329:733" aria-label="Грузия в Париже — Хачапури">
+        <div class="image-layer collection-cover-photo"><img src="assets/places-cover-khachapuri.png" alt="Хачапури по-аджарски"></div>
+        <div class="collection-cover-shade"><div></div></div>
+        <div class="collection-cover-heading"><div><h2>Грузия<br>в Париже</h2><p>Где искать вкусные<br>хачапури и хинкали?</p></div></div>
+        <div aria-hidden="true"><img class="collection-vertical-ribbon" src="assets/places-ribbon-vertical.svg" alt=""><div class="collection-vertical-word collection-vertical-name"><span>Сарафан</span></div><div class="collection-vertical-word collection-vertical-journal"><span>Журнал</span></div></div>
+      </article></div>
+  </div>
+  <div class="card-unit" data-variant-group="cover">
+    <div class="card-shell" role="group" aria-roledescription="макет" aria-label="2 из 12. Обложка · Грузинский стол">
+      <article class="ig-card collection-cover collection-cover-v2 cover-table" data-node-id="329:720" aria-label="Грузия в Париже — Грузинский стол">
+        <div class="image-layer collection-cover-photo"><img src="assets/places-cover-table.png" alt="Грузинские блюда и бокалы вина"></div>
+        <div class="collection-cover-shade"><div></div></div>
+        <div class="collection-cover-heading"><div><h2>Грузия<br>в Париже</h2><p>Где искать вкусные<br>хачапури и хинкали?</p></div></div>
+        <div aria-hidden="true"><img class="collection-vertical-ribbon" src="assets/places-ribbon-vertical.svg" alt=""><div class="collection-vertical-word collection-vertical-name"><span>Сарафан</span></div><div class="collection-vertical-word collection-vertical-journal"><span>Журнал</span></div></div>
+      </article></div>
+  </div>
+  <div class="card-unit" data-variant-group="cover">
+    <div class="card-shell" role="group" aria-roledescription="макет" aria-label="3 из 12. Обложка · Хинкали">
+      <article class="ig-card collection-cover collection-cover-v2 cover-khinkali" data-node-id="329:707" aria-label="Грузия в Париже — Хинкали">
+        <div class="image-layer collection-cover-photo"><img src="assets/places-cover-khinkali.png" alt="Хинкали на блюде"></div>
+        <div class="collection-cover-shade"><div></div></div>
+        <div class="collection-cover-heading"><div><h2>Грузия<br>в Париже</h2><p>Где искать вкусные<br>хачапури и хинкали?</p></div></div>
+        <div aria-hidden="true"><img class="collection-vertical-ribbon" src="assets/places-ribbon-vertical.svg" alt=""><div class="collection-vertical-word collection-vertical-name"><span>Сарафан</span></div><div class="collection-vertical-word collection-vertical-journal"><span>Журнал</span></div></div>
+      </article></div>
+  </div>
+  <div class="card-unit" data-variant-group="landscape">
+    <div class="card-shell" role="group" aria-roledescription="макет" aria-label="4 из 12. Горизонтальное фото · Tbilissi">
+      <article class="ig-card collection-place" data-node-id="329:590" aria-label="Tbilissi — горизонтальное фото">
+        <div class="image-layer collection-landscape"><img src="assets/places-tbilissi-landscape.png" alt="Интерьер ресторана Tbilissi"></div>
+        <h2 class="collection-place-name">Tbilissi</h2><div class="collection-address"><span class="collection-pin" aria-hidden="true">📍</span><p>186 rue Saint-Denis, 75002</p></div><p class="collection-description">Компактный ресторан с классическими блюдами и домашним вайбом</p><div class="collection-credit"><p>Фото: Google Maps</p></div>
+      </article></div>
+  </div>
+  <div class="card-unit" data-variant-group="fullscreen">
+    <div class="card-shell" role="group" aria-roledescription="макет" aria-label="5 из 12. Фото на весь слайд · Tbilissi">
+      <article class="ig-card collection-place collection-fullscreen collection-fullscreen-v2" data-node-id="329:626" aria-label="Tbilissi — фото на весь слайд">
+        <div class="image-layer collection-fullscreen-photo"><img src="assets/places-tbilissi-full.png" alt="Интерьер ресторана Tbilissi"></div><div class="collection-fullscreen-shade"></div>
+        <h2 class="collection-place-name">Tbilissi</h2><div class="collection-address"><span class="collection-pin" aria-hidden="true">📍</span><p>186 rue Saint-Denis, 75002</p></div><p class="collection-description">Компактный ресторан с классическими блюдами и домашним вайбом</p><div class="collection-credit"><p>Фото: Google Maps</p></div>
+      </article></div>
+  </div>
+  <div class="card-unit" data-variant-group="oval">
+    <div class="card-shell" role="group" aria-roledescription="макет" aria-label="6 из 12. Овальное фото · Tbilissi">
+      <article class="ig-card collection-place collection-oval" data-node-id="329:599" aria-label="Tbilissi — овальное фото">
+        <h2 class="collection-place-name">Tbilissi</h2><div class="collection-address"><span class="collection-pin" aria-hidden="true">📍</span><p>186 rue Saint-Denis, 75002</p></div>
+        <img class="collection-oval-photo" src="assets/places-tbilissi-oval.png" width="936" height="573" alt="Интерьер Tbilissi в овальной рамке">
+        <p class="collection-description">Компактный ресторан с классическими блюдами и домашним вайбом</p><div class="collection-credit"><p>Фото: Google Maps</p></div>
+      </article></div>
+  </div>
+  <div class="card-unit" data-variant-group="text">
+    <div class="card-shell" role="group" aria-roledescription="макет" aria-label="7 из 12. Без фото · Голубой">
+      <article class="ig-card collection-text text-blue" data-node-id="329:765" aria-label="Tbilissi — текстовая карточка, голубой вариант">
+        <p class="collection-text-number">1</p><p class="collection-text-copy"><span>Компактный ресторан с </span><em>классическими блюдами</em><span> и домашним вайбом</span></p><p class="collection-text-name">Tbilissi</p>
+        <div class="collection-text-address"><span class="collection-pin" aria-hidden="true">📍</span><p>186 rue Saint-Denis, 75002</p></div>
+      </article></div>
+  </div>
+  <div class="card-unit" data-variant-group="text">
+    <div class="card-shell" role="group" aria-roledescription="макет" aria-label="8 из 12. Без фото · Кремовый">
+      <article class="ig-card collection-text text-cream" data-node-id="329:3767" aria-label="Pirosmani — текстовая карточка, кремовый вариант">
+        <p class="collection-text-number">2</p><p class="collection-text-copy"><span>Маленький </span><em>аутентичный</em><em> </em><span>ресторан, будто попал в гости к грузинской семье</span></p><p class="collection-text-name">Pirosmani</p>
+        <div class="collection-text-address"><span class="collection-pin" aria-hidden="true">📍</span><p>6 rue Boutebrie, 75005</p></div>
+      </article></div>
+  </div>
+  <div class="card-unit" data-variant-group="text">
+    <div class="card-shell" role="group" aria-roledescription="макет" aria-label="9 из 12. Без фото · Розовый">
+      <article class="ig-card collection-text text-pink" data-node-id="329:3774" aria-label="Tamada — текстовая карточка, розовый вариант">
+        <p class="collection-text-number">3</p><p class="collection-text-copy"><span>Более </span><em>ресторанный формат</em><span> <br>с большим меню и прицелом на вина</span></p><p class="collection-text-name">Tamada</p>
+        <div class="collection-text-address"><span class="collection-pin" aria-hidden="true">📍</span><p>143 boulevard Saint-Michel, 75005</p></div>
+      </article></div>
+  </div>
+  <div class="card-unit" data-variant-group="text">
+    <div class="card-shell" role="group" aria-roledescription="макет" aria-label="10 из 12. Без фото · Оливковый">
+      <article class="ig-card collection-text text-olive" data-node-id="329:3781" aria-label="Saperavi — текстовая карточка, оливковый вариант">
+        <p class="collection-text-number">4</p><p class="collection-text-copy"><span>Камерный ресторан <br></span><em>с акцентом <br>на вино</em><span> и традиционные рецепты</span></p><p class="collection-text-name">Saperavi</p>
+        <div class="collection-text-address"><span class="collection-pin" aria-hidden="true">📍</span><p>4 rue du Fer à Moulin, 75005</p></div>
+      </article></div>
+  </div>
+  <div class="card-unit" data-variant-group="text">
+    <div class="card-shell" role="group" aria-roledescription="макет" aria-label="11 из 12. Без фото · Коричневый">
+      <article class="ig-card collection-text text-brown" data-node-id="329:3788" aria-label="Oda — текстовая карточка, коричневый вариант">
+        <p class="collection-text-number">1</p><p class="collection-text-copy"><span>Маленький ресторан </span><em>с открытой кухней</em><span>, где видно, как в печи готовят ваш хачапури</span></p><p class="collection-text-name">Oda</p>
+        <div class="collection-text-address"><span class="collection-pin" aria-hidden="true">📍</span><p>44 rue Laffitte, 75009</p></div>
+      </article></div>
+  </div>
+  <div class="card-unit" data-variant-group="text">
+    <div class="card-shell" role="group" aria-roledescription="макет" aria-label="12 из 12. Без фото · Оранжевый">
+      <article class="ig-card collection-text text-orange" data-node-id="329:3795" aria-label="Tbilissi — текстовая карточка, оранжевый вариант">
+        <p class="collection-text-number">1</p><p class="collection-text-copy"><span>Современная грузинская кухня в стильной подаче, </span><em>идеально для свиданий</em></p><p class="collection-text-name">Tbilissi</p>
+        <div class="collection-text-address"><span class="collection-pin" aria-hidden="true">📍</span><p>92 avenue Ledru-Rollin, 75011</p></div>
+      </article></div>
+  </div>
+</template>
+<template id="template-expert">
+  <div class="card-unit">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="1 из 5. Обложка эксперта">
+      <article class="ig-card expert-card expert-cover" data-node-id="327:259" aria-label="Катерина Штефан. Хотите зарабатывать больше?">
+        <img class="expert-cover-ovals" src="assets/expert-cover-ovals.svg" alt="" data-node-id="327:261">
+        <div class="expert-cover-underlay" data-node-id="327:266"><img src="assets/expert-cover-underlay.png" alt=""></div>
+        <div class="expert-cover-portrait" data-node-id="327:267"><img src="assets/expert-portrait.png" alt="Портрет Катерины Штефан в белой блузке на фоне книг"></div>
+        <div class="expert-ribbon" data-node-id="327:269"><img src="assets/expert-ribbon.svg" alt=""></div>
+        <div aria-label="Сарафан Бюро"><p class="expert-ribbon-name" data-node-id="327:273">Сарафан</p><p class="expert-ribbon-bureau" data-node-id="327:274">Бюро</p></div>
+        <p class="expert-heading expert-cover-heading" data-node-id="327:275">Хотите зарабатывать больше?</p>
+        <div class="expert-cover-info" data-node-id="327:276">
+          <div class="expert-cover-copy" data-node-id="327:277">
+            <p class="expert-cover-name" data-node-id="327:278">Катерина Штефан,<br>коуч ICF / психолог</p>
+            <p class="expert-cover-description" data-node-id="327:279">Помогает выстроить здоровые отношения с&nbsp;финансами</p>
+          </div>
+          <img class="expert-cover-rule" src="assets/expert-cover-rule.svg" alt="" data-node-id="327:280">
+          <div class="expert-cover-meta" data-node-id="327:281"><p data-node-id="327:282">Париж · RU/FR/EN</p><p data-node-id="327:283">@shtefan_kate</p></div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="2 из 5. Вопросы к читателю">
+      <article class="ig-card expert-card expert-questions" data-node-id="327:210" aria-label="Работаете много, а доход стоит на месте?">
+        <p class="expert-heading expert-question-1" data-node-id="327:214">Работаете много,<br>а доход стоит<br>на месте?</p>
+        <img class="expert-logo" src="assets/expert-questions-logo.svg" alt="Сарафан Бюро" data-node-id="327:215">
+        <p class="expert-heading expert-question-2" data-node-id="327:219">Думаете о своем деле или новой профессии, но не знаете, с чего начать?</p>
+        <p class="expert-heading expert-question-3" data-node-id="327:220">Боитесь назвать цену, которой достоин<br>ваш опыт?</p>
+        <img class="expert-footer-rule" src="assets/expert-questions-rule.svg" alt="" data-node-id="327:213">
+        <p class="expert-footer-name" data-node-id="327:211">Катерина Штефан, коуч ICF / психолог</p><p class="expert-footer-handle" data-node-id="327:212">@shtefan_kate</p>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="3 из 5. Стратегическая сессия">
+      <article class="ig-card expert-card expert-session" data-node-id="327:221" aria-label="Что даёт стратегическая сессия">
+        <div class="image-layer expert-session-photo" data-node-id="327:222"><img src="assets/expert-session-photo.png" alt="Катерина Штефан сидит у окна"></div>
+        <div class="expert-session-shade" data-node-id="327:223"></div>
+        <p class="expert-heading expert-session-copy" data-node-id="327:227">На стратегической сессии разберете<br>свой опыт и ресурсы, найдете новые точки дохода и получите план на 1–3 месяца</p>
+        <img class="expert-logo" src="assets/expert-session-logo.svg" alt="Сарафан Бюро" data-node-id="327:228">
+        <img class="expert-footer-rule" src="assets/expert-session-rule.svg" alt="" data-node-id="327:226">
+        <p class="expert-footer-name" data-node-id="327:224">Катерина Штефан, коуч ICF / психолог</p><p class="expert-footer-handle" data-node-id="327:225">@shtefan_kate</p>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="4 из 5. Обо мне">
+      <article class="ig-card expert-card expert-about" data-node-id="327:232" aria-label="Обо мне — опыт Катерины Штефан">
+        <p class="expert-section-label" data-node-id="327:233">Обо мне</p>
+        <div class="expert-about-portrait" data-node-id="327:239">
+          <img class="expert-about-layer-1" src="assets/expert-about-layer-1.png" alt="" data-node-id="327:240">
+          <img class="expert-about-layer-2" src="assets/expert-about-layer-2.png" alt="" data-node-id="327:241">
+          <img class="expert-about-layer-3" src="assets/expert-about-layer-3.png" alt="" data-node-id="327:242">
+          <img class="expert-about-layer-4" src="assets/expert-about-layer-4.png" alt="" data-node-id="327:243">
+          <img class="expert-about-layer-5" src="assets/expert-about-portrait.png" alt="Портрет Катерины Штефан" data-node-id="327:244">
+        </div>
+        <p class="expert-heading expert-about-quote" data-node-id="327:237">«Способ зарабатывать<br>не обязательно выбирать один раз<br>и на всю жизнь»</p>
+        <p class="expert-about-copy" data-node-id="327:238">600+ часов практики. Сама несколько раз меняла профессию: инженерия, юриспруденция, семейный бизнес. Теперь помогаю другим <br>найти свой путь к большему доходу</p>
+        <img class="expert-logo" src="assets/expert-about-logo.svg" alt="Сарафан Бюро" data-node-id="327:245">
+        <img class="expert-footer-rule" src="assets/expert-about-rule.svg" alt="" data-node-id="327:236">
+        <p class="expert-footer-name" data-node-id="327:234">Катерина Штефан, коуч ICF / психолог</p><p class="expert-footer-handle" data-node-id="327:235">@shtefan_kate</p>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="5 из 5. Контакты">
+      <article class="ig-card expert-card expert-contact" data-node-id="327:249" aria-label="Записаться на стратегическую сессию: @shtefan_kate">
+        <p class="expert-section-label" data-node-id="327:250">Контакты</p>
+        <p class="expert-heading expert-contact-copy" data-node-id="327:254">Записаться<br>на стратегическую сессию:<br><br>@shtefan_kate</p>
+        <img class="expert-logo" src="assets/expert-contact-logo.svg" alt="Сарафан Бюро" data-node-id="327:255">
+        <img class="expert-footer-rule" src="assets/expert-contact-rule.svg" alt="" data-node-id="327:253">
+        <p class="expert-footer-name" data-node-id="327:251">Катерина Штефан, коуч ICF / психолог</p><p class="expert-footer-handle" data-node-id="327:252">@shtefan_kate</p>
+      </article>
+    </div>
+  </div>
+</template>
+<template id="reference-intro">
+  <div class="card-unit">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="1 из 7. Сарафан · Жизнь во Франции">
+      <article class="ig-card intro-card intro-cover" data-node-id="344:5898" aria-label="Сарафан · Жизнь во Франции">
+        <div class="intro-original">
+          <div class="intro-photo intro-cover-photo" data-node-id="344:5899"><img src="assets/intro-1-image79.png" alt="Парижская улица с видом на Эйфелеву башню"></div>
+          <h2 class="intro-wordmark" data-node-id="344:5900">Сарафан</h2>
+          <p class="intro-since" data-node-id="344:5901">depuis 2021</p>
+          <p class="intro-cover-sections" data-node-id="344:5902">Журнал<br>Бюро<br>Клуб</p>
+          <p class="intro-cover-tagline" data-node-id="344:5903">Жизнь во Франции</p>
+          <div aria-hidden="true"><div class="intro-logo-piece" style="inset:7.46% 16.76% 90.88% 82.11%" data-node-id="344:5905"><img src="assets/intro-1-group68.svg" alt=""></div><div class="intro-logo-piece" style="inset:7.45% 12.05% 87.87% 86.82%" data-node-id="344:5914"><img src="assets/intro-1-group63.svg" alt=""></div><div class="intro-logo-piece" style="inset:6.7% 7.33% 90.89% 91.54%" data-node-id="344:5939"><img src="assets/intro-1-group58.svg" alt=""></div><div class="intro-logo-piece" style="inset:5.95% 8.28% 90.88% 90.59%" data-node-id="344:5952"><img src="assets/intro-1-group59.svg" alt=""></div><div class="intro-logo-piece" style="inset:5.95% 9.22% 90.13% 89.65%" data-node-id="344:5969"><img src="assets/intro-1-group60.svg" alt=""></div><div class="intro-logo-piece" style="inset:5.95% 10.16% 89.37% 88.71%" data-node-id="344:5990"><img src="assets/intro-1-group61.svg" alt=""></div><div class="intro-logo-piece" style="inset:5.95% 11.11% 88.62% 87.76%" data-node-id="344:6015"><img src="assets/intro-1-group62.svg" alt=""></div><div class="intro-logo-piece" style="inset:5.19% 15.82% 90.13% 83.05%" data-node-id="344:6044"><img src="assets/intro-1-group67.svg" alt=""></div><div class="intro-logo-piece" style="inset:4.44% 12.99% 88.62% 85.88%" data-node-id="344:6065"><img src="assets/intro-1-group69.svg" alt=""></div><div class="intro-logo-piece" style="inset:4.44% 13.94% 89.38% 84.94%" data-node-id="344:6094"><img src="assets/intro-1-group65.svg" alt=""></div><div class="intro-logo-piece" style="inset:4.44% 14.88% 89.37% 83.99%" data-node-id="344:6127"><img src="assets/intro-1-group66.svg" alt=""></div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="2 из 7. Журнал · Открывать город">
+      <article class="ig-card intro-card intro-journal" data-node-id="344:4884" aria-label="Журнал · Открывать город">
+        
+        <div class="intro-photo intro-oval" data-node-id="344:4885"><img src="assets/intro-2-ellipse17.png" alt="Посетители и картины в парижском музее"></div>
+        <div class="intro-art intro-ribbon" data-node-id="344:4886"><img src="assets/intro-2-vector.svg" alt=""></div>
+        <h2 class="intro-section-name intro-trim" data-node-id="344:4887">Журнал</h2>
+        <p class="intro-section-topline" data-node-id="344:4888">Афиша · Подборки · Истории</p>
+        <p class="intro-body intro-trim" data-node-id="344:4889"><em>Рассказываем про жизнь Парижа:</em><br>афиша выставок, концертов и маркетов, подборки кафе, баров и галерей,<br>где стоит побывать, и истории тех,<br>кто живёт в этом городе</p>
+        <p class="intro-action intro-trim" data-node-id="344:4890">Открывать город</p>
+        <div class="intro-art intro-corner" data-node-id="344:4891"><img src="assets/intro-2-rectangle72.svg" alt=""></div>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="3 из 7. Бюро · Справляться с жизнью">
+      <article class="ig-card intro-card intro-bureau" data-node-id="344:4892" aria-label="Бюро · Справляться с жизнью">
+        
+        <div class="intro-photo intro-oval" data-node-id="344:4893"><img src="assets/intro-3-ellipse17.png" alt="Французский флаг над Национальным собранием"></div>
+        <div class="intro-art intro-ribbon" data-node-id="344:4894"><img src="assets/intro-3-vector.svg" alt=""></div>
+        <h2 class="intro-section-name intro-trim" data-node-id="344:4895">Бюро</h2>
+        <p class="intro-section-topline" data-node-id="344:4896">Консьерж · Специалисты · Экспертиза</p>
+        <p class="intro-body intro-trim" data-node-id="344:4897"><em>Помогаем решать проблемы:</em> организуем мероприятия под ключ, находим проверенных русскоязычных специалистов и разбираемся в любых вопросах — от бытовых мелочей до налогов и документов</p>
+        <p class="intro-action intro-trim" data-node-id="344:4898">Справляться с жизнью</p>
+        <div class="intro-art intro-corner" data-node-id="344:4899"><img src="assets/intro-3-group82.svg" alt=""></div>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="4 из 7. Клуб · Находить своих">
+      <article class="ig-card intro-card intro-club" data-node-id="344:4903" aria-label="Клуб · Находить своих">
+        
+        <div class="intro-photo intro-oval" data-node-id="344:4904"><img src="assets/intro-4904-ellipse17.png" alt="Участники сообщества Сарафан на общей встрече"></div>
+        <div class="intro-art intro-ribbon" data-node-id="344:4905"><img src="assets/intro-4905-vector.svg" alt=""></div>
+        <h2 class="intro-section-name intro-trim" data-node-id="344:4906">Клуб</h2>
+        <p class="intro-section-topline" data-node-id="344:4907">Встречи · Люди · Сообщество</p>
+        <p class="intro-body intro-trim" data-node-id="344:4908"><em>Создаём поводы встречаться, знакомиться и проводить время вместе:</em> от кофе и afterwork до вечеринок, пикников и экспертных завтраков с нашими экспертами</p>
+        <p class="intro-action intro-trim" data-node-id="344:4909">Находить своих</p>
+        <div class="intro-photo intro-corner" data-node-id="344:4910"><img src="assets/intro-4910-logo.png" alt=""></div>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="5 из 7. Сарафан Салон">
+      <article class="ig-card intro-card intro-salon" data-node-id="344:3807" aria-label="Сарафан Салон">
+        <h2 class="intro-salon-name intro-trim" data-node-id="344:3808">Салон</h2>
+        <p class="intro-salon-brand intro-trim" data-node-id="344:3809">САРАФАН</p>
+        <p class="intro-salon-copy" data-node-id="344:3810">Два раза в год собираем специалистов, бренды и наше комьюнити в одном пространстве. <em>Мастер-классы, дегустации, игры, знакомства и разговоры</em></p><div class="intro-photo intro-salon-bottom-right" data-node-id="344:3811"><img src="assets/intro-3811-ellipse28.png" alt="Фрагмент интерьера встречи"></div><div class="intro-source-circle intro-salon-food" data-node-id="344:3812"><img class="intro-salon-underlay" src="assets/intro-3812-image75.png" alt=""><img class="intro-salon-circle-underlay" src="assets/intro-3812-ellipse21.png" alt="Дегустация блюд на встрече"></div><div class="intro-source-circle intro-salon-table" data-node-id="344:3815"><img class="intro-salon-underlay" src="assets/intro-3815-image75.png" alt=""><img class="intro-salon-circle-underlay" src="assets/intro-3815-ellipse21.png" alt=""><img class="intro-salon-table-photo" src="assets/intro-3815-ellipse20.png" alt="Разговор за общим столом"></div><div class="intro-source-circle intro-salon-talk" data-node-id="344:3819"><img class="intro-salon-underlay" src="assets/intro-3819-image75.png" alt=""><img class="intro-salon-circle-underlay" src="assets/intro-3819-ellipse21.png" alt=""><img class="intro-salon-talk-photo" src="assets/intro-3819-ellipse24.png" alt="Участники беседуют"></div><div class="intro-photo intro-salon-group" data-node-id="344:3823"><img src="assets/intro-3823-ellipse22.png" alt="Групповое фото участников"></div><div class="intro-photo intro-salon-bottom-left" data-node-id="344:3824"><img src="assets/intro-3824-ellipse27.png" alt="Фрагмент интерьера Салона"></div><p class="intro-salon-note" data-node-id="344:3825">офлайн ·<br>два раза в год</p><div class="intro-photo intro-corner" data-node-id="344:3826"><img src="assets/intro-3826-logo.png" alt=""></div><div class="intro-photo intro-salon-party-circle" data-node-id="344:4875"><img src="assets/intro-4875-original.png" alt="Вечеринка Сарафана"></div><div class="intro-photo intro-salon-books" data-node-id="344:4879"><img src="assets/intro-4879-rectangle102.png" alt="Читательницы с книгами"></div><div class="intro-photo intro-salon-top-circle" data-node-id="344:4880"><img src="assets/intro-4880-original.png" alt="Фрагмент кафе"></div>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="6 из 7. Рекламная площадка">
+      <article class="ig-card intro-card intro-ad" data-node-id="344:5610" aria-label="Рекламная площадка">
+        
+        <h2 class="intro-ad-title" data-node-id="344:5611">Рекламная<br>площадка</h2>
+        <p class="intro-ad-copy" data-node-id="344:5612"><span class="intro-highlight">Расскажите о себе аудитории Сарафана:</span> размещение<br>в каталоге <em>Бюро</em>, публикации<br>в наших каналах, участие<br>в <em>Салоне</em> и партнерство<br>в событиях <em>Клуба</em></p>
+        <dl class="intro-stats" data-node-id="344:5613"><div class="intro-stat"><dt>телеграм</dt><dd>5000+ подписчиков</dd></div><div class="intro-stat"><dt>instagram</dt><dd>23 000+ подписчиков</dd></div><div class="intro-stat"><dt>рассылка</dt><dd>2000+ адресов</dd></div><div class="intro-stat"><dt>сайт</dt><dd>3000+ читателей в день</dd></div><div class="intro-stat"><dt>офлайн</dt><dd>1000+ людей в год</dd></div></dl>
+      </article>
+    </div>
+  </div>
+  <div class="card-unit">
+    <div class="card-shell" role="group" aria-roledescription="слайд" aria-label="7 из 7. Становитесь частью сообщества">
+      <article class="ig-card intro-card intro-finale" data-node-id="344:5634" aria-label="Становитесь частью сообщества">
+        <div class="intro-original">
+          <h2 class="intro-wordmark" data-node-id="344:5635">Сарафан</h2>
+          <p class="intro-finale-topline" data-node-id="344:5636">Журнал · Бюро · Клуб</p>
+          <p class="intro-finale-copy intro-trim" data-node-id="344:5637">Становитесь частью сообщества, <em>и живите<br>во Франции как дома</em></p>
+          <div aria-hidden="true"><div class="intro-logo-piece" style="inset:6.4% 13.31% 92.33% 85.82%" data-node-id="344:5639"><img src="assets/intro-7-group68.svg" alt=""></div><div class="intro-logo-piece" style="inset:6.39% 9.68% 90.01% 89.45%" data-node-id="344:5648"><img src="assets/intro-7-group63.svg" alt=""></div><div class="intro-logo-piece" style="inset:5.81% 6.05% 92.33% 93.08%" data-node-id="344:5673"><img src="assets/intro-7-group58.svg" alt=""></div><div class="intro-logo-piece" style="inset:5.23% 6.78% 92.33% 92.35%" data-node-id="344:5686"><img src="assets/intro-7-group59.svg" alt=""></div><div class="intro-logo-piece" style="inset:5.23% 7.5% 91.75% 91.63%" data-node-id="344:5703"><img src="assets/intro-7-group60.svg" alt=""></div><div class="intro-logo-piece" style="inset:5.23% 8.23% 91.17% 90.9%" data-node-id="344:5724"><img src="assets/intro-7-group61.svg" alt=""></div><div class="intro-logo-piece" style="inset:5.23% 8.96% 90.59% 90.17%" data-node-id="344:5749"><img src="assets/intro-7-group62.svg" alt=""></div><div class="intro-logo-piece" style="inset:4.65% 12.59% 91.75% 86.55%" data-node-id="344:5778"><img src="assets/intro-7-group67.svg" alt=""></div><div class="intro-logo-piece" style="inset:4.07% 10.41% 90.59% 88.72%" data-node-id="344:5799"><img src="assets/intro-7-group69.svg" alt=""></div><div class="intro-logo-piece" style="inset:4.07% 11.13% 91.17% 88%" data-node-id="344:5828"><img src="assets/intro-7-group65.svg" alt=""></div><div class="intro-logo-piece" style="inset:4.07% 11.86% 91.17% 87.27%" data-node-id="344:5861"><img src="assets/intro-7-group66.svg" alt=""></div></div>
+          <div class="intro-photo intro-finale-party" data-node-id="344:5894"><img src="assets/intro-7-ellipse19.png" alt="Танцы на вечеринке Сарафана"></div>
+          <div class="intro-photo intro-finale-paris" data-node-id="344:5895"><img src="assets/intro-7-ellipse17.png" alt="Вид на Эйфелеву башню и Сену"></div>
+          <div class="intro-photo intro-finale-picnic" data-node-id="344:5896"><img src="assets/intro-7-ellipse18.png" alt="Участники сообщества на пикнике"></div>
+          <p class="intro-finale-url" data-node-id="344:5897">sarafan-buro.com</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</template>
+<template id="reference-transition">
+  <div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="1 из 6. В Сарафане скоро всё изменится"><article class="ig-card transition-card transition-cover" data-node-id="351:6591" aria-label="В Сарафане скоро всё изменится"><div class="transition-original"><div aria-hidden="true"><div class="transition-heart-piece" style="inset:32% 55.33% 65.88% 43.22%"><img src="assets/transition-6591-group68.svg" alt=""></div><div class="transition-heart-piece" style="inset:31.99% 49.28% 62.01% 49.27%"><img src="assets/transition-6591-group63.svg" alt=""></div><div class="transition-heart-piece" style="inset:31.02% 43.22% 65.88% 55.33%"><img src="assets/transition-6591-group58.svg" alt=""></div><div class="transition-heart-piece" style="inset:30.05% 44.43% 65.88% 54.12%"><img src="assets/transition-6591-group59.svg" alt=""></div><div class="transition-heart-piece" style="inset:30.05% 45.64% 64.91% 52.91%"><img src="assets/transition-6591-group60.svg" alt=""></div><div class="transition-heart-piece" style="inset:30.05% 46.85% 63.94% 51.69%"><img src="assets/transition-6591-group61.svg" alt=""></div><div class="transition-heart-piece" style="inset:30.05% 48.07% 62.97% 50.48%"><img src="assets/transition-6591-group62.svg" alt=""></div><div class="transition-heart-piece" style="inset:29.08% 54.12% 64.91% 44.43%"><img src="assets/transition-6591-group67.svg" alt=""></div><div class="transition-heart-piece" style="inset:28.12% 50.49% 62.97% 48.06%"><img src="assets/transition-6591-group69.svg" alt=""></div><div class="transition-heart-piece" style="inset:28.12% 51.7% 63.94% 46.85%"><img src="assets/transition-6591-group65.svg" alt=""></div><div class="transition-heart-piece" style="inset:28.12% 52.91% 63.94% 45.64%"><img src="assets/transition-6591-group66.svg" alt=""></div></div><p class="transition-cover-title" data-node-id="351:6592">В Сарафане<br>скоро <em>всё</em> изменится</p><p class="transition-more" data-node-id="351:6593">подробнее →</p></div></article></div></div>
+  <div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="2 из 6. История проекта · Варя и Юля"><article class="ig-card transition-card transition-history" data-node-id="351:6294" aria-label="История проекта · Варя и Юля"><p class="transition-history-title" data-node-id="351:6295">В 2021 году<br>Сарафан-бюро придумали <em class="transition-orange">Варя и Юля</em><span class="transition-orange">,</span><br>две парижанки, которым не хватало общения и сообщества близких людей</p><div class="transition-photo transition-founder-varya" data-node-id="351:6297"><img src="assets/transition-6294-image202610041820251.png" alt="Варя" style="left:-140.164px;top:-55.084px;width:710.82px;height:1066.647px" data-node-id="351:6298"></div><div class="transition-photo transition-founder-yulia" data-node-id="351:6299"><img src="assets/transition-6294-image202610041820252.png" alt="Юля" style="left:-271.715px;top:-144.066px;width:614.497px;height:922.106px" data-node-id="351:6300"></div><p class="transition-history-note" data-node-id="351:6296">За 5 лет в проекте родилось несколько рубрик:</p><p class="transition-ribbon" style="left:65px;top:1083px;width:834px" data-node-id="351:6302">рекламная площадка для русскоязычного бизнеса,</p><p class="transition-ribbon" style="left:65px;top:1135px;width:356px" data-node-id="351:6304">экспертные завтраки,</p><p class="transition-ribbon" style="left:433px;top:1135px;width:224px" data-node-id="351:6306">нетворкинги,</p><p class="transition-ribbon" style="left:669px;top:1135px;width:336px" data-node-id="351:6308">культурные выходы,</p><p class="transition-ribbon" style="left:65px;top:1187px;width:159px" data-node-id="351:6310">пикники,</p><p class="transition-ribbon" style="left:236px;top:1187px;width:192px" data-node-id="351:6312">дегустации,</p><p class="transition-ribbon" style="left:440px;top:1187px;width:290px" data-node-id="351:6314">занятия спортом,</p><p class="transition-ribbon" style="left:742px;top:1187px;width:277px" data-node-id="351:6316">поп-ап гостиная,</p><p class="transition-ribbon" style="left:65px;top:1239px;width:696px" data-node-id="351:6318">пространство для знакомств и партнёрств</p></article></div></div>
+  <div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="3 из 6. Юля · Новые направления"><article class="ig-card transition-card transition-yulia" data-node-id="351:6319" aria-label="Юля · Новые направления"><div class="transition-photo transition-portrait" data-node-id="351:6322"><img src="assets/transition-6319-image202610041820251.png" alt="" style="left:-344.616px;top:-157.029px;width:737.791px;height:1107.12px" data-node-id="351:6323"><img src="assets/transition-6319-image202610042104491.png" alt="Юля" style="left:-173.370px;top:-212.157px;width:586.309px;height:879.807px" data-node-id="351:6324"></div><p class="transition-person-title" data-node-id="351:6320">В мае 2026 года<br><em>Юля приняла решение<br>выйти из проекта</em><br>и сосредоточиться<br>на собственных профессиональных направлениях</p><p class="transition-person-note" data-node-id="351:6321">Сегодня Юля развивает проекты, связанные<br>с искусством, аукционным рынком, культурной журналистикой и авторскими форматами в Париже</p></article></div></div>
+  <div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="4 из 6. Варя · Новая глава Сарафана"><article class="ig-card transition-card transition-varya" data-node-id="351:6325" aria-label="Варя · Новая глава Сарафана"><div class="transition-photo transition-portrait" data-node-id="351:6328"><img src="assets/transition-6325-image202610041820251.png" alt="" style="left:-344.616px;top:-157.029px;width:737.791px;height:1107.12px" data-node-id="351:6329"><img src="assets/transition-6325-image202610042104491.png" alt="Варя" style="left:-75.152px;top:-337.971px;width:701.788px;height:1053.093px" data-node-id="351:6330"></div><p class="transition-person-title" data-node-id="351:6326"><em class="transition-orange">Варя продолжает развивать<br>Сарафан-бюро</em><span class="transition-orange">,</span><br>и совсем скоро<br>у Сарафана начнется новая глава</p><p class="transition-person-note" data-node-id="351:6327"><strong>Сарафан</strong> останется главным событийным медиа сообщества с каталогом специалистов, офлайн-рубриками экспертных и культурных встреч,<br>агентством организации мероприятий и бюро<br>по адаптации во французскую жизнь</p></article></div></div>
+  <div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="5 из 6. Часть общей истории"><article class="ig-card transition-card transition-story" data-node-id="351:6289" aria-label="Часть общей истории"><div class="transition-photo transition-story-photo" data-node-id="351:6290"><img src="assets/transition-6289-image202610042121411.png" alt="Варя и Юля вместе в саду"></div><div class="transition-story-shade" data-node-id="351:6291"></div><p class="transition-story-title" data-node-id="351:6293"><em>Сарафан-бюро</em> навсегда останется частью нашей общей истории,</p><p class="transition-story-note" data-node-id="351:6292">даже если дальше у каждой<br>она продолжается по-своему</p></article></div></div>
+  <div class="card-unit"><div class="card-shell" role="group" aria-roledescription="слайд" aria-label="6 из 6. Спасибо, что вы с нами"><article class="ig-card transition-card transition-finale" data-node-id="351:6331" aria-label="Спасибо, что вы с нами"><div aria-hidden="true"><div class="transition-heart-piece" style="inset:8.7% 55.27% 89.17% 43.28%"><img src="assets/transition-6331-group68.svg" alt=""></div><div class="transition-heart-piece" style="inset:8.7% 49.22% 85.29% 49.33%"><img src="assets/transition-6331-group63.svg" alt=""></div><div class="transition-heart-piece" style="inset:7.72% 43.15% 89.17% 55.39%"><img src="assets/transition-6331-group58.svg" alt=""></div><div class="transition-heart-piece" style="inset:6.76% 44.36% 89.17% 54.18%"><img src="assets/transition-6331-group59.svg" alt=""></div><div class="transition-heart-piece" style="inset:6.76% 45.58% 88.2% 52.97%"><img src="assets/transition-6331-group60.svg" alt=""></div><div class="transition-heart-piece" style="inset:6.76% 46.79% 87.23% 51.76%"><img src="assets/transition-6331-group61.svg" alt=""></div><div class="transition-heart-piece" style="inset:6.76% 48% 86.26% 50.54%"><img src="assets/transition-6331-group62.svg" alt=""></div><div class="transition-heart-piece" style="inset:5.79% 54.06% 88.2% 44.49%"><img src="assets/transition-6331-group67.svg" alt=""></div><div class="transition-heart-piece" style="inset:4.82% 50.43% 86.26% 48.12%"><img src="assets/transition-6331-group69.svg" alt=""></div><div class="transition-heart-piece" style="inset:4.82% 51.64% 87.23% 46.91%"><img src="assets/transition-6331-group65.svg" alt=""></div><div class="transition-heart-piece" style="inset:4.82% 52.85% 87.23% 45.7%"><img src="assets/transition-6331-group66.svg" alt=""></div></div><p class="transition-quote" data-node-id="351:6332">«Мы поменяемся визуально, переосмыслим привычные сервисы<br>и запустим новые,<br>но продолжим быть местом, где можно найти своих, получить помощь<br>и <em class="transition-orange">почувствовать себя частью Парижа</em>»</p><p class="transition-thanks" data-node-id="351:6333"><br>Спасибо, что вы с нами.<br>Впереди — новая глава Сарафана</p></article></div></div>
+</template>
+</body>
+</html>

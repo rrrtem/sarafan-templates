@@ -1,0 +1,903 @@
+[
+  {
+    "card": "01",
+    "bounds": [
+      {
+        "className": "club-address",
+        "text": "66 rue Notre-Dame de Nazareth, 75003",
+        "x": 165,
+        "y": 856,
+        "width": 390,
+        "height": 90,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-salon-title",
+        "text": "Салон",
+        "x": 555,
+        "y": 234,
+        "width": 464,
+        "height": 136,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-range",
+        "text": "9—15",
+        "x": 65,
+        "y": 370,
+        "width": 351,
+        "height": 136,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-month",
+        "text": "ноября",
+        "x": 256,
+        "y": 547,
+        "width": 527,
+        "height": 136,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-brand-title",
+        "text": "сарафан",
+        "x": 65,
+        "y": 65,
+        "width": 857.78125,
+        "height": 172,
+        "overflow": false
+      },
+      {
+        "className": "club-program-list",
+        "text": "кофе-нетворкинг ✚ театр и власть ✚ дизайн ✚ сервировка ✚ квартирник ✚ искусство радоваться ✚ кутюрная вышивка ✚ винное казино ✚ керамика ✚ книжный своп",
+        "x": 65,
+        "y": 1010,
+        "width": 950,
+        "height": 225,
+        "overflow": false
+      },
+      {
+        "className": "club-cta",
+        "text": "программа →",
+        "x": 822.046875,
+        "y": 1250,
+        "width": 192.953125,
+        "height": 35,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "card": "02",
+    "bounds": [
+      {
+        "className": "club-cinema club-poster-date",
+        "text": "10/11",
+        "x": 647,
+        "y": 65.5625,
+        "width": 165.375,
+        "height": 81.59375,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-time",
+        "text": "вторник,10:00–12:00",
+        "x": 647,
+        "y": 165.609375,
+        "width": 174,
+        "height": 60,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-heading-zone",
+        "text": "Открытый кофе-нетворкингс Дмитрием Макаровым",
+        "x": 68,
+        "y": 736,
+        "width": 947,
+        "height": 429,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-title weekly-title",
+        "text": "Открытый кофе-нетворкинг",
+        "x": 48,
+        "y": 813.3125,
+        "width": 987,
+        "height": 189.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-subtitle",
+        "text": "с Дмитрием Макаровым",
+        "x": 48,
+        "y": 1027.5,
+        "width": 987,
+        "height": 60.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-description",
+        "text": "Знакомимся за кофе и завтраком. Приносите визитки и рассказывайте о себе и своих проектах. Встречу ведёт Дмитрий Макаров.",
+        "x": 68,
+        "y": 1165,
+        "width": 947,
+        "height": 120,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-name",
+        "text": "Сарафан",
+        "x": 65,
+        "y": 80,
+        "width": 180,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-salon",
+        "text": "Салон",
+        "x": 259,
+        "y": 80,
+        "width": 131,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-price",
+        "text": "Вход свободный",
+        "x": 417.6698303222656,
+        "y": 685.6602783203125,
+        "width": 266.0197448730469,
+        "height": 73.335693359375,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "card": "03",
+    "bounds": [
+      {
+        "className": "club-cinema club-poster-date",
+        "text": "10/11",
+        "x": 647,
+        "y": 65.5625,
+        "width": 165.375,
+        "height": 81.59375,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-time",
+        "text": "вторник,19:30",
+        "x": 647,
+        "y": 165.609375,
+        "width": 174,
+        "height": 60,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-heading-zone",
+        "text": "Драматурги властьЛекция Дмитрия Макарова",
+        "x": 68,
+        "y": 736,
+        "width": 947,
+        "height": 429,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-title weekly-title",
+        "text": "Драматурги власть",
+        "x": 48,
+        "y": 813.3125,
+        "width": 987,
+        "height": 189.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-subtitle",
+        "text": "Лекция Дмитрия Макарова",
+        "x": 48,
+        "y": 1027.5,
+        "width": 987,
+        "height": 60.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-description",
+        "text": "Дмитрий Макаров — о Шекспире, Мольере и Островском. Поговорим о театре, запретах и отношениях драматургов с властью.",
+        "x": 68,
+        "y": 1165,
+        "width": 947,
+        "height": 120,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-name",
+        "text": "Сарафан",
+        "x": 65,
+        "y": 80,
+        "width": 180,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-salon",
+        "text": "Салон",
+        "x": 259,
+        "y": 80,
+        "width": 131,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-price",
+        "text": "€10",
+        "x": 496.9387512207031,
+        "y": 695.0909423828125,
+        "width": 87.46627807617188,
+        "height": 54.474365234375,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "card": "04",
+    "bounds": [
+      {
+        "className": "club-cinema club-poster-date",
+        "text": "11/11",
+        "x": 647,
+        "y": 65.5625,
+        "width": 146.890625,
+        "height": 81.59375,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-time",
+        "text": "среда,весь день",
+        "x": 647,
+        "y": 165.609375,
+        "width": 174,
+        "height": 60,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-heading-zone",
+        "text": "Дизайн-приёмнаяи кастом-станцияДизайн-дуэт Chichis",
+        "x": 68,
+        "y": 736,
+        "width": 947,
+        "height": 349,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-title weekly-title",
+        "text": "Дизайн-приёмнаяи кастом-станция",
+        "x": 48,
+        "y": 773.3125,
+        "width": 987,
+        "height": 189.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-subtitle",
+        "text": "Дизайн-дуэт Chichis",
+        "x": 48,
+        "y": 987.5,
+        "width": 987,
+        "height": 60.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-description",
+        "text": "Дизайн-дуэт Артём Зайцев и Настя Самохина: два события в одном. Приносите дизайн-вопросы о бизнесе, блоге или проекте — посоветуем и поищем решения на месте. Параллельно делаем кастом-патчи на вашу одежду с нашими иллюстрациями.",
+        "x": 68,
+        "y": 1085,
+        "width": 947,
+        "height": 200,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-name",
+        "text": "Сарафан",
+        "x": 65,
+        "y": 80,
+        "width": 180,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-salon",
+        "text": "Салон",
+        "x": 259,
+        "y": 80,
+        "width": 131,
+        "height": 43,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "card": "05",
+    "bounds": [
+      {
+        "className": "club-cinema club-poster-date",
+        "text": "12/11",
+        "x": 647,
+        "y": 65.5625,
+        "width": 158.890625,
+        "height": 81.59375,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-time",
+        "text": "четверг,10:00–12:00",
+        "x": 647,
+        "y": 165.609375,
+        "width": 174,
+        "height": 60,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-heading-zone",
+        "text": "Искусствосервировкисо Светланой Забо",
+        "x": 68,
+        "y": 736,
+        "width": 947,
+        "height": 429,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-title weekly-title",
+        "text": "Искусствосервировки",
+        "x": 48,
+        "y": 813.3125,
+        "width": 987,
+        "height": 189.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-subtitle",
+        "text": "со Светланой Забо",
+        "x": 48,
+        "y": 1027.5,
+        "width": 987,
+        "height": 60.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-description",
+        "text": "Светлана Забо из Old French Plate — о старинной посуде, фарфоре и коллекционировании. Узнаем, как сервировка создаёт настроение за столом.",
+        "x": 68,
+        "y": 1165,
+        "width": 947,
+        "height": 120,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-name",
+        "text": "Сарафан",
+        "x": 65,
+        "y": 80,
+        "width": 180,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-salon",
+        "text": "Салон",
+        "x": 259,
+        "y": 80,
+        "width": 131,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-price",
+        "text": "€30",
+        "x": 496.9387512207031,
+        "y": 695.0909423828125,
+        "width": 87.46627807617188,
+        "height": 54.474365234375,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "card": "06",
+    "bounds": [
+      {
+        "className": "club-cinema club-poster-date",
+        "text": "12/11",
+        "x": 647,
+        "y": 65.5625,
+        "width": 158.890625,
+        "height": 81.59375,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-time",
+        "text": "четверг,19:30–20:00",
+        "x": 647,
+        "y": 165.609375,
+        "width": 174,
+        "height": 60,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-heading-zone",
+        "text": "КвартирникДимы Макарова",
+        "x": 68,
+        "y": 736,
+        "width": 947,
+        "height": 469,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-title weekly-title",
+        "text": "КвартирникДимы Макарова",
+        "x": 48,
+        "y": 875.90625,
+        "width": 987,
+        "height": 189.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-description",
+        "text": "Песни Вертинского, Галича и Азнавура, стихи и истории Димы Макарова. За гитару отвечает Миша Глебов.",
+        "x": 68,
+        "y": 1205,
+        "width": 947,
+        "height": 80,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-name",
+        "text": "Сарафан",
+        "x": 65,
+        "y": 80,
+        "width": 180,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-salon",
+        "text": "Салон",
+        "x": 259,
+        "y": 80,
+        "width": 131,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-price",
+        "text": "€20",
+        "x": 496.9387512207031,
+        "y": 695.0909423828125,
+        "width": 87.46627807617188,
+        "height": 54.474365234375,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "card": "07",
+    "bounds": [
+      {
+        "className": "club-cinema club-poster-date",
+        "text": "13/11",
+        "x": 647,
+        "y": 65.5625,
+        "width": 160.6875,
+        "height": 81.59375,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-time",
+        "text": "пятница,10:00–12:00",
+        "x": 647,
+        "y": 165.609375,
+        "width": 174,
+        "height": 60,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-heading-zone",
+        "text": "Искусстворадоватьсяс Ольгой и Натальей",
+        "x": 68,
+        "y": 736,
+        "width": 947,
+        "height": 429,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-title weekly-title",
+        "text": "Искусстворадоваться",
+        "x": 48,
+        "y": 813.3125,
+        "width": 987,
+        "height": 189.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-subtitle",
+        "text": "с Ольгой и Натальей",
+        "x": 48,
+        "y": 1027.5,
+        "width": 987,
+        "height": 60.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-description",
+        "text": "Практикум с искусствоведом Ольгой и мастером медитации Натальей: учимся замечать радость через искусство и простые практики. Опыт не нужен.",
+        "x": 68,
+        "y": 1165,
+        "width": 947,
+        "height": 120,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-name",
+        "text": "Сарафан",
+        "x": 65,
+        "y": 80,
+        "width": 180,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-salon",
+        "text": "Салон",
+        "x": 259,
+        "y": 80,
+        "width": 131,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-price",
+        "text": "€30",
+        "x": 496.9387512207031,
+        "y": 695.0909423828125,
+        "width": 87.46627807617188,
+        "height": 54.474365234375,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "card": "08",
+    "bounds": [
+      {
+        "className": "club-cinema club-poster-date",
+        "text": "14/11",
+        "x": 647,
+        "y": 65.5625,
+        "width": 161.890625,
+        "height": 81.59375,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-time",
+        "text": "суббота,15:00–18:00",
+        "x": 647,
+        "y": 165.609375,
+        "width": 174,
+        "height": 60,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-heading-zone",
+        "text": "Вышивкас кутюрье DiorМастер-класс с Ларисой",
+        "x": 68,
+        "y": 736,
+        "width": 947,
+        "height": 429,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-title weekly-title",
+        "text": "Вышивкас кутюрье Dior",
+        "x": 48,
+        "y": 813.3125,
+        "width": 987,
+        "height": 189.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-subtitle",
+        "text": "Мастер-класс с Ларисой",
+        "x": 48,
+        "y": 1027.5,
+        "width": 987,
+        "height": 60.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-description",
+        "text": "С Ларисой из ателье Dior вышиваем праздничную салфетку и знакомимся с кутюрными техниками. Подойдёт и тем, кто впервые берёт в руки иглу.",
+        "x": 68,
+        "y": 1165,
+        "width": 947,
+        "height": 120,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-name",
+        "text": "Сарафан",
+        "x": 65,
+        "y": 80,
+        "width": 180,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-salon",
+        "text": "Салон",
+        "x": 259,
+        "y": 80,
+        "width": 131,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-price",
+        "text": "€50",
+        "x": 496.9387512207031,
+        "y": 695.0909423828125,
+        "width": 87.46627807617188,
+        "height": 54.474365234375,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "card": "09",
+    "bounds": [
+      {
+        "className": "club-cinema club-poster-date",
+        "text": "14/11",
+        "x": 647,
+        "y": 65.5625,
+        "width": 161.890625,
+        "height": 81.59375,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-time",
+        "text": "суббота,19:00",
+        "x": 647,
+        "y": 165.609375,
+        "width": 174,
+        "height": 60,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-heading-zone",
+        "text": "Винноеказинос Еленой Шиловой",
+        "x": 68,
+        "y": 736,
+        "width": 947,
+        "height": 429,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-title weekly-title",
+        "text": "Винноеказино",
+        "x": 48,
+        "y": 813.3125,
+        "width": 987,
+        "height": 189.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-subtitle",
+        "text": "с Еленой Шиловой",
+        "x": 48,
+        "y": 1027.5,
+        "width": 987,
+        "height": 60.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-description",
+        "text": "Слепая дегустация с сомелье Еленой Шиловой. Пробуем вино, угадываем сорт, регион и год — и проверяем свою интуицию за игровым столом.",
+        "x": 68,
+        "y": 1165,
+        "width": 947,
+        "height": 120,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-name",
+        "text": "Сарафан",
+        "x": 65,
+        "y": 80,
+        "width": 180,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-salon",
+        "text": "Салон",
+        "x": 259,
+        "y": 80,
+        "width": 131,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-price",
+        "text": "€20",
+        "x": 496.9387512207031,
+        "y": 695.0909423828125,
+        "width": 87.46627807617188,
+        "height": 54.474365234375,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "card": "10",
+    "bounds": [
+      {
+        "className": "club-cinema club-poster-date",
+        "text": "15/11",
+        "x": 647,
+        "y": 65.5625,
+        "width": 159,
+        "height": 81.59375,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-time",
+        "text": "воскресенье,14:00–16:30",
+        "x": 647,
+        "y": 165.609375,
+        "width": 174,
+        "height": 60,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-heading-zone",
+        "text": "Керамическаямастерскаяс Александрой",
+        "x": 68,
+        "y": 736,
+        "width": 947,
+        "height": 429,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-title weekly-title",
+        "text": "Керамическаямастерская",
+        "x": 48,
+        "y": 813.3125,
+        "width": 987,
+        "height": 189.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-subtitle",
+        "text": "с Александрой",
+        "x": 48,
+        "y": 1027.5,
+        "width": 987,
+        "height": 60.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-description",
+        "text": "Лепим свою чашку с Александрой. Глина и инструменты будут на месте, опыт не нужен. После встречи мастер заберёт изделия на обжиг.",
+        "x": 68,
+        "y": 1165,
+        "width": 947,
+        "height": 120,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-name",
+        "text": "Сарафан",
+        "x": 65,
+        "y": 80,
+        "width": 180,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-salon",
+        "text": "Салон",
+        "x": 259,
+        "y": 80,
+        "width": 131,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-price",
+        "text": "€70",
+        "x": 496.9387512207031,
+        "y": 695.0909423828125,
+        "width": 87.46627807617188,
+        "height": 54.474365234375,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "card": "11",
+    "bounds": [
+      {
+        "className": "club-cinema club-poster-date",
+        "text": "15/11",
+        "x": 647,
+        "y": 65.5625,
+        "width": 159,
+        "height": 81.59375,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-time",
+        "text": "воскресенье,17:00",
+        "x": 647,
+        "y": 165.609375,
+        "width": 174,
+        "height": 60,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-heading-zone",
+        "text": "Книжныйсвоп",
+        "x": 68,
+        "y": 736,
+        "width": 947,
+        "height": 469,
+        "overflow": false
+      },
+      {
+        "className": "club-cinema club-poster-title weekly-title",
+        "text": "Книжныйсвоп",
+        "x": 48,
+        "y": 875.90625,
+        "width": 987,
+        "height": 189.1875,
+        "overflow": false
+      },
+      {
+        "className": "club-poster-description",
+        "text": "Приносите прочитанные книги и выбирайте новые для себя. Обмениваемся историями, знакомимся и пьём чай.",
+        "x": 68,
+        "y": 1205,
+        "width": 947,
+        "height": 80,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-name",
+        "text": "Сарафан",
+        "x": 65,
+        "y": 80,
+        "width": 180,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-ribbon-salon",
+        "text": "Салон",
+        "x": 259,
+        "y": 80,
+        "width": 131,
+        "height": 43,
+        "overflow": false
+      },
+      {
+        "className": "club-price",
+        "text": "Вход свободный",
+        "x": 417.6698303222656,
+        "y": 685.6602783203125,
+        "width": 266.0197448730469,
+        "height": 73.335693359375,
+        "overflow": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cream",
+    "title": "Кремовый",
+    "hex": "#FBEED2"
+  },
+  {
+    "id": "brown",
+    "title": "Коричневый",
+    "hex": "#553D3D"
+  },
+  {
+    "id": "blue",
+    "title": "Голубой",
+    "hex": "#A9C9DF"
+  },
+  {
+    "id": "orange",
+    "title": "Оранжевый",
+    "hex": "#FF3C00"
+  },
+  {
+    "id": "pink",
+    "title": "Розовый",
+    "hex": "#E19A9B"
+  },
+  {
+    "id": "olive",
+    "title": "Оливковый",
+    "hex": "#91945B"
+  },
+  {
+    "id": "slate",
+    "title": "Серо-синий",
+    "hex": "#606D82",
+    "secondary": true
+  },
+  {
+    "id": "sand",
+    "title": "Песочный",
+    "hex": "#E4D5B6",
+    "secondary": true
+  },
+  {
+    "id": "forest",
+    "title": "Тёмно-зелёный",
+    "hex": "#014B3E",
+    "secondary": true
+  },
+  {
+    "id": "dusty-rose",
+    "title": "Пыльно-розовый",
+    "hex": "#C98384",
+    "secondary": true
+  },
+  {
+    "id": "terracotta",
+    "title": "Терракотовый",
+    "hex": "#B54F1A",
+    "secondary": true
+  }
+]

@@ -199,13 +199,14 @@
       const img = preview.querySelector('img');
       img.src = variant.formats.SVG;
       img.alt = item.name + ' · ' + color.name;
-      preview.dataset.tone = ['cream','blue','pink'].includes(color.id) ? 'dark' : 'light';
+      delete preview.dataset.tone;
       card.dataset.color = color.id;
       card.querySelector('.ds-asset-links').replaceWith(assetLinks(variant));
     }
     for (const button of document.querySelectorAll('[data-brand-color]')) button.setAttribute('aria-pressed',String(button.dataset.brandColor === color.id));
   }
-  for (const color of data.colors) {
+  const brandColors = data.brandColors.map(option => ({...data.colors.find(color => color.id === option.id),name:option.name}));
+  for (const color of brandColors) {
     const button = node('button','ds-brand-color');
     button.type = 'button';
     button.dataset.brandColor = color.id;
@@ -215,7 +216,7 @@
     button.addEventListener('click',() => selectBrandColor(color));
     document.getElementById('brand-colors').append(button);
   }
-  selectBrandColor(data.colors.find(color => color.id === 'orange'));
+  selectBrandColor(brandColors.find(color => color.id === 'orange'));
 
   for (const ribbon of data.ribbons) {
     const card = node('article','ds-ribbon');

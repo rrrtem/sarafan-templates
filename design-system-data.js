@@ -62,6 +62,11 @@ window.SARAFAN_DESIGN = {
       ]
     }
   ],
+  brandColors: [
+    {id:'orange',name:'Красный'},
+    {id:'cream',name:'Бежевый'},
+    {id:'brown',name:'Коричневый'}
+  ],
   wordmarks: [
     {id:'sarafan-wordmark-orange',name:'Сарафан'},
     {id:'sarafan-wordmark-since',name:'С depuis 2021'}

@@ -137,7 +137,7 @@ const readme = `# Сарафан — локальный набор дизайн-
 Для векторных знаков исходный SVG, прозрачный PNG с размером 4× от intrinsic,
 векторный PDF со страницей по bounds (1 px = 0.75 pt). В PDF исходные белые геометрические
 SVG-маски экспортируются как эквивалентные векторные clipping paths; SVG не меняется.
-Все четыре знака экспортируются из оригинальных SVG; PNG и PDF создаются из тех же векторов. Две версии словесного логотипа и четыре знака доступны в шести основных цветах бренда; в реестре цветовые версии находятся в variants. Сирину рубрика пока не назначена.
+Все четыре знака экспортируются из оригинальных SVG; PNG и PDF создаются из тех же векторов. Две версии словесного логотипа и четыре знака доступны в красном, бежевом и коричневом; в реестре цветовые версии находятся в variants. Сирину рубрика пока не назначена.
 Кремовые элементы рассчитаны на контрастный фон и могут быть почти незаметны на белом.
 
 Шрифты копируются без модификации. Включены только существующие TTF/OTF и имеющийся
@@ -221,9 +221,13 @@ async function main() {
     for (const vector of vectors) assets.push(await exportVector(vector, page));
     const colorable = new Set(['sarafan-wordmark-orange','sarafan-wordmark-since','rooster-orange','bureau-orange','club-horse','sirin']);
     for (const vector of vectors.filter(item => colorable.has(item.id))) {
+      for (const color of palette.filter(item => !item.secondary && !design.brandColors.some(option => option.id === item.id))) {
+        const obsoleteId = vector.id.replace(/-orange$/, '') + '-' + color.id;
+        for (const extension of ['svg','png','pdf']) fs.rmSync(path.join(destination,'logos',`${obsoleteId}.${extension}`),{force:true});
+      }
       const base = assets.find(item => item.id === vector.id);
       base.variants = {};
-      for (const color of palette.filter(item => !item.secondary && item.id !== 'orange')) {
+      for (const color of palette.filter(item => design.brandColors.some(option => option.id === item.id) && item.id !== 'orange')) {
         const id = vector.id.replace(/-orange$/, '') + '-' + color.id;
         const existing = assets.find(item => item.id === id);
         base.variants[color.id] = existing || await exportVector({ ...vector, id,
@@ -289,7 +293,7 @@ async function main() {
       fs.readFileSync(path.join(root, relative)), { date: fixedDate });
     write(archive.path, await zip.generateAsync({ type: 'nodebuffer', compression: 'DEFLATE', compressionOptions: { level: 9 } }));
   }
-  console.log(`Built ${assets.length} assets (${assets.filter(a => a.formats.SVG).length} vector), ${fonts.length} fonts, six colors for logos/symbols and ${archives.length} ZIP archives in downloads/.`);
+  console.log(`Built ${assets.length} assets (${assets.filter(a => a.formats.SVG).length} vector), ${fonts.length} fonts, three colors for logos/symbols and ${archives.length} ZIP archives in downloads/.`);
 }
 
 main().catch(error => { console.error(error); process.exitCode = 1; });

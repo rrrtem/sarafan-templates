@@ -158,3 +158,9 @@ dialog::backdrop{background:rgb(38 29 26 / 65%)}
 .ds-ribbon .ds-ribbon-use{margin:3px 0 0;font-size:11px;color:var(--ui-muted)}
 /* Horizontal ribbons meet the preview edge, as they do on the card. */
 .ds-ribbon-preview[data-orientation="horizontal"]{padding-left:0}
+
+/* The kit is a quiet text link; brand marks sit directly on the page. */
+.ds-sidebar .ds-kit-download{display:inline-flex;align-items:center;justify-content:flex-start;gap:10px;min-height:44px;width:max-content;max-width:100%;margin-top:40px;padding:0;background:transparent;color:var(--ink)}
+.ds-sidebar .ds-kit-download:hover{color:var(--ink);opacity:.7}
+.ds-branding .ds-asset-preview{background:transparent}
+@media(max-width:800px){.ds-sidebar .ds-kit-download{margin-top:24px;padding:0;gap:10px}}

@@ -2032,26 +2032,26 @@
     {
       "path": "design-system-data.js",
       "mediaType": "text/javascript",
-      "bytes": 10112,
-      "sha256": "f291cfa14a1d37ed60eca744f3dccee77068ffd5a9f483c299319180c6eaa748"
+      "bytes": 10260,
+      "sha256": "0bec4f1bfbfffc33e1f9dd38dd1ad08abd7748e1fcb39e19a1c16fec06c1f20b"
     },
     {
       "path": "design-system.css",
       "mediaType": "text/css",
-      "bytes": 16046,
-      "sha256": "5fedbbe7a23efaa2cf4f7dbab624c59ade7cb36f5bddc3f9101e0ca9e3d172a5"
+      "bytes": 16550,
+      "sha256": "28807c2020e2018d37db2ede09c28992ecac820d95990cd0a18639c772f511b7"
     },
     {
       "path": "design-system.html",
       "mediaType": "text/html",
-      "bytes": 11501,
-      "sha256": "e95863ce8a4578ae7981816b9e7b958c4ee6ad7f0f9fcb46ad8ea4693746bd5a"
+      "bytes": 11488,
+      "sha256": "f46c7f4cc6b81628f35ad7baa23c652e53d404406a096934629a0aef2d2eb303"
     },
     {
       "path": "design-system.js",
       "mediaType": "text/javascript",
-      "bytes": 13743,
-      "sha256": "081898ff4b1e84126d60ef8f089cf8ed3d155e1622ce4ec41eb6450197957e93"
+      "bytes": 13815,
+      "sha256": "e0e1aa4d1774e151f0ccb6911e9af913a11a0ad23596787148d6a7f1e0523757"
     },
     {
       "path": "docs/ads-template.md",
@@ -2080,8 +2080,8 @@
     {
       "path": "docs/design-system.md",
       "mediaType": "text/markdown",
-      "bytes": 21368,
-      "sha256": "5d2e6e43080ce5666a3c3f932a3ef33ae426e15fb4149951e32b1ffc3d560637"
+      "bytes": 21157,
+      "sha256": "7383c93259e3f809f61f89b78a287ddbbf495dc43e8ae870f930708db5539a67"
     },
     {
       "path": "docs/event-template.md",
@@ -2128,8 +2128,8 @@
     {
       "path": "downloads/README.md",
       "mediaType": "text/markdown",
-      "bytes": 6941,
-      "sha256": "354dd94dd930830891cb2db757d53b924909f3ed66f21efe5d9f0c1dbe7ab641"
+      "bytes": 6942,
+      "sha256": "893b13ba1b2f292b2baace1383ed7c939510004c7c0272e61ef3f27c3a504683"
     },
     {
       "path": "downloads/backgrounds/blue-1080x1350.png",
@@ -2672,24 +2672,6 @@
       "sha256": "a0d3d05d83b39a89429962aef900bb25f4789160f5d635c101d0a6d67b5d974a"
     },
     {
-      "path": "downloads/logos/bureau-blue.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 2317,
-      "sha256": "e5887f2a9e2d9973249da47765c8ce9c63c4764b5a07dcf0e15bdb07c4178f02"
-    },
-    {
-      "path": "downloads/logos/bureau-blue.png",
-      "mediaType": "image/png",
-      "bytes": 157788,
-      "sha256": "ff66bfa906014f648a02dcc5f8280ab55c0e70f4b9a86efcbc46e97a25989565"
-    },
-    {
-      "path": "downloads/logos/bureau-blue.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 2444,
-      "sha256": "f1bb9abf634a9c9f56cd81cf05c271545c8bcb73113ebb01bf76c62d99dbac34"
-    },
-    {
       "path": "downloads/logos/bureau-brown.pdf",
       "mediaType": "application/pdf",
       "bytes": 2326,
@@ -2726,24 +2708,6 @@
       "sha256": "9d965c01a6d7b4b9323e3754b186e658f90e131464b5b6a9afbd42253b280137"
     },
     {
-      "path": "downloads/logos/bureau-olive.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 2324,
-      "sha256": "5e6335f6472d3ba2496d0beeda2ea01b018c04aa38e661ee04de6c184fead533"
-    },
-    {
-      "path": "downloads/logos/bureau-olive.png",
-      "mediaType": "image/png",
-      "bytes": 156395,
-      "sha256": "5fcc5c8af60eceb171b7fd4358f5a9f61f35443f2eac6009f752b01bcd4eefe4"
-    },
-    {
-      "path": "downloads/logos/bureau-olive.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 2444,
-      "sha256": "ec1ec6faf562bfa82287bf08ceee972e645b2bd9ab26af600a3ef5610d015f7e"
-    },
-    {
       "path": "downloads/logos/bureau-orange.pdf",
       "mediaType": "application/pdf",
       "bytes": 2269,
@@ -2760,42 +2724,6 @@
       "mediaType": "image/svg+xml",
       "bytes": 2444,
       "sha256": "9ffc51344fdb0641dd0dac44e266267e832bf5fafe9c32a3c08bfe3dc8b08de0"
-    },
-    {
-      "path": "downloads/logos/bureau-pink.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 2317,
-      "sha256": "b523cb35d1e339fe49d7d005432c9a8ebaa17372b5f6bdafe45783c22c02ebd9"
-    },
-    {
-      "path": "downloads/logos/bureau-pink.png",
-      "mediaType": "image/png",
-      "bytes": 154094,
-      "sha256": "005e1714ff635240ddffd42cd926d4f811622ab8367122bc530ba2b09442de27"
-    },
-    {
-      "path": "downloads/logos/bureau-pink.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 2444,
-      "sha256": "4914c362e165240054e48c6098cfb15f4f69565c0439878d1e9aa7eb0ca48cc5"
-    },
-    {
-      "path": "downloads/logos/club-horse-blue.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 39691,
-      "sha256": "18f47abcb05a0ed4d2a9ddfede1708c8adab02bffadc68e92a11e7a14d4e0898"
-    },
-    {
-      "path": "downloads/logos/club-horse-blue.png",
-      "mediaType": "image/png",
-      "bytes": 295285,
-      "sha256": "782f7a64aa8cfd18eeaa9a60479706006dade824ab6832b57a55d271c7ed3357"
-    },
-    {
-      "path": "downloads/logos/club-horse-blue.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 133042,
-      "sha256": "6f02112a6fccefb91ef0f1cbd57a8e8691c485263b59c9a2c7cd3bc35f690284"
     },
     {
       "path": "downloads/logos/club-horse-brown.pdf",
@@ -2832,42 +2760,6 @@
       "mediaType": "image/svg+xml",
       "bytes": 133042,
       "sha256": "e9f251897243487a77196d92b5d7b592517d175c8757ec4cd21670eb2f856dfa"
-    },
-    {
-      "path": "downloads/logos/club-horse-olive.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 39699,
-      "sha256": "8dca1c60dc776320fcb81378a0d2087a3d23c724d558b98771777b579c8c22d8"
-    },
-    {
-      "path": "downloads/logos/club-horse-olive.png",
-      "mediaType": "image/png",
-      "bytes": 291859,
-      "sha256": "c78e478a341d265f1ef3499f199d04a8fffc7e488f75c778a4f9754ecd38721d"
-    },
-    {
-      "path": "downloads/logos/club-horse-olive.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 133042,
-      "sha256": "fc62685bbbb36ae0cdb8969d56c0acf5882cd59e86a5675bff935a78869f423c"
-    },
-    {
-      "path": "downloads/logos/club-horse-pink.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 39691,
-      "sha256": "fe9d5b382a8d619c565ee2f654f80a33b0a62625e475da60a3cbd396efabd80b"
-    },
-    {
-      "path": "downloads/logos/club-horse-pink.png",
-      "mediaType": "image/png",
-      "bytes": 287092,
-      "sha256": "f360fbc15fd5ad1dc0cb0e6319567cd2d288b6eb521dfdc68c0b24179c91cab6"
-    },
-    {
-      "path": "downloads/logos/club-horse-pink.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 133042,
-      "sha256": "0675bd624090902691ed5ed5cb4887f68903d828dedd65db186cd53a5b640ae8"
     },
     {
       "path": "downloads/logos/club-horse.pdf",
@@ -2960,24 +2852,6 @@
       "sha256": "9c79b482c8926c38c4812e866c5ffadbdacc0c567c8d9d2305c10b4081dbed50"
     },
     {
-      "path": "downloads/logos/rooster-blue.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 24403,
-      "sha256": "2475e30815170a0e96dbb77381d0850c974f5b9ebd21546779876af38ccbd43c"
-    },
-    {
-      "path": "downloads/logos/rooster-blue.png",
-      "mediaType": "image/png",
-      "bytes": 250042,
-      "sha256": "88544b1e0ad0663999f749e435226b21e7295780fd5a974848f9252773b948b2"
-    },
-    {
-      "path": "downloads/logos/rooster-blue.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 97689,
-      "sha256": "69033a0dd5b327600c83ce67136dc7dcea7fa46a31f770fa34548f53985d83bc"
-    },
-    {
       "path": "downloads/logos/rooster-brown.pdf",
       "mediaType": "application/pdf",
       "bytes": 24411,
@@ -3014,24 +2888,6 @@
       "sha256": "6d4c0070fae0ad6b5f3e82be222b4d9c8d60ec94f701d64033f4cd38fad38532"
     },
     {
-      "path": "downloads/logos/rooster-olive.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 24410,
-      "sha256": "7e4730992be7f74837044a1008ca5e10dad627544a075cac7c1b4166f16fff54"
-    },
-    {
-      "path": "downloads/logos/rooster-olive.png",
-      "mediaType": "image/png",
-      "bytes": 248345,
-      "sha256": "5c9ad6895da0a11ac4568e3209a5f33f0598fae91f7e021dd3171258f234380e"
-    },
-    {
-      "path": "downloads/logos/rooster-olive.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 97689,
-      "sha256": "6a507d261ab17fc582101175443e1457e3fd66a144eebe72a0a140883e5813a0"
-    },
-    {
       "path": "downloads/logos/rooster-orange.pdf",
       "mediaType": "application/pdf",
       "bytes": 24356,
@@ -3050,24 +2906,6 @@
       "sha256": "1a837727cd5f714c4fd97c619361fc1c3c2db01d516f80eb4ab94a4f7b89079b"
     },
     {
-      "path": "downloads/logos/rooster-pink.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 24403,
-      "sha256": "ca56280153c4883f2933f740c106d7ea2774d868f7d14fa57a8ce68f7f31e2a4"
-    },
-    {
-      "path": "downloads/logos/rooster-pink.png",
-      "mediaType": "image/png",
-      "bytes": 243892,
-      "sha256": "a0a77a8e72815d0d264b4e30359a68e2288d5c8edff7ff380dfceb1c745150a0"
-    },
-    {
-      "path": "downloads/logos/rooster-pink.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 97689,
-      "sha256": "938a1d52eefa520a9cabd57eb675a2534f18b678763a2afd2f3a6740f8f62e67"
-    },
-    {
       "path": "downloads/logos/salon.pdf",
       "mediaType": "application/pdf",
       "bytes": 30487,
@@ -3084,24 +2922,6 @@
       "mediaType": "image/svg+xml",
       "bytes": 97705,
       "sha256": "fbfb8509102e0b9844eea4df55fc4628c7179a8390419eddaed44cb0a88a4ee6"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-blue.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 9581,
-      "sha256": "019736be83d0b26e65065d1922bab610c410ccf18d14ca8dbc5fd129f2568422"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-blue.png",
-      "mediaType": "image/png",
-      "bytes": 59078,
-      "sha256": "70fb76634d8c69f61c83adacb6c26c03c294ea91a20707134ba7110c2a874ee1"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-blue.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 22556,
-      "sha256": "ffe34a0c9bd8e6fbfb55374c7b04a5f7d06cfde6b0e102bee811fe92fe12205a"
     },
     {
       "path": "downloads/logos/sarafan-wordmark-brown.pdf",
@@ -3140,24 +2960,6 @@
       "sha256": "3b4c3604fa5d698409f80fcaeb2958aeaa66e63dc6474f4529ce60bb8bae66dc"
     },
     {
-      "path": "downloads/logos/sarafan-wordmark-olive.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 9590,
-      "sha256": "1c90cb639b25a3b2a37b8e2a376cd2672bc8418b0ced469af517d4a5e53693f4"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-olive.png",
-      "mediaType": "image/png",
-      "bytes": 58676,
-      "sha256": "aac16938aa1938b85d0ae22b38964d6933302fcc692620b9c631271d7f7b3dd7"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-olive.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 22556,
-      "sha256": "5bdb1ce16400d7f40ef9e53edb3bb16d2731f039d813162c8c64abe356bb3e09"
-    },
-    {
       "path": "downloads/logos/sarafan-wordmark-orange.pdf",
       "mediaType": "application/pdf",
       "bytes": 9536,
@@ -3174,42 +2976,6 @@
       "mediaType": "image/svg+xml",
       "bytes": 22556,
       "sha256": "acd865c7fb9d773684e783bf35cf1d2ad8f0ff708a52e229cdedb50c0aba6d31"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-pink.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 9581,
-      "sha256": "d1b3ea8418bf7a045b2ffe2cf8fd64080cabb3b8a0ce6fde98bfde6e7faf90c2"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-pink.png",
-      "mediaType": "image/png",
-      "bytes": 57690,
-      "sha256": "8f34b166b1606d6ee73443ede322f1fa75769c7cd06ee32ba49f571c17bb3ae8"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-pink.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 22556,
-      "sha256": "1095e6a4808b799b1eafb53d9d0e2c93901d961e1ae09e770636693e181d52c6"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-since-blue.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 19688,
-      "sha256": "73b885b13bd626154dcccad47c3863060c80b5bf8777ba9c0a3dd2853b8aa411"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-since-blue.png",
-      "mediaType": "image/png",
-      "bytes": 77583,
-      "sha256": "c6bb6cc38d9e2a3c831d03b0404781dfcc1f6ca92b1272bd422f47525cdf8145"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-since-blue.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 46745,
-      "sha256": "42c9259f7d59708954b0ab56c71a84b0fd52edbe7733e077ed43d6367b5bdfa2"
     },
     {
       "path": "downloads/logos/sarafan-wordmark-since-brown.pdf",
@@ -3248,42 +3014,6 @@
       "sha256": "099bd1d96d1eb1792bf1fb9e531ada01343aad81d4d281300afca97b5a058bf0"
     },
     {
-      "path": "downloads/logos/sarafan-wordmark-since-olive.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 19696,
-      "sha256": "4c7b6cfd9619e6b0d17b0427c4ec69fb53af7666ad3f2c597cb10c4094069bd8"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-since-olive.png",
-      "mediaType": "image/png",
-      "bytes": 76920,
-      "sha256": "efe2576b96c053a168524001259d500a9b37f8c818f8e65b65509bb4bc2b2dbe"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-since-olive.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 46745,
-      "sha256": "71c3e02a25e9256fd90171e49b95973071cbbff0cc3dc20b3d8aa2e59d49235f"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-since-pink.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 19687,
-      "sha256": "13e7c8453eb1b35cf7f10fcd12e39b3602fc5bfed856c493485b9e78906ce01f"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-since-pink.png",
-      "mediaType": "image/png",
-      "bytes": 75753,
-      "sha256": "b1f6309a799b8d7585e7f44b17c3a97cf6a57a690047beb24cc2e70be16867ed"
-    },
-    {
-      "path": "downloads/logos/sarafan-wordmark-since-pink.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 46745,
-      "sha256": "10b4f7ce6bb61a264ce5a9a6390bbf23ba2f8968846164826c1b69e68220af7c"
-    },
-    {
       "path": "downloads/logos/sarafan-wordmark-since.pdf",
       "mediaType": "application/pdf",
       "bytes": 19643,
@@ -3300,24 +3030,6 @@
       "mediaType": "image/svg+xml",
       "bytes": 46745,
       "sha256": "5de64909497777a85ff35fb2a39bf6af8922c45fcd9951450cf4423538de818a"
-    },
-    {
-      "path": "downloads/logos/sirin-blue.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 30545,
-      "sha256": "f595d817f0e75849b3090810fdcac4bcfdf9be9f016d7db16b8d8d5a5bbdf45f"
-    },
-    {
-      "path": "downloads/logos/sirin-blue.png",
-      "mediaType": "image/png",
-      "bytes": 209706,
-      "sha256": "3f27feeca16386f4190f0eb34ec369bee226bbbf2d0a32af49b2530b792f82d4"
-    },
-    {
-      "path": "downloads/logos/sirin-blue.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 97705,
-      "sha256": "b29f2f8c712021cb17c48b329f5748fba91cfa26ab891ff6806f3d17a1c9dff9"
     },
     {
       "path": "downloads/logos/sirin-brown.pdf",
@@ -3356,42 +3068,6 @@
       "sha256": "70248794505f18cd88578bd8ad5658b37e0d1eed7480704ecf00b3353cb7115f"
     },
     {
-      "path": "downloads/logos/sirin-olive.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 30552,
-      "sha256": "f87d00e2e8278a2402a359930f1f28a838b36355953cadf238632f6317f7ba10"
-    },
-    {
-      "path": "downloads/logos/sirin-olive.png",
-      "mediaType": "image/png",
-      "bytes": 207101,
-      "sha256": "e7e968432d8538548bb33db3483e382c0f1fc29a19e74d8db2f9849bc6003029"
-    },
-    {
-      "path": "downloads/logos/sirin-olive.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 97705,
-      "sha256": "b20d1134559745e6aec05f9f04db893a9b0a7b8e8e3eff8058df06c22417fdf7"
-    },
-    {
-      "path": "downloads/logos/sirin-pink.pdf",
-      "mediaType": "application/pdf",
-      "bytes": 30546,
-      "sha256": "153ff31f940f3983e94ef492d3d15c71d990ea0d4a5a0cacf27c992eabfa1ddf"
-    },
-    {
-      "path": "downloads/logos/sirin-pink.png",
-      "mediaType": "image/png",
-      "bytes": 204228,
-      "sha256": "7b1a179b417e1eb30f7ee2cf667819d06bb49ea4b4791e05a0c72b60d3aee71a"
-    },
-    {
-      "path": "downloads/logos/sirin-pink.svg",
-      "mediaType": "image/svg+xml",
-      "bytes": 97705,
-      "sha256": "22c64ae775ebda0e7e303129506dcdd2f2c0910d8474822cee9c43cfff36a9e0"
-    },
-    {
       "path": "downloads/logos/sirin.pdf",
       "mediaType": "application/pdf",
       "bytes": 30499,
@@ -3412,14 +3088,14 @@
     {
       "path": "downloads/manifest.js",
       "mediaType": "text/javascript",
-      "bytes": 14205693,
-      "sha256": "1dc5c5b9387250554b2e66b1fe827497ec8208aa24fe5df17068a61d2247c843"
+      "bytes": 8828715,
+      "sha256": "f638acfe3456463bcc6bfb2fcec82e56cc7b501efeabe45f2c2fec88d10af1b6"
     },
     {
       "path": "downloads/manifest.json",
       "mediaType": "application/json",
-      "bytes": 14205668,
-      "sha256": "31a5c7b77d767d2784562b22c80bfee27439316309e770b52d55125e9fda99ff"
+      "bytes": 8828690,
+      "sha256": "9b49947ce8066396141092091523afb4058b038bf318f4fe87b6db4e5d124baa"
     },
     {
       "path": "downloads/palette.css",
@@ -4864,8 +4540,8 @@
     {
       "path": "scripts/build-design-assets.cjs",
       "mediaType": "text/javascript",
-      "bytes": 24909,
-      "sha256": "07c4a083b2032262453ac485df18ffea22f86d0f4d7bd7d9e6e82d884ed54040"
+      "bytes": 25308,
+      "sha256": "0b5ffef3967d251ac674c039d69fb6a907b13d1b06465be6bb697b7c36f9abde"
     },
     {
       "path": "scripts/build-design-examples.cjs",
@@ -4972,8 +4648,8 @@
     {
       "path": "scripts/test-design-system.cjs",
       "mediaType": "text/javascript",
-      "bytes": 9001,
-      "sha256": "eeef1eedb55e3832ca5ec3bf611123d0328d13c1590b41c34fdacbd82c2ec957"
+      "bytes": 9086,
+      "sha256": "0dccba829b00b4dd13d92d70609ca477954ed9de3c0b77ff525978e52f311ff4"
     },
     {
       "path": "scripts/test-download-kit.py",
@@ -5064,26 +4740,26 @@
     {
       "path": "downloads/sarafan-design-kit.zip",
       "mediaType": "application/zip",
-      "bytes": 30392694,
-      "sha256": "fe71ae794eb8536ff5cd4beefc93c3d32ec2c9d7b017a98696d720f4ebf0a132"
+      "bytes": 20247731,
+      "sha256": "5f580804d963f38eca21219ca313da3b12517e69507bb8e26a570bb70504a2f5"
     },
     {
       "path": "downloads/sarafan-elements.zip",
       "mediaType": "application/zip",
       "bytes": 785463,
-      "sha256": "3f98965e067fbdcd83331fca7881ed418b77864ee62302d7e131b62f74e3e5ef"
+      "sha256": "e0be2ff60b1342af1602bb736c0ec452645086e51c3b42962f24d099dab89f47"
     },
     {
       "path": "downloads/sarafan-fonts.zip",
       "mediaType": "application/zip",
       "bytes": 4211012,
-      "sha256": "9c1ad4e3d56574f8ff3546a2ff26d031d74bd8d824bd8a1770873c8ac49dd384"
+      "sha256": "c003093425b8526918a7387ef9c236693c81b18e1b0ece8bbb3bae6cd98d5fc3"
     },
     {
       "path": "downloads/sarafan-logos.zip",
       "mediaType": "application/zip",
-      "bytes": 7993897,
-      "sha256": "939fc73d99060426d3823def036ca1dff2b5231b14cf3c2351a2724c69d449cc"
+      "bytes": 4472674,
+      "sha256": "948f73f342d6fdc36a99326781ee49d1b8d59ddafdab2f7bc8cb9246b251bbfe"
     },
     {
       "path": "posts/french-superlevel/carousel.zip",

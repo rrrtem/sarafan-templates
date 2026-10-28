@@ -61,16 +61,16 @@ const root = path.resolve(__dirname, '..');
     assert.equal(await page.locator('#wordmarks [data-asset="sarafan-wordmark-since"]').count(), 0);
     assert.equal(await page.locator('#logos #wordmarks, #logos #symbol-assets, #logos #brand-colors').count(), 3, 'One section contains logos, symbols and their shared color choice');
     // A single color choice changes the preview and the actual downloadable vectors.
-    assert.equal(await page.locator('[data-brand-color]').count(), 6, 'One compact selector offers six brand colors');
-    await page.locator('[data-brand-color="blue"]').click();
-    assert.equal(await page.locator('[data-brand-color="blue"]').getAttribute('aria-pressed'), 'true');
+    assert.equal(await page.locator('[data-brand-color]').count(), 3, 'One compact selector offers three brand colors');
+    await page.locator('[data-brand-color="brown"]').click();
+    assert.equal(await page.locator('[data-brand-color="brown"]').getAttribute('aria-pressed'), 'true');
     const colorDownloadEvent = page.waitForEvent('download');
     await page.locator('#wordmarks .ds-asset-links a').first().click();
     const colorDownload = await colorDownloadEvent;
-    assert((await fs.promises.readFile(await colorDownload.path(), 'utf8')).includes('#A9C9DF'), 'Downloaded wordmark uses the selected color');
-    assert.equal(await page.locator('#symbol-assets .ds-asset[data-color="blue"]').count(), 4, 'All four symbols follow the shared choice');
+    assert((await fs.promises.readFile(await colorDownload.path(), 'utf8')).includes('#553D3D'), 'Downloaded wordmark uses the selected color');
+    assert.equal(await page.locator('#symbol-assets .ds-asset[data-color="brown"]').count(), 4, 'All four symbols follow the shared choice');
     await page.locator('[data-brand-color="cream"]').click();
-    assert.equal(await page.locator('#wordmarks .ds-asset-preview[data-tone="dark"]').count(), 1, 'Light logos remain visible against a dark preview');
+    assert(await page.locator('#wordmarks .ds-asset-preview').evaluateAll(nodes => nodes.length === 2 && nodes.every(node => getComputedStyle(node).backgroundColor === 'rgba(0, 0, 0, 0)')), 'Logo previews have no backing panels');
     await page.locator('[data-brand-color="orange"]').click();
     // A designer can inspect a real card, then download its full-size image.
     const specimen = page.locator('[data-specimen]').first();
@@ -111,11 +111,11 @@ const root = path.resolve(__dirname, '..');
     await page.locator('.ds-background-links a').nth(1).click();
     const localBackground = await sharp(await (await localBackgroundEvent).path()).metadata();
     assert.equal(localBackground.width,1080); assert.equal(localBackground.height,1920);
-    await page.locator('[data-brand-color="pink"]').click();
+    await page.locator('[data-brand-color="brown"]').click();
     const localDownloadEvent = page.waitForEvent('download');
     await page.locator('#symbol-assets .ds-asset-links a').first().click();
     const localDownload = await localDownloadEvent;
-    assert((await fs.promises.readFile(await localDownload.path(), 'utf8')).includes('#E19A9B'), 'Selected SVG color downloads through file://');
+    assert((await fs.promises.readFile(await localDownload.path(), 'utf8')).includes('#553D3D'), 'Selected SVG color downloads through file://');
 
     assert.deepEqual(failures, [], 'No missing resources or browser errors');
     console.log(`PASS design system: full-size image inspection/download, SVG download, ${paths.length} download targets, file://, 320–1440 px, no browser errors.`);
